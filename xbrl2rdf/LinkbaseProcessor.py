@@ -92,6 +92,7 @@ def checkExtendedLink(element, base, ns, params):
 
     return missingSchemas
 
+
 # simple links are used to point to linkbases and taxonomy schemas
 # with the xlink:href attribute. If defined use xml:base in place
 # of the document URI for resolving relative links. The xlink:role
@@ -279,10 +280,6 @@ def processExtendedLink(element, base, ns, params):
 #         arc->toLoc = item;
 #     }
 
-    # translateXLink_resources(element, xlink, base, ns, params)
-
-    # translateXLink_locators(element, xlink, base, ns, params)
-
     translateXLink(element, xlink, base, ns, params)
 
     return 0
@@ -346,9 +343,6 @@ def process_resource(resource, base, ns, params):
     params['out'].write("        ] ;\n")
     return 0
 
-def translateXLink_locators(node, xlink, base, ns, params):
-
-    return 0
 
 def translateXLink(node, xlink, base, ns, params):
 
@@ -362,6 +356,7 @@ def translateXLink(node, xlink, base, ns, params):
     
     # char *role = samestring(node->name, "footnoteLink") ? NULL :
     #                       shortRoleName((char *)(xlink->role), 0);
+
     if etree.QName(node.tag).localname=="footnoteLink":
         node_role = None
     else:
@@ -447,6 +442,7 @@ def translateXLink(node, xlink, base, ns, params):
                 if locator_type=="resource":
 
                     process_resource(arc_to, base, ns, params)
+
                     # # process children of the arc_to object
                     # if len(arc_to_node)>=1:
                     #     # char *xml = xmlFragmentToString(node->children);
@@ -469,6 +465,7 @@ def translateXLink(node, xlink, base, ns, params):
                     #             params['out'].write('    rdf:value """'+xml+'"""; \n')
                     #     else:
                     #         params['out'].write("    xl:to "+triple_object+" ;\n")
+
                 else:
                     params['out'].write("    xl:to "+triple_object+" ;\n")
 
@@ -487,9 +484,15 @@ def getTurtleName(loc, base, ns, params):
         href = utilfunctions.expandRelativePath(href, base)
         res, namespace, name = findId(href, base, params)
         if res!=0:
-            # if not found the use parent's namespace and url fragment
-            namespace = ns
-            name = urllib.parse.urlparse(href).fragment
+            # check if href path is in namespaces, presumable a bug in the eiopa taxonomy
+            corrected_path = "/".join(href.split("/")[0:-1]).replace("s.", "S.").replace("eu/eu/", "eu/")
+            if corrected_path in params['namespaces'].keys():
+                namespace = corrected_path
+                name = urllib.parse.urlparse(href).fragment
+            else:
+                # if not found then use parent's namespace and url fragment
+                namespace = ns
+                name = urllib.parse.urlparse(href).fragment
     else:
         # if no href then use parent's namespace with label
         namespace = ns
