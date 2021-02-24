@@ -63,9 +63,9 @@ def main(url, taxo, output, log):
     params['package_name'] = manager.config['packages'][2]['name']
     params['package_uri'] = manager.config['packages'][2]['URL']
 
-    params['namespaces'] = DtsProcessor.create_hashtable()
-    params['dts_processed'] = DtsProcessor.create_hashtable()
-    params['id2elementTbl'] = DtsProcessor.create_hashtable()
+    params['namespaces'] = dict()
+    params['dts_processed'] = list()
+    params['id2elementTbl'] = dict()
     params['dts_queue'] = list()
     params['factCount'] = 0
     params['conceptCount'] = 0
@@ -90,8 +90,30 @@ def main(url, taxo, output, log):
     utilfunctions.addNamespace("xlink", "http://www.w3.org/1999/xlink", params)
     utilfunctions.addNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#", params)
     utilfunctions.addNamespace("rdfs", "http://www.w3.org/2000/01/rdf-schema#", params)
-    utilfunctions.addNamespace("iso4217", "http://www.dnb.nl/iso4217", params)
+    utilfunctions.addNamespace("eurofiling", "http://www.eurofiling.info/xbrl/role", params)
 
+    utilfunctions.addNamespace("enum", "http://xbrl.org/2014/extensible-enumerations", params)
+    utilfunctions.addNamespace("gen", "http://xbrl.org/2008/generic", params)
+    utilfunctions.addNamespace("iso4217", "http://www.xbrl.org/2003/iso4217", params)
+    utilfunctions.addNamespace("label", "http://xbrl.org/2008/label", params)
+    utilfunctions.addNamespace("nonnum", "http://www.xbrl.org/dtr/type/non-numeric", params)
+    utilfunctions.addNamespace("num", "http://www.xbrl.org/dtr/type/numeric", params)
+    utilfunctions.addNamespace("table", "http://xbrl.org/2014/table", params)
+    utilfunctions.addNamespace("variable", "http://xbrl.org/2008/variable", params)
+    utilfunctions.addNamespace("xbrldi", "http://xbrl.org/2006/xbrldi", params)
+    utilfunctions.addNamespace("xbrldt", "http://xbrl.org/2005/xbrldt", params)
+    utilfunctions.addNamespace("xbrli", "http://www.xbrl.org/2003/instance", params)
+    utilfunctions.addNamespace("xs", "http://www.w3.org/2001/XMLSchema", params)
+
+    utilfunctions.addNamespace("cf", "http://xbrl.org/2008/filter/concept", params)
+    utilfunctions.addNamespace("tf", "http://xbrl.org/2008/filter/tuple", params)
+    utilfunctions.addNamespace("df", "http://xbrl.org/2008/filter/dimension", params)
+    utilfunctions.addNamespace("acf", "http://xbrl.org/2010/filter/aspect-cover", params)
+    utilfunctions.addNamespace("mf", "http://xbrl.org/2008/filter/match", params)
+    utilfunctions.addNamespace("gf", "http://xbrl.org/2008/filter/general", params)
+
+    utilfunctions.addNamespace("va", "http://xbrl.org/2008/assertion/value", params)
+    utilfunctions.addNamespace("ea", "http://xbrl.org/2008/assertion/existence", params)
     utilfunctions.printNamespaces(params)
     
     res = parse_xbrl(params, url)

@@ -1,4 +1,4 @@
-import lxml as etree
+from lxml import etree
 import DtsProcessor
 import utilfunctions
 
@@ -51,7 +51,7 @@ def processSchema(root, base, params):
 
     return res1 or res2
 
-def processLinkBases(nodes, base, ns, params):
+def processLinkBases(nodes, base, targetNs, params):
     res = 0
     params['log'].write("importing linkbases for base "+base+"\n")
     for node in nodes:
@@ -63,8 +63,8 @@ def processLinkBases(nodes, base, ns, params):
         params['log'].write("importing "+uri+"\n")
         # if linkbase has relative uri then schema namespace applies
         # lns = (ns && (uri[0:7]=="http://") ? ns : NULL)
-        if ns and (uri[0:7]!='http://'):
-            lns = ns
+        if targetNs and (uri[0:7]!='http://'):
+            lns = targetNs
         else:
             lns = None
         DtsProcessor.appendDtsQueue(XBRL_LINKBASE, uri, base, lns, 0, params)
@@ -79,12 +79,16 @@ def processImportedSchema(root, base, ns, params):
     for node in root:
 #         if (node->type != XML_ELEMENT_NODE)
 #              continue;
+        # if (strcmp((char *)(node->name), "import") &&
+        #       strcmp((char *)(node->name), "include"))
+        #     continue;
+        
         if (node.tag!="{http://www.w3.org/2001/XMLSchema}import") and \
            (node.tag!="{http://www.w3.org/2001/XMLSchema}include"):
             continue
-        loc = node.attrib.get("schemaLocation", None)
-        ins = node.attrib.get("namespace", None)
-        DtsProcessor.prependDtsQueue(XBRL_LINKBASE, loc, base, ins, 0, params)
+        schema = node.attrib.get("schemaLocation", None)
+        namespace = node.attrib.get("namespace", None)
+        DtsProcessor.prependDtsQueue(XBRL_LINKBASE, schema, base, namespace, 0, params)
     return res
 
 # examine element declarations to build dictionary that maps
@@ -97,7 +101,11 @@ def processElements(root, base, targetNs, params):
     namespaces = params['namespaces']
 
     # char *prefix = getNsPrefix((const char *)targetNs);
-    prefix = DtsProcessor.hashtable_search(namespaces, targetNs)
+    prefix = namespaces.get(targetNs, None)
+
+    params['out'].write("# SCHEMAS\n")
+    params['out'].write("# target namespace:" + targetNs)
+    params['out'].write("# base: "+base+"\n\n")
 
     for child in root:
 
@@ -150,14 +158,10 @@ def processElements(root, base, targetNs, params):
             else:
                 addId(base, child_id, targetNs, child_name, params)
 
-def addId(xsdUri, child_id, ns, name, params):
-    id2elementTbl = params['id2elementTbl']
+def addId(xsdUri, child_id, targetNs, name, params):
     key = xsdUri + "#" + child_id
-    value = (ns, name)
+    value = (targetNs, name)
     if key[0] == '#':
-        params['log'].write('addId: uri = "'+key+'", ns = "'+ns+'", name="'+name+'"\n')
-    found = DtsProcessor.hashtable_search(id2elementTbl, key)
-    if found:
-        DtsProcessor.hashtable_remove(id2elementTbl, key)
-    res = DtsProcessor.hashtable_insert(id2elementTbl, key, value)
+        params['log'].write('addId: uri = "'+key+'", ns = "'+targetNs+'", name="'+name+'"\n')
+    params['id2elementTbl'][key] = value
     return 0

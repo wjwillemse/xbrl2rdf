@@ -22,31 +22,29 @@ def prependDtsQueue(uri_type, uri, base, ns, force, params):
     """ put uri at end of dtsqueue
         an item in the DtsQueue consists of uri_type (linkbase, schema), uri and namespace
     """ 
-    dts_queue = params['dts_queue']
     uri = utilfunctions.expandRelativePath(uri, base)
-    if force:
-        removeDtsUri(uri, params)
-    if seenDtsUri(uri, params):
+    if force!=0:
+        params['dts_processed'].remove(uri)
+    if uri in params['dts_processed']:
         return -1;
-    for entry in dts_queue:
+    for entry in params['dts_queue']:
         if entry[1]==uri:
             return 0
-    dts_queue.insert(0, (uri_type, uri, ns))
+    params['dts_queue'].insert(0, (uri_type, uri, ns))
     return 0
 
 def appendDtsQueue(uri_type, uri, base, ns, force, params):
     """ put uri at end of dtsqueue if not already present
     """ 
-    dts_queue = params['dts_queue']
     uri = utilfunctions.expandRelativePath(uri, base)
-    if force:
-        removeDtsUri(uri, params)
-    elif seenDtsUri(uri, params):
+    if force!=0:
+        params['dts_processed'].remove(uri)
+    elif uri in params['dts_processed']:
         return -1
-    for entry in dts_queue:
+    for entry in params['dts_queue']:
         if entry[1]==uri:
             return 0
-    dts_queue.append((uri_type, uri, ns))
+    params['dts_queue'].append((uri_type, uri, ns))
     return 0
 
 # pop entry from start of queue
@@ -54,8 +52,7 @@ def appendDtsQueue(uri_type, uri, base, ns, force, params):
 def popDtsQueue(params):
     dts_queue = params['dts_queue']
     if dts_queue!=[]:
-        uri = dts_queue.pop(0)
-        return uri
+        return dts_queue.pop(0)
     return None
 
 def dispatchDtsQueue(params):
@@ -76,35 +73,10 @@ def dtsQueueLength(params):
     return len(params['dts_queue'])
 
 # Processed dts elements
-
 def addDtsUri(params, uri):
     dts = params['dts_processed']
-    found = hashtable_search(dts, uri)
-    if found:
+    if uri in dts:
         return -1
-    res = hashtable_insert(dts, uri, uri)
-    return 0
-
-def seenDtsUri(uri, params):
-    dts = params['dts_processed']
-    found = hashtable_search(dts, uri)
-    return found is not None
-
-def removeDtsUri(uri, params):
-    dts = params['dts_processed']
-    hashtable_remove(dts, uri)
-    return None
-
-# the hash table is implemented as a Python dict
-
-def create_hashtable():
-    return dict()
-
-def hashtable_search(d, key):
-    return d.get(key, None)
-
-def hashtable_remove(d, key):
-    del d[key]
-
-def hashtable_insert(d, key, value):
-    d[key] = value
+    else:
+        dts.append(uri)
+        return 0

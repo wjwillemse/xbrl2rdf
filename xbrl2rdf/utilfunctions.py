@@ -120,14 +120,14 @@ def registerNamespaces(root, base, params):
 
 def addNamespace(prefix, uri, params):
     namespaces = params['namespaces']
-    found = DtsProcessor.hashtable_search(namespaces, uri)
+    found = namespaces.get(uri, None)
     if found:
         if prefix!=found:
             # print("error!!! prefix with different uris")
             # print(prefix+ ", " + found + ", " + uri)
             return -1
-        DtsProcessor.hashtable_remove(namespaces, uri)
-    res = DtsProcessor.hashtable_insert(namespaces, uri, prefix)
+        del namespaces[uri]
+    namespaces[uri] = prefix
     # params['prefixes'].write("@prefix "+prefix+": <"+uri+">.\n")
     return 0
 
@@ -135,7 +135,10 @@ def addNamespace(prefix, uri, params):
 def printNamespaces(params):
     namespaces = params['namespaces']
     for uri in namespaces:
-        params['prefix'].write("@prefix "+namespaces[uri]+": <"+uri+">.\n")
+        if uri[-1]!="#":
+            params['prefix'].write("@prefix "+namespaces[uri]+": <"+uri+"#>.\n")
+        else:
+            params['prefix'].write("@prefix "+namespaces[uri]+": <"+uri+">.\n")
 
 
 def expandRelativePath(relPath, base):

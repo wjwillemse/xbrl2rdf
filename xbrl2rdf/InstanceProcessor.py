@@ -12,9 +12,7 @@ def genFactName(params):
 
 
 def genProvenanceName(base, params):
-
     base = base.replace("\\", "\\\\")
-
     params['provenanceNumber'] += 1
     name = "_:provenance"+str(params['provenanceNumber'])
     params['facts'].write("# provenance is used to speed selection of facts from same filing\n")
@@ -56,6 +54,7 @@ def processInstance(root, base, ns, params):
             if uri is None:
                 params['log'].write("couldn't identify schema location\n")
                 return -1
+            printSchemaRef(child, provenance, params)
             res = DtsProcessor.prependDtsQueue(XBRL_SCHEMA, uri, base, ns, 0, params)
         elif child_name=="footnoteLink":
             footnotelinks.append(child)
@@ -105,7 +104,7 @@ def printContext(context, params):
         for child in scenario:
             namespace = etree.QName(child).namespace
             name = etree.QName(child).localname
-            prefix = DtsProcessor.hashtable_search(params['namespaces'], namespace)
+            prefix = params['namespaces'].get(namespace, None)
             members.append((prefix+":"+name, child.text))
         params['facts'].write('    xbrli:scenario [\n')
         for member in members:
@@ -199,19 +198,13 @@ def printUnit(unit, params):
 def printFact(fact, provenance, base, params):
 
     fact_id = fact.attrib.get('id', None)
-
-    # if fact_id:
-    #     addId(base, fact_id, (fact->ns->href), fact->name)
-
     contextRef = fact.attrib.get("contextRef", None)
-
-    prefix = DtsProcessor.hashtable_search(params['namespaces'], etree.QName(fact).namespace)
+    prefix = params['namespaces'].get(etree.QName(fact).namespace, None)
 
     # this implies that the fact is a tuple
     if contextRef is None:
 
         # todo prefix
-
         params['log'].write("tuple: "+etree.QName(fact).localname+"\nprefix: "+prefix+"\n")
 
         child_fact_name = []
@@ -223,7 +216,6 @@ def printFact(fact, provenance, base, params):
             child_fact_name.append("_:fact"+str(params['factCount'])+"\n")
 
         factName = genFactName(params)
-
         params['facts'].write(factName+"\n")
         params['facts'].write("    xl:type xbrli:tuple ;\n")
         params['facts'].write("    xl:provenance "+provenance+" ;\n")
@@ -238,10 +230,11 @@ def printFact(fact, provenance, base, params):
         return factName
 
     factName = genFactName(params)
+    # change to Raggett-> rdf:type is xl:type and vice versa
     params['facts'].write(factName+" \n")
-    params['facts'].write("    xl:type xbrli:fact ;\n")
+    params['facts'].write("    rdf:type xbrli:fact ;\n")
     params['facts'].write("    xl:provenance "+provenance+" ;\n")
-    params['facts'].write("    rdf:type "+prefix+":"+etree.QName(fact).localname+" ;\n")
+    params['facts'].write("    xl:type "+prefix+":"+etree.QName(fact).localname+" ;\n")
 
     unitRef = fact.attrib.get("unitRef", None)
 
@@ -310,3 +303,13 @@ def getDenominator(divide, params):
                 content = divide_child.text
             break;
     return content
+
+
+def printSchemaRef(child, provenance, params):
+    schemaRef = child.attrib.get('{http://www.w3.org/1999/xlink}href', None)
+    schemaRef = schemaRef.replace("eu/eu/", "eu/")
+    if schemaRef:
+        params['facts'].write("_:schemaRef \n")
+        params['facts'].write("    xl:provenance "+provenance+" ;\n")
+        params['facts'].write("    link:schemaRef <"+schemaRef+"> .\n\n")
+    return 0
