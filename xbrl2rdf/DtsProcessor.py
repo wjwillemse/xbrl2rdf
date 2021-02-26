@@ -19,17 +19,15 @@ def processDtsFile(root, base, ns, params):
 # but the target namespace needs to be copied here
 
 def prependDtsQueue(uri_type, uri, base, ns, force, params):
-    """ put uri at end of dtsqueue
+    """ put uri at start of dtsqueue
         an item in the DtsQueue consists of uri_type (linkbase, schema), uri and namespace
     """ 
     uri = utilfunctions.expandRelativePath(uri, base)
     if force!=0:
         params['dts_processed'].remove(uri)
-    if uri in params['dts_processed']:
-        return -1;
     for entry in params['dts_queue']:
         if entry[1]==uri:
-            return 0
+            params['dts_queue'].remove(entry)
     params['dts_queue'].insert(0, (uri_type, uri, ns))
     return 0
 
@@ -39,16 +37,15 @@ def appendDtsQueue(uri_type, uri, base, ns, force, params):
     uri = utilfunctions.expandRelativePath(uri, base)
     if force!=0:
         params['dts_processed'].remove(uri)
-    elif uri in params['dts_processed']:
-        return -1
     for entry in params['dts_queue']:
         if entry[1]==uri:
-            return 0
+            params['dts_queue'].remove(entry)
+    #     return -1
+
     params['dts_queue'].append((uri_type, uri, ns))
     return 0
 
 # pop entry from start of queue
-# caller responsible for freeing uri
 def popDtsQueue(params):
     dts_queue = params['dts_queue']
     if dts_queue!=[]:

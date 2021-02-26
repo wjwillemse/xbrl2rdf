@@ -262,7 +262,6 @@ def printFact(fact, provenance, base, params):
         params['facts'].write("    xbrli:unit _:unit_"+unitRef+";\n")
     else: # non-numeric fact
         count = len(fact)
-
         if count>=1:
             xml = ''
             for child in fact:
@@ -270,11 +269,14 @@ def printFact(fact, provenance, base, params):
             params['facts'].write('    xbrli:resource """'+xml+'"""^^rdf:XMLLiteral.\n')
         else:
             content = fact.text.replace('"',"'")
-            lang = fact.attrib.get("lang", None)
-            if lang is not None:
-                params['facts'].write('    xbrli:resource """'+content+'"""@'+lang+' ;\n')
+            if content.split(":")[0] in params['namespaces'].values():
+                params['facts'].write('    xbrli:resource '+content+' ;\n')
             else:
-                params['facts'].write('    xbrli:resource """'+content+'""" ;\n')
+                lang = fact.attrib.get("lang", None)
+                if lang is not None:
+                    params['facts'].write('    xbrli:resource """'+content+'"""@'+lang+' ;\n')
+                else:
+                    params['facts'].write('    xbrli:resource """'+content+'""" ;\n')
 
     params['facts'].write("    xbrli:context _:context_"+contextRef+" .\n\n")
 

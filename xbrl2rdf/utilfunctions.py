@@ -25,21 +25,18 @@ def isAbsolute(url):
 
 
 def loadXML(handler, uri, ns, params):
-    # struct stat st
+
     res = 0
+
     if DtsProcessor.addDtsUri(params, uri)!=0:
         return 0 # already loaded
 
-    # if (uri[0:7]=="http://"):
     if isHttpUrl(uri):
-
         mappedUri = os.path.abspath(params['xbrl_zipfile'].mappedUrl(uri))
         if mappedUri not in params['uri2file'].keys():
             params['log'].write('xbrl uri "'+uri+'" not found in zip file.\n')
             return 0
-
         filePath = params['uri2file'][mappedUri]
-
         try:
             fp = params['xbrl_zipfile'].fs.open(filePath, "r")
             content = fp.read()
@@ -97,25 +94,12 @@ def loadXML(handler, uri, ns, params):
     return res
 
 
-# publish namespaces from xbrl root element plus others
-# this doesn't deal with the schema or linkbase URIs
-# a better solution would be to keep a dictionary and to
-# (re)declare namespaces as needed
-
 def registerNamespaces(root, base, params):
     nsmap = root.nsmap
-    # if len(nsmap.keys()):
-    #     params['out'].write("\n# "+etree.QName(root).localname+" in "+base+"\n")
-    for ns in nsmap.keys():
-        prefix = ns
-        uri = nsmap[ns]
-        if uri and prefix and (uri!="http://www.xbrl.org/2003/instance") and \
-                              (uri!="http://www.xbrl.org/2003/linkbase") and \
-                              (uri!="http://www.w3.org/1999/xlink") and \
-                              (uri!="http://www.w3.org/2001/XMLSchema-instance") and \
-                              (uri!="http://www.xbrl.org/2003/iso4217"):
+    for prefix in nsmap.keys():
+        uri = nsmap[prefix]
+        if uri not in params['namespaces_to_skip']:
             addNamespace(prefix, uri, params)
-    # params['prefixes'].write("\n")
     return 0
 
 def addNamespace(prefix, uri, params):
@@ -221,5 +205,3 @@ def encoding(xml, default="utf-8"):
     if match and match.lastindex == 1:
         return match.group(1)
     return default
-
-

@@ -114,7 +114,15 @@ def main(url, taxo, output, log):
 
     utilfunctions.addNamespace("va", "http://xbrl.org/2008/assertion/value", params)
     utilfunctions.addNamespace("ea", "http://xbrl.org/2008/assertion/existence", params)
-    utilfunctions.printNamespaces(params)
+
+    # schemas not to include
+    params['namespaces_to_skip'] = ["http://www.xbrl.org/2003/instance",
+                                   "http://xbrl.org/2005/xbrldt",
+                                   "http://www.xbrl.org/2003/XLink",
+                                   "http://xbrl.org/2008/variable",
+                                   "http://www.xbrl.org/2003/linkbase"]
+
+    # utilfunctions.printNamespaces(params)
     
     res = parse_xbrl(params, url)
     if res:
@@ -128,10 +136,12 @@ def main(url, taxo, output, log):
     file_content.write("\n")
 
     utilfunctions.printNamespaces(params)
+
     file_content.write(params['prefix'].getvalue())
 
     file_content.write("\n\n")
     file_content.write(params['facts'].getvalue().replace('\u2264', ''))
+
     file_content.write("\n\n")
     file_content.write(params['out'].getvalue().replace('\u2264', ''))
     # print(list(params['namespaces'].keys()))
@@ -166,20 +176,17 @@ def main(url, taxo, output, log):
 def parse_xbrl(params, uri):
 
     started = datetime.datetime.now()
-    # xmlInitParser()
 
-    if (uri[0:7]=="http://") and (uri[0] != '/'):
+    if (utilfunctions.isHttpUrl(uri)) and (uri[0]!='/'):
         base = os.getcwd()
-        if (base[-1]!=os.sep):
+        if base[-1]!=os.sep:
             base += os.sep
         uri = expandRelativePath(uri, base)
 
     if utilfunctions.loadXML(processInstance, uri, None, params):
         return -1
 
-    # deal with files discovered from the instance
-    # this will in turn discover others and so forth
-
+    # process taxonomy files
     res = DtsProcessor.dispatchDtsQueue(params)
 
     finished = datetime.datetime.now()

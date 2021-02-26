@@ -8,13 +8,8 @@ def processSchema(root, base, params):
 
     targetNs = root.attrib.get("targetNamespace", None)
 
-    # these core schemas don't play a role in defining a taxonomy
-    # and moreover give misleading triples when processed for elements
-    if (targetNs=="http://www.xbrl.org/2003/instance") or \
-       (targetNs=="http://xbrl.org/2005/xbrldt") or \
-       (targetNs=="http://www.xbrl.org/2003/XLink") or \
-       (targetNs=="http://xbrl.org/2008/variable") or \
-       (targetNs=="http://www.xbrl.org/2003/linkbase"):
+    # skip core schemas
+    if targetNs in params['namespaces_to_skip']:
         return 0
 
     params['log'].write("processing schema "+base+"\n")

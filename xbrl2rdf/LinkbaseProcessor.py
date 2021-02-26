@@ -7,39 +7,30 @@ import urllib
 XBRL_LINKBASE = 1
 XBRL_SCHEMA = 0
 
+
 def processLinkBase(root, base, ns, params):
 
-    missingSchemas = 0
-
-    params['log'].write("checking linkbase "+base+"\n")
-
     # first phase searchs for schemas
+    params['log'].write("checking linkbase "+base+"\n")
+    missingSchemas = 0
     for node in root:
-#         if (node->type != XML_ELEMENT_NODE)
-#              continue;
         node_type = node.attrib.get('{http://www.w3.org/1999/xlink}type', None)
         if node_type=="extended":
             missingSchemas += checkExtendedLink(node, base, ns, params)
         elif node_type=="simple":
             missingSchemas += checkSimpleLink(node, base, ns, params)
-
     if missingSchemas > 0:
         DtsProcessor.appendDtsQueue(XBRL_LINKBASE, base, "", ns, 1, params)
         params['log'].write("missing schemas "+base+"\n")
         return 0
-
-    params['log'].write("processing linkbase "+base+"\n")
-
     # second phase translates links into RDF
+    params['log'].write("processing linkbase "+base+"\n")
     for node in root:
-#         if (node->type != XML_ELEMENT_NODE)
-#              continue;
         node_type = node.attrib.get('{http://www.w3.org/1999/xlink}type', None)
         if node_type=="extended":
             processExtendedLink(node, base, ns, params)
         elif node_type=="simple":
             processSimpleLink(node, base, ns, params)
-
     return 0
 
 
@@ -57,10 +48,11 @@ def checkSimpleLink(node, base, ns, params):
             lns = ns
         else:
             lns = None
-        # returns false if uri has already been processed
-        if DtsProcessor.prependDtsQueue(XBRL_SCHEMA, uri, base, lns, 0, params)!=-1:
+        uri = utilfunctions.expandRelativePath(uri, base)
+        if uri not in params['dts_processed']:
             missingSchemas += 1
             params['log'].write("found unseen1: "+uri+"\n")
+            DtsProcessor.prependDtsQueue(XBRL_SCHEMA, uri, base, lns, 0, params)
 
     return missingSchemas
 
@@ -78,17 +70,17 @@ def checkExtendedLink(element, base, ns, params):
                 uri = href
                 if "#" in uri:
                     uri = uri.split("#")[0]
-                uri = utilfunctions.expandRelativePath(uri, base)
                 # if resource has relative uri then parent's namespace applies
                 # const char *lns = (ns && strncmp((char *)href, "http://", 7) ? ns : NULL);
                 if ns and not utilfunctions.isHttpUrl(href):
                     lns = ns
                 else:
                     lns = None
-                # returns false if uri has already been processed
-                if DtsProcessor.prependDtsQueue(XBRL_SCHEMA, uri, base, lns, 0, params)!=-1:
+                uri = utilfunctions.expandRelativePath(uri, base)
+                if uri not in params['dts_processed']:
                     missingSchemas += 1
                     params['log'].write("found unseen2: "+uri+"\n")
+                    DtsProcessor.prependDtsQueue(XBRL_SCHEMA, uri, base, lns, 0, params)
 
     return missingSchemas
 
@@ -120,21 +112,14 @@ def processExtendedLink(element, base, ns, params):
              'arcs': list()}
 
     for node in element:
-
-#         if (node->type != XML_ELEMENT_NODE)
-#             continue;
-
         localLocCount += 1 
-
         node_type = node.attrib.get("{http://www.w3.org/1999/xlink}type", None)
-
         if node_type=="locator":
             params['locCount'] += 1
             localLocCount += 1
             locator = {key: node.attrib.get(key) for key in node.attrib if node.attrib.get(key) is not None}
             locator['tag'] = node.tag
             xlink['locators'].append(locator)
-
         elif node_type=="resource":
             params['resCount'] += 1
             localLocCount += 1
@@ -142,7 +127,6 @@ def processExtendedLink(element, base, ns, params):
             resource['node'] = node
             resource['tag'] = node.tag
             xlink['locators'].append(resource)
-
         elif node_type=="arc":
             params['arcCount'] += 1
             for key in node.attrib:
@@ -164,7 +148,6 @@ def processExtendedLink(element, base, ns, params):
                                    'complement',
                                    'axis']:
                         print("Not supported yet: arc attribute '"+str(key)+"'")
-
             arc = {key: node.attrib.get(key) for key in node.attrib if node.attrib.get(key) is not None}
             arc['tag'] = node.tag
             xlink['arcs'].append(arc)
@@ -208,7 +191,6 @@ def processExtendedLink(element, base, ns, params):
             params['log'].write("Unknown type found in xlink " + node_type + "\n")
 
     labels_nodes = defaultdict(list)
-
     for locator in xlink['locators']:
         labels_nodes[locator['{http://www.w3.org/1999/xlink}label']].append(locator)
 
@@ -286,17 +268,26 @@ def processExtendedLink(element, base, ns, params):
 
 def process_resource(resource, base, ns, params):
 
-    params['out'].write("    xl:to [ \n")
+    params['out'].write(getTurtleName(resource, base, ns, params)+" \n")
 
     namespace = etree.QName(resource['node']).namespace
     name = etree.QName(resource['node']).localname
     prefix = params['namespaces'].get(namespace, None)
 
-    params['out'].write("        xl:type "+prefix+":"+name+" ;\n")
+    params['out'].write("    xl:type "+prefix+":"+name+" ;\n")
+
+    resource_role = resource.get('{http://www.w3.org/1999/xlink}role', None)
+    if resource_role is not None:
+        role_base, role_name = splitRole(resource_role)
+        role_prefix = params['namespaces'].get(role_base, None)
+        if role_prefix is not None:
+            params['out'].write("    xlink:role "+role_prefix+":"+role_name+" ;\n")
+        else:
+            params['out'].write("    xlink:role <"+role_base+"/"+role_name+"> ;\n")
 
     resource_lang = resource.get("{http://www.w3.org/XML/1998/namespace}lang", None)
     if resource_lang:
-        params['out'].write('        rdf:lang "'+resource_lang+'" ;\n')
+        params['out'].write('    rdf:lang "'+resource_lang+'" ;\n')
 
     for key in ['as']:
         value = resource.get(key, None)
@@ -309,7 +300,7 @@ def process_resource(resource, base, ns, params):
         value = resource.get(key, None)
         if value is not None:
             value = value.replace("\\", "\\\\")
-            params['out'].write('        xl:'+key+' "'+value+'"^^xsd:boolean ;\n')
+            params['out'].write('    xl:'+key+' "'+value+'"^^xsd:boolean ;\n')
 
     # arc_to literal attributes
     for key in ['name', 'output', 'fallbackValue', 'bindAsSequence',
@@ -319,7 +310,7 @@ def process_resource(resource, base, ns, params):
         value = resource.get(key, None)
         if value is not None:
             value = value.replace("\\", "\\\\")
-            params['out'].write('        xl:'+key+' """'+value+'"""^^rdf:XMLLiteral ;\n')
+            params['out'].write('    xl:'+key+' """'+value+'"""^^rdf:XMLLiteral ;\n')
 
     # we did not yet do 'id' to Literal
 
@@ -327,20 +318,25 @@ def process_resource(resource, base, ns, params):
     if resource_text and (resource_text)!='\n      ':
         lang = resource.get('{http://www.w3.org/XML/1998/namespace}lang', None)
         if lang is not None:
-            params['out'].write('        rdf:value """'+resource_text+'"""@'+lang+' ;\n')
+            params['out'].write('    rdf:value """'+resource_text+'"""@'+lang+' ;\n')
         else:
-            params['out'].write('        rdf:value """'+resource_text+'"""; \n')
+            params['out'].write('    rdf:value """'+resource_text+'"""; \n')
+    else:
+        resource_label = getTurtleName(resource, base, ns, params)
+        if resource_label is not None:
+            params['out'].write('    xlink:label '+resource_label+' ;\n')
 
     for child in resource['node']:
         namespace = etree.QName(child).namespace
         name = etree.QName(child).localname
         prefix = params['namespaces'].get(namespace, None)
-        if len(child)>0:
-            params['out'].write("        "+prefix+":"+name+' '+child[0].text+' ;\n')
-        elif child.text:
-            params['out'].write("        "+prefix+":"+name+' """'+child.text+'"""^^rdf:XMLLiteral ;\n')
+        if (len(child)>0) and (child[0].text!='\n          '):
+            params['out'].write("    "+prefix+":"+name+' '+child[0].text+' ;\n')
+        elif child.text and (child.text!='\n        '):
+            params['out'].write("    "+prefix+":"+name+' """'+child.text+'"""^^rdf:XMLLiteral ;\n')
 
-    params['out'].write("        ] ;\n")
+    params['out'].write("    .\n\n")
+
     return 0
 
 
@@ -412,7 +408,7 @@ def translateXLink(node, xlink, base, ns, params):
 
                 arc_complement = arc.get('complement', None)
                 if arc_complement:
-                    params['out'].write('    xl:complement "'+arc_complement+'" ;\n')
+                    params['out'].write('    xl:complement """'+arc_complement+'"""^^xsd:boolean ;\n')
 
                 arc_name = arc.get('name', None)
                 if arc_name:
@@ -436,12 +432,9 @@ def translateXLink(node, xlink, base, ns, params):
                     params['out'].write('    xl:weight "'+arc_weight+'"^^xsd:decimal ;\n')
 
                 params['out'].write("    xl:from "+triple_subject+" ;\n")
+                params['out'].write("    xl:to "+triple_object+" ;\n")
                 
                 # arc to node attributes
-                locator_type = arc_to.get("{http://www.w3.org/1999/xlink}type", None)
-                if locator_type=="resource":
-
-                    process_resource(arc_to, base, ns, params)
 
                     # # process children of the arc_to object
                     # if len(arc_to_node)>=1:
@@ -466,10 +459,11 @@ def translateXLink(node, xlink, base, ns, params):
                     #     else:
                     #         params['out'].write("    xl:to "+triple_object+" ;\n")
 
-                else:
-                    params['out'].write("    xl:to "+triple_object+" ;\n")
-
                 params['out'].write("    ] .\n\n")
+
+                locator_type = arc_to.get("{http://www.w3.org/1999/xlink}type", None)
+                if locator_type=="resource":
+                    process_resource(arc_to, base, ns, params)
 
     return 0
 
@@ -488,11 +482,10 @@ def getTurtleName(loc, base, ns, params):
             corrected_path = "/".join(href.split("/")[0:-1]).replace("s.", "S.").replace("eu/eu/", "eu/")
             if corrected_path in params['namespaces'].keys():
                 namespace = corrected_path
-                name = urllib.parse.urlparse(href).fragment
             else:
                 # if not found then use parent's namespace and url fragment
                 namespace = ns
-                name = urllib.parse.urlparse(href).fragment
+            name = urllib.parse.urlparse(href).fragment
     else:
         # if no href then use parent's namespace with label
         namespace = ns
