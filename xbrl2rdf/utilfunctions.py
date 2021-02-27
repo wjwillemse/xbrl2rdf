@@ -45,22 +45,7 @@ def loadXML(handler, uri, ns, params):
             params['errorCount'] += 1
             return -1
 
-        # load file into cache if not already present
-        # contentType = None
-        # if (stat(filePath, &st) != 0)
-        #     res = xmlNanoHTTPFetch((const char *)uri, (const char *)filePath, &contentType);
-        #     if contentType is not None:
-        #         if (! (!strcmp(contentType, "application/xml") ||
-        #                 !strcmp(contentType, "text/xml")) )
-        #             unlink((const char *)filePath);
-        #             res = -1
-        #     xmlNanoHTTPCleanup()
-        #     if res:
-        #         params['log'].write("Error: couldn't retrieve "+uri+"\n")
-        #         params['errorCount'] += 1
-        #         return -1
-
-    else: # treat as local file
+    else:  # treat as local file
 
         if uri[0:6]=="file:/":
             filePath = uri[6:]
@@ -71,9 +56,10 @@ def loadXML(handler, uri, ns, params):
             fp = open(filePath, "rb")
             content = fp.read()
             fp.close()
-        except:
+        except e:
             params['log'].write("Error: "+uri+" is malformed\n")
             params['errorCount'] += 1
+            raise(e)
             return -1
 
     root = etree.fromstring(content, parser=etree.XMLParser(remove_comments=True))
@@ -81,11 +67,6 @@ def loadXML(handler, uri, ns, params):
         params['log'].write("Error: document has no root element.\n")
         params['errorCount'] += 1
         return -1
-
-    # if root.tag != XML_ELEMENT_NODE:
-    #     params['log'].write("Error: document root is not an element.\n")
-    #     params['errorCount'] += 1
-    #     return -1
 
     res = handler(root, uri, ns, params)
     
@@ -135,50 +116,8 @@ def expandRelativePath(relPath, base):
     else:
         return urllib.parse.urljoin(base, relPath)
 
-    # if relPath[0]==os.sep:
-    #     i = 0
-    #     if base[0:7]=="http://":
-    #         # char *p = strchr(base+7, '/')
-    #         # if (p != 0)
-    #         #    i = (p - base);
-    #         p = base[7:].find("/")
-    #         if p:
-    #            i = (p - base)
-    #     return base[0:i] + relPath
-
-    # # strip leading ../ from relPath 
-    # up = 0
-    # while (relPath[0:3]=="../"):
-    #     up += 1
-    #     relPath = relPath[3:]
-
-    # # strip leading ./ from relative path 
-    # while (relPath[0:2]=="./"):
-    #     relPath = relPath[2:]
-
-    # i = len(base)
-    # if (up > 0):
-    #     # # find where to attach rel path 
-    #     last = base.rfind('/')
-    #     # if last!=-1:
-
-    #     # while up>0:
-    #     #     i -= 1
-    #     #     if i<1:
-    #     #         return None
-    #     #     if base[i-1] == '/':
-    #     #         up -= 1
-    # elif (base[i-1] != '/'):
-
-    #     # last = base.rfind('/')
-    #     # if last:
-    #     #     i = last-base+1
-    #     res = os.path.join(base, relPath)
-
-    # return res
-
-
 xmlEncodingPattern = re.compile(r"\s*<\?xml\s.*encoding=['\"]([^'\"]*)['\"].*\?>")
+
 
 def encoding(xml, default="utf-8"):
     if isinstance(xml,bytes):

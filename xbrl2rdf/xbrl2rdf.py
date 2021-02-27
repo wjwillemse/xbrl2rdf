@@ -18,9 +18,19 @@ import DtsProcessor
 import utilfunctions
 from InstanceProcessor import *
 
+TAXONOMY_PATH = join("data", "taxonomies")
+
+taxonomies = [f for f in listdir(TAXONOMY_PATH) if isfile(join(TAXONOMY_PATH, f)) and f[-3:]=='zip']
+manager = PackageManager.Taxonomies(TAXONOMY_PATH)
+for taxonomy in taxonomies:
+    manager.addPackage(join(TAXONOMY_PATH, taxonomy))
+manager.rebuildRemappings()
+manager.save()
+taxo_choice = "\n".join([str(idx)+": "+str(item['name']) for idx, item in enumerate(manager.config['packages'])])
+
 @click.command()
 @click.option('--url', default=join("data", "instances", "qrs_240_instance.xbrl"), prompt = "input file")
-@click.option('--taxo', default=join("data", "taxonomies"), prompt = "taxonomy directory")
+@click.option('--taxo', default=2, prompt=taxo_choice)
 @click.option('--output', default=join("data", "rdf"), prompt = "output directory")
 @click.option('--log', default=join("data", "log"), prompt = "log directory")
 
@@ -38,16 +48,8 @@ def main(url, taxo, output, log):
     output_file = join(output, "".join(os.path.basename(url).split(".")[0:-1])+".ttl")
     log_file = join(log, "".join(os.path.basename(url).split(".")[0:-1])+".log")
 
-    XBRL_TAXONOMY_PATH = taxo
-    taxonomies = [f for f in listdir(XBRL_TAXONOMY_PATH) if isfile(join(XBRL_TAXONOMY_PATH, f)) and f[-3:]=='zip']
-    manager = PackageManager.Taxonomies(XBRL_TAXONOMY_PATH)
-    for taxonomy in taxonomies:
-        manager.addPackage(join(XBRL_TAXONOMY_PATH, taxonomy))
-    manager.rebuildRemappings()
-    manager.save()
-
-    fp_taxo_zipfile = FileSource.openFileSource(manager.config['packages'][2]['URL'])
-    fp_taxo_zipfile.mappedPaths = manager.config['packages'][2]["remappings"]
+    fp_taxo_zipfile = FileSource.openFileSource(manager.config['packages'][taxo]['URL'])
+    fp_taxo_zipfile.mappedPaths = manager.config['packages'][taxo]["remappings"]
     fp_taxo_zipfile.open()
 
     params = dict()
@@ -60,8 +62,8 @@ def main(url, taxo, output, log):
     params['xbrl_zipfile'] = fp_taxo_zipfile
     params['uri2file'] = {abspath(join(params['xbrl_zipfile'].url, file)): file for file in params['xbrl_zipfile'].dir}
 
-    params['package_name'] = manager.config['packages'][2]['name']
-    params['package_uri'] = manager.config['packages'][2]['URL']
+    params['package_name'] = manager.config['packages'][taxo]['name']
+    params['package_uri'] = manager.config['packages'][taxo]['URL']
 
     params['namespaces'] = dict()
     params['dts_processed'] = list()

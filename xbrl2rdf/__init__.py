@@ -6,3 +6,4 @@ from .LinkbaseProcessor import *
 from .SchemaProcessor import *
 from .xbrl2rdf import *
 from .utilfunctions import *
+from .const import *
