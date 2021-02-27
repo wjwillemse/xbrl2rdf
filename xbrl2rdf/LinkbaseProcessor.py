@@ -4,7 +4,7 @@ import urllib
 import DtsProcessor
 import utilfunctions
 import const
-
+from utilfunctions import processAttribute
 
 def processLinkBase(root, base, ns, params):
     # first phase searchs for schemas
@@ -285,10 +285,8 @@ def translateXLink(node, xlink, base, ns, params):
 
                 # process_arc_attributes
                 # addition to xbrlimport / Raggett
-                arc_contextElement = arc.get(const.XBRLDT_CONTEXTELEMENT, None)
-                if arc_contextElement:
-                    output.write('    xbrldt:contextElement "' +
-                                 arc_contextElement + '" ;\n')
+
+                output.write(processAttribute(arc, const.XBRLDT_CONTEXTELEMENT, str))
 
                 arc_targetRole = arc.get(const.XBRLDT_TARGETROLE, None)
                 if arc_targetRole:
@@ -300,15 +298,9 @@ def translateXLink(node, xlink, base, ns, params):
                     else:
                         output.write('    xbrldt:targetRole <' + target_base +
                                      ':'+target_name+'> ;\n')
-                arc_closed = arc.get(const.XBRLDT_CLOSED, None)
-                if arc_closed:
-                    output.write('    xbrldt:closed "' + arc_closed +
-                                 '"^^xsd:boolean ;\n')
 
-                arc_usable = arc.get(const.XBRLDT_USABLE, None)
-                if arc_usable:
-                    output.write('    xbrldt:usable "' + arc_usable +
-                                 '"^^xsd:boolean ;\n')
+                output.write(processAttribute(arc, const.XBRLDT_CLOSED, bool))
+                output.write(processAttribute(arc, const.XBRLDT_USABLE, bool))
 
                 arc_cover = arc.get('cover', None)
                 if arc_cover:

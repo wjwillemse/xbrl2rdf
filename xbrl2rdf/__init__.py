@@ -1,9 +1,9 @@
 """Top-level package for xbrl2rdf."""
 
-from .DtsProcessor import *
-from .InstanceProcessor import *
-from .LinkbaseProcessor import *
-from .SchemaProcessor import *
-from .xbrl2rdf import *
-from .utilfunctions import *
-from .const import *
+import DtsProcessor
+import InstanceProcessor
+import SchemaProcessor
+import LinkbaseProcessor
+import xbrl2rdf
+import utilfunctions
+import const

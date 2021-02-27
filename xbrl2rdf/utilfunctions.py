@@ -1,18 +1,35 @@
 import os
 import urllib.parse
-import DtsProcessor
 from lxml import etree
 try:
     import regex as re
 except ImportError:
     import re
+import const
+
+def processAttribute(node, attr, attr_type=None):
+    if isinstance(node, dict):
+        attr_value = node.get(attr, None)
+    else:
+        attr_value = node.attrib.get(attr, None)
+    if attr_value:
+        if attr_type == bool:
+             return '    ' + const.predicates[attr] + ' """' + attr_value + '"""^^xsd:boolean ;\n'
+        elif attr_type == str:
+             return '    ' + const.predicates[attr] + ' "' + attr_value + '" ;\n'
+        else:
+             return '    ' + const.predicates[attr] + ' ' + attr_value + ' ;\n'
+    else:
+        return ''
 
 
 def isHttpUrl(url):
     return isinstance(url, str) and (url.startswith("http://") or url.startswith("https://"))
 
+
 def getLanguageCode():
     return "en"
+
 
 def isAbsolute(url):
     if url is not None:
@@ -28,8 +45,10 @@ def loadXML(handler, uri, ns, params):
 
     res = 0
 
-    if DtsProcessor.addDtsUri(params, uri)!=0:
+    if uri in params['dts_processed']:
         return 0 # already loaded
+    else:
+        params['dts_processed'].append(uri)
 
     if isHttpUrl(uri):
         mappedUri = os.path.abspath(params['xbrl_zipfile'].mappedUrl(uri))

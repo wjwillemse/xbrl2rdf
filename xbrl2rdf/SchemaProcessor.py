@@ -1,7 +1,7 @@
 import DtsProcessor
 import utilfunctions
 import const
-
+from utilfunctions import processAttribute
 
 def processSchema(root, base, params):
 
@@ -116,24 +116,24 @@ def processElements(root, base, targetNs, params):
                     child_type = "xsd:"+child_type[3:]
                 output.write("    rdf:type "+child_type+" ;\n")
 
-            output.write(processAttribute(child, const.XBRLI_PERIODTYPE))
-            output.write(processAttribute(child, const.XBRLDT_TYPEDDOMAINREF))
+            output.write(processAttribute(child, const.XBRLI_PERIODTYPE, str))
+            output.write(processAttribute(child, const.XBRLDT_TYPEDDOMAINREF, str))
             
-            output.write(processAttribute(child, const.MODEL_CREATIONDATE))
-            output.write(processAttribute(child, const.MODEL_TODATE))
-            output.write(processAttribute(child, const.MODEL_MODIFICATIONDATE))
-            output.write(processAttribute(child, const.MODEL_TODATE))
-            output.write(processAttribute(child, const.MODEL_DOMAIN))
-            output.write(processAttribute(child, const.MODEL_HIERARCHY))
-            output.write(processAttribute(child, const.MODEL_ISDEFAULTMEMBER))
+            output.write(processAttribute(child, const.MODEL_CREATIONDATE, str))
+            output.write(processAttribute(child, const.MODEL_TODATE, str))
+            output.write(processAttribute(child, const.MODEL_MODIFICATIONDATE, str))
+            output.write(processAttribute(child, const.MODEL_TODATE, str))
+            output.write(processAttribute(child, const.MODEL_DOMAIN, str))
+            output.write(processAttribute(child, const.MODEL_HIERARCHY, str))
+            output.write(processAttribute(child, const.MODEL_ISDEFAULTMEMBER, str))
             
-            output.write(processAttribute(child, const.ENUM_DOMAIN))
-            output.write(processAttribute(child, const.ENUM_LINKROLE))
+            output.write(processAttribute(child, const.ENUM_DOMAIN, str))
+            output.write(processAttribute(child, const.ENUM_LINKROLE, str))
             
-            output.write(processAttribute(child, const.SUBSTITUTIONGROUP, "uri"))
+            output.write(processAttribute(child, const.SUBSTITUTIONGROUP, None))
             output.write(processAttribute(child, const.NILLABLE, bool))
             output.write(processAttribute(child, const.ABSTRACT, bool))
-            output.write(processAttribute(child, const.BALANCE))
+            output.write(processAttribute(child, const.BALANCE, str))
 
             output.write('    . \n\n')
 
@@ -144,19 +144,6 @@ def processElements(root, base, targetNs, params):
                 params['log'].write("name = "+child_name+"\n")
             else:
                 addId(base, child_id, targetNs, child_name, params)
-
-
-def processAttribute(node, attr, attr_type=None):
-    attr_value = node.attrib.get(attr, None)
-    if attr_value:
-        if attr_type == bool:
-             return '    ' + const.predicates[attr] + ' """' + attr_value + '"""^^xsd:boolean ;\n'
-        elif attr_type == 'uri':
-             return '    ' + const.predicates[attr] + ' ' + attr_value + ' ;\n'
-        else:
-             return '    ' + const.predicates[attr] + ' "' + attr_value + '" ;\n'
-    else:
-        return ''
 
 
 def addId(xsdUri, child_id, targetNs, name, params):

@@ -51,4 +51,7 @@ predicates = {XBRLI_PERIODTYPE:   'xbrli:periodType',
               NILLABLE: 'xbrli:nillable',
               ABSTRACT: 'xbrli:abstract',
               BALANCE: 'xbrli:balance',
+              XBRLDT_CONTEXTELEMENT: 'xbrldt:contextElement',
+              XBRLDT_CLOSED: 'xbrldt:closed',
+              XBRLDT_USABLE: 'xbrldt:usable',
 }
