@@ -7,18 +7,33 @@ except ImportError:
     import re
 import const
 
-def processAttribute(node, attr, attr_type=None):
+def processAttribute(node, attr, attr_type=None, text_prefix='    ', params=None):
+    if text_prefix == '    ':
+        line_end = ' ;\n'
+    else:
+        line_end = ' .\n'
+
     if isinstance(node, dict):
         attr_value = node.get(attr, None)
     else:
         attr_value = node.attrib.get(attr, None)
     if attr_value:
+        attr_value = attr_value.replace("\\", "\\\\")
         if attr_type == bool:
-             return '    ' + const.predicates[attr] + ' """' + attr_value + '"""^^xsd:boolean ;\n'
+            return text_prefix+const.predicates[attr] + ' "' + attr_value + '"^^xsd:boolean'+line_end
         elif attr_type == str:
-             return '    ' + const.predicates[attr] + ' "' + attr_value + '" ;\n'
+            return text_prefix+const.predicates[attr] + ' """' + attr_value + '"""^^rdf:XMLLiteral'+line_end
+        elif attr_type == int:
+            return text_prefix+const.predicates[attr] + ' "' + attr_value + '"^^xsd:integer'+line_end
+        elif attr_type == float:
+            return text_prefix+const.predicates[attr] + ' "' + attr_value + '"^^xsd:decimal'+line_end
         else:
-             return '    ' + const.predicates[attr] + ' ' + attr_value + ' ;\n'
+            name = attr_value.split("/")[-1]
+            base = "/".join(attr_value.split("/")[0:-1])
+            prefix = params['namespaces'].get(base, None)
+            if prefix:
+                attr_value = prefix+":"+name
+            return text_prefix+const.predicates[attr]+' '+attr_value+line_end
     else:
         return ''
 

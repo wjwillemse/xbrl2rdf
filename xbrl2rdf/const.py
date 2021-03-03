@@ -13,10 +13,39 @@ XLINK_ARCROLE = '{http://www.w3.org/1999/xlink}arcrole'
 XLINK_ROLE = '{http://www.w3.org/1999/xlink}role'
 XLINK_TITLE = '{http://www.w3.org/1999/xlink}title'
 
+XML_LANG = "{http://www.w3.org/XML/1998/namespace}lang"
+
 SUBSTITUTIONGROUP = 'substitutionGroup'
 NILLABLE = 'nillable'
 ABSTRACT = 'abstract'
+MERGE = 'merge'
+NILS = 'nils'
+STRICT = 'strict'
+IMPLICITFILTERING = 'implicitFiltering'
+MATCHES = 'matches'
+MATCHANY = 'matchAny'
 BALANCE = 'balance'
+COVER = 'cover'
+AXIS = 'axis'
+COMPLEMENT = 'complement'
+NAME = 'name'
+USE = 'use'
+PRIORITY = 'priority'
+ORDER = 'order'
+WEIGHT = 'weight'
+AS = 'as'
+ID = 'id'
+
+OUTPUT = 'output'
+FALLBACKVALUE = 'fallbackValue'
+BINDASSEQUENCE = 'bindAsSequence'
+ASPECTMODEL = 'aspectModel'
+TEST = 'test'
+PARENTCHILDORDER = 'parentChildOrder'
+SELECT = 'select'
+VARIABLE = 'variable'
+DIMENSION = 'dimension'
+SCHEME = 'scheme'
 
 XBRLI_PERIODTYPE = '{http://www.xbrl.org/2003/instance}periodType'
 MODEL_CREATIONDATE = '{http://www.eurofiling.info/xbrl/ext/model}creationDate'
@@ -45,13 +74,42 @@ predicates = {XBRLI_PERIODTYPE:   'xbrli:periodType',
               MODEL_HIERARCHY:    'model:hierarchy',
               MODEL_ISDEFAULTMEMBER: 'model:isDefaultMember',
               XBRLDT_TYPEDDOMAINREF: 'xbrldt:typedDomainRef',
+              XBRLDT_TARGETROLE: 'xbrldt:targetRole',
               ENUM_DOMAIN: 'enum:domain',
               ENUM_LINKROLE: 'enum:linkrole',
               SUBSTITUTIONGROUP: 'xbrli:substitutionGroup',
               NILLABLE: 'xbrli:nillable',
               ABSTRACT: 'xbrli:abstract',
               BALANCE: 'xbrli:balance',
+              MERGE: 'xbrli:merge',
+              NILS: 'xbrli:nils',
+              STRICT: 'xbrli:strict',
+              IMPLICITFILTERING: 'xbrli:implicitFiltering',
+              MATCHES: 'xbrli:matches',
+              MATCHANY: 'xbrli:matchAny',
               XBRLDT_CONTEXTELEMENT: 'xbrldt:contextElement',
               XBRLDT_CLOSED: 'xbrldt:closed',
               XBRLDT_USABLE: 'xbrldt:usable',
+              COVER: 'xl:cover',
+              AXIS: 'xl:axis',
+              COMPLEMENT: 'xl:complement',
+              NAME: 'xl:name',
+              USE: 'xl:use',
+              PRIORITY: 'xl:priority',
+              ORDER: 'xl:order',
+              WEIGHT: 'xl:weight',
+              AS: 'xl:as',
+              OUTPUT: 'xl:output',
+              FALLBACKVALUE: 'xl:fallbackValue',
+              BINDASSEQUENCE: 'xl:bindAsSequence',
+              ASPECTMODEL: 'xl:aspectModel',
+              TEST: 'xl:test',
+              PARENTCHILDORDER: 'xl:parentChildOrder',
+              SELECT: 'xl:select',
+              VARIABLE: 'xl:variable',
+              DIMENSION: 'xl:dimension',
+              SCHEME: 'xl:scheme',
+
+              XML_LANG: 'rdf:lang',
+              XLINK_ROLE: 'xlink:role'
 }

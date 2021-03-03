@@ -32,9 +32,9 @@ taxo_choice = "\n".join([str(idx)+": "+str(item['name']) for idx, item in enumer
 @click.option('--url', default=join("data", "instances", "qrs_240_instance.xbrl"), prompt = "input file")
 @click.option('--taxo', default=2, prompt=taxo_choice)
 @click.option('--output', default=join("data", "rdf"), prompt = "output directory")
-@click.option('--log', default=join("data", "log"), prompt = "log directory")
+@click.option('--output_format', default=1, prompt="1: rdf-turtle\n2: rdf-star-turtle\n")
 
-def main(url, taxo, output, log):
+def main(url, taxo, output, output_format):
 
     # click.echo("-----------------------------------------------")
     # click.echo("xbrl2rdf: a Python tool to convert XBRL to RDF.")
@@ -46,7 +46,7 @@ def main(url, taxo, output, log):
     # click.echo("-----------------------------------------------")
 
     output_file = join(output, "".join(os.path.basename(url).split(".")[0:-1])+".ttl")
-    log_file = join(log, "".join(os.path.basename(url).split(".")[0:-1])+".log")
+    log_file = join(output, "".join(os.path.basename(url).split(".")[0:-1])+".log")
 
     fp_taxo_zipfile = FileSource.openFileSource(manager.config['packages'][taxo]['URL'])
     fp_taxo_zipfile.mappedPaths = manager.config['packages'][taxo]["remappings"]
@@ -64,6 +64,7 @@ def main(url, taxo, output, log):
 
     params['package_name'] = manager.config['packages'][taxo]['name']
     params['package_uri'] = manager.config['packages'][taxo]['URL']
+    params['output_format'] = output_format
 
     params['namespaces'] = dict()
     params['dts_processed'] = list()

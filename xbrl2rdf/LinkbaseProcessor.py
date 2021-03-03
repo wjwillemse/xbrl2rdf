@@ -49,7 +49,6 @@ def checkSimpleLink(node, base, ns, params):
             missingSchemas += 1
             params['log'].write("found unseen1: "+uri+"\n")
             DtsProcessor.prependDtsQueue(const.XBRL_SCHEMA, uri, base, lns, 0, params)
-
     return missingSchemas
 
 
@@ -107,6 +106,34 @@ def processExtendedLink(element, base, ns, params):
             xlink['locators'].append(locator)
         elif node_type == "resource":
             params['resCount'] += 1
+            for key in node.attrib:
+                if key not in [const.XLINK_ROLE,
+                               const.XLINK_TYPE,
+                               const.XLINK_LABEL,
+                               const.XLINK_TITLE,
+                               const.XML_LANG,
+                               const.ID,
+                               const.AS,
+                               const.ABSTRACT,
+                               const.MERGE,
+                               const.NILS,
+                               const.STRICT,
+                               const.IMPLICITFILTERING,
+                               const.MATCHES,
+                               const.MATCHANY,
+                               const.BINDASSEQUENCE,
+                               const.NAME,
+                               const.OUTPUT,
+                               const.FALLBACKVALUE,
+                               const.ASPECTMODEL,
+                               const.TEST,
+                               const.PARENTCHILDORDER,
+                               const.SELECT,
+                               const.VARIABLE,
+                               const.DIMENSION,
+                               const.SCHEME]:
+                    print("Not supported yet: resource attribute '"+str(key)+"'")
+
             localLocCount += 1
             resource = {key: node.attrib.get(key) for key
                         in node.attrib if node.attrib.get(key) is not None}
@@ -125,14 +152,14 @@ def processExtendedLink(element, base, ns, params):
                                const.XBRLDT_CLOSED,
                                const.XBRLDT_TARGETROLE,
                                const.XBRLDT_USABLE,
-                               'order',
-                               'use',
-                               'priority',
-                               'weight',
-                               'name',
-                               'cover',
-                               'complement',
-                               'axis']:
+                               const.ORDER,
+                               const.USE,
+                               const.PRIORITY,
+                               const.WEIGHT,
+                               const.NAME,
+                               const.COVER,
+                               const.COMPLEMENT,
+                               const.AXIS]:
                     print("Not supported yet: arc attribute '"+str(key)+"'")
             arc = {key: node.attrib.get(key) for key
                    in node.attrib if node.attrib.get(key) is not None}
@@ -157,7 +184,10 @@ def processExtendedLink(element, base, ns, params):
         if label in labels_nodes.keys():
             arc['toloc'] = labels_nodes[label]
 
-    translateXLink(element, xlink, base, ns, params)
+    if params['output_format'] == 1:
+        XLink2RDF(element, xlink, base, ns, params)
+    elif params['output_format'] == 2:
+        XLink2RDFstar(element, xlink, base, ns, params)
 
     return 0
 
@@ -165,9 +195,7 @@ def processExtendedLink(element, base, ns, params):
 def process_resource(resource, base, ns, params):
 
     output = params['out']
-
     output.write(getTurtleName(resource, base, ns, params)+" \n")
-
     namespace = etree.QName(resource['node']).namespace
     name = etree.QName(resource['node']).localname
     prefix = params['namespaces'].get(namespace, None)
@@ -175,51 +203,32 @@ def process_resource(resource, base, ns, params):
         output.write("    xl:type "+prefix+":"+name+" ;\n")
     else:
         output.write("    xl:type <"+namespace+"/"+name+"> ;\n")
-
-    resource_role = resource.get(const.XLINK_ROLE, None)
-    if resource_role is not None:
-        role_base, role_name = splitRole(resource_role)
-        role_prefix = params['namespaces'].get(role_base, None)
-        if role_prefix is not None:
-            output.write("    xlink:role " + role_prefix +
-                         ":"+role_name+" ;\n")
-        else:
-            output.write("    xlink:role <" + role_base +
-                         "/"+role_name+"> ;\n")
-
-    resource_lang = resource.get("{http://www.w3.org/XML/1998/namespace}lang", None)
-    if resource_lang:
-        output.write('    rdf:lang "'+resource_lang+'" ;\n')
-
-    for key in ['as']:
-        value = resource.get(key, None)
-        if value is not None:
-            value = value.replace("\\", "\\\\")
-            output.write('    xl:'+key+' '+value+' ;\n')
+        
+    output.write(processAttribute(resource, const.XLINK_ROLE, attr_type=None, params=params))
+    output.write(processAttribute(resource, const.XML_LANG, attr_type=str, params=params))
+    output.write(processAttribute(resource, const.AS, attr_type=None, params=params))
 
     # arc_to boolean attributes
-    for key in ['abstract',
-                'merge',
-                'nils',
-                'strict',
-                'implicitFiltering',
-                'matches',
-                'matchAny']:
-        value = resource.get(key, None)
-        if value is not None:
-            value = value.replace("\\", "\\\\")
-            output.write('    xl:'+key+' "'+value+'"^^xsd:boolean ;\n')
+    output.write(processAttribute(resource, const.ABSTRACT, attr_type=bool, params=params))
+    output.write(processAttribute(resource, const.MERGE, attr_type=bool, params=params))
+    output.write(processAttribute(resource, const.NILS, attr_type=bool, params=params))
+    output.write(processAttribute(resource, const.STRICT, attr_type=bool, params=params))
+    output.write(processAttribute(resource, const.IMPLICITFILTERING, attr_type=bool, params=params))
+    output.write(processAttribute(resource, const.MATCHES, attr_type=bool, params=params))
+    output.write(processAttribute(resource, const.MATCHANY, attr_type=bool, params=params))
+    output.write(processAttribute(resource, const.BINDASSEQUENCE, attr_type=bool, params=params))
 
     # arc_to literal attributes
-    for key in ['name', 'output', 'fallbackValue', 'bindAsSequence',
-                'aspectModel', 'test', 'parentChildOrder',
-                'select', 'variable', 'dimension',
-                'scheme']:
-        value = resource.get(key, None)
-        if value is not None:
-            value = value.replace("\\", "\\\\")
-            output.write('    xl:' + key + ' """' + value +
-                         '"""^^rdf:XMLLiteral ;\n')
+    output.write(processAttribute(resource, const.NAME, attr_type=str, params=params))
+    output.write(processAttribute(resource, const.OUTPUT, attr_type=str, params=params))
+    output.write(processAttribute(resource, const.FALLBACKVALUE, attr_type=str, params=params))
+    output.write(processAttribute(resource, const.ASPECTMODEL, attr_type=str, params=params))
+    output.write(processAttribute(resource, const.TEST, attr_type=str, params=params))
+    output.write(processAttribute(resource, const.PARENTCHILDORDER, attr_type=str, params=params))
+    output.write(processAttribute(resource, const.SELECT, attr_type=str, params=params))
+    output.write(processAttribute(resource, const.VARIABLE, attr_type=str, params=params))
+    output.write(processAttribute(resource, const.DIMENSION, attr_type=str, params=params))
+    output.write(processAttribute(resource, const.SCHEME, attr_type=str, params=params))
 
     # we did not yet do 'id' to Literal
 
@@ -249,7 +258,7 @@ def process_resource(resource, base, ns, params):
     return 0
 
 
-def translateXLink(node, xlink, base, ns, params):
+def XLink2RDF(node, xlink, base, ns, params):
 
     output = params['out']
 
@@ -284,63 +293,22 @@ def translateXLink(node, xlink, base, ns, params):
                     output.write("    xl:role "+node_role+" ;\n")
 
                 # process_arc_attributes
+
                 # addition to xbrlimport / Raggett
-
-                output.write(processAttribute(arc, const.XBRLDT_CONTEXTELEMENT, str))
-
-                arc_targetRole = arc.get(const.XBRLDT_TARGETROLE, None)
-                if arc_targetRole:
-                    target_base, target_name = splitRole(arc_targetRole)
-                    target_prefix = params['namespaces'].get(target_base, None)
-                    if target_prefix:
-                        output.write('    xbrldt:targetRole ' + target_prefix +
-                                     ':'+target_name+' ;\n')
-                    else:
-                        output.write('    xbrldt:targetRole <' + target_base +
-                                     ':'+target_name+'> ;\n')
-
-                output.write(processAttribute(arc, const.XBRLDT_CLOSED, bool))
-                output.write(processAttribute(arc, const.XBRLDT_USABLE, bool))
-
-                arc_cover = arc.get('cover', None)
-                if arc_cover:
-                    output.write('    xl:cover "' + arc_cover +
-                                 '" ;\n')
-
-                arc_axis = arc.get('axis', None)
-                if arc_axis:
-                    output.write('    xl:axis "' + arc_axis +
-                                 '" ;\n')
-
-                arc_complement = arc.get('complement', None)
-                if arc_complement:
-                    output.write('    xl:complement """' +
-                                 arc_complement + '"""^^xsd:boolean ;\n')
-
-                arc_name = arc.get('name', None)
-                if arc_name:
-                    output.write('    xl:name "'+arc_name+'" ;\n')
-
+                output.write(processAttribute(arc, const.XBRLDT_CONTEXTELEMENT, attr_type=str, params=params))
+                output.write(processAttribute(arc, const.XBRLDT_TARGETROLE, attr_type=None, params=params))
+                output.write(processAttribute(arc, const.XBRLDT_CLOSED, attr_type=bool, params=params))
+                output.write(processAttribute(arc, const.XBRLDT_USABLE, attr_type=bool, params=params))
+                output.write(processAttribute(arc, const.COVER, attr_type=str, params=params))
+                output.write(processAttribute(arc, const.AXIS, attr_type=str, params=params))
+                output.write(processAttribute(arc, const.COMPLEMENT, attr_type=bool, params=params))
+                output.write(processAttribute(arc, const.NAME, attr_type=str, params=params))
                 # end of addition to xbrlimport / Raggett
-
-                arc_use = arc.get('use', None)
-                if arc_use:
-                    output.write('    xl:use "prohibited" ;\n')
-
-                arc_priority = arc.get('priority', None)
-                if arc_priority:
-                    output.write('    xl:priority "' + str(arc_priority) +
-                                 '"^^xsd:integer ;\n')
-
-                arc_order = arc.get('order', None)
-                if arc_order and (float(arc_order) >= 0):
-                    output.write('    xl:order "' + arc_order +
-                                 '"^^xsd:decimal ;\n')
-
-                arc_weight = arc.get('weight', None)
-                if arc_weight and (float(arc_weight) >= 0):
-                    output.write('    xl:weight "' + arc_weight +
-                                 '"^^xsd:decimal ;\n')
+ 
+                output.write(processAttribute(arc, const.USE, attr_type=str, params=params))
+                output.write(processAttribute(arc, const.PRIORITY, attr_type=int, params=params))
+                output.write(processAttribute(arc, const.ORDER, attr_type=float, params=params))
+                output.write(processAttribute(arc, const.WEIGHT, attr_type=float, params=params))
 
                 output.write("    xl:from "+triple_subject+" ;\n")
                 output.write("    xl:to "+triple_object+" ;\n")
@@ -351,6 +319,74 @@ def translateXLink(node, xlink, base, ns, params):
                     process_resource(arc_to, base, ns, params)
 
     return 0
+
+
+def XLink2RDFstar(node, xlink, base, ns, params):
+
+    output = params['out']
+
+    output.write("# XLINKS\n")
+    output.write("# localname: "+etree.QName(node.tag).localname+"\n")
+    output.write("# role: "+node.attrib.get(const.XLINK_ROLE, None)+"\n")
+    output.write("# base: "+base+"\n\n")
+
+    if etree.QName(node.tag).localname == "footnoteLink":
+        print("Footnote link found, skipping")
+        node_role = None
+    else:
+        node_role = genRoleName(xlink[const.XLINK_ROLE], 0, params)
+
+    for arc in xlink['arcs']:
+        for arc_from in arc['fromloc']:
+            for arc_to in arc['toloc']:
+                blank = genLinkName(params)
+                triple_subject = getTurtleName(arc_from, base, ns, params)
+                triple_predicate = genRoleName(arc[const.XLINK_ARCROLE],
+                                               1, params)
+                triple_object = getTurtleName(arc_to, base, ns, params)
+                output.write(triple_subject+" "+triple_predicate+" "+triple_object+" .\n")
+
+                found = False
+                for a in arc.keys():
+                    if a in [const.XLINK_ROLE,
+                             const.USE,
+                             const.PRIORITY,
+                             const.ORDER,
+                             const.WEIGHT,
+                             const.XBRLDT_CONTEXTELEMENT,
+                             const.XBRLDT_TARGETROLE,
+                             const.XBRLDT_CLOSED,
+                             const.XBRLDT_USABLE,
+                             const.COVER,
+                             const.AXIS,
+                             const.COMPLEMENT,
+                             const.NAME]:
+                        found = True
+                if found:
+                    output.write("<<"+triple_subject + " " + triple_predicate + " " + triple_object+">> \n")
+                    output.write(processAttribute(arc, const.XLINK_ROLE, attr_type=str, params=params))
+                    output.write(processAttribute(arc, const.USE, attr_type=str, params=params))
+                    output.write(processAttribute(arc, const.PRIORITY, attr_type=int, params=params))
+                    output.write(processAttribute(arc, const.ORDER, attr_type=float, params=params))
+                    output.write(processAttribute(arc, const.WEIGHT, attr_type=float, params=params))
+
+                    # addition to xbrlimport / Raggett
+                    output.write(processAttribute(arc, const.XBRLDT_CONTEXTELEMENT, attr_type=str, params=params))
+                    output.write(processAttribute(arc, const.XBRLDT_TARGETROLE, attr_type=None, params=params))
+                    output.write(processAttribute(arc, const.XBRLDT_CLOSED, attr_type=bool, params=params))
+                    output.write(processAttribute(arc, const.XBRLDT_USABLE, attr_type=bool, params=params))
+                    output.write(processAttribute(arc, const.COVER, attr_type=str, params=params))
+                    output.write(processAttribute(arc, const.AXIS, attr_type=str, params=params))
+                    output.write(processAttribute(arc, const.COMPLEMENT, attr_type=bool, params=params))
+                    output.write(processAttribute(arc, const.NAME, attr_type=str, params=params))
+                    output.write("    .\n")
+                output.write("\n")
+                locator_type = arc_to.get(const.XLINK_TYPE, None)
+                if locator_type == "resource":
+                    process_resource(arc_to, base, ns, params)
+
+    return 0
+
 
 
 def genLinkName(params):

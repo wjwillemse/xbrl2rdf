@@ -172,16 +172,16 @@ def processUnit(unit, params):
         measure = unit_child.text
         if ":" in measure:
             params['facts'].write("_:unit_" + unit_id +
-                                  " xbrli:measure "+measure+" .\n")
+                                  " xbrli:measure "+measure+" .\n\n")
         else:
             params['facts'].write("_:unit_" + unit_id +
-                                  " xbrli:measure xbrli:"+measure+" .\n")
+                                  " xbrli:measure xbrli:"+measure+" .\n\n")
     elif etree.QName(unit).localname == "divide":
         numerator = getNumerator(unit_child, params)
         denominator = getDenominator(unit_child, params)
         params['facts'].write("_:unit_"+unit_id+"\n")
         params['facts'].write("    xbrli:numerator "+numerator+" ;\n")
-        params['facts'].write("    xbrli:denominator "+denominator+" .\n")
+        params['facts'].write("    xbrli:denominator "+denominator+" .\n\n")
 
 
 def processFact(fact, provenance, base, params):

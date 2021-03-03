@@ -46,21 +46,13 @@ def processImportedSchema(root, base, ns, params):
         params['log'].write("couldn't find first child element\n")
         return -1
     for node in root:
-        # if (strcmp((char *)(node->name), "import") &&
-        #       strcmp((char *)(node->name), "include"))
-        #     continue;
-
         if (node.tag != "{http://www.w3.org/2001/XMLSchema}import") and \
            (node.tag != "{http://www.w3.org/2001/XMLSchema}include"):
             continue
         schema = node.attrib.get("schemaLocation", None)
         namespace = node.attrib.get("namespace", None)
         DtsProcessor.prependDtsQueue(const.XBRL_LINKBASE,
-                                     schema,
-                                     base,
-                                     namespace,
-                                     0,
-                                     params)
+                                     schema, base, namespace, 0, params)
     return res
 
 
@@ -77,9 +69,7 @@ def processElements(root, base, targetNs, params):
     output.write("# base: "+base+"\n\n")
 
     for child in root:
-
         if child.tag == "{http://www.w3.org/2001/XMLSchema}element":
-
             for item in child.attrib.keys():
                 if item not in ['name',
                                 'id',
@@ -116,24 +106,23 @@ def processElements(root, base, targetNs, params):
                     child_type = "xsd:"+child_type[3:]
                 output.write("    rdf:type "+child_type+" ;\n")
 
-            output.write(processAttribute(child, const.XBRLI_PERIODTYPE, str))
-            output.write(processAttribute(child, const.XBRLDT_TYPEDDOMAINREF, str))
+            output.write(processAttribute(child, const.XBRLI_PERIODTYPE, attr_type=str, params=params))
+            output.write(processAttribute(child, const.XBRLDT_TYPEDDOMAINREF, attr_type=str, params=params))
             
-            output.write(processAttribute(child, const.MODEL_CREATIONDATE, str))
-            output.write(processAttribute(child, const.MODEL_TODATE, str))
-            output.write(processAttribute(child, const.MODEL_MODIFICATIONDATE, str))
-            output.write(processAttribute(child, const.MODEL_TODATE, str))
-            output.write(processAttribute(child, const.MODEL_DOMAIN, str))
-            output.write(processAttribute(child, const.MODEL_HIERARCHY, str))
-            output.write(processAttribute(child, const.MODEL_ISDEFAULTMEMBER, str))
+            output.write(processAttribute(child, const.MODEL_CREATIONDATE, attr_type=str, params=params))
+            output.write(processAttribute(child, const.MODEL_TODATE, attr_type=str, params=params))
+            output.write(processAttribute(child, const.MODEL_MODIFICATIONDATE, attr_type=str, params=params))
+            output.write(processAttribute(child, const.MODEL_DOMAIN, attr_type=str, params=params))
+            output.write(processAttribute(child, const.MODEL_HIERARCHY, attr_type=str, params=params))
+            output.write(processAttribute(child, const.MODEL_ISDEFAULTMEMBER, attr_type=str, params=params))
             
-            output.write(processAttribute(child, const.ENUM_DOMAIN, str))
-            output.write(processAttribute(child, const.ENUM_LINKROLE, str))
+            output.write(processAttribute(child, const.ENUM_DOMAIN, attr_type=str, params=params))
+            output.write(processAttribute(child, const.ENUM_LINKROLE, attr_type=str, params=params))
             
-            output.write(processAttribute(child, const.SUBSTITUTIONGROUP, None))
-            output.write(processAttribute(child, const.NILLABLE, bool))
-            output.write(processAttribute(child, const.ABSTRACT, bool))
-            output.write(processAttribute(child, const.BALANCE, str))
+            output.write(processAttribute(child, const.SUBSTITUTIONGROUP, attr_type=None, params=params))
+            output.write(processAttribute(child, const.NILLABLE, attr_type=bool, params=params))
+            output.write(processAttribute(child, const.ABSTRACT, attr_type=bool, params=params))
+            output.write(processAttribute(child, const.BALANCE, attr_type=str, params=params))
 
             output.write('    . \n\n')
 
