@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "bluebird": "^3.7.2"
+  }
+}

@@ -6,6 +6,7 @@ try:
 except ImportError:
     import re
 import const
+from datetime import datetime
 
 def processAttribute(node, attr, attr_type=None, text_prefix='    ', params=None):
     if text_prefix == '    ':
@@ -27,6 +28,8 @@ def processAttribute(node, attr, attr_type=None, text_prefix='    ', params=None
             return text_prefix+const.predicates[attr] + ' "' + attr_value + '"^^xsd:integer'+line_end
         elif attr_type == float:
             return text_prefix+const.predicates[attr] + ' "' + attr_value + '"^^xsd:decimal'+line_end
+        elif attr_type == datetime:
+            return text_prefix+const.predicates[attr] + ' "' + attr_value + '"^^xsd:dateTime'+line_end
         else:
             name = attr_value.split("/")[-1]
             base = "/".join(attr_value.split("/")[0:-1])

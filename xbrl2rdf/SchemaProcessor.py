@@ -2,6 +2,7 @@ import DtsProcessor
 import utilfunctions
 import const
 from utilfunctions import processAttribute
+from datetime import datetime
 
 def processSchema(root, base, params):
 
@@ -109,9 +110,10 @@ def processElements(root, base, targetNs, params):
             output.write(processAttribute(child, const.XBRLI_PERIODTYPE, attr_type=str, params=params))
             output.write(processAttribute(child, const.XBRLDT_TYPEDDOMAINREF, attr_type=str, params=params))
             
-            output.write(processAttribute(child, const.MODEL_CREATIONDATE, attr_type=str, params=params))
-            output.write(processAttribute(child, const.MODEL_TODATE, attr_type=str, params=params))
-            output.write(processAttribute(child, const.MODEL_MODIFICATIONDATE, attr_type=str, params=params))
+            output.write(processAttribute(child, const.MODEL_CREATIONDATE, attr_type=datetime, params=params))
+            output.write(processAttribute(child, const.MODEL_TODATE, attr_type=datetime, params=params))
+            output.write(processAttribute(child, const.MODEL_MODIFICATIONDATE, attr_type=datetime, params=params))
+            
             output.write(processAttribute(child, const.MODEL_DOMAIN, attr_type=str, params=params))
             output.write(processAttribute(child, const.MODEL_HIERARCHY, attr_type=str, params=params))
             output.write(processAttribute(child, const.MODEL_ISDEFAULTMEMBER, attr_type=str, params=params))
