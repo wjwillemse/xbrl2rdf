@@ -111,5 +111,4 @@ predicates = {XBRLI_PERIODTYPE:   'xbrli:periodType',
               SCHEME: 'xl:scheme',
 
               XML_LANG: 'rdf:lang',
-              XLINK_ROLE: 'xlink:role'
-}
+              XLINK_ROLE: 'xlink:role'}

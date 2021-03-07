@@ -1,29 +1,41 @@
 from collections import defaultdict
 from lxml import etree
 import urllib
-import DtsProcessor
-import utilfunctions
-import const
-from utilfunctions import processAttribute
+
+from .const import XLINK_TYPE, XLINK_HREF, XLINK_ID, XLINK_BASE, \
+                   XLINK_ROLE, XLINK_LABEL, XBRL_LINKBASE, XBRL_SCHEMA
+from .const import XML_LANG
+from .const import ID, AS, ABSTRACT, MERGE, NILS, STRICT, IMPLICITFILTERING, \
+                   MATCHES, MATCHANY, BINDASSEQUENCE, OUTPUT, \
+                   FALLBACKVALUE, ASPECTMODEL, TEST, PARENTCHILDORDER, \
+                   SELECT, VARIABLE, DIMENSION, SCHEME
+from .const import XLINK_FROM, XLINK_TO, XLINK_ARCROLE, XLINK_TITLE
+from .const import XBRLDT_CONTEXTELEMENT, XBRLDT_CLOSED, XBRLDT_TARGETROLE, \
+                   XBRLDT_USABLE
+from .const import ORDER, USE, PRIORITY, WEIGHT, NAME, COVER, COMPLEMENT, AXIS
+
+from .utilfunctions import processAttribute, isHttpUrl, expandRelativePath, \
+                           appendDtsQueue, prependDtsQueue
+
 
 def processLinkBase(root, base, ns, params):
     # first phase searchs for schemas
     params['log'].write("checking linkbase "+base+"\n")
     missingSchemas = 0
     for node in root:
-        node_type = node.attrib.get(const.XLINK_TYPE, None)
+        node_type = node.attrib.get(XLINK_TYPE, None)
         if node_type == "extended":
             missingSchemas += checkExtendedLink(node, base, ns, params)
         elif node_type == "simple":
             missingSchemas += checkSimpleLink(node, base, ns, params)
     if missingSchemas > 0:
-        DtsProcessor.appendDtsQueue(const.XBRL_LINKBASE, base, "", ns, 1, params)
+        appendDtsQueue(XBRL_LINKBASE, base, "", ns, 1, params)
         params['log'].write("missing schemas "+base+"\n")
         return 0
     # second phase translates links into RDF
     params['log'].write("processing linkbase "+base+"\n")
     for node in root:
-        node_type = node.attrib.get(const.XLINK_TYPE, None)
+        node_type = node.attrib.get(XLINK_TYPE, None)
         if node_type == "extended":
             processExtendedLink(node, base, ns, params)
         elif node_type == "simple":
@@ -33,46 +45,46 @@ def processLinkBase(root, base, ns, params):
 
 def checkSimpleLink(node, base, ns, params):
     missingSchemas = 0
-    href = node.attrib.get(const.XLINK_HREF, None)
+    href = node.attrib.get(XLINK_HREF, None)
     if href is not None:
         # suppress fragment id to avoid problems with loading resource
         uri = href
         if "#" in uri:
             uri = uri.split("#")[0]
         # if resource has relative uri then parent's namespace applies
-        if ns and not utilfunctions.isHttpUrl(href):
+        if ns and not isHttpUrl(href):
             lns = ns
         else:
             lns = None
-        uri = utilfunctions.expandRelativePath(uri, base)
+        uri = expandRelativePath(uri, base)
         if uri not in params['dts_processed']:
             missingSchemas += 1
             params['log'].write("found unseen1: "+uri+"\n")
-            DtsProcessor.prependDtsQueue(const.XBRL_SCHEMA, uri, base, lns, 0, params)
+            prependDtsQueue(XBRL_SCHEMA, uri, base, lns, 0, params)
     return missingSchemas
 
 
 def checkExtendedLink(element, base, ns, params):
     missingSchemas = 0
     for node in element:
-        node_type = node.attrib.get(const.XLINK_TYPE, None)
+        node_type = node.attrib.get(XLINK_TYPE, None)
         if node_type == "locator":
-            href = node.attrib.get(const.XLINK_HREF, None)
+            href = node.attrib.get(XLINK_HREF, None)
             # suppress fragment id to avoid problems with loading resource
             if href is not None:
                 uri = href
                 if "#" in uri:
                     uri = uri.split("#")[0]
                 # if resource has relative uri then parent's namespace applies
-                if ns and not utilfunctions.isHttpUrl(href):
+                if ns and not isHttpUrl(href):
                     lns = ns
                 else:
                     lns = None
-                uri = utilfunctions.expandRelativePath(uri, base)
+                uri = expandRelativePath(uri, base)
                 if uri not in params['dts_processed']:
                     missingSchemas += 1
                     params['log'].write("found unseen2: "+uri+"\n")
-                    DtsProcessor.prependDtsQueue(const.XBRL_SCHEMA, uri, base, lns, 0, params)
+                    prependDtsQueue(XBRL_SCHEMA, uri, base, lns, 0, params)
     return missingSchemas
 
 
@@ -89,14 +101,14 @@ def processSimpleLink(node, base, ns, params):
 def processExtendedLink(element, base, ns, params):
     params['xlinkCount'] += 1
     localLocCount = 0
-    xlink = {const.XLINK_ROLE: element.attrib.get(const.XLINK_ROLE),
-             const.XLINK_ID: element.attrib.get(const.XLINK_ID),
-             const.XLINK_BASE: element.attrib.get(const.XLINK_BASE),
+    xlink = {XLINK_ROLE: element.attrib.get(XLINK_ROLE),
+             XLINK_ID: element.attrib.get(XLINK_ID),
+             XLINK_BASE: element.attrib.get(XLINK_BASE),
              'locators': list(),
              'arcs': list()}
     for node in element:
         localLocCount += 1
-        node_type = node.attrib.get(const.XLINK_TYPE, None)
+        node_type = node.attrib.get(XLINK_TYPE, None)
         if node_type == "locator":
             params['locCount'] += 1
             localLocCount += 1
@@ -107,31 +119,31 @@ def processExtendedLink(element, base, ns, params):
         elif node_type == "resource":
             params['resCount'] += 1
             for key in node.attrib:
-                if key not in [const.XLINK_ROLE,
-                               const.XLINK_TYPE,
-                               const.XLINK_LABEL,
-                               const.XLINK_TITLE,
-                               const.XML_LANG,
-                               const.ID,
-                               const.AS,
-                               const.ABSTRACT,
-                               const.MERGE,
-                               const.NILS,
-                               const.STRICT,
-                               const.IMPLICITFILTERING,
-                               const.MATCHES,
-                               const.MATCHANY,
-                               const.BINDASSEQUENCE,
-                               const.NAME,
-                               const.OUTPUT,
-                               const.FALLBACKVALUE,
-                               const.ASPECTMODEL,
-                               const.TEST,
-                               const.PARENTCHILDORDER,
-                               const.SELECT,
-                               const.VARIABLE,
-                               const.DIMENSION,
-                               const.SCHEME]:
+                if key not in [XLINK_ROLE,
+                               XLINK_TYPE,
+                               XLINK_LABEL,
+                               XLINK_TITLE,
+                               XML_LANG,
+                               ID,
+                               AS,
+                               ABSTRACT,
+                               MERGE,
+                               NILS,
+                               STRICT,
+                               IMPLICITFILTERING,
+                               MATCHES,
+                               MATCHANY,
+                               BINDASSEQUENCE,
+                               NAME,
+                               OUTPUT,
+                               FALLBACKVALUE,
+                               ASPECTMODEL,
+                               TEST,
+                               PARENTCHILDORDER,
+                               SELECT,
+                               VARIABLE,
+                               DIMENSION,
+                               SCHEME]:
                     print("Not supported yet: resource attribute '"+str(key)+"'")
 
             localLocCount += 1
@@ -143,23 +155,23 @@ def processExtendedLink(element, base, ns, params):
         elif node_type == "arc":
             params['arcCount'] += 1
             for key in node.attrib:
-                if key not in [const.XLINK_FROM,
-                               const.XLINK_TO,
-                               const.XLINK_ARCROLE,
-                               const.XLINK_TITLE,
-                               const.XLINK_TYPE,
-                               const.XBRLDT_CONTEXTELEMENT,
-                               const.XBRLDT_CLOSED,
-                               const.XBRLDT_TARGETROLE,
-                               const.XBRLDT_USABLE,
-                               const.ORDER,
-                               const.USE,
-                               const.PRIORITY,
-                               const.WEIGHT,
-                               const.NAME,
-                               const.COVER,
-                               const.COMPLEMENT,
-                               const.AXIS]:
+                if key not in [XLINK_FROM,
+                               XLINK_TO,
+                               XLINK_ARCROLE,
+                               XLINK_TITLE,
+                               XLINK_TYPE,
+                               XBRLDT_CONTEXTELEMENT,
+                               XBRLDT_CLOSED,
+                               XBRLDT_TARGETROLE,
+                               XBRLDT_USABLE,
+                               ORDER,
+                               USE,
+                               PRIORITY,
+                               WEIGHT,
+                               NAME,
+                               COVER,
+                               COMPLEMENT,
+                               AXIS]:
                     print("Not supported yet: arc attribute '"+str(key)+"'")
             arc = {key: node.attrib.get(key) for key
                    in node.attrib if node.attrib.get(key) is not None}
@@ -171,16 +183,16 @@ def processExtendedLink(element, base, ns, params):
 
     labels_nodes = defaultdict(list)
     for locator in xlink['locators']:
-        labels_nodes[locator[const.XLINK_LABEL]].append(locator)
+        labels_nodes[locator[XLINK_LABEL]].append(locator)
 
     # fix up relations between arcs and locs
     for arc in xlink['arcs']:
         arc['fromloc'] = list()
-        label = arc[const.XLINK_FROM]
+        label = arc[XLINK_FROM]
         if label in labels_nodes.keys():
             arc['fromloc'] = labels_nodes[label]
         arc['toloc'] = list()
-        label = arc[const.XLINK_TO]
+        label = arc[XLINK_TO]
         if label in labels_nodes.keys():
             arc['toloc'] = labels_nodes[label]
 
@@ -204,31 +216,42 @@ def process_resource(resource, base, ns, params):
     else:
         output.write("    xl:type <"+namespace+"/"+name+"> ;\n")
         
-    output.write(processAttribute(resource, const.XLINK_ROLE, attr_type=None, params=params))
-    output.write(processAttribute(resource, const.XML_LANG, attr_type=str, params=params))
-    output.write(processAttribute(resource, const.AS, attr_type=None, params=params))
+    output.write(processAttribute(resource, XLINK_ROLE,
+                                  attr_type=None, params=params))
+    output.write(processAttribute(resource, XML_LANG,
+                                  attr_type=str, params=params))
+    output.write(processAttribute(resource, AS,
+                                  attr_type=None, params=params))
 
     # arc_to boolean attributes
-    output.write(processAttribute(resource, const.ABSTRACT, attr_type=bool, params=params))
-    output.write(processAttribute(resource, const.MERGE, attr_type=bool, params=params))
-    output.write(processAttribute(resource, const.NILS, attr_type=bool, params=params))
-    output.write(processAttribute(resource, const.STRICT, attr_type=bool, params=params))
-    output.write(processAttribute(resource, const.IMPLICITFILTERING, attr_type=bool, params=params))
-    output.write(processAttribute(resource, const.MATCHES, attr_type=bool, params=params))
-    output.write(processAttribute(resource, const.MATCHANY, attr_type=bool, params=params))
-    output.write(processAttribute(resource, const.BINDASSEQUENCE, attr_type=bool, params=params))
+    output.write(processAttribute(resource, ABSTRACT,
+                                  attr_type=bool, params=params))
+    output.write(processAttribute(resource, MERGE,
+                                  attr_type=bool, params=params))
+    output.write(processAttribute(resource, NILS,
+                                  attr_type=bool, params=params))
+    output.write(processAttribute(resource, STRICT,
+                                  attr_type=bool, params=params))
+    output.write(processAttribute(resource, IMPLICITFILTERING,
+                                  attr_type=bool, params=params))
+    output.write(processAttribute(resource, MATCHES,
+                                  attr_type=bool, params=params))
+    output.write(processAttribute(resource, MATCHANY,
+                                  attr_type=bool, params=params))
+    output.write(processAttribute(resource, BINDASSEQUENCE,
+                                  attr_type=bool, params=params))
 
     # arc_to literal attributes
-    output.write(processAttribute(resource, const.NAME, attr_type=str, params=params))
-    output.write(processAttribute(resource, const.OUTPUT, attr_type=str, params=params))
-    output.write(processAttribute(resource, const.FALLBACKVALUE, attr_type=str, params=params))
-    output.write(processAttribute(resource, const.ASPECTMODEL, attr_type=str, params=params))
-    output.write(processAttribute(resource, const.TEST, attr_type=str, params=params))
-    output.write(processAttribute(resource, const.PARENTCHILDORDER, attr_type=str, params=params))
-    output.write(processAttribute(resource, const.SELECT, attr_type=str, params=params))
-    output.write(processAttribute(resource, const.VARIABLE, attr_type=str, params=params))
-    output.write(processAttribute(resource, const.DIMENSION, attr_type=str, params=params))
-    output.write(processAttribute(resource, const.SCHEME, attr_type=str, params=params))
+    output.write(processAttribute(resource, NAME, attr_type=str, params=params))
+    output.write(processAttribute(resource, OUTPUT, attr_type=str, params=params))
+    output.write(processAttribute(resource, FALLBACKVALUE, attr_type=str, params=params))
+    output.write(processAttribute(resource, ASPECTMODEL, attr_type=str, params=params))
+    output.write(processAttribute(resource, TEST, attr_type=str, params=params))
+    output.write(processAttribute(resource, PARENTCHILDORDER, attr_type=str, params=params))
+    output.write(processAttribute(resource, SELECT, attr_type=str, params=params))
+    output.write(processAttribute(resource, VARIABLE, attr_type=str, params=params))
+    output.write(processAttribute(resource, DIMENSION, attr_type=str, params=params))
+    output.write(processAttribute(resource, SCHEME, attr_type=str, params=params))
 
     # we did not yet do 'id' to Literal
 
@@ -264,14 +287,14 @@ def XLink2RDF(node, xlink, base, ns, params):
 
     output.write("# XLINKS\n")
     output.write("# localname: "+etree.QName(node.tag).localname+"\n")
-    output.write("# role: "+node.attrib.get(const.XLINK_ROLE, None)+"\n")
+    output.write("# role: "+node.attrib.get(XLINK_ROLE, None)+"\n")
     output.write("# base: "+base+"\n\n")
 
     if etree.QName(node.tag).localname == "footnoteLink":
         print("Footnote link found, skipping")
         node_role = None
     else:
-        node_role = genRoleName(xlink[const.XLINK_ROLE], 0, params)
+        node_role = genRoleName(xlink[XLINK_ROLE], 0, params)
 
     for arc in xlink['arcs']:
 
@@ -282,7 +305,7 @@ def XLink2RDF(node, xlink, base, ns, params):
                 blank = genLinkName(params)
 
                 triple_subject = getTurtleName(arc_from, base, ns, params)
-                triple_predicate = genRoleName(arc[const.XLINK_ARCROLE],
+                triple_predicate = genRoleName(arc[XLINK_ARCROLE],
                                                1, params)
                 triple_object = getTurtleName(arc_to, base, ns, params)
 
@@ -295,26 +318,26 @@ def XLink2RDF(node, xlink, base, ns, params):
                 # process_arc_attributes
 
                 # addition to xbrlimport / Raggett
-                output.write(processAttribute(arc, const.XBRLDT_CONTEXTELEMENT, attr_type=str, params=params))
-                output.write(processAttribute(arc, const.XBRLDT_TARGETROLE, attr_type=None, params=params))
-                output.write(processAttribute(arc, const.XBRLDT_CLOSED, attr_type=bool, params=params))
-                output.write(processAttribute(arc, const.XBRLDT_USABLE, attr_type=bool, params=params))
-                output.write(processAttribute(arc, const.COVER, attr_type=str, params=params))
-                output.write(processAttribute(arc, const.AXIS, attr_type=str, params=params))
-                output.write(processAttribute(arc, const.COMPLEMENT, attr_type=bool, params=params))
-                output.write(processAttribute(arc, const.NAME, attr_type=str, params=params))
+                output.write(processAttribute(arc, XBRLDT_CONTEXTELEMENT, attr_type=str, params=params))
+                output.write(processAttribute(arc, XBRLDT_TARGETROLE, attr_type=None, params=params))
+                output.write(processAttribute(arc, XBRLDT_CLOSED, attr_type=bool, params=params))
+                output.write(processAttribute(arc, XBRLDT_USABLE, attr_type=bool, params=params))
+                output.write(processAttribute(arc, COVER, attr_type=str, params=params))
+                output.write(processAttribute(arc, AXIS, attr_type=str, params=params))
+                output.write(processAttribute(arc, COMPLEMENT, attr_type=bool, params=params))
+                output.write(processAttribute(arc, NAME, attr_type=str, params=params))
                 # end of addition to xbrlimport / Raggett
  
-                output.write(processAttribute(arc, const.USE, attr_type=str, params=params))
-                output.write(processAttribute(arc, const.PRIORITY, attr_type=int, params=params))
-                output.write(processAttribute(arc, const.ORDER, attr_type=float, params=params))
-                output.write(processAttribute(arc, const.WEIGHT, attr_type=float, params=params))
+                output.write(processAttribute(arc, USE, attr_type=str, params=params))
+                output.write(processAttribute(arc, PRIORITY, attr_type=int, params=params))
+                output.write(processAttribute(arc, ORDER, attr_type=float, params=params))
+                output.write(processAttribute(arc, WEIGHT, attr_type=float, params=params))
 
                 output.write("    xl:from "+triple_subject+" ;\n")
                 output.write("    xl:to "+triple_object+" ;\n")
                 output.write("    ] .\n\n")
 
-                locator_type = arc_to.get(const.XLINK_TYPE, None)
+                locator_type = arc_to.get(XLINK_TYPE, None)
                 if locator_type == "resource":
                     process_resource(arc_to, base, ns, params)
 
@@ -327,66 +350,64 @@ def XLink2RDFstar(node, xlink, base, ns, params):
 
     output.write("# XLINKS\n")
     output.write("# localname: "+etree.QName(node.tag).localname+"\n")
-    output.write("# role: "+node.attrib.get(const.XLINK_ROLE, None)+"\n")
+    output.write("# role: "+node.attrib.get(XLINK_ROLE, None)+"\n")
     output.write("# base: "+base+"\n\n")
 
     if etree.QName(node.tag).localname == "footnoteLink":
         print("Footnote link found, skipping")
         node_role = None
     else:
-        node_role = genRoleName(xlink[const.XLINK_ROLE], 0, params)
+        node_role = genRoleName(xlink[XLINK_ROLE], 0, params)
 
     for arc in xlink['arcs']:
         for arc_from in arc['fromloc']:
             for arc_to in arc['toloc']:
-                blank = genLinkName(params)
                 triple_subject = getTurtleName(arc_from, base, ns, params)
-                triple_predicate = genRoleName(arc[const.XLINK_ARCROLE],
+                triple_predicate = genRoleName(arc[XLINK_ARCROLE],
                                                1, params)
                 triple_object = getTurtleName(arc_to, base, ns, params)
                 output.write(triple_subject+" "+triple_predicate+" "+triple_object+" .\n")
 
                 found = False
                 for a in arc.keys():
-                    if a in [const.XLINK_ROLE,
-                             const.USE,
-                             const.PRIORITY,
-                             const.ORDER,
-                             const.WEIGHT,
-                             const.XBRLDT_CONTEXTELEMENT,
-                             const.XBRLDT_TARGETROLE,
-                             const.XBRLDT_CLOSED,
-                             const.XBRLDT_USABLE,
-                             const.COVER,
-                             const.AXIS,
-                             const.COMPLEMENT,
-                             const.NAME]:
+                    if a in [XLINK_ROLE,
+                             USE,
+                             PRIORITY,
+                             ORDER,
+                             WEIGHT,
+                             XBRLDT_CONTEXTELEMENT,
+                             XBRLDT_TARGETROLE,
+                             XBRLDT_CLOSED,
+                             XBRLDT_USABLE,
+                             COVER,
+                             AXIS,
+                             COMPLEMENT,
+                             NAME]:
                         found = True
                 if found:
                     output.write("<<"+triple_subject + " " + triple_predicate + " " + triple_object+">> \n")
-                    output.write(processAttribute(arc, const.XLINK_ROLE, attr_type=str, params=params))
-                    output.write(processAttribute(arc, const.USE, attr_type=str, params=params))
-                    output.write(processAttribute(arc, const.PRIORITY, attr_type=int, params=params))
-                    output.write(processAttribute(arc, const.ORDER, attr_type=float, params=params))
-                    output.write(processAttribute(arc, const.WEIGHT, attr_type=float, params=params))
+                    output.write(processAttribute(arc, XLINK_ROLE, attr_type=str, params=params))
+                    output.write(processAttribute(arc, USE, attr_type=str, params=params))
+                    output.write(processAttribute(arc, PRIORITY, attr_type=int, params=params))
+                    output.write(processAttribute(arc, ORDER, attr_type=float, params=params))
+                    output.write(processAttribute(arc, WEIGHT, attr_type=float, params=params))
 
                     # addition to xbrlimport / Raggett
-                    output.write(processAttribute(arc, const.XBRLDT_CONTEXTELEMENT, attr_type=str, params=params))
-                    output.write(processAttribute(arc, const.XBRLDT_TARGETROLE, attr_type=None, params=params))
-                    output.write(processAttribute(arc, const.XBRLDT_CLOSED, attr_type=bool, params=params))
-                    output.write(processAttribute(arc, const.XBRLDT_USABLE, attr_type=bool, params=params))
-                    output.write(processAttribute(arc, const.COVER, attr_type=str, params=params))
-                    output.write(processAttribute(arc, const.AXIS, attr_type=str, params=params))
-                    output.write(processAttribute(arc, const.COMPLEMENT, attr_type=bool, params=params))
-                    output.write(processAttribute(arc, const.NAME, attr_type=str, params=params))
+                    output.write(processAttribute(arc, XBRLDT_CONTEXTELEMENT, attr_type=str, params=params))
+                    output.write(processAttribute(arc, XBRLDT_TARGETROLE, attr_type=None, params=params))
+                    output.write(processAttribute(arc, XBRLDT_CLOSED, attr_type=bool, params=params))
+                    output.write(processAttribute(arc, XBRLDT_USABLE, attr_type=bool, params=params))
+                    output.write(processAttribute(arc, COVER, attr_type=str, params=params))
+                    output.write(processAttribute(arc, AXIS, attr_type=str, params=params))
+                    output.write(processAttribute(arc, COMPLEMENT, attr_type=bool, params=params))
+                    output.write(processAttribute(arc, NAME, attr_type=str, params=params))
                     output.write("    .\n")
                 output.write("\n")
-                locator_type = arc_to.get(const.XLINK_TYPE, None)
+                locator_type = arc_to.get(XLINK_TYPE, None)
                 if locator_type == "resource":
                     process_resource(arc_to, base, ns, params)
 
     return 0
-
 
 
 def genLinkName(params):
@@ -396,9 +417,9 @@ def genLinkName(params):
 
 
 def getTurtleName(loc, base, ns, params):
-    href = loc.get(const.XLINK_HREF, None)
+    href = loc.get(XLINK_HREF, None)
     if href is not None:
-        href = utilfunctions.expandRelativePath(href, base)
+        href = expandRelativePath(href, base)
         res, namespace, name = findId(href, base, params)
         if res != 0:
             # check if href path is in namespaces, presumable a bug in the eiopa taxonomy
@@ -412,7 +433,7 @@ def getTurtleName(loc, base, ns, params):
     else:
         # if no href then use parent's namespace with label
         namespace = ns
-        name = loc.get(const.XLINK_LABEL, None)
+        name = loc.get(XLINK_LABEL, None)
 
     # if label ends with . then delete ., otherwise we get error in turtle
     if name[-1] == ".":

@@ -1,20 +1,21 @@
 from lxml import etree
-import DtsProcessor
-import LinkbaseProcessor
-import utilfunctions
-import const
+
+from .DtsProcessor import processSchema, processLinkBase
+from .LinkbaseProcessor import processExtendedLink
+from .utilfunctions import registerNamespaces, prependDtsQueue
+from .const import XLINK_HREF, XBRL_SCHEMA
 
 
 def processInstance(root, base, ns, params):
 
     if etree.QName(root).localname == "schema":
-        return DtsProcessor.processSchema(root, base)
+        return processSchema(root, base)
     if etree.QName(root).localname == "linkbase":
-        return DtsProcessor.processLinkBase(root, base, ns)
+        return processLinkBase(root, base, ns)
 
     params['log'].write("processing instance "+base+"\n")
 
-    utilfunctions.registerNamespaces(root, base, params)
+    registerNamespaces(root, base, params)
 
     footnote_links = list()
 
@@ -29,13 +30,12 @@ def processInstance(root, base, ns, params):
         elif child_name == "unit":
             processUnit(child, params)
         elif child_name == "schemaRef":
-            uri = child.attrib.get(const.XLINK_HREF, None)
+            uri = child.attrib.get(XLINK_HREF, None)
             if uri is None:
                 params['log'].write("couldn't identify schema location\n")
                 return -1
             processSchemaRef(child, provenance, params)
-            res = DtsProcessor.prependDtsQueue(const.XBRL_SCHEMA,
-                                               uri, base, ns, 0, params)
+            res = prependDtsQueue(XBRL_SCHEMA, uri, base, ns, 0, params)
         elif child_name == "footnoteLink":
             footnote_links.append(child)
         else:
@@ -44,7 +44,7 @@ def processInstance(root, base, ns, params):
     for child in footnote_links:
         # if (child->type != XML_ELEMENT_NODE)
         #     continue
-        LinkbaseProcessor.processExtendedLink(child, base, "")
+        processExtendedLink(child, base, "")
 
     return res
 
@@ -303,7 +303,7 @@ def getDenominator(divide, params):
 
 
 def processSchemaRef(child, provenance, params):
-    schemaRef = child.attrib.get(const.XLINK_HREF, None)
+    schemaRef = child.attrib.get(XLINK_HREF, None)
     schemaRef = schemaRef.replace("eu/eu/", "eu/")
     if schemaRef:
         params['facts'].write("_:schemaRef \n")

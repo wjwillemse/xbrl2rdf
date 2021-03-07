@@ -4,7 +4,11 @@ Separated on Jul 28, 2013 from DialogOpenArchive.py
 @author: Mark V Systems Limited
 (c) Copyright 2010 Mark V Systems Limited, All rights reserved.
 '''
-import sys, os, io, re, time, json, logging
+import os
+import io
+import time
+import json
+import logging
 from collections import defaultdict
 from fnmatch import fnmatch
 from lxml import etree
@@ -12,7 +16,9 @@ from urllib.parse import urljoin
 from os.path import join
 from collections import OrderedDict
 
-import FileSource, utilfunctions
+from .FileSource import openFileSource
+from .utilfunctions import getLanguageCode, isAbsolute
+
 
 class Taxonomies:
 
@@ -40,19 +46,15 @@ class Taxonomies:
         self.jsonFile = None
         self.config = None
         self.mapping = dict()
-
         try:
             self.jsonFile = join(path, "taxonomyPackages.json")
             with io.open(self.JsonFile, 'rt', encoding='utf-8') as f:
                 self.config = json.load(f)
         except Exception:
-            pass 
-
+            pass
         if self.config is None:
-            self.config = {  # savable/reloadable plug in configuration
-                "packages": [], # list taxonomy packages loaded and their remappings
-                "remappings": {}  # dict by prefix of remappings in effect
-            }
+            self.config = {"packages": list(), "remappings": dict()}
+
 
     def addPackage(self, url):
         newPackageInfo = packageInfo(url, packageManifestName=None)
@@ -71,6 +73,7 @@ class Taxonomies:
                 packagesList.append(newPackageInfo)
             return newPackageInfo
         return None
+
 
     def rebuildRemappings(self):
         remappings = self.config["remappings"]
@@ -103,6 +106,7 @@ class Taxonomies:
                     #                messageCode="arelle.packageRewriteOverlap",
                     #                file=(_url1, _url2),
                     #                level=logging.WARNING)
+
 
     def save(self):
         with io.open(self.jsonFile, 'wt', encoding='utf-8') as f:
@@ -143,9 +147,11 @@ def baseForElement(element):
                 base = baseAttr + base
         baseElt = baseElt.getparent()
     return base
-   
+
+
 def xmlLang(element):
     return (element.xpath('@xml:lang') + element.xpath('ancestor::*/@xml:lang') + [''])[0]
+
 
 def langCloseness(l1, l2):
     _len = min(len(l1), len(l2))
@@ -153,6 +159,7 @@ def langCloseness(l1, l2):
         if l1[i] != l2[i]:
             return i
     return _len
+
 
 def parsePackage(filesource, metadataFile, fileBase, errors=[]):
 
@@ -166,18 +173,18 @@ def parsePackage(filesource, metadataFile, fileBase, errors=[]):
                    "http://xbrl.org/WGWD/YYYY-MM-DD/taxonomy-package")
     catalogNSes = ("urn:oasis:names:tc:entity:xmlns:xml:catalog",)
     
-    pkg = {}
+    pkg = dict()
 
-    currentLang = utilfunctions.getLanguageCode()
+    currentLang = getLanguageCode()
     _file = filesource.file(metadataFile)[0] # URL in zip, plain file in file system or web
     try:
         tree = etree.parse(_file)
     except etree.XMLSyntaxError as err:
         addToLog(_("Package catalog syntax error %(error)s"),
-                       messageArgs={"error": str(err)},
-                       messageCode="tpe:invalidMetaDataFile",
-                       file=os.path.basename(metadataFile),
-                       level=logging.ERROR)
+                   messageArgs={"error": str(err)},
+                   messageCode="tpe:invalidMetaDataFile",
+                   file=os.path.basename(metadataFile),
+                   level=logging.ERROR)
         errors.append("tpe:invalidMetaDataFile")
         raise # reraise error
     root = tree.getroot()
@@ -240,9 +247,8 @@ def parsePackage(filesource, metadataFile, fileBase, errors=[]):
                                        refs=[{"href":os.path.basename(metadataFile), "sourceLine":m.sourceline} for m in elts],
                                        level=logging.ERROR)
                         errors.append("tpe:duplicateLanguagesForElement")
-        del langElts # dereference
-
-    else: # oasis catalog, use dirname as the package name
+        del langElts  # dereference
+    else:  # oasis catalog, use dirname as the package name
         # metadataFile may be a File object (with name) or string filename 
         fileName = getattr(metadataFile, 'fileName',      # for FileSource named objects 
                            getattr(metadataFile, 'name',  # for io.file named objects
@@ -277,7 +283,7 @@ def parsePackage(filesource, metadataFile, fileBase, errors=[]):
                     if base:
                         replaceValue = os.path.join(base, replaceValue)
                     if replaceValue: # neither None nor ''
-                        if not utilfunctions.isAbsolute(replaceValue):
+                        if not isAbsolute(replaceValue):
                             if not os.path.isabs(replaceValue):
                                 replaceValue = fileBase + replaceValue
                             replaceValue = replaceValue.replace("/", os.sep)
@@ -292,7 +298,6 @@ def parsePackage(filesource, metadataFile, fileBase, errors=[]):
                                    file=os.path.basename(catalogFile),
                                    level=logging.ERROR)
                     errors.append("tpe:multipleRewriteURIsForStartString")
-
 
     pkg["remappings"] = remappings
 
@@ -368,12 +373,14 @@ def reset():  # force reloading modules and plugin infos
     packagesConfig.clear()  # dict of loaded module pluginInfo objects by module names
     packagesMappings.clear() # dict by class of list of ordered callable function objects
     
+
 def close():  # close all loaded methods
     packagesConfig.clear()
     packagesMappings.clear()
     global webCache
     webCache = None
     
+
 def packageNamesWithNewerFileDates():
     names = set()
     for package in packagesConfig["packages"]:
@@ -384,12 +391,13 @@ def packageNamesWithNewerFileDates():
             pass
     return names
 
+
 def packageInfo(URL, reload=False, packageManifestName=None, errors=[]):
     packageFilename = URL
     if packageFilename:
         filesource = None
         try:
-            filesource = FileSource.openFileSource(packageFilename)
+            filesource = openFileSource(packageFilename)
             # allow multiple manifests [[metadata, prefix]...] for multiple catalogs
             packages = []
             packageFiles = []
@@ -461,8 +469,8 @@ def packageInfo(URL, reload=False, packageManifestName=None, errors=[]):
                                file=os.path.basename(packageFilename),
                                level=logging.ERROR)
                 errors.append("tpe:invalidArchiveFormat")
-                if (os.path.basename(filesource.url) in TAXONOMY_PACKAGE_FILE_NAMES or # individual manifest file
-                      (os.path.basename(filesource.url) == "taxonomyPackage.xml" and 
+                if (os.path.basename(filesource.url) in TAXONOMY_PACKAGE_FILE_NAMES or  # individual manifest file
+                      (os.path.basename(filesource.url) == "taxonomyPackage.xml" and
                        os.path.basename(os.path.dirname(filesource.url)) == "META-INF")):
                     packageFile = packageFileUrl = filesource.url
                     packageFilePrefix = os.path.dirname(packageFile)
@@ -485,10 +493,10 @@ def packageInfo(URL, reload=False, packageManifestName=None, errors=[]):
                         remappings[prefix] = remapping
                     else:
                         addToLog("Package mapping duplicate rewrite start string %(rewriteStartString)s",
-                                       messageArgs={"rewriteStartString": prefix},
-                                       messageCode="arelle.packageDuplicateMapping",
-                                       file=os.path.basename(URL),
-                                       level=logging.ERROR)
+                                 messageArgs={"rewriteStartString": prefix},
+                                 messageCode="arelle.packageDuplicateMapping",
+                                 file=os.path.basename(URL),
+                                 level=logging.ERROR)
                         errors.append("arelle.packageDuplicateMapping")
             if not parsedPackage:
                 return None
@@ -501,11 +509,11 @@ def packageInfo(URL, reload=False, packageManifestName=None, errors=[]):
                        'entryPoints': parsedPackage.get('entryPoints', {}),
                        'manifestName': packageManifestName,
                        'description': "; ".join(descriptions),
-                       'publisher': parsedPackage.get('publisher'), 
+                       'publisher': parsedPackage.get('publisher'),
                        'publisherURL': parsedPackage.get('publisherURL'),
-                       'publisherCountry': parsedPackage.get('publisherCountry'), 
+                       'publisherCountry': parsedPackage.get('publisherCountry'),
                        'publicationDate': parsedPackage.get('publicationDate'),
-                       'supersededTaxonomyPackages': parsedPackage.get('supersededTaxonomyPackages'), 
+                       'supersededTaxonomyPackages': parsedPackage.get('supersededTaxonomyPackages'),
                        'versioningReports': parsedPackage.get('versioningReports'),
                        'remappings': remappings,
                        }
@@ -517,10 +525,12 @@ def packageInfo(URL, reload=False, packageManifestName=None, errors=[]):
             filesource.close()
     return None
 
+
 def isMappedUrl(url):
-    return (packagesConfig is not None and 
-            any(url.startswith(mapFrom) 
+    return (packagesConfig is not None and
+            any(url.startswith(mapFrom)
                 for mapFrom in packagesConfig.get('remappings', EMPTYDICT).keys()))
+
 
 def mappedUrl(url):
     if packagesConfig is not None:
@@ -535,6 +545,7 @@ def mappedUrl(url):
             return mappedUrl
     return url
 
+
 def reloadPackageModule(name):
     packageUrls = []
     packagesList = packagesConfig["packages"]
@@ -547,12 +558,13 @@ def reloadPackageModule(name):
         result = True
     return result
 
+
 def removePackageModule(name):
     packageIndices = []
     packagesList = packagesConfig["packages"]
     for i, _packageInfo in enumerate(packagesList):
         if _packageInfo['name'] == name:
-            packageIndices.insert(0, i) # must remove in reverse index order
+            packageIndices.insert(0, i)  # must remove in reverse index order
     result = False
     for i in packageIndices:
         del packagesList[i]

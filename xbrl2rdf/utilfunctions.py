@@ -5,10 +5,12 @@ try:
     import regex as re
 except ImportError:
     import re
-import const
+from .const import predicates
 from datetime import datetime
 
-def processAttribute(node, attr, attr_type=None, text_prefix='    ', params=None):
+
+def processAttribute(node, attr, attr_type=None, 
+                     text_prefix='    ', params=None):
     if text_prefix == '    ':
         line_end = ' ;\n'
     else:
@@ -21,24 +23,54 @@ def processAttribute(node, attr, attr_type=None, text_prefix='    ', params=None
     if attr_value:
         attr_value = attr_value.replace("\\", "\\\\")
         if attr_type == bool:
-            return text_prefix+const.predicates[attr] + ' "' + attr_value + '"^^xsd:boolean'+line_end
+            return text_prefix+predicates[attr]+' "'+attr_value+'"^^xsd:boolean'+line_end
         elif attr_type == str:
-            return text_prefix+const.predicates[attr] + ' """' + attr_value + '"""^^rdf:XMLLiteral'+line_end
+            return text_prefix+predicates[attr]+' """'+attr_value+'"""^^rdf:XMLLiteral'+line_end
         elif attr_type == int:
-            return text_prefix+const.predicates[attr] + ' "' + attr_value + '"^^xsd:integer'+line_end
+            return text_prefix+predicates[attr]+' "'+attr_value+'"^^xsd:integer'+line_end
         elif attr_type == float:
-            return text_prefix+const.predicates[attr] + ' "' + attr_value + '"^^xsd:decimal'+line_end
+            return text_prefix+predicates[attr]+' "'+attr_value+'"^^xsd:decimal'+line_end
         elif attr_type == datetime:
-            return text_prefix+const.predicates[attr] + ' "' + attr_value + '"^^xsd:dateTime'+line_end
+            return text_prefix+predicates[attr]+' "'+attr_value+'"^^xsd:dateTime'+line_end
         else:
             name = attr_value.split("/")[-1]
             base = "/".join(attr_value.split("/")[0:-1])
             prefix = params['namespaces'].get(base, None)
             if prefix:
                 attr_value = prefix+":"+name
-            return text_prefix+const.predicates[attr]+' '+attr_value+line_end
+            return text_prefix+predicates[attr]+' '+attr_value+line_end
     else:
         return ''
+
+
+def prependDtsQueue(uri_type, uri, base, ns, force, params):
+    """ put uri at start of dtsqueue
+        an item in the DtsQueue consists of uri_type
+        (linkbase, schema), uri and namespace
+    """
+    uri = expandRelativePath(uri, base)
+    if force != 0:
+        params['dts_processed'].remove(uri)
+    for entry in params['dts_queue']:
+        if entry[1] == uri:
+            params['dts_queue'].remove(entry)
+    params['dts_queue'].insert(0, (uri_type, uri, ns))
+    return 0
+
+
+def appendDtsQueue(uri_type, uri, base, ns, force, params):
+    """ put uri at end of dtsqueue if not already present
+    """
+    uri = expandRelativePath(uri, base)
+    if force != 0:
+        params['dts_processed'].remove(uri)
+    for entry in params['dts_queue']:
+        if entry[1] == uri:
+            params['dts_queue'].remove(entry)
+    #     return -1
+
+    params['dts_queue'].append((uri_type, uri, ns))
+    return 0
 
 
 def isHttpUrl(url):
@@ -64,7 +96,7 @@ def loadXML(handler, uri, ns, params):
     res = 0
 
     if uri in params['dts_processed']:
-        return 0 # already loaded
+        return 0  # already loaded
     else:
         params['dts_processed'].append(uri)
 
@@ -80,11 +112,12 @@ def loadXML(handler, uri, ns, params):
         except:
             params['log'].write("Could not read "+uri+" from zip-file.\n")
             params['errorCount'] += 1
+            raise(e)
             return -1
 
     else:  # treat as local file
 
-        if uri[0:6]=="file:/":
+        if uri[0:6] == "file:/":
             filePath = uri[6:]
         else:
             filePath = uri
@@ -99,14 +132,15 @@ def loadXML(handler, uri, ns, params):
             raise(e)
             return -1
 
-    root = etree.fromstring(content, parser=etree.XMLParser(remove_comments=True))
+    root = etree.fromstring(content,
+                            parser=etree.XMLParser(remove_comments=True))
     if root is None:
         params['log'].write("Error: document has no root element.\n")
         params['errorCount'] += 1
         return -1
 
     res = handler(root, uri, ns, params)
-    
+
     params['fileCount'] += 1
 
     return res
@@ -120,11 +154,12 @@ def registerNamespaces(root, base, params):
             addNamespace(prefix, uri, params)
     return 0
 
+
 def addNamespace(prefix, uri, params):
     namespaces = params['namespaces']
     found = namespaces.get(uri, None)
     if found:
-        if prefix!=found:
+        if prefix != found:
             # print("error!!! prefix with different uris")
             # print(prefix+ ", " + found + ", " + uri)
             return -1
@@ -137,10 +172,11 @@ def addNamespace(prefix, uri, params):
 def printNamespaces(params):
     namespaces = params['namespaces']
     for uri in namespaces:
-        if uri[-1]!="#":
-            params['prefix'].write("@prefix "+namespaces[uri]+": <"+uri+"#>.\n")
+        if uri[-1] != "#":
+            prefix_def = "@prefix "+namespaces[uri]+": <"+uri+"#>.\n"
         else:
-            params['prefix'].write("@prefix "+namespaces[uri]+": <"+uri+">.\n")
+            prefix_def = "@prefix "+namespaces[uri]+": <"+uri+">.\n"
+        params['prefix'].write(prefix_def)
 
 
 def expandRelativePath(relPath, base):
@@ -148,16 +184,17 @@ def expandRelativePath(relPath, base):
     # if relPath[0:7]=="http://":
     if isHttpUrl(relPath):
         return relPath
-    elif relPath[0]=='#':
+    elif relPath[0] == '#':
         return base+relPath
     else:
         return urllib.parse.urljoin(base, relPath)
 
+
 xmlEncodingPattern = re.compile(r"\s*<\?xml\s.*encoding=['\"]([^'\"]*)['\"].*\?>")
 
 
-def encoding(xml, default="utf-8"):
-    if isinstance(xml,bytes):
+def encoding_type(xml, default="utf-8"):
+    if isinstance(xml, bytes):
         s = xml[0:120]
         if s.startswith(b'\xef\xbb\xbf'):
             return 'utf-8-sig'

@@ -1,8 +1,16 @@
-import DtsProcessor
-import utilfunctions
-import const
-from utilfunctions import processAttribute
+from .const import XLINK_HREF, XBRL_LINKBASE
+from .const import XBRLI_PERIODTYPE
+from .const import MODEL_CREATIONDATE, MODEL_TODATE, MODEL_FROMDATE, \
+                   MODEL_MODIFICATIONDATE
+from .const import MODEL_HIERARCHY, MODEL_DOMAIN, MODEL_ISDEFAULTMEMBER
+from .const import ENUM_LINKROLE, ENUM_DOMAIN
+from .const import XBRLDT_TYPEDDOMAINREF, SUBSTITUTIONGROUP, NILLABLE, \
+                   ABSTRACT, BALANCE
+
+from .utilfunctions import processAttribute, registerNamespaces, \
+                           appendDtsQueue, prependDtsQueue
 from datetime import datetime
+
 
 def processSchema(root, base, params):
 
@@ -13,9 +21,11 @@ def processSchema(root, base, params):
 
     params['log'].write("processing schema "+base+"\n")
 
-    utilfunctions.registerNamespaces(root, base, params)
+    registerNamespaces(root, base, params)
     processElements(root, base, targetNs, params)
-    xpathobj = root.xpath("//link:linkbaseRef", namespaces={"link": "http://www.xbrl.org/2003/linkbase"})
+    xpathobj = root.xpath("//link:linkbaseRef",
+                          namespaces={"link":
+                                      "http://www.xbrl.org/2003/linkbase"})
     res1 = processLinkBases(xpathobj, base, targetNs, params)
     res2 = processImportedSchema(root, base, targetNs, params)
     return res1 or res2
@@ -25,7 +35,7 @@ def processLinkBases(nodes, base, targetNs, params):
     res = 0
     params['log'].write("importing linkbases for base "+base+"\n")
     for node in nodes:
-        uri = node.attrib.get(const.XLINK_HREF, None)
+        uri = node.attrib.get(XLINK_HREF, None)
         if uri is None:
             params['log'].write("couldn't identify schema location\n")
             return -1
@@ -35,8 +45,7 @@ def processLinkBases(nodes, base, targetNs, params):
             lns = targetNs
         else:
             lns = None
-        DtsProcessor.appendDtsQueue(const.XBRL_LINKBASE,
-                                    uri, base, lns, 0, params)
+        appendDtsQueue(XBRL_LINKBASE, uri, base, lns, 0, params)
     return res
 
 
@@ -52,8 +61,7 @@ def processImportedSchema(root, base, ns, params):
             continue
         schema = node.attrib.get("schemaLocation", None)
         namespace = node.attrib.get("namespace", None)
-        DtsProcessor.prependDtsQueue(const.XBRL_LINKBASE,
-                                     schema, base, namespace, 0, params)
+        prependDtsQueue(XBRL_LINKBASE, schema, base, namespace, 0, params)
     return res
 
 
@@ -75,21 +83,21 @@ def processElements(root, base, targetNs, params):
                 if item not in ['name',
                                 'id',
                                 'type',
-                                const.XBRLI_PERIODTYPE,
-                                const.MODEL_CREATIONDATE,
-                                const.MODEL_TODATE,
-                                const.MODEL_FROMDATE,
-                                const.MODEL_MODIFICATIONDATE,
-                                const.MODEL_HIERARCHY,
-                                const.MODEL_DOMAIN,
-                                const.MODEL_ISDEFAULTMEMBER,
-                                const.ENUM_LINKROLE,
-                                const.ENUM_DOMAIN,
-                                const.XBRLDT_TYPEDDOMAINREF,
-                                const.SUBSTITUTIONGROUP,
-                                const.NILLABLE,
-                                const.ABSTRACT,
-                                const.BALANCE]:
+                                XBRLI_PERIODTYPE,
+                                MODEL_CREATIONDATE,
+                                MODEL_TODATE,
+                                MODEL_FROMDATE,
+                                MODEL_MODIFICATIONDATE,
+                                MODEL_HIERARCHY,
+                                MODEL_DOMAIN,
+                                MODEL_ISDEFAULTMEMBER,
+                                ENUM_LINKROLE,
+                                ENUM_DOMAIN,
+                                XBRLDT_TYPEDDOMAINREF,
+                                SUBSTITUTIONGROUP,
+                                NILLABLE,
+                                ABSTRACT,
+                                BALANCE]:
                     print("Unknown attribute in element: " + str(item))
 
             child_name = child.attrib.get('name', None)
@@ -107,24 +115,38 @@ def processElements(root, base, targetNs, params):
                     child_type = "xsd:"+child_type[3:]
                 output.write("    rdf:type "+child_type+" ;\n")
 
-            output.write(processAttribute(child, const.XBRLI_PERIODTYPE, attr_type=str, params=params))
-            output.write(processAttribute(child, const.XBRLDT_TYPEDDOMAINREF, attr_type=str, params=params))
-            
-            output.write(processAttribute(child, const.MODEL_CREATIONDATE, attr_type=datetime, params=params))
-            output.write(processAttribute(child, const.MODEL_TODATE, attr_type=datetime, params=params))
-            output.write(processAttribute(child, const.MODEL_MODIFICATIONDATE, attr_type=datetime, params=params))
-            
-            output.write(processAttribute(child, const.MODEL_DOMAIN, attr_type=str, params=params))
-            output.write(processAttribute(child, const.MODEL_HIERARCHY, attr_type=str, params=params))
-            output.write(processAttribute(child, const.MODEL_ISDEFAULTMEMBER, attr_type=str, params=params))
-            
-            output.write(processAttribute(child, const.ENUM_DOMAIN, attr_type=str, params=params))
-            output.write(processAttribute(child, const.ENUM_LINKROLE, attr_type=str, params=params))
-            
-            output.write(processAttribute(child, const.SUBSTITUTIONGROUP, attr_type=None, params=params))
-            output.write(processAttribute(child, const.NILLABLE, attr_type=bool, params=params))
-            output.write(processAttribute(child, const.ABSTRACT, attr_type=bool, params=params))
-            output.write(processAttribute(child, const.BALANCE, attr_type=str, params=params))
+            output.write(processAttribute(child, XBRLI_PERIODTYPE,
+                                          attr_type=str, params=params))
+            output.write(processAttribute(child, XBRLDT_TYPEDDOMAINREF,
+                                          attr_type=str, params=params))
+
+            output.write(processAttribute(child, MODEL_CREATIONDATE,
+                                          attr_type=datetime, params=params))
+            output.write(processAttribute(child, MODEL_TODATE,
+                                          attr_type=datetime, params=params))
+            output.write(processAttribute(child, MODEL_MODIFICATIONDATE,
+                                          attr_type=datetime, params=params))
+
+            output.write(processAttribute(child, MODEL_DOMAIN,
+                                          attr_type=str, params=params))
+            output.write(processAttribute(child, MODEL_HIERARCHY,
+                                          attr_type=str, params=params))
+            output.write(processAttribute(child, MODEL_ISDEFAULTMEMBER,
+                                          attr_type=str, params=params))
+
+            output.write(processAttribute(child, ENUM_DOMAIN,
+                                          attr_type=str, params=params))
+            output.write(processAttribute(child, ENUM_LINKROLE,
+                                          attr_type=str, params=params))
+
+            output.write(processAttribute(child, SUBSTITUTIONGROUP,
+                                          attr_type=None, params=params))
+            output.write(processAttribute(child, NILLABLE,
+                                          attr_type=bool, params=params))
+            output.write(processAttribute(child, ABSTRACT,
+                                          attr_type=bool, params=params))
+            output.write(processAttribute(child, BALANCE,
+                                          attr_type=str, params=params))
 
             output.write('    . \n\n')
 

@@ -7,48 +7,41 @@ import logging
 import os
 from os import listdir
 from os.path import join, isfile, abspath
-from lxml import etree
-import datetime
+from datetime import datetime
 import rdflib
 
-import PackageManager
-import FileSource
-
-import DtsProcessor
-import utilfunctions
-from InstanceProcessor import *
+from .PackageManager import Taxonomies
+from .FileSource import openFileSource
+from .InstanceProcessor import processInstance
+from .DtsProcessor import dispatchDtsQueue
+from .utilfunctions import addNamespace, printNamespaces, \
+                        expandRelativePath, isHttpUrl, loadXML
 
 TAXONOMY_PATH = join("data", "taxonomies")
 
-taxonomies = [f for f in listdir(TAXONOMY_PATH) if isfile(join(TAXONOMY_PATH, f)) and f[-3:]=='zip']
-manager = PackageManager.Taxonomies(TAXONOMY_PATH)
+taxonomies = [f for f in listdir(TAXONOMY_PATH) if isfile(join(TAXONOMY_PATH, f)) and f[-3:] == 'zip']
+manager = Taxonomies(TAXONOMY_PATH)
 for taxonomy in taxonomies:
     manager.addPackage(join(TAXONOMY_PATH, taxonomy))
 manager.rebuildRemappings()
 manager.save()
 taxo_choice = "\n".join([str(idx)+": "+str(item['name']) for idx, item in enumerate(manager.config['packages'])])
 
+
 @click.command()
-@click.option('--url', default=join("data", "instances", "qrs_240_instance.xbrl"), prompt = "input file")
+@click.option('--url', default=join("data", "instances", "qrs_240_instance.xbrl"), prompt="input file")
 @click.option('--taxo', default=2, prompt=taxo_choice)
-@click.option('--output', default=join("data", "rdf"), prompt = "output directory")
+@click.option('--output', default=join("data", "rdf"), prompt="output directory")
 @click.option('--output_format', default=1, prompt="1: rdf-turtle\n2: rdf-star-turtle\n")
 
+
 def main(url, taxo, output, output_format):
+    output_file = join(output,
+                       "".join(os.path.basename(url).split(".")[0:-1])+".ttl")
+    log_file = join(output,
+                    "".join(os.path.basename(url).split(".")[0:-1])+".log")
 
-    # click.echo("-----------------------------------------------")
-    # click.echo("xbrl2rdf: a Python tool to convert XBRL to RDF.")
-    # click.echo("-----------------------------------------------")
-    # click.echo("XBRL instance file: "+url)
-    # click.echo("XBRL taxonomy location: "+out)
-    # click.echo("RDF output file: "+out)
-    # click.echo("Log file: "+log)
-    # click.echo("-----------------------------------------------")
-
-    output_file = join(output, "".join(os.path.basename(url).split(".")[0:-1])+".ttl")
-    log_file = join(output, "".join(os.path.basename(url).split(".")[0:-1])+".log")
-
-    fp_taxo_zipfile = FileSource.openFileSource(manager.config['packages'][taxo]['URL'])
+    fp_taxo_zipfile = openFileSource(manager.config['packages'][taxo]['URL'])
     fp_taxo_zipfile.mappedPaths = manager.config['packages'][taxo]["remappings"]
     fp_taxo_zipfile.open()
 
@@ -83,50 +76,50 @@ def main(url, taxo, output, output_format):
     params['arcroleNumber'] = 0
     params['roleNumber'] = 0
 
-    utilfunctions.addNamespace("xbrli", "http://www.xbrl.org/2003/instance", params)
-    utilfunctions.addNamespace("link", "http://www.xbrl.org/2003/linkbase", params)
-    utilfunctions.addNamespace("xl", "http://www.xbrl.org/2003/XLink", params)
-    utilfunctions.addNamespace("arcrole", "http://www.xbrl.org/2003/arcrole/", params)
-    utilfunctions.addNamespace("arcroledim", "http://xbrl.org/int/dim/arcrole/", params)
-    utilfunctions.addNamespace("role", "http://www.xbrl.org/2003/role/", params)
-    utilfunctions.addNamespace("xsd", "http://www.w3.org/2001/XMLSchema", params)
-    utilfunctions.addNamespace("xlink", "http://www.w3.org/1999/xlink", params)
-    utilfunctions.addNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#", params)
-    utilfunctions.addNamespace("rdfs", "http://www.w3.org/2000/01/rdf-schema#", params)
-    utilfunctions.addNamespace("eurofiling", "http://www.eurofiling.info/xbrl/role", params)
+    addNamespace("xbrli", "http://www.xbrl.org/2003/instance", params)
+    addNamespace("link", "http://www.xbrl.org/2003/linkbase", params)
+    addNamespace("xl", "http://www.xbrl.org/2003/XLink", params)
+    addNamespace("arcrole", "http://www.xbrl.org/2003/arcrole/", params)
+    addNamespace("arcroledim", "http://xbrl.org/int/dim/arcrole/", params)
+    addNamespace("role", "http://www.xbrl.org/2003/role/", params)
+    addNamespace("xsd", "http://www.w3.org/2001/XMLSchema", params)
+    addNamespace("xlink", "http://www.w3.org/1999/xlink", params)
+    addNamespace("rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns#", params)
+    addNamespace("rdfs", "http://www.w3.org/2000/01/rdf-schema#", params)
+    addNamespace("eurofiling", "http://www.eurofiling.info/xbrl/role", params)
 
-    utilfunctions.addNamespace("enum", "http://xbrl.org/2014/extensible-enumerations", params)
-    utilfunctions.addNamespace("gen", "http://xbrl.org/2008/generic", params)
-    utilfunctions.addNamespace("iso4217", "http://www.xbrl.org/2003/iso4217", params)
-    utilfunctions.addNamespace("label", "http://xbrl.org/2008/label", params)
-    utilfunctions.addNamespace("nonnum", "http://www.xbrl.org/dtr/type/non-numeric", params)
-    utilfunctions.addNamespace("num", "http://www.xbrl.org/dtr/type/numeric", params)
-    utilfunctions.addNamespace("table", "http://xbrl.org/2014/table", params)
-    utilfunctions.addNamespace("variable", "http://xbrl.org/2008/variable", params)
-    utilfunctions.addNamespace("xbrldi", "http://xbrl.org/2006/xbrldi", params)
-    utilfunctions.addNamespace("xbrldt", "http://xbrl.org/2005/xbrldt", params)
-    utilfunctions.addNamespace("xbrli", "http://www.xbrl.org/2003/instance", params)
-    utilfunctions.addNamespace("xs", "http://www.w3.org/2001/XMLSchema", params)
+    addNamespace("enum", "http://xbrl.org/2014/extensible-enumerations", params)
+    addNamespace("gen", "http://xbrl.org/2008/generic", params)
+    addNamespace("iso4217", "http://www.xbrl.org/2003/iso4217", params)
+    addNamespace("label", "http://xbrl.org/2008/label", params)
+    addNamespace("nonnum", "http://www.xbrl.org/dtr/type/non-numeric", params)
+    addNamespace("num", "http://www.xbrl.org/dtr/type/numeric", params)
+    addNamespace("table", "http://xbrl.org/2014/table", params)
+    addNamespace("variable", "http://xbrl.org/2008/variable", params)
+    addNamespace("xbrldi", "http://xbrl.org/2006/xbrldi", params)
+    addNamespace("xbrldt", "http://xbrl.org/2005/xbrldt", params)
+    addNamespace("xbrli", "http://www.xbrl.org/2003/instance", params)
+    addNamespace("xs", "http://www.w3.org/2001/XMLSchema", params)
 
-    utilfunctions.addNamespace("cf", "http://xbrl.org/2008/filter/concept", params)
-    utilfunctions.addNamespace("tf", "http://xbrl.org/2008/filter/tuple", params)
-    utilfunctions.addNamespace("df", "http://xbrl.org/2008/filter/dimension", params)
-    utilfunctions.addNamespace("acf", "http://xbrl.org/2010/filter/aspect-cover", params)
-    utilfunctions.addNamespace("mf", "http://xbrl.org/2008/filter/match", params)
-    utilfunctions.addNamespace("gf", "http://xbrl.org/2008/filter/general", params)
+    addNamespace("cf", "http://xbrl.org/2008/filter/concept", params)
+    addNamespace("tf", "http://xbrl.org/2008/filter/tuple", params)
+    addNamespace("df", "http://xbrl.org/2008/filter/dimension", params)
+    addNamespace("acf", "http://xbrl.org/2010/filter/aspect-cover", params)
+    addNamespace("mf", "http://xbrl.org/2008/filter/match", params)
+    addNamespace("gf", "http://xbrl.org/2008/filter/general", params)
 
-    utilfunctions.addNamespace("va", "http://xbrl.org/2008/assertion/value", params)
-    utilfunctions.addNamespace("ea", "http://xbrl.org/2008/assertion/existence", params)
+    addNamespace("va", "http://xbrl.org/2008/assertion/value", params)
+    addNamespace("ea", "http://xbrl.org/2008/assertion/existence", params)
 
     # schemas not to include
     params['namespaces_to_skip'] = ["http://www.xbrl.org/2003/instance",
-                                   "http://xbrl.org/2005/xbrldt",
-                                   "http://www.xbrl.org/2003/XLink",
-                                   "http://xbrl.org/2008/variable",
-                                   "http://www.xbrl.org/2003/linkbase"]
+                                    "http://xbrl.org/2005/xbrldt",
+                                    "http://www.xbrl.org/2003/XLink",
+                                    "http://xbrl.org/2008/variable",
+                                    "http://www.xbrl.org/2003/linkbase"]
 
     # utilfunctions.printNamespaces(params)
-    
+
     res = parse_xbrl(params, url)
     if res:
         params['log'].write("WARNING: "+str(params['errorCount'])+" error(s) found when importing "+url+"\n")
@@ -138,7 +131,7 @@ def main(url, taxo, output, output_format):
     file_content.write("# TAXONOMY URI  '"+params['package_uri']+"'\n")
     file_content.write("\n")
 
-    utilfunctions.printNamespaces(params)
+    printNamespaces(params)
 
     file_content.write(params['prefix'].getvalue())
 
@@ -162,12 +155,12 @@ def main(url, taxo, output, output_format):
         # if isinstance(file_content, BytesIO):
         #     fh = open(output_file, "wb")
         # else:
-        fh = open(output_file, "w", encoding = 'utf-8')
+        fh = open(output_file, "w", encoding='utf-8')
         fh.write(file_content.getvalue())
         fh.close()
 
     if log_file:
-        fh = open(log_file, "w", encoding = "utf-8")
+        fh = open(log_file, "w", encoding="utf-8")
         fh.write(params['log'].getvalue().replace('\u2264', ''))
         fh.close()
 
@@ -178,35 +171,36 @@ def main(url, taxo, output, output_format):
 
 def parse_xbrl(params, uri):
 
-    started = datetime.datetime.now()
+    started = datetime.now()
 
-    if (utilfunctions.isHttpUrl(uri)) and (uri[0]!='/'):
+    if (isHttpUrl(uri)) and (uri[0] != '/'):
         base = os.getcwd()
-        if base[-1]!=os.sep:
+        if base[-1] != os.sep:
             base += os.sep
         uri = expandRelativePath(uri, base)
 
-    if utilfunctions.loadXML(processInstance, uri, None, params):
+    if loadXML(processInstance, uri, None, params):
         return -1
 
     # process taxonomy files
-    res = DtsProcessor.dispatchDtsQueue(params)
+    res = dispatchDtsQueue(params)
 
-    finished = datetime.datetime.now()
+    finished = datetime.now()
 
-    params['log'].write("turtle generation took "+str(finished-started)+" seconds\nfound:\n"+
-                str(params['factCount'])+" facts, \n" + \
-                str(params['conceptCount'])+" concepts, \n"+\
-                str(params['linkCount'])+" links, \n"+\
-                str(params['xlinkCount'])+" xlinks, \n"+\
-                str(params['arcCount'])+" arcs, \n"+\
-                str(params['locCount'])+" locators and \n"+\
-                str(params['resCount'])+" resources \nfrom processing "+str(params['fileCount'])+" files.\n")
+    params['log'].write("turtle generation took " + str(finished - started) + " seconds\nfound:\n" +
+                        str(params['factCount']) + " facts, \n" +
+                        str(params['conceptCount']) + " concepts, \n" +
+                        str(params['linkCount']) + " links, \n" +
+                        str(params['xlinkCount']) + " xlinks, \n" +
+                        str(params['arcCount']) + " arcs, \n" +
+                        str(params['locCount']) + " locators and \n" +
+                        str(params['resCount']) + " resources \nfrom processing "+str(params['fileCount'])+" files.\n")
 
     if params['errorCount'] > 0:
         res = 1
 
     return res
+
 
 if __name__ == "__main__":
     sys.exit(main())

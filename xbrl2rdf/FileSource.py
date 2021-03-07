@@ -8,7 +8,7 @@ import zipfile, tarfile, os, io, errno, base64, gzip, zlib, re, struct, random, 
 from lxml import etree
 from operator import indexOf
 
-import utilfunctions
+from .utilfunctions import isHttpUrl, encoding_type
 
 archivePathSeparators = (".zip" + os.sep, ".tar.gz" + os.sep, ".eis" + os.sep, ".xml" + os.sep, ".xfd" + os.sep, ".frm" + os.sep, '.taxonomyPackage.xml' + os.sep) + \
                         ((".zip/", ".tar.gz/", ".eis/", ".xml/", ".xfd/", ".frm/", '.taxonomyPackage.xml/') if os.sep != "/" else ()) #acomodate windows and http styles
@@ -48,7 +48,7 @@ def archiveFilenameParts(filename):
             (not archiveSep.startswith(".xml"))):
             filenameParts = filename.partition(archiveSep)
             fileDir = filenameParts[0] + archiveSep[:-1]
-            if (utilfunctions.isHttpUrl(fileDir) or
+            if (isHttpUrl(fileDir) or
                 os.path.isfile(fileDir)): # if local, be sure it is not a directory name
                 return (fileDir, filenameParts[2])
     return None
@@ -96,7 +96,7 @@ class ArchiveFileIOError(IOError):
 class FileSource:
     def __init__(self, url):
         self.url = str(url)  # allow either string or FileNamedStringIO
-        self.baseIsHttp = utilfunctions.isHttpUrl(self.url)
+        self.baseIsHttp = isHttpUrl(self.url)
         self.type = self.url.lower()[-7:]
         self.isTarGz = self.type == ".tar.gz"
         if not self.isTarGz:
@@ -171,7 +171,7 @@ class FileSource:
                 if buf.startswith(b"<?xml "):
                     try:
                         # must strip encoding
-                        str = buf.decode(utilfunctions.encoding(buf))
+                        str = buf.decode(encoding_type(buf))
                         endEncoding = str.index("?>", 0, 128)
                         if endEncoding > 0:
                             str = str[endEncoding+2:]
@@ -388,7 +388,7 @@ class FileSource:
                     if binary:
                         return (io.BytesIO(b), )
                     if encoding is None:
-                        encoding = utilfunctions.encoding(b)
+                        encoding = encoding_type(b)
                     if stripDeclaration:
                         b = stripDeclarationBytes(b)
                     return (FileNamedTextIOWrapper(filepath, io.BytesIO(b), encoding=encoding), 
@@ -403,7 +403,7 @@ class FileSource:
                     if binary:
                         return (io.BytesIO(b), )
                     if encoding is None:
-                        encoding = utilfunctions.encoding(b)
+                        encoding = encoding_type(b)
                     if stripDeclaration:
                         b = stripDeclarationBytes(b)
                     return (FileNamedTextIOWrapper(filepath, io.BytesIO(b), encoding=encoding), 
@@ -428,7 +428,7 @@ class FileSource:
                             if binary:
                                 return (io.BytesIO(b), )
                             if encoding is None:
-                                encoding = utilfunctions.encoding(b, default="latin-1")
+                                encoding = encoding_type(b, default="latin-1")
                             return (io.TextIOWrapper(io.BytesIO(b), encoding=encoding), 
                                     encoding)
                 raise ArchiveFileIOError(self, errno.ENOENT, archiveFileName)
@@ -450,7 +450,7 @@ class FileSource:
                             if binary:
                                 return (io.BytesIO(b), )
                             if encoding is None:
-                                encoding = utilfunctions.encoding(b, default="latin-1")
+                                encoding = encoding_type(b, default="latin-1")
                             return (io.TextIOWrapper(io.BytesIO(b), encoding=encoding), 
                                     encoding)
                 raise ArchiveFileIOError(self, errno.ENOENT, archiveFileName)
@@ -532,7 +532,7 @@ class FileSource:
         return self.filesDir
     
     def basedUrl(self, selection):
-        if utilfunctions.isHttpUrl(selection) or os.path.isabs(selection):
+        if isHttpUrl(selection) or os.path.isabs(selection):
             return selection
         elif self.baseIsHttp or os.sep == '/':
             return self.baseurl + "/" + selection
@@ -559,7 +559,7 @@ def openFileStream(filepath, mode='r', encoding=None):
     if encoding is None and 'b' not in mode:
         openedFileStream = io.open(filepath, mode='rb')
         hdrBytes = openedFileStream.read(512)
-        encoding = utilfunctions.encoding(hdrBytes, default=None)
+        encoding = encoding_type(hdrBytes, default=None)
         openedFileStream.close()
         return io.open(filepath, mode=mode, encoding=encoding)
     else:
@@ -571,7 +571,7 @@ def openXmlFileStream(filepath, stripDeclaration=False):
     openedFileStream = openFileStream(filepath, 'rb')
     # check encoding
     hdrBytes = openedFileStream.read(512)
-    encoding = utilfunctions.encoding('utf-8')
+    encoding = encoding_type('utf-8')
     # encoding default from disclosure system could be None
     if encoding.lower() in ('utf-8','utf8','utf-8-sig'):
         text = None
