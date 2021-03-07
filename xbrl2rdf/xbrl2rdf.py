@@ -18,63 +18,60 @@ from .utilfunctions import addNamespace, printNamespaces, \
                         expandRelativePath, isHttpUrl, loadXML
 
 TAXONOMY_PATH = join("data", "taxonomies")
-
-taxonomies = [f for f in listdir(TAXONOMY_PATH) if isfile(join(TAXONOMY_PATH, f)) and f[-3:] == 'zip']
+taxonomies: list = [f for f in listdir(TAXONOMY_PATH) if isfile(join(TAXONOMY_PATH, f)) and f[-3:] == 'zip']
 manager = Taxonomies(TAXONOMY_PATH)
 for taxonomy in taxonomies:
     manager.addPackage(join(TAXONOMY_PATH, taxonomy))
 manager.rebuildRemappings()
 manager.save()
-taxo_choice = "\n".join([str(idx)+": "+str(item['name']) for idx, item in enumerate(manager.config['packages'])])
+taxo_choices: str = "\n".join([str(idx)+": "+str(item['name']) for idx, item in enumerate(manager.config['packages'])])
 
 
 @click.command()
 @click.option('--url', default=join("data", "instances", "qrs_240_instance.xbrl"), prompt="input file")
-@click.option('--taxo', default=2, prompt=taxo_choice)
+@click.option('--taxo', default=2, prompt=taxo_choices)
 @click.option('--output', default=join("data", "rdf"), prompt="output directory")
 @click.option('--output_format', default=1, prompt="1: rdf-turtle\n2: rdf-star-turtle\n")
 
 
-def main(url, taxo, output, output_format):
-    output_file = join(output,
-                       "".join(os.path.basename(url).split(".")[0:-1])+".ttl")
-    log_file = join(output,
-                    "".join(os.path.basename(url).split(".")[0:-1])+".log")
+def main(url: str, taxo: int, output: str, output_format: int) -> int:
 
-    fp_taxo_zipfile = openFileSource(manager.config['packages'][taxo]['URL'])
+    log_file: str = join(output, "".join(os.path.basename(url).split(".")[0:-1])+".log")
+    logging.basicConfig(filename=log_file, level=logging.DEBUG, filemode="w")
+
+    fp_taxo_zipfile: FileSource = openFileSource(manager.config['packages'][taxo]['URL'])
     fp_taxo_zipfile.mappedPaths = manager.config['packages'][taxo]["remappings"]
     fp_taxo_zipfile.open()
 
-    params = dict()
+    params: dict = dict()
 
-    params['log'] = StringIO()
-    params['out'] = StringIO()
-    params['facts'] = StringIO()
-    params['prefix'] = StringIO()
+    params['out']: StringIO = StringIO()
+    params['facts']: StringIO = StringIO()
+    params['prefix']: StringIO = StringIO()
 
-    params['xbrl_zipfile'] = fp_taxo_zipfile
-    params['uri2file'] = {abspath(join(params['xbrl_zipfile'].url, file)): file for file in params['xbrl_zipfile'].dir}
+    params['xbrl_zipfile']: FileSource = fp_taxo_zipfile
+    params['uri2file']: dict = {abspath(join(params['xbrl_zipfile'].url, file)): file for file in params['xbrl_zipfile'].dir}
 
-    params['package_name'] = manager.config['packages'][taxo]['name']
-    params['package_uri'] = manager.config['packages'][taxo]['URL']
-    params['output_format'] = output_format
+    params['package_name']: str = manager.config['packages'][taxo]['name']
+    params['package_uri']: str = manager.config['packages'][taxo]['URL']
+    params['output_format']: int = output_format
 
-    params['namespaces'] = dict()
-    params['dts_processed'] = list()
-    params['id2elementTbl'] = dict()
-    params['dts_queue'] = list()
-    params['factCount'] = 0
-    params['conceptCount'] = 0
-    params['xlinkCount'] = 0
-    params['arcCount'] = 0
-    params['locCount'] = 0
-    params['resCount'] = 0
-    params['linkCount'] = 0
-    params['fileCount'] = 0
-    params['errorCount'] = 0
-    params['provenanceNumber'] = 0
-    params['arcroleNumber'] = 0
-    params['roleNumber'] = 0
+    params['namespaces']: dict = dict()
+    params['dts_processed']: list = list()
+    params['id2elementTbl']: dict = dict()
+    params['dts_queue']: list = list()
+    params['factCount']: int = 0
+    params['conceptCount']: int = 0
+    params['xlinkCount']: int = 0
+    params['arcCount']: int = 0
+    params['locCount']: int = 0
+    params['resCount']: int = 0
+    params['linkCount']: int = 0
+    params['fileCount']: int = 0
+    params['errorCount']: int = 0
+    params['provenanceNumber']: int = 0
+    params['arcroleNumber']: int = 0
+    params['roleNumber']: int = 0
 
     addNamespace("xbrli", "http://www.xbrl.org/2003/instance", params)
     addNamespace("link", "http://www.xbrl.org/2003/linkbase", params)
@@ -120,24 +117,21 @@ def main(url, taxo, output, output_format):
 
     # utilfunctions.printNamespaces(params)
 
-    res = parse_xbrl(params, url)
+    res = parse_xbrl(url, params)
     if res:
-        params['log'].write("WARNING: "+str(params['errorCount'])+" error(s) found when importing "+url+"\n")
+        logging.warning("WARNING: "+str(params['errorCount'])+" error(s) found when importing "+url)
 
-    file_content = StringIO()
+    params['prefix'] = printNamespaces(params)
+
+    file_content: StringIO = StringIO()
     file_content.write("# RDF triples (turtle syntax)\n\n")
     file_content.write("# INSTANCE URI  '"+url+"'\n")
     file_content.write("# TAXONOMY NAME '"+params['package_name']+"'\n")
     file_content.write("# TAXONOMY URI  '"+params['package_uri']+"'\n")
     file_content.write("\n")
-
-    printNamespaces(params)
-
-    file_content.write(params['prefix'].getvalue())
-
+    file_content.write(params['prefix'])
     file_content.write("\n\n")
     file_content.write(params['facts'].getvalue().replace('\u2264', ''))
-
     file_content.write("\n\n")
     file_content.write(params['out'].getvalue().replace('\u2264', ''))
     # print(list(params['namespaces'].keys()))
@@ -151,6 +145,7 @@ def main(url, taxo, output, output_format):
     # except:
     #     params['log'].write("Error parsing content into graph")
 
+    output_file: str = join(output, "".join(os.path.basename(url).split(".")[0:-1])+".ttl")
     if output_file:
         # if isinstance(file_content, BytesIO):
         #     fh = open(output_file, "wb")
@@ -159,17 +154,12 @@ def main(url, taxo, output, output_format):
         fh.write(file_content.getvalue())
         fh.close()
 
-    if log_file:
-        fh = open(log_file, "w", encoding="utf-8")
-        fh.write(params['log'].getvalue().replace('\u2264', ''))
-        fh.close()
-
     params['xbrl_zipfile'].close()
 
     return 0
 
 
-def parse_xbrl(params, uri):
+def parse_xbrl(uri: str, params: dict) -> int:
 
     started = datetime.now()
 
@@ -187,14 +177,14 @@ def parse_xbrl(params, uri):
 
     finished = datetime.now()
 
-    params['log'].write("turtle generation took " + str(finished - started) + " seconds\nfound:\n" +
-                        str(params['factCount']) + " facts, \n" +
-                        str(params['conceptCount']) + " concepts, \n" +
-                        str(params['linkCount']) + " links, \n" +
-                        str(params['xlinkCount']) + " xlinks, \n" +
-                        str(params['arcCount']) + " arcs, \n" +
-                        str(params['locCount']) + " locators and \n" +
-                        str(params['resCount']) + " resources \nfrom processing "+str(params['fileCount'])+" files.\n")
+    logging.info("turtle generation took " + str(finished - started) + " seconds\nfound:\n" +
+                 str(params['factCount']) + " facts, \n" +
+                 str(params['conceptCount']) + " concepts, \n" +
+                 str(params['linkCount']) + " links, \n" +
+                 str(params['xlinkCount']) + " xlinks, \n" +
+                 str(params['arcCount']) + " arcs, \n" +
+                 str(params['locCount']) + " locators and \n" +
+                 str(params['resCount']) + " resources \nfrom processing "+str(params['fileCount'])+" files.")
 
     if params['errorCount'] > 0:
         res = 1

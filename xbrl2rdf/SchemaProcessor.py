@@ -10,7 +10,7 @@ from .const import XBRLDT_TYPEDDOMAINREF, SUBSTITUTIONGROUP, NILLABLE, \
 from .utilfunctions import processAttribute, registerNamespaces, \
                            appendDtsQueue, prependDtsQueue
 from datetime import datetime
-
+import logging
 
 def processSchema(root, base, params):
 
@@ -19,7 +19,7 @@ def processSchema(root, base, params):
     if targetNs in params['namespaces_to_skip']:
         return 0
 
-    params['log'].write("processing schema "+base+"\n")
+    logging.info("processing schema "+base)
 
     registerNamespaces(root, base, params)
     processElements(root, base, targetNs, params)
@@ -33,13 +33,13 @@ def processSchema(root, base, params):
 
 def processLinkBases(nodes, base, targetNs, params):
     res = 0
-    params['log'].write("importing linkbases for base "+base+"\n")
+    logging.info("importing linkbases for base "+base)
     for node in nodes:
         uri = node.attrib.get(XLINK_HREF, None)
         if uri is None:
-            params['log'].write("couldn't identify schema location\n")
+            logging.error("couldn't identify schema location.")
             return -1
-        params['log'].write("importing "+uri+"\n")
+        logging.info("importing "+uri)
         # if linkbase has relative uri then schema namespace applies
         if targetNs and (uri[0:7] != 'http://'):
             lns = targetNs
@@ -51,9 +51,9 @@ def processLinkBases(nodes, base, targetNs, params):
 
 def processImportedSchema(root, base, ns, params):
     res = 0
-    params['log'].write("importing schema for base "+base+"\n")
+    logging.info("importing schema for base "+base)
     if len(root) == 0:
-        params['log'].write("couldn't find first child element\n")
+        logging.error("couldn't find first child element.")
         return -1
     for node in root:
         if (node.tag != "{http://www.w3.org/2001/XMLSchema}import") and \
@@ -154,7 +154,7 @@ def processElements(root, base, targetNs, params):
 
             # add base#id, targetnamespace:name to dictionary
             if child_id is None:
-                params['log'].write("name = "+child_name+"\n")
+                logging.info("name = "+child_name)
             else:
                 addId(base, child_id, targetNs, child_name, params)
 
@@ -163,8 +163,8 @@ def addId(xsdUri, child_id, targetNs, name, params):
     key = xsdUri + "#" + child_id
     value = (targetNs, name)
     if key[0] == '#':
-        params['log'].write('addId: uri = "' + key +
-                            '", ns = "' + targetNs +
-                            '", name="' + name + '"\n')
+        logging.info('addId: uri = "' + key +
+                     '", ns = "' + targetNs +
+                     '", name="' + name)
     params['id2elementTbl'][key] = value
     return 0

@@ -1,6 +1,7 @@
 from collections import defaultdict
 from lxml import etree
 import urllib
+import logging
 
 from .const import XLINK_TYPE, XLINK_HREF, XLINK_ID, XLINK_BASE, \
                    XLINK_ROLE, XLINK_LABEL, XBRL_LINKBASE, XBRL_SCHEMA
@@ -20,7 +21,7 @@ from .utilfunctions import processAttribute, isHttpUrl, expandRelativePath, \
 
 def processLinkBase(root, base, ns, params):
     # first phase searchs for schemas
-    params['log'].write("checking linkbase "+base+"\n")
+    logging.info("checking linkbase "+base)
     missingSchemas = 0
     for node in root:
         node_type = node.attrib.get(XLINK_TYPE, None)
@@ -30,10 +31,10 @@ def processLinkBase(root, base, ns, params):
             missingSchemas += checkSimpleLink(node, base, ns, params)
     if missingSchemas > 0:
         appendDtsQueue(XBRL_LINKBASE, base, "", ns, 1, params)
-        params['log'].write("missing schemas "+base+"\n")
+        logging.info("missing schemas "+base)
         return 0
     # second phase translates links into RDF
-    params['log'].write("processing linkbase "+base+"\n")
+    logging.info("processing linkbase "+base)
     for node in root:
         node_type = node.attrib.get(XLINK_TYPE, None)
         if node_type == "extended":
@@ -59,7 +60,7 @@ def checkSimpleLink(node, base, ns, params):
         uri = expandRelativePath(uri, base)
         if uri not in params['dts_processed']:
             missingSchemas += 1
-            params['log'].write("found unseen1: "+uri+"\n")
+            logging.info("found unseen1: "+uri)
             prependDtsQueue(XBRL_SCHEMA, uri, base, lns, 0, params)
     return missingSchemas
 
@@ -83,7 +84,7 @@ def checkExtendedLink(element, base, ns, params):
                 uri = expandRelativePath(uri, base)
                 if uri not in params['dts_processed']:
                     missingSchemas += 1
-                    params['log'].write("found unseen2: "+uri+"\n")
+                    logging.info("found unseen2: "+uri)
                     prependDtsQueue(XBRL_SCHEMA, uri, base, lns, 0, params)
     return missingSchemas
 
@@ -178,8 +179,7 @@ def processExtendedLink(element, base, ns, params):
             arc['tag'] = node.tag
             xlink['arcs'].append(arc)
         else:
-            params['log'].write("Unknown type found in xlink " + node_type +
-                                "\n")
+            logging.error("Unknown type found in xlink "+node_type)
 
     labels_nodes = defaultdict(list)
     for locator in xlink['locators']:

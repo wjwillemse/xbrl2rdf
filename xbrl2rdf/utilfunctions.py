@@ -12,9 +12,9 @@ from datetime import datetime
 def processAttribute(node, attr, attr_type=None, 
                      text_prefix='    ', params=None):
     if text_prefix == '    ':
-        line_end = ' ;\n'
+        line_end: str = ' ;\n'
     else:
-        line_end = ' .\n'
+        line_end: str = ' .\n'
 
     if isinstance(node, dict):
         attr_value = node.get(attr, None)
@@ -171,13 +171,13 @@ def addNamespace(prefix, uri, params):
 
 def printNamespaces(params):
     namespaces = params['namespaces']
+    res: str = ''
     for uri in namespaces:
         if uri[-1] != "#":
-            prefix_def = "@prefix "+namespaces[uri]+": <"+uri+"#>.\n"
+            res += "@prefix "+namespaces[uri]+": <"+uri+"#>.\n"
         else:
-            prefix_def = "@prefix "+namespaces[uri]+": <"+uri+">.\n"
-        params['prefix'].write(prefix_def)
-
+            res += "@prefix "+namespaces[uri]+": <"+uri+">.\n"
+    return res
 
 def expandRelativePath(relPath, base):
 
