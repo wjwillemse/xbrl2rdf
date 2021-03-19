@@ -19,10 +19,10 @@ from .utilfunctions import processAttribute, isHttpUrl, expandRelativePath, \
                            appendDtsQueue, prependDtsQueue
 
 
-def processLinkBase(root, base, ns, params):
+def processLinkBase(root: etree._Element, base: str, ns: str, params: dict) -> int:
     # first phase searchs for schemas
     logging.info("checking linkbase "+base)
-    missingSchemas = 0
+    missingSchemas: int = 0
     for node in root:
         node_type = node.attrib.get(XLINK_TYPE, None)
         if node_type == "extended":
@@ -44,7 +44,7 @@ def processLinkBase(root, base, ns, params):
     return 0
 
 
-def checkSimpleLink(node, base, ns, params):
+def checkSimpleLink(node: etree._Element, base: str, ns: str, params: dict) -> int:
     missingSchemas = 0
     href = node.attrib.get(XLINK_HREF, None)
     if href is not None:
@@ -65,7 +65,7 @@ def checkSimpleLink(node, base, ns, params):
     return missingSchemas
 
 
-def checkExtendedLink(element, base, ns, params):
+def checkExtendedLink(element: etree._Element, base: str, ns: str, params: dict) -> int:
     missingSchemas = 0
     for node in element:
         node_type = node.attrib.get(XLINK_TYPE, None)
@@ -89,7 +89,7 @@ def checkExtendedLink(element, base, ns, params):
     return missingSchemas
 
 
-def processSimpleLink(node, base, ns, params):
+def processSimpleLink(node: etree._Element, base: str, ns: str, params: dict) -> int:
     node_role = node.attrib.get("roleURI", None)
     if node_role:
         declareRole(node_role, 0, params)
@@ -99,7 +99,7 @@ def processSimpleLink(node, base, ns, params):
     return 0
 
 
-def processExtendedLink(element, base, ns, params):
+def processExtendedLink(element: etree._Element, base: str, ns: str, params: dict) -> int:
     params['xlinkCount'] += 1
     localLocCount = 0
     xlink = {XLINK_ROLE: element.attrib.get(XLINK_ROLE),
@@ -204,10 +204,10 @@ def processExtendedLink(element, base, ns, params):
     return 0
 
 
-def process_resource(resource, base, ns, params):
+def process_resource(name: str, resource: dict, base: str, ns: str, params: dict) -> int:
 
     output = params['out']
-    output.write(getTurtleName(resource, base, ns, params)+" \n")
+    output.write(name+" \n")
     namespace = etree.QName(resource['node']).namespace
     name = etree.QName(resource['node']).localname
     prefix = params['namespaces'].get(namespace, None)
@@ -281,7 +281,7 @@ def process_resource(resource, base, ns, params):
     return 0
 
 
-def XLink2RDF(node, xlink, base, ns, params):
+def XLink2RDF(node: etree._Element, xlink: dict, base: str, ns: str, params: dict) -> int:
 
     output = params['out']
 
@@ -334,17 +334,22 @@ def XLink2RDF(node, xlink, base, ns, params):
                 output.write(processAttribute(arc, WEIGHT, attr_type=float, params=params))
 
                 output.write("    xl:from "+triple_subject+" ;\n")
-                output.write("    xl:to "+triple_object+" ;\n")
-                output.write("    ] .\n\n")
 
                 locator_type = arc_to.get(XLINK_TYPE, None)
                 if locator_type == "resource":
-                    process_resource(arc_to, base, ns, params)
+                    name = genResourceName(params)
+                    output.write("    xl:to "+name+" ;\n")
+                    output.write("    ] .\n\n")
+                    process_resource(name, arc_to, base, ns, params)
+                else:
+                    output.write("    xl:to "+triple_object+" ;\n")
+                    output.write("    ] .\n\n")
+
 
     return 0
 
 
-def XLink2RDFstar(node, xlink, base, ns, params):
+def XLink2RDFstar(node: etree._Element, xlink: dict, base: str, ns: str, params: dict) -> int:
 
     output = params['out']
 
@@ -410,13 +415,19 @@ def XLink2RDFstar(node, xlink, base, ns, params):
     return 0
 
 
-def genLinkName(params):
+def genLinkName(params: dict) -> str:
     params['linkCount'] += 1
     name = "_:link"+str(params['linkCount'])
     return name
 
 
-def getTurtleName(loc, base, ns, params):
+def genResourceName(params: dict) -> str:
+    params['resourceCount'] += 1
+    name = "_:resource"+str(params['resourceCount'])
+    return name
+
+
+def getTurtleName(loc: dict, base: str, ns: str, params: dict) -> str:
     href = loc.get(XLINK_HREF, None)
     if href is not None:
         href = expandRelativePath(href, base)
@@ -446,7 +457,7 @@ def getTurtleName(loc, base, ns, params):
     return prefix+":"+name
 
 
-def genRoleName(role, arc, params):
+def genRoleName(role: str, arc: int, params: dict) -> str:
     base, name = splitRole(role)
     prefix = params['namespaces'].get(base, None)
     if prefix is None:
@@ -458,31 +469,31 @@ def genRoleName(role, arc, params):
     return prefix+":"+name
 
 
-def findId(uri, base, params):
+def findId(uri: str, base: str, params: dict) -> tuple([int, str, str]):
     found = params['id2elementTbl'].get(uri, None)
     if found:
         return 0, found[0], found[1]
     return -1, '', ''
 
 
-def declareNamespace(prefix, uri, params):
+def declareNamespace(prefix: str, uri: str, params: dict) -> None:
     params['namespaces'][uri] = prefix
-
+    return None
 
 # used for gensymmed names for nodes
-def genArcRolePrefixName(params):
+def genArcRolePrefixName(params: dict) -> str:
     params['arcroleNumber'] += 1
     name = "arcrole"+str(params['arcroleNumber'])
     return name
 
 
-def genRolePrefixName(params):
+def genRolePrefixName(params: dict) -> str:
     params['roleNumber'] += 1
     name = "role"+str(params['roleNumber'])
     return name
 
 
-def declareRole(uri, arc, params):
+def declareRole(uri: str, arc: int, params: dict) -> None:
     base, name = splitRole(uri)
     if base not in params['namespaces'].keys():
         if arc:
@@ -490,9 +501,9 @@ def declareRole(uri, arc, params):
         else:
             prefix = genRolePrefixName(params)
         params['namespaces'][base] = prefix
+    return None
 
-
-def splitRole(uri):
+def splitRole(uri: str) -> tuple([str, str]):
     name = uri.split("/")[-1]
     base = "/".join(uri.split("/")[0:-1])
     return base, name

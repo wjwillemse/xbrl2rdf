@@ -7,14 +7,14 @@ from .utilfunctions import registerNamespaces, prependDtsQueue
 from .const import XLINK_HREF, XBRL_SCHEMA
 
 
-def processInstance(root: etree, base: str, ns: str, params: dict):
+def processInstance(root: etree._Element, base: str, ns: str, params: dict) -> int:
 
     if etree.QName(root).localname == "schema":
         return processSchema(root, base)
     if etree.QName(root).localname == "linkbase":
         return processLinkBase(root, base, ns)
 
-    logging.info("processing instance "+base+"\n")
+    logging.info("Processing instance "+base+"\n")
 
     registerNamespaces(root, base, params)
 
@@ -23,7 +23,7 @@ def processInstance(root: etree, base: str, ns: str, params: dict):
     provenance = genProvenanceName(base, params)
 
     for child in root:
-        child_name:str = etree.QName(child).localname
+        child_name: str = etree.QName(child).localname
         # child_namespace = etree.QName(child).namespace
         if child_name == "context":
             processContext(child, params)
@@ -32,7 +32,7 @@ def processInstance(root: etree, base: str, ns: str, params: dict):
         elif child_name == "schemaRef":
             uri = child.attrib.get(XLINK_HREF, None)
             if uri is None:
-                logging.error("couldn't identify schema location.")
+                logging.error("Couldn't identify schema location.")
                 return -1
             processSchemaRef(child, provenance, params)
             res = prependDtsQueue(XBRL_SCHEMA, uri, base, ns, 0, params)
@@ -49,7 +49,7 @@ def processInstance(root: etree, base: str, ns: str, params: dict):
     return res
 
 
-def processContext(context, params):
+def processContext(context: etree._Element, params: dict) -> int:
 
     context_id = context.attrib.get('id', None)
     output = params['facts']
@@ -79,7 +79,7 @@ def processContext(context, params):
     # each context may have one scenario element
     scenario = getContextScenario(context, params)
     if scenario is not None:
-        members = list()
+        members: list = list()
         for child in scenario:
             namespace = etree.QName(child).namespace
             name = etree.QName(child).localname
@@ -114,9 +114,11 @@ def processContext(context, params):
                          '"^^xsd:date; ]\n')
             period_child = child.getnext()
         output.write("        ).\n\n")
+   
+    return 0
 
 
-def genFactName(params):
+def genFactName(params: dict) -> str:
     params['factCount'] += 1
     return "_:fact"+str(params['factCount'])
 
@@ -132,26 +134,26 @@ def genProvenanceName(base: str, params: dict) -> str:
     return name
 
 
-def getContextIdentifier(context, params):
+def getContextIdentifier(context: etree._Element, params: dict) -> etree._Element:
     entity = context[0]
     return entity[0]
 
 
-def getContextSegment(context, params):
+def getContextSegment(context: etree._Element, params: dict) -> etree._Element:
     for node in context:
         if etree.QName(node).localname == "segment":
             return node
     return None
 
 
-def getContextScenario(context, params):
+def getContextScenario(context: etree._Element, params: dict) -> etree._Element:
     for node in context:
         if etree.QName(node).localname == "scenario":
             return node
     return None
 
 
-def getContextPeriod(context, params):
+def getContextPeriod(context: etree._Element, params: dict) -> etree._Element:
     for node in context:
         if etree.QName(node).localname == "period":
             return node
@@ -162,7 +164,7 @@ def getContextPeriod(context, params):
 # child element for the unit element, e.g. 2 measures for
 # multiple pairs or numerator/denominator this could use
 # one collection for numerator and another for denominator
-def processUnit(unit, params):
+def processUnit(unit: etree._Element, params: dict) -> int:
     output = params['facts']
     unit_id = unit.attrib.get("id", None)
     unit_child = unit[0]
@@ -181,9 +183,9 @@ def processUnit(unit, params):
         output.write("_:unit_"+unit_id+"\n")
         output.write("    xbrli:numerator "+numerator+" ;\n")
         output.write("    xbrli:denominator "+denominator+" .\n\n")
+    return 0
 
-
-def processFact(fact, provenance, base, params):
+def processFact(fact: etree._Element, provenance: str, base: str, params: dict) -> str:
     # fact_id = fact.attrib.get('id', None)
     output = params['facts']
     contextRef = fact.attrib.get("contextRef", None)
@@ -281,7 +283,7 @@ def processFact(fact, provenance, base, params):
     return factName
 
 
-def getNumerator(divide, params):
+def getNumerator(divide: etree._Element, params: dict) -> str:
     for child in divide:
         if etree.QName(child).localname == "unitNumerator":
             divide_child = child[0]
@@ -291,7 +293,7 @@ def getNumerator(divide, params):
     return content
 
 
-def getDenominator(divide, params):
+def getDenominator(divide: etree._Element, params: dict) -> str:
     for child in divide:
         if etree.QName(child).localname == "unitDenominator":
             divide_child = child[0]
@@ -300,7 +302,7 @@ def getDenominator(divide, params):
     return content
 
 
-def processSchemaRef(child, provenance, params):
+def processSchemaRef(child: etree._Element, provenance: str, params: dict) -> int:
     output = params['facts']
     schemaRef = child.attrib.get(XLINK_HREF, None)
     schemaRef = schemaRef.replace("eu/eu/", "eu/")

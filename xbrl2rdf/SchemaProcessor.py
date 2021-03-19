@@ -10,9 +10,10 @@ from .const import XBRLDT_TYPEDDOMAINREF, SUBSTITUTIONGROUP, NILLABLE, \
 from .utilfunctions import processAttribute, registerNamespaces, \
                            appendDtsQueue, prependDtsQueue
 from datetime import datetime
+from lxml import etree
 import logging
 
-def processSchema(root, base, params):
+def processSchema(root: etree._Element, base: str, params: dict) -> int:
 
     # skip core schemas
     targetNs = root.attrib.get("targetNamespace", None)
@@ -31,7 +32,7 @@ def processSchema(root, base, params):
     return res1 or res2
 
 
-def processLinkBases(nodes, base, targetNs, params):
+def processLinkBases(nodes: etree._Element, base: str, targetNs: str, params: dict) -> int:
     res = 0
     logging.info("importing linkbases for base "+base)
     for node in nodes:
@@ -49,7 +50,7 @@ def processLinkBases(nodes, base, targetNs, params):
     return res
 
 
-def processImportedSchema(root, base, ns, params):
+def processImportedSchema(root: etree._Element, base: str, ns: str, params: dict) -> int:
     res = 0
     logging.info("importing schema for base "+base)
     if len(root) == 0:
@@ -65,7 +66,7 @@ def processImportedSchema(root, base, ns, params):
     return res
 
 
-def processElements(root, base, targetNs, params):
+def processElements(root: etree._Element, base: str, targetNs: str, params: dict) -> int:
 
     output = params['out']
     namespaces = params['namespaces']
@@ -157,9 +158,9 @@ def processElements(root, base, targetNs, params):
                 logging.info("name = "+child_name)
             else:
                 addId(base, child_id, targetNs, child_name, params)
+    return 0
 
-
-def addId(xsdUri, child_id, targetNs, name, params):
+def addId(xsdUri: str, child_id: str, targetNs: str, name: str, params: dict) -> int:
     key = xsdUri + "#" + child_id
     value = (targetNs, name)
     if key[0] == '#':

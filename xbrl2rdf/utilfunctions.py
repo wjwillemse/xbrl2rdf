@@ -38,6 +38,8 @@ def processAttribute(node, attr, attr_type=None,
             prefix = params['namespaces'].get(base, None)
             if prefix:
                 attr_value = prefix+":"+name
+            else:
+                attr_value = "<"+attr_value+">"
             return text_prefix+predicates[attr]+' '+attr_value+line_end
     else:
         return ''
