@@ -105,5 +105,6 @@ ENV/
 # IDE settings
 .vscode/
 
-data/
-!data/taxonomies/
+data/rdf
+data/log
+data/instances
