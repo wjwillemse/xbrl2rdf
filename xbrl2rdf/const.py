@@ -27,6 +27,7 @@ MATCHANY: str = 'matchAny'
 BALANCE: str = 'balance'
 COVER: str = 'cover'
 AXIS: str = 'axis'
+PREFERRED_LABEL: str = 'preferredLabel'
 COMPLEMENT: str = 'complement'
 NAME: str = 'name'
 USE: str = 'use'
@@ -48,6 +49,7 @@ DIMENSION: str = 'dimension'
 SCHEME: str = 'scheme'
 
 XBRLI_PERIODTYPE: str = '{http://www.xbrl.org/2003/instance}periodType'
+XBRLI_BALANCE: str = '{http://www.xbrl.org/2003/instance}balance'
 MODEL_CREATIONDATE: str = '{http://www.eurofiling.info/xbrl/ext/model}creationDate'
 MODEL_TODATE: str = '{http://www.eurofiling.info/xbrl/ext/model}toDate'
 MODEL_FROMDATE: str = '{http://www.eurofiling.info/xbrl/ext/model}fromDate'
@@ -66,6 +68,7 @@ XBRLDT_USABLE: str = '{http://xbrl.org/2005/xbrldt}usable'
 XBRLDT_TYPEDDOMAINREF: str = '{http://xbrl.org/2005/xbrldt}typedDomainRef'
 
 predicates: dict = {XBRLI_PERIODTYPE:   'xbrli:periodType',
+              XBRLI_BALANCE:      'xbrli:balance',
               MODEL_CREATIONDATE: 'model:creationDate',
               MODEL_TODATE:       'model:toDate',
               MODEL_FROMDATE:     'model:fromDate',
@@ -92,6 +95,7 @@ predicates: dict = {XBRLI_PERIODTYPE:   'xbrli:periodType',
               XBRLDT_USABLE: 'xbrldt:usable',
               COVER: 'xl:cover',
               AXIS: 'xl:axis',
+              PREFERRED_LABEL: 'xl:preferredLabel',
               COMPLEMENT: 'xl:complement',
               NAME: 'xl:name',
               USE: 'xl:use',

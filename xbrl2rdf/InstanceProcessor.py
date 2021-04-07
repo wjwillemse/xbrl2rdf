@@ -41,10 +41,10 @@ def processInstance(root: etree._Element, base: str, ns: str, params: dict) -> i
         else:
             child_name = processFact(child, provenance, base, params)
 
-    for child in footnote_links:
-        # if (child->type != XML_ELEMENT_NODE)
-        #     continue
-        processExtendedLink(child, base, "")
+    # for child in footnote_links:
+    #     # if (child->type != XML_ELEMENT_NODE)
+    #     #     continue
+    #     processExtendedLink(child, base, "")
 
     return res
 

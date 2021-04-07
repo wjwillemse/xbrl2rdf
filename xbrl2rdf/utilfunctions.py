@@ -7,7 +7,7 @@ except ImportError:
     import re
 from .const import predicates
 from datetime import datetime
-
+import logging
 
 def processAttribute(node, attr, attr_type=None, 
                      text_prefix='    ', params=None):
@@ -105,16 +105,15 @@ def loadXML(handler, uri, ns, params):
     if isHttpUrl(uri):
         mappedUri = os.path.abspath(params['xbrl_zipfile'].mappedUrl(uri))
         if mappedUri not in params['uri2file'].keys():
-            params['log'].write('xbrl uri "'+uri+'" not found in zip file.\n')
+            logging.info('xbrl uri "'+uri+'" not found in zip file.\n')
             return 0
         filePath = params['uri2file'][mappedUri]
         try:
             fp = params['xbrl_zipfile'].fs.open(filePath, "r")
             content = fp.read()
         except:
-            params['log'].write("Could not read "+uri+" from zip-file.\n")
+            logging.info('Could not read "+uri+" from zip-file.\n')
             params['errorCount'] += 1
-            raise(e)
             return -1
 
     else:  # treat as local file

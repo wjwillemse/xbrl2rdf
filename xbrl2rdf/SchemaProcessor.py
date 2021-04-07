@@ -1,5 +1,5 @@
 from .const import XLINK_HREF, XBRL_LINKBASE
-from .const import XBRLI_PERIODTYPE
+from .const import XBRLI_PERIODTYPE, XBRLI_BALANCE
 from .const import MODEL_CREATIONDATE, MODEL_TODATE, MODEL_FROMDATE, \
                    MODEL_MODIFICATIONDATE
 from .const import MODEL_HIERARCHY, MODEL_DOMAIN, MODEL_ISDEFAULTMEMBER
@@ -85,6 +85,7 @@ def processElements(root: etree._Element, base: str, targetNs: str, params: dict
                                 'id',
                                 'type',
                                 XBRLI_PERIODTYPE,
+                                XBRLI_BALANCE,
                                 MODEL_CREATIONDATE,
                                 MODEL_TODATE,
                                 MODEL_FROMDATE,
@@ -117,6 +118,8 @@ def processElements(root: etree._Element, base: str, targetNs: str, params: dict
                 output.write("    rdf:type "+child_type+" ;\n")
 
             output.write(processAttribute(child, XBRLI_PERIODTYPE,
+                                          attr_type=str, params=params))
+            output.write(processAttribute(child, XBRLI_BALANCE,
                                           attr_type=str, params=params))
             output.write(processAttribute(child, XBRLDT_TYPEDDOMAINREF,
                                           attr_type=str, params=params))

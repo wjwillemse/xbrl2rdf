@@ -13,7 +13,7 @@ from .const import ID, AS, ABSTRACT, MERGE, NILS, STRICT, IMPLICITFILTERING, \
 from .const import XLINK_FROM, XLINK_TO, XLINK_ARCROLE, XLINK_TITLE
 from .const import XBRLDT_CONTEXTELEMENT, XBRLDT_CLOSED, XBRLDT_TARGETROLE, \
                    XBRLDT_USABLE
-from .const import ORDER, USE, PRIORITY, WEIGHT, NAME, COVER, COMPLEMENT, AXIS
+from .const import ORDER, USE, PRIORITY, WEIGHT, NAME, COVER, COMPLEMENT, AXIS, PREFERRED_LABEL
 
 from .utilfunctions import processAttribute, isHttpUrl, expandRelativePath, \
                            appendDtsQueue, prependDtsQueue
@@ -172,7 +172,8 @@ def processExtendedLink(element: etree._Element, base: str, ns: str, params: dic
                                NAME,
                                COVER,
                                COMPLEMENT,
-                               AXIS]:
+                               AXIS,
+                               PREFERRED_LABEL]:
                     print("Not supported yet: arc attribute '"+str(key)+"'")
             arc = {key: node.attrib.get(key) for key
                    in node.attrib if node.attrib.get(key) is not None}
@@ -326,6 +327,7 @@ def XLink2RDF(node: etree._Element, xlink: dict, base: str, ns: str, params: dic
                 output.write(processAttribute(arc, AXIS, attr_type=str, params=params))
                 output.write(processAttribute(arc, COMPLEMENT, attr_type=bool, params=params))
                 output.write(processAttribute(arc, NAME, attr_type=str, params=params))
+                output.write(processAttribute(arc, PREFERRED_LABEL, attr_type=str, params=params))
                 # end of addition to xbrlimport / Raggett
  
                 output.write(processAttribute(arc, USE, attr_type=str, params=params))
