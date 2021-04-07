@@ -23,13 +23,13 @@ Python package to convert XBRL instance and taxonomy files to RDF
 * Documentation: https://xbrl2rdf.readthedocs.io.
 
 Features
---------
+========
 
 Here is what the package does:
 - convert XBRL instance file and related taxonomy files (schemas and linkbases) to RDF and RDF-star
 
 Quick overview
---------------
+==============
 
 To install the package
 
@@ -37,15 +37,64 @@ To install the package
 
     pip install xbrl2rdf
 
+To install the package from Github
+
+::
+
+	pip install -e git+https://github.com/wjwillemse/xbrl2rdf.git#egg=xbrl2rdf
+
 
 How to run
-----------
+==========
 
 To parse an XBRL-instance file run in the root of the project
 
 ::
 
 	python -m xbrl2rdf.xbrl2rdf
+
+
+Contributing
+============
+
+You can contribute in many ways:
+
+Types of Contributions
+----------------------
+
+Report Bugs
+~~~~~~~~~~~
+
+Report bugs at https://github.com/DeNederlandscheBank/data-quality-rules/issues.
+
+If you are reporting a bug, please include:
+
+* Your operating system name and version.
+* Any details about your local setup that might be helpful in troubleshooting.
+* Detailed steps to reproduce the bug.
+
+Fix Bugs
+~~~~~~~~
+
+Look through the GitHub issues for bugs. Anything tagged with "bug" and "help
+wanted" is open to whoever wants to implement it.
+
+Implement Features
+~~~~~~~~~~~~~~~~~~
+
+Look through the GitHub issues for features. Anything tagged with "enhancement"
+and "help wanted" is open to whoever wants to implement it.
+
+Submit Feedback
+~~~~~~~~~~~~~~~
+
+The best way to send feedback is to file an issue at https://github.com/DeNederlandscheBank/data-quality-rules/issues.
+
+If you are proposing a feature:
+
+* Explain in detail how it would work.
+* Keep the scope as narrow as possible, to make it easier to implement.
+
 
 
 Credits
