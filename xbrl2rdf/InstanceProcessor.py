@@ -108,11 +108,11 @@ def processContext(context: etree._Element, params: dict) -> int:
             value = period_child.text
             output.write('        [ xbrli:startDate "' + value +
                          '"^^xsd:date;\n')
-            period_child = child.getnext()
+            period_child = period_child.getnext()
             value = period_child.text
             output.write('          xbrli:endDate "' + value +
                          '"^^xsd:date; ]\n')
-            period_child = child.getnext()
+            period_child = period_child.getnext()
         output.write("        ).\n\n")
    
     return 0

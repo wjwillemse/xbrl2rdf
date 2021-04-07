@@ -128,10 +128,9 @@ def loadXML(handler, uri, ns, params):
             fp = open(filePath, "rb")
             content = fp.read()
             fp.close()
-        except e:
+        except:
             params['log'].write("Error: "+uri+" is malformed\n")
             params['errorCount'] += 1
-            raise(e)
             return -1
 
     root = etree.fromstring(content,
