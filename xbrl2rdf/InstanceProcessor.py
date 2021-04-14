@@ -60,16 +60,38 @@ def processContext(context: etree._Element, params: dict) -> int:
     # identifier = context[0][0]
     # scheme = identifier.attrib.get('scheme', None)
 
-    # entity element has optional segment
-    segment = getContextSegment(context, params)
-    if segment is not None:
-        if len(segment) == 1:
-            segment = segment[0]
-        xml = segment.text
-        output.write('        xbrli:segment """' + xml +
-                     '"""^^rdf:XMLLiteral;\n')
-
     context_identifier = getContextIdentifier(context, params)
+
+    # entity element has optional segment
+    segment = getContextSegment(context[0], params)
+    if segment is not None:
+        output.write('        xbrli:segment [\n')
+        for child in segment:
+            namespace = etree.QName(child).namespace
+            name = etree.QName(child).localname
+            prefix = params['namespaces'].get(namespace, None)
+            if len(child)==0:
+                if child.text is not None:
+                    params['facts'].write('            '+str(prefix+":"+name)+
+                                          ' '+str(child.text)+" ;\n")
+            else:
+                params['facts'].write('            '+str(prefix+":"+name)+" [\n")
+                for child2 in child:
+                    namespace = etree.QName(child2).namespace
+                    name = etree.QName(child2).localname
+                    prefix = params['namespaces'].get(namespace, None)
+                    if child2.text is not None:
+                        params['facts'].write('                '+str(prefix+":"+name)+
+                                                          ' """'+str(child2.text)+'"""^^rdf:XMLLiteral ;\n')
+                output.write('                ] ;\n')
+
+        output.write('            ] ;\n')
+        # print(segment.attrib)
+        # print(len(segment))
+        # xml = segment.text
+        # output.write('        xbrli:segment """' + xml +
+        #              '"""^^rdf:XMLLiteral;\n')
+
     context_value = context_identifier.text
     output.write('        xbrli:identifier "'+context_value+'" ;\n')
 

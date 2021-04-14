@@ -28,8 +28,8 @@ taxo_choices: str = "\n".join([str(idx)+": "+str(item['name']) for idx, item in 
 
 
 @click.command()
-@click.option('--url', default=join("data", "instances", "qrs_240_instance.xbrl"), prompt="input file")
-@click.option('--taxo', default=2, prompt=taxo_choices)
+@click.option('--url', default=join("data", "instances", "AepAppalachianTransmissionCompanyInc-436-2018Q1F1.xbrl"), prompt="input file")
+@click.option('--taxo', default=6, prompt=taxo_choices)
 @click.option('--output', default=join("data", "rdf"), prompt="output directory")
 @click.option('--output_format', default=1, prompt="1: rdf-turtle\n2: rdf-star-turtle\n")
 
@@ -139,10 +139,10 @@ def main(url: str, taxo: int, output: str, output_format: int) -> int:
 
     # check is rdf triples can be read into graph
     # try:
-    # g = rdflib.Graph()
-    # g.parse(data = file_content.getvalue(), format='turtle')
-    # file_content = BytesIO()
-    # file_content.write(g.serialize(format='turtle'))
+    #     g = rdflib.Graph()
+    #     g.parse(data = file_content.getvalue(), format='turtle')
+    #     content = BytesIO()
+    #     content.write(g.serialize(format='turtle'))
     # except:
     #     params['log'].write("Error parsing content into graph")
 
