@@ -219,6 +219,8 @@ def process_resource(name: str, resource: dict, base: str, ns: str, params: dict
         
     output.write(processAttribute(resource, XLINK_ROLE,
                                   attr_type=None, params=params))
+    output.write(processAttribute(resource, XLINK_LABEL,
+                                  attr_type=str, params=params))
     output.write(processAttribute(resource, XML_LANG,
                                   attr_type=str, params=params))
     output.write(processAttribute(resource, AS,
@@ -276,6 +278,19 @@ def process_resource(name: str, resource: dict, base: str, ns: str, params: dict
             output.write("    "+prefix+":"+name+' '+child[0].text+' ;\n')
         elif child.text and (child.text != '\n        '):
             output.write("    "+prefix+":"+name+' """'+child.text+'"""^^rdf:XMLLiteral ;\n')
+        elif len(child) > 0: 
+            output.write("    "+prefix+":"+name+' [\n')
+            for item in child.attrib.keys():
+                output.write("        "+prefix+":"+item+' '+child.attrib[item]+' ;\n')
+            for child2 in child:
+                namespace2 = etree.QName(child2).namespace
+                name2 = etree.QName(child2).localname
+                prefix2 = params['namespaces'].get(namespace2, None)
+                if child2[0].text != '\n          ':
+                    output.write("        "+prefix2+":"+name2+' '+child2[0].text+' ;\n')
+                elif child2.text and (child2.text != '\n        '):
+                    output.write("        "+prefix2+":"+name2+' """'+child2.text+'"""^^rdf:XMLLiteral ;\n')
+            output.write("    ] ;\n")
 
     output.write("    .\n\n")
 
@@ -335,18 +350,29 @@ def XLink2RDF(node: etree._Element, xlink: dict, base: str, ns: str, params: dic
                 output.write(processAttribute(arc, ORDER, attr_type=float, params=params))
                 output.write(processAttribute(arc, WEIGHT, attr_type=float, params=params))
 
-                output.write("    xl:from "+triple_subject+" ;\n")
+                locator_type = arc_from.get(XLINK_TYPE, None)
+                if locator_type == "resource":
+                    name_from = genResourceName(params)
+                    output.write("    xl:from "+name_from+" ;\n")
+                else:
+                    name_from = None
+                    output.write("    xl:from "+triple_subject+" ;\n")
 
                 locator_type = arc_to.get(XLINK_TYPE, None)
                 if locator_type == "resource":
-                    name = genResourceName(params)
-                    output.write("    xl:to "+name+" ;\n")
-                    output.write("    ] .\n\n")
-                    process_resource(name, arc_to, base, ns, params)
+                    name_to = genResourceName(params)
+                    output.write("    xl:to "+name_to+" ;\n")
                 else:
+                    name_to = None
                     output.write("    xl:to "+triple_object+" ;\n")
-                    output.write("    ] .\n\n")
 
+                output.write("    ] .\n\n")
+
+                if name_from is not None:
+                    process_resource(name_from, arc_from, base, ns, params)
+
+                if name_to is not None:
+                    process_resource(name_to, arc_to, base, ns, params)
 
     return 0
 
