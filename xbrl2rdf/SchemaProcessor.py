@@ -139,9 +139,9 @@ def processElements(root: etree._Element, base: str, targetNs: str, params: dict
                                           attr_type=str, params=params))
 
             output.write(processAttribute(child, ENUM_DOMAIN,
-                                          attr_type=str, params=params))
+                                          attr_type=None, params=params))
             output.write(processAttribute(child, ENUM_LINKROLE,
-                                          attr_type=str, params=params))
+                                          attr_type=None, params=params))
 
             output.write(processAttribute(child, SUBSTITUTIONGROUP,
                                           attr_type=None, params=params))
