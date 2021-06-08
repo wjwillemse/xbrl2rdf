@@ -2,6 +2,7 @@ from collections import defaultdict
 from lxml import etree
 import urllib
 import logging
+from io import StringIO
 
 from .const import XLINK_TYPE, XLINK_HREF, XLINK_ID, XLINK_BASE, \
                    XLINK_ROLE, XLINK_LABEL, XBRL_LINKBASE, XBRL_SCHEMA
@@ -197,6 +198,9 @@ def processExtendedLink(element: etree._Element, base: str, ns: str, params: dic
         if label in labels_nodes.keys():
             arc['toloc'] = labels_nodes[label]
 
+    # keep record of processed resources
+    params['resources_processed'] = dict()
+
     if params['output_format'] == 1:
         XLink2RDF(element, xlink, base, ns, params)
     elif params['output_format'] == 2:
@@ -205,10 +209,10 @@ def processExtendedLink(element: etree._Element, base: str, ns: str, params: dic
     return 0
 
 
-def process_resource(name: str, resource: dict, base: str, ns: str, params: dict) -> int:
+def process_resource(resource_name: str, resource: dict, base: str, ns: str, params: dict) -> int:
 
-    output = params['out']
-    output.write(name+" \n")
+    output = StringIO()
+    output.write(resource_name+" \n")
     namespace = etree.QName(resource['node']).namespace
     name = etree.QName(resource['node']).localname
     prefix = params['namespaces'].get(namespace, None)
@@ -219,8 +223,8 @@ def process_resource(name: str, resource: dict, base: str, ns: str, params: dict
         
     output.write(processAttribute(resource, XLINK_ROLE,
                                   attr_type=None, params=params))
-    output.write(processAttribute(resource, XLINK_LABEL,
-                                  attr_type=str, params=params))
+    # output.write(processAttribute(resource, XLINK_LABEL,
+    #                               attr_type=str, params=params))
     output.write(processAttribute(resource, XML_LANG,
                                   attr_type=str, params=params))
     output.write(processAttribute(resource, AS,
@@ -294,6 +298,14 @@ def process_resource(name: str, resource: dict, base: str, ns: str, params: dict
 
     output.write("    .\n\n")
 
+    resource_def = output.getvalue()
+    if resource_name not in params['resources_processed'].keys():
+        params['out'].write(resource_def)
+        params['resources_processed'][resource_name] = resource_def
+    else:
+        if params['resources_processed'][resource_name] != resource_def:
+            logging.info("Not consistent definition: " + resource_name)
+
     return 0
 
 
@@ -350,29 +362,15 @@ def XLink2RDF(node: etree._Element, xlink: dict, base: str, ns: str, params: dic
                 output.write(processAttribute(arc, ORDER, attr_type=float, params=params))
                 output.write(processAttribute(arc, WEIGHT, attr_type=float, params=params))
 
-                locator_type = arc_from.get(XLINK_TYPE, None)
-                if locator_type == "resource":
-                    name_from = genResourceName(params)
-                    output.write("    xl:from "+name_from+" ;\n")
-                else:
-                    name_from = None
-                    output.write("    xl:from "+triple_subject+" ;\n")
-
-                locator_type = arc_to.get(XLINK_TYPE, None)
-                if locator_type == "resource":
-                    name_to = genResourceName(params)
-                    output.write("    xl:to "+name_to+" ;\n")
-                else:
-                    name_to = None
-                    output.write("    xl:to "+triple_object+" ;\n")
-
+                output.write("    xl:from "+triple_subject+" ;\n")
+                output.write("    xl:to "+triple_object+" ;\n")
                 output.write("    ] .\n\n")
 
-                if name_from is not None:
-                    process_resource(name_from, arc_from, base, ns, params)
+                if arc_from.get(XLINK_TYPE, None) == "resource":
+                    process_resource(triple_subject, arc_from, base, ns, params)
 
-                if name_to is not None:
-                    process_resource(name_to, arc_to, base, ns, params)
+                if arc_to.get(XLINK_TYPE, None) == "resource":
+                    process_resource(triple_object, arc_to, base, ns, params)
 
     return 0
 
@@ -436,9 +434,12 @@ def XLink2RDFstar(node: etree._Element, xlink: dict, base: str, ns: str, params:
                     output.write(processAttribute(arc, NAME, attr_type=str, params=params))
                     output.write("    .\n")
                 output.write("\n")
-                locator_type = arc_to.get(XLINK_TYPE, None)
-                if locator_type == "resource":
-                    process_resource(arc_to, base, ns, params)
+
+                if arc_from.get(XLINK_TYPE, None) == "resource":
+                    process_resource(triple_subject, arc_from, base, ns, params)
+
+                if arc_to.get(XLINK_TYPE, None) == "resource":
+                    process_resource(triple_object, arc_to, base, ns, params)
 
     return 0
 
@@ -470,17 +471,19 @@ def getTurtleName(loc: dict, base: str, ns: str, params: dict) -> str:
                 namespace = ns
             name = urllib.parse.urlparse(href).fragment
     else:
-        # if no href then use parent's namespace with label
-        namespace = ns
+        # if no href then use base location
+        namespace = "/".join(base.split("/")[0:-1]).replace("s.", "S.").replace("eu/eu/", "eu/")
         name = loc.get(XLINK_LABEL, None)
 
     # if label ends with . then delete ., otherwise we get error in turtle
     if name[-1] == ".":
         name = name[0:-1]
 
-    prefix = params['namespaces'].get(namespace, None)
-    if prefix is None:
-        prefix = "_"
+    prefix = params['namespaces'].get(namespace, "_")
+    if prefix == "_" and namespace is not None:
+        # if prefix not found, try uncased namespaces
+        uncased_namespaces = dict((k.lower(), v) for k, v in params['namespaces'].items())
+        prefix = uncased_namespaces.get(namespace.lower(), "_")
 
     return prefix+":"+name
 
