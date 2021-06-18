@@ -10,7 +10,7 @@ from datetime import datetime
 import logging
 
 def processAttribute(node, attr, attr_type=None, 
-                     text_prefix='    ', params=None):
+                     text_prefix='    ', base=None, params=None):
     if text_prefix == '    ':
         line_end: str = ' ;\n'
     else:
@@ -33,6 +33,8 @@ def processAttribute(node, attr, attr_type=None,
         elif attr_type == datetime:
             return text_prefix+predicates[attr]+' "'+attr_value+'"^^xsd:dateTime'+line_end
         else:
+            if base is not None:
+                attr_value = expandRelativePath(attr_value, base).replace("s.", "S.").replace("eu/eu/", "eu/")
             name = attr_value.split("/")[-1]
             base = "/".join(attr_value.split("/")[0:-1])
             prefix = params['namespaces'].get(base, None)

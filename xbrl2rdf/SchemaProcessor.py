@@ -122,7 +122,7 @@ def processElements(root: etree._Element, base: str, targetNs: str, params: dict
             output.write(processAttribute(child, XBRLI_BALANCE,
                                           attr_type=str, params=params))
             output.write(processAttribute(child, XBRLDT_TYPEDDOMAINREF,
-                                          attr_type=str, params=params))
+                                          attr_type=None, base=base, params=params))
 
             output.write(processAttribute(child, MODEL_CREATIONDATE,
                                           attr_type=datetime, params=params))

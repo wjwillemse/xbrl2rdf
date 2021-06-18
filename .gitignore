@@ -108,3 +108,5 @@ ENV/
 data/rdf
 data/log
 data/instances
+
+tests/actual

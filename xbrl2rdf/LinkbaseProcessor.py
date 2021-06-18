@@ -198,8 +198,10 @@ def processExtendedLink(element: etree._Element, base: str, ns: str, params: dic
         if label in labels_nodes.keys():
             arc['toloc'] = labels_nodes[label]
 
-    # keep record of processed resources
-    params['resources_processed'] = dict()
+    # # keep record of processed resources
+    # if 'resource_processed' not in params.keys():
+    #     print("new dict")
+    #     params['resources_processed'] = dict()
 
     if params['output_format'] == 1:
         XLink2RDF(element, xlink, base, ns, params)
@@ -211,7 +213,7 @@ def processExtendedLink(element: etree._Element, base: str, ns: str, params: dic
 
 def process_resource(resource_name: str, resource: dict, base: str, ns: str, params: dict) -> int:
 
-    output = StringIO()
+    output = params['out']
     output.write(resource_name+" \n")
     namespace = etree.QName(resource['node']).namespace
     name = etree.QName(resource['node']).localname
@@ -265,6 +267,7 @@ def process_resource(resource_name: str, resource: dict, base: str, ns: str, par
     resource_text = resource['node'].text
     if resource_text and (resource_text) != '\n      ':
         lang = resource.get('{http://www.w3.org/XML/1998/namespace}lang', None)
+        resource_text = resource_text.replace('"', "'")
         if lang is not None:
             output.write('    rdf:value """'+resource_text+'"""@'+lang+' ;\n')
         else:
@@ -297,14 +300,6 @@ def process_resource(resource_name: str, resource: dict, base: str, ns: str, par
             output.write("    ] ;\n")
 
     output.write("    .\n\n")
-
-    resource_def = output.getvalue()
-    if resource_name not in params['resources_processed'].keys():
-        params['out'].write(resource_def)
-        params['resources_processed'][resource_name] = resource_def
-    else:
-        if params['resources_processed'][resource_name] != resource_def:
-            logging.info("Not consistent definition: " + resource_name)
 
     return 0
 
@@ -363,6 +358,10 @@ def XLink2RDF(node: etree._Element, xlink: dict, base: str, ns: str, params: dic
                 output.write(processAttribute(arc, WEIGHT, attr_type=float, params=params))
 
                 output.write("    xl:from "+triple_subject+" ;\n")
+                if arc_to.get(XLINK_TYPE, None) == "resource":
+                    resource_text = arc_to['node'].text
+                    if resource_text and (resource_text != '\n      '):
+                        triple_object = genResourceName(params)
                 output.write("    xl:to "+triple_object+" ;\n")
                 output.write("    ] .\n\n")
 
@@ -463,7 +462,7 @@ def getTurtleName(loc: dict, base: str, ns: str, params: dict) -> str:
         res, namespace, name = findId(href, base, params)
         if res != 0:
             # check if href path is in namespaces, presumable a bug in the eiopa taxonomy
-            corrected_path = "/".join(href.split("/")[0:-1]).replace("s.", "S.").replace("eu/eu/", "eu/")
+            corrected_path = "/".join(href.split("/")[0:-1]).replace("s.", "S.").replace("eu/eu/", "eu/").replace("nl/fr/", "")
             if corrected_path in params['namespaces'].keys():
                 namespace = corrected_path
             else:
@@ -472,7 +471,7 @@ def getTurtleName(loc: dict, base: str, ns: str, params: dict) -> str:
             name = urllib.parse.urlparse(href).fragment
     else:
         # if no href then use base location
-        namespace = "/".join(base.split("/")[0:-1]).replace("s.", "S.").replace("eu/eu/", "eu/")
+        namespace = "/".join(base.split("/")[0:-1]).replace("s.", "S.").replace("eu/eu/", "eu/").replace("nl/fr/", "")
         name = loc.get(XLINK_LABEL, None)
 
     # if label ends with . then delete ., otherwise we get error in turtle
