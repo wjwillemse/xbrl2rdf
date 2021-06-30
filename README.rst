@@ -64,7 +64,7 @@ Example:
 Download from https://www.eiopa.europa.eu/tools-and-data/supervisory-reporting-dpm-and-xbrl_en
 the file EIOPA_SolvencyII_XBRL_Taxonomy_2.4.0_with_external_hotfix.zip and put the file in data/taxonomies.
 
-Download from the same location the file EIOPA_SolvencyII_XBRL_Instance_documents_2.4.0.zip. Extract from this EIOPA_SolvencyII_XBRL_Instance_documents_2.4.0\random\qrs_240_instance.xbrl (or another instance file) and put the file in data/instances.
+Download from the same location the file EIOPA_SolvencyII_XBRL_Instance_documents_2.4.0.zip. Extract from this EIOPA_SolvencyII_XBRL_Instance_documents_2.4.0/random/qrs_240_instance.xbrl (or another instance file) and put the file in data/instances.
 
 Then run the command above to parse this file.
 
