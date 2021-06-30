@@ -47,12 +47,26 @@ To install the package from Github
 How to run
 ==========
 
+Put the taxonomy .zip files in data/taxonomies (do not extract the zip file).
+
+Put the instance .xbrl files in data/instances.
+
+Make sure you have the corresponding taxonomy of the instance you want to parse.
+
 To parse an XBRL-instance file run in the root of the project
 
 ::
 
 	python -m xbrl2rdf.xbrl2rdf
 
+Example:
+
+Download from https://www.eiopa.europa.eu/tools-and-data/supervisory-reporting-dpm-and-xbrl_en
+the file EIOPA_SolvencyII_XBRL_Taxonomy_2.4.0_with_external_hotfix.zip and put the file in data/taxonomies.
+
+Download from the same location the file EIOPA_SolvencyII_XBRL_Instance_documents_2.4.0.zip. Extract from this EIOPA_SolvencyII_XBRL_Instance_documents_2.4.0\random\qrs_240_instance.xbrl (or another instance file) and put the file in data/instances.
+
+Then run the command above to parse this file.
 
 Contributing
 ============
