@@ -1,0 +1,52 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/typ.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix s2c_typ: <http://eiopa.europa.eu/xbrl/s2c/dict/typ#>.
+@prefix model: <http://www.eurofiling.info/xbrl/ext/model#>.
+
+
+# SCHEMAS
+# target namespace:http://eiopa.europa.eu/xbrl/s2c/dict/typ# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/typ.xsd
+
+s2c_typ:ID 
+    rdf:type xsd:string ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    . 
+
+s2c_typ:NA 
+    rdf:type xsd:string ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    . 
+
+s2c_typ:NB 
+    rdf:type xsd:string ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2018-07-15"^^xsd:dateTime ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    . 
+
+s2c_typ:ER 
+    rdf:type xsd:string ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    . 
+
+s2c_typ:RA 
+    rdf:type xsd:string ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    . 
+
+s2c_typ:TY 
+    rdf:type xsd:string ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    . 
+

@@ -1,0 +1,93 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/aset-s.01.01.02.01_s.01.02.01.01.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix s2md_mod_qrs: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs#>.
+@prefix s2md_tab_S.01.02.01.01: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/S.01.02.01.01#>.
+@prefix s2md_tab_S.01.01.02.01: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/S.01.01.02.01#>.
+@prefix arcrole1: <http://xbrl.org/arcrole/2008#>.
+@prefix role1: <http://www.xbrl.org/2003/role#>.
+@prefix validation: <http://xbrl.org/2008/validation#>.
+@prefix dts775: <http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/aset-s.01.01.02.01_s.01.02.01.01.xml#>.
+@prefix arcrole5: <http://www.eurofiling.info/xbrl/arcrole#>.
+@prefix role5: <http://eiopa.europa.eu/eu/xbrl/role#>.
+@prefix model: <http://www.eurofiling.info/xbrl/ext/model#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/aset-s.01.01.02.01_s.01.02.01.01.xml
+
+dts775:link84365 arcrole5:model-properties [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from dts775:assertionSet ;
+    xl:to dts775:properties ;
+    ] .
+
+dts775:assertionSet 
+    xl:type validation:assertionSet ;
+    .
+
+dts775:properties 
+    xl:type model:properties ;
+    .
+
+dts775:link84366 arcrole5:applies-to-table [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from dts775:assertionSet ;
+    xl:to s2md_tab_S.01.01.02.01:s2md_tS.01.01.02.01 ;
+    ] .
+
+dts775:assertionSet 
+    xl:type validation:assertionSet ;
+    .
+
+dts775:link84367 arcrole5:applies-to-table [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from dts775:assertionSet ;
+    xl:to s2md_tab_S.01.02.01.01:s2md_tS.01.02.01.01 ;
+    ] .
+
+dts775:assertionSet 
+    xl:type validation:assertionSet ;
+    .
+
+dts775:link84368 arcrole1:assertion-set [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from dts775:assertionSet ;
+    xl:to s2md_mod_qrs:s2md_BV333-2 ;
+    ] .
+
+dts775:assertionSet 
+    xl:type validation:assertionSet ;
+    .
+
+dts775:link84369 arcrole1:assertion-set [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from dts775:assertionSet ;
+    xl:to s2md_mod_qrs:s2md_BV998-1 ;
+    ] .
+
+dts775:assertionSet 
+    xl:type validation:assertionSet ;
+    .
+
+dts775:link84370 arcrole1:assertion-set [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from dts775:assertionSet ;
+    xl:to s2md_mod_qrs:s2md_BV998-1_W ;
+    ] .
+
+dts775:assertionSet 
+    xl:type validation:assertionSet ;
+    .
+

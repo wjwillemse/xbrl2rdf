@@ -1,0 +1,596 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/exp-lab-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix role1: <http://www.xbrl.org/2003/role#>.
+@prefix arcrole3: <http://www.xbrl.org/2003/arcrole#>.
+@prefix role3: <http://www.xbrl.org/2008/role#>.
+@prefix s2c_exp: <http://eiopa.europa.eu/xbrl/s2c/dict/exp#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+@prefix dts2615: <http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/exp-lab-en.xml#>.
+
+
+# XLINKS
+# localname: labelLink
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/exp-lab-en.xml
+
+dts2615:link132951 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:BC ;
+    xl:to dts2615:resource17914 ;
+    ] .
+
+dts2615:resource17914 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Basic concepts"""@en ;
+    .
+
+dts2615:link132952 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:MC ;
+    xl:to dts2615:resource17915 ;
+    ] .
+
+dts2615:resource17915 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Main categories"""@en ;
+    .
+
+dts2615:link132953 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:AM ;
+    xl:to dts2615:resource17916 ;
+    ] .
+
+dts2615:resource17916 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Amount types"""@en ;
+    .
+
+dts2615:link132954 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:VM ;
+    xl:to dts2615:resource17917 ;
+    ] .
+
+dts2615:resource17917 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Valuation methods"""@en ;
+    .
+
+dts2615:link132955 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:DI ;
+    xl:to dts2615:resource17918 ;
+    ] .
+
+dts2615:resource17918 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Instant or duration"""@en ;
+    .
+
+dts2615:link132956 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:TR ;
+    xl:to dts2615:resource17919 ;
+    ] .
+
+dts2615:resource17919 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Treatment of risk mitigation"""@en ;
+    .
+
+dts2615:link132957 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:TB ;
+    xl:to dts2615:resource17920 ;
+    ] .
+
+dts2615:resource17920 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of businesses"""@en ;
+    .
+
+dts2615:link132958 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:PU ;
+    xl:to dts2615:resource17921 ;
+    ] .
+
+dts2615:resource17921 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Purposes of assets/portfolio"""@en ;
+    .
+
+dts2615:link132959 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:SE ;
+    xl:to dts2615:resource17922 ;
+    ] .
+
+dts2615:resource17922 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Sectors"""@en ;
+    .
+
+dts2615:link132960 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:CG ;
+    xl:to dts2615:resource17923 ;
+    ] .
+
+dts2615:resource17923 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Collaterals/Guarantees"""@en ;
+    .
+
+dts2615:link132961 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:LB ;
+    xl:to dts2615:resource17924 ;
+    ] .
+
+dts2615:resource17924 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Lines of businesses"""@en ;
+    .
+
+dts2615:link132962 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:EL ;
+    xl:to dts2615:resource17925 ;
+    ] .
+
+dts2615:resource17925 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Eligibility"""@en ;
+    .
+
+dts2615:link132963 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:CS ;
+    xl:to dts2615:resource17926 ;
+    ] .
+
+dts2615:resource17926 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Consolidation scopes"""@en ;
+    .
+
+dts2615:link132964 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:CM ;
+    xl:to dts2615:resource17927 ;
+    ] .
+
+dts2615:resource17927 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Controlling or minority interests"""@en ;
+    .
+
+dts2615:link132965 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:CU ;
+    xl:to dts2615:resource17928 ;
+    ] .
+
+dts2615:resource17928 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Currencies"""@en ;
+    .
+
+dts2615:link132966 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:GA ;
+    xl:to dts2615:resource17929 ;
+    ] .
+
+dts2615:resource17929 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Geographical areas"""@en ;
+    .
+
+dts2615:link132967 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:PI ;
+    xl:to dts2615:resource17930 ;
+    ] .
+
+dts2615:resource17930 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Percentage intervals"""@en ;
+    .
+
+dts2615:link132968 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:TS ;
+    xl:to dts2615:resource17931 ;
+    ] .
+
+dts2615:resource17931 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of string"""@en ;
+    .
+
+dts2615:link132969 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:LT ;
+    xl:to dts2615:resource17932 ;
+    ] .
+
+dts2615:resource17932 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of trigger"""@en ;
+    .
+
+dts2615:link132970 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:TD ;
+    xl:to dts2615:resource17933 ;
+    ] .
+
+dts2615:resource17933 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of date"""@en ;
+    .
+
+dts2615:link132971 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:NT ;
+    xl:to dts2615:resource17934 ;
+    ] .
+
+dts2615:resource17934 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of number"""@en ;
+    .
+
+dts2615:link132972 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:BR ;
+    xl:to dts2615:resource17935 ;
+    ] .
+
+dts2615:resource17935 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Brackets"""@en ;
+    .
+
+dts2615:link132973 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:PP ;
+    xl:to dts2615:resource17936 ;
+    ] .
+
+dts2615:resource17936 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of percentage"""@en ;
+    .
+
+dts2615:link132974 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:DC ;
+    xl:to dts2615:resource17937 ;
+    ] .
+
+dts2615:resource17937 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of decimal"""@en ;
+    .
+
+dts2615:link132975 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:CE ;
+    xl:to dts2615:resource17938 ;
+    ] .
+
+dts2615:resource17938 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of income statement concepts"""@en ;
+    .
+
+dts2615:link132976 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:TI ;
+    xl:to dts2615:resource17939 ;
+    ] .
+
+dts2615:resource17939 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Time intervals"""@en ;
+    .
+
+dts2615:link132977 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:RT ;
+    xl:to dts2615:resource17940 ;
+    ] .
+
+dts2615:resource17940 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk types"""@en ;
+    .
+
+dts2615:link132978 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:SC ;
+    xl:to dts2615:resource17941 ;
+    ] .
+
+dts2615:resource17941 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Status of claim"""@en ;
+    .
+
+dts2615:link132979 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:PC ;
+    xl:to dts2615:resource17942 ;
+    ] .
+
+dts2615:resource17942 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Product characteristics"""@en ;
+    .
+
+dts2615:link132980 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:EX ;
+    xl:to dts2615:resource17943 ;
+    ] .
+
+dts2615:resource17943 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Exposure types"""@en ;
+    .
+
+dts2615:link132981 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:AP ;
+    xl:to dts2615:resource17944 ;
+    ] .
+
+dts2615:resource17944 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Approaches used"""@en ;
+    .
+
+dts2615:link132982 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:BT ;
+    xl:to dts2615:resource17945 ;
+    ] .
+
+dts2615:resource17945 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of boolean"""@en ;
+    .
+
+dts2615:link132983 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:TP ;
+    xl:to dts2615:resource17946 ;
+    ] .
+
+dts2615:resource17946 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Templates"""@en ;
+    .
+
+dts2615:link132984 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:AO ;
+    xl:to dts2615:resource17947 ;
+    ] .
+
+dts2615:resource17947 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Article 112 and 167"""@en ;
+    .
+
+dts2615:link132985 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:CN ;
+    xl:to dts2615:resource17948 ;
+    ] .
+
+dts2615:resource17948 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Content"""@en ;
+    .
+
+dts2615:link132986 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:TL ;
+    xl:to dts2615:resource17949 ;
+    ] .
+
+dts2615:resource17949 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of URI"""@en ;
+    .
+
+dts2615:link132987 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:DO ;
+    xl:to dts2615:resource17950 ;
+    ] .
+
+dts2615:resource17950 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Datapoint Owner"""@en ;
+    .
+
+dts2615:link132988 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:NC ;
+    xl:to dts2615:resource17951 ;
+    ] .
+
+dts2615:resource17951 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """NACE"""@en ;
+    .
+
+dts2615:link132989 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:LA ;
+    xl:to dts2615:resource17952 ;
+    ] .
+
+dts2615:resource17952 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Languages"""@en ;
+    .
+
+dts2615:link132990 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:TF ;
+    xl:to dts2615:resource17953 ;
+    ] .
+
+dts2615:resource17953 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Time reference"""@en ;
+    .
+
+dts2615:link132991 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_exp:CA ;
+    xl:to dts2615:resource17954 ;
+    ] .
+
+dts2615:resource17954 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Currency conversion approach"""@en ;
+    .
+

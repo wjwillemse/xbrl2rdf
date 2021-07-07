@@ -1,0 +1,1930 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-rend.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix s2md_tab_S.02.01.02.01: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01#>.
+@prefix table: <http://xbrl.org/2014/table#>.
+@prefix formula: <http://xbrl.org/2008/formula#>.
+@prefix arcrole4: <http://xbrl.org/arcrole/2014#>.
+@prefix role2: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab#>.
+@prefix dts767: <http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-rend.xml#>.
+@prefix role4: <http://www.xbrl.org/2010/role#>.
+@prefix s2c_dim: <http://eiopa.europa.eu/xbrl/s2c/dict/dim#>.
+@prefix s2md_met: <http://eiopa.europa.eu/xbrl/s2md/dict/met#>.
+@prefix s2c_AM: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/AM#>.
+@prefix s2c_VM: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/VM#>.
+@prefix s2c_LB: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB#>.
+
+
+# XLINKS
+# localname: link
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-rend.xml
+
+dts767:link84227 arcrole4:breakdown-tree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "0"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_a1 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_a1.root ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_a1 
+    xl:type table:breakdown ;
+    xl:parentChildOrder """parent-first"""^^rdf:XMLLiteral ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_a1.root 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    xbrli:merge "true"^^xsd:boolean ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VG ;
+        formula:member s2c_AM:x80 ;
+    ] ;
+    .
+
+dts767:link84228 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_a1.root ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c689 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_a1.root 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    xbrli:merge "true"^^xsd:boolean ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VG ;
+        formula:member s2c_AM:x80 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c689 
+    xl:type table:ruleNode ;
+    .
+
+dts767:link84229 arcrole4:table-breakdown [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:axis """x"""^^rdf:XMLLiteral ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_tS.02.01.02.01 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_a1 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_tS.02.01.02.01 
+    xl:type table:table ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_a1 
+    xl:type table:breakdown ;
+    xl:parentChildOrder """parent-first"""^^rdf:XMLLiteral ;
+    .
+
+dts767:link84230 arcrole4:breakdown-tree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "0"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_a2 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_a2.root ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_a2 
+    xl:type table:breakdown ;
+    xl:parentChildOrder """parent-first"""^^rdf:XMLLiteral ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_a2.root 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    xbrli:merge "true"^^xsd:boolean ;
+    .
+
+dts767:link84231 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c691 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c691 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi250 ;
+    .
+
+dts767:link84232 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c692 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c692 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi221 ;
+    .
+
+dts767:link84233 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c693 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c693 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi251 ;
+    .
+
+dts767:link84234 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c694 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c694 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi222 ;
+    .
+
+dts767:link84235 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c695 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c695 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi256 ;
+    .
+
+dts767:link84236 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c696 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c696 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi266 ;
+    .
+
+dts767:link84237 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c697 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c698 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c697 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi263 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c698 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi265 ;
+    .
+
+dts767:link84238 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c697 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c699 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c697 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi263 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c699 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi243 ;
+    .
+
+dts767:link84239 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c700 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c701 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c700 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi238 ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c701 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi226 ;
+    .
+
+dts767:link84240 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c700 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c702 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c700 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi238 ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c702 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi227 ;
+    .
+
+dts767:link84241 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c697 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c700 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c697 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi263 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c700 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi238 ;
+    .
+
+dts767:link84242 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c703 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c704 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c703 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi213 ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c704 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi212 ;
+    .
+
+dts767:link84243 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c703 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c705 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c703 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi213 ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c705 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi211 ;
+    .
+
+dts767:link84244 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c703 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c706 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c703 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi213 ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c706 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi280 ;
+    .
+
+dts767:link84245 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c703 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c707 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c703 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi213 ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c707 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi220 ;
+    .
+
+dts767:link84246 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c697 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c703 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c697 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi263 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c703 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi213 ;
+    .
+
+dts767:link84247 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c697 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c708 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c697 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi263 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c708 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi1964 ;
+    .
+
+dts767:link84248 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c697 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c709 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c697 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi263 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c709 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi224 ;
+    .
+
+dts767:link84249 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c697 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c710 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c697 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi263 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c710 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi223 ;
+    .
+
+dts767:link84250 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c697 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c711 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c697 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi263 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c711 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi1965 ;
+    .
+
+dts767:link84251 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c697 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c697 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi263 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+dts767:link84252 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c712 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c712 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi263 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x119 ;
+    ] ;
+    .
+
+dts767:link84253 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c713 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c714 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c713 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi252 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c714 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi202 ;
+    .
+
+dts767:link84254 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c713 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c715 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c713 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi252 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c715 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi203 ;
+    .
+
+dts767:link84255 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c713 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c716 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c713 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi252 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c716 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi204 ;
+    .
+
+dts767:link84256 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "9"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c713 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c713 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi252 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x91 ;
+    ] ;
+    .
+
+dts767:link84257 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c718 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c719 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c718 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x79 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c719 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x75 ;
+    ] ;
+    .
+
+dts767:link84258 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c718 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c720 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c718 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x79 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c720 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x43 ;
+    ] ;
+    .
+
+dts767:link84259 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c717 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c718 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c717 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c718 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x79 ;
+    ] ;
+    .
+
+dts767:link84260 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c721 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c722 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c721 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x64 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c722 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x45 ;
+    ] ;
+    .
+
+dts767:link84261 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c721 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c723 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c721 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x64 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c723 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x63 ;
+    ] ;
+    .
+
+dts767:link84262 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c717 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c721 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c717 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c721 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x64 ;
+    ] ;
+    .
+
+dts767:link84263 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c717 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c724 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c717 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c724 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x119 ;
+    ] ;
+    .
+
+dts767:link84264 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "10"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c717 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c717 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi276 ;
+    .
+
+dts767:link84265 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "11"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c725 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c725 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi278 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:TB ;
+        formula:member s2c_LB:x109 ;
+    ] ;
+    .
+
+dts767:link84266 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "12"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c726 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c726 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi267 ;
+    .
+
+dts767:link84267 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "13"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c727 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c727 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi268 ;
+    .
+
+dts767:link84268 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "14"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c728 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c728 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi269 ;
+    .
+
+dts767:link84269 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "15"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c729 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c729 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi279 ;
+    .
+
+dts767:link84270 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "16"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c730 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c730 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi225 ;
+    .
+
+dts767:link84271 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "17"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c731 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c731 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi239 ;
+    .
+
+dts767:link84272 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "18"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c732 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c732 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi2301 ;
+    .
+
+dts767:link84273 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "19"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c733 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c733 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi201 ;
+    .
+
+dts767:link84274 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_a2.root ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c690 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_a2.root 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    xbrli:merge "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c690 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+dts767:link84275 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c736 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c737 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c736 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x75 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c737 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x8 ;
+    ] ;
+    .
+
+dts767:link84276 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c736 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c738 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c736 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x75 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c738 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x5 ;
+    ] ;
+    .
+
+dts767:link84277 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c736 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c739 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c736 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x75 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c739 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x47 ;
+    ] ;
+    .
+
+dts767:link84278 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c735 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c736 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c735 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x79 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c736 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x75 ;
+    ] ;
+    .
+
+dts767:link84279 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c740 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c741 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c740 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x43 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c741 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x8 ;
+    ] ;
+    .
+
+dts767:link84280 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c740 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c742 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c740 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x43 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c742 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x5 ;
+    ] ;
+    .
+
+dts767:link84281 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c740 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c743 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c740 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x43 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c743 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x47 ;
+    ] ;
+    .
+
+dts767:link84282 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c735 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c740 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c735 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x79 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c740 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x43 ;
+    ] ;
+    .
+
+dts767:link84283 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c735 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c735 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x79 ;
+    ] ;
+    .
+
+dts767:link84284 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c745 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c746 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c745 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x46 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c746 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x8 ;
+    ] ;
+    .
+
+dts767:link84285 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c745 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c747 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c745 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x46 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c747 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x5 ;
+    ] ;
+    .
+
+dts767:link84286 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c745 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c748 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c745 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x46 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c748 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x47 ;
+    ] ;
+    .
+
+dts767:link84287 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c744 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c745 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c744 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x176 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c745 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x46 ;
+    ] ;
+    .
+
+dts767:link84288 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c749 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c750 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c749 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x173 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c750 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x8 ;
+    ] ;
+    .
+
+dts767:link84289 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c749 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c751 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c749 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x173 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c751 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x5 ;
+    ] ;
+    .
+
+dts767:link84290 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c749 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c752 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c749 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x173 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c752 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x47 ;
+    ] ;
+    .
+
+dts767:link84291 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c744 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c749 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c744 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x176 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c749 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x173 ;
+    ] ;
+    .
+
+dts767:link84292 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c744 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c744 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x176 ;
+    ] ;
+    .
+
+dts767:link84293 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c753 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c754 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c753 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x119 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c754 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x8 ;
+    ] ;
+    .
+
+dts767:link84294 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c753 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c755 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c753 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x119 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c755 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x5 ;
+    ] ;
+    .
+
+dts767:link84295 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c753 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c756 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c753 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x119 ;
+    ] ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c756 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:VL ;
+        formula:member s2c_VM:x47 ;
+    ] ;
+    .
+
+dts767:link84296 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c753 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c753 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi363 ;
+    formula:explicitDimension [
+        formula:dimension s2c_dim:BL ;
+        formula:member s2c_LB:x119 ;
+    ] ;
+    .
+
+dts767:link84297 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c757 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c757 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi362 ;
+    .
+
+dts767:link84298 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c758 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c758 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi355 ;
+    .
+
+dts767:link84299 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c759 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c759 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi372 ;
+    .
+
+dts767:link84300 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c760 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c760 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi369 ;
+    .
+
+dts767:link84301 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c761 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c761 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi377 ;
+    .
+
+dts767:link84302 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "9"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c762 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c762 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi359 ;
+    .
+
+dts767:link84303 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "10"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c763 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c763 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi360 ;
+    .
+
+dts767:link84304 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "11"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c764 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c764 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi357 ;
+    .
+
+dts767:link84305 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "12"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c765 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c765 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi358 ;
+    .
+
+dts767:link84306 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "13"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c766 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c766 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi373 ;
+    .
+
+dts767:link84307 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "14"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c767 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c767 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi374 ;
+    .
+
+dts767:link84308 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "15"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c768 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c768 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi375 ;
+    .
+
+dts767:link84309 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c769 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c770 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c769 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi378 ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c770 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi348 ;
+    .
+
+dts767:link84310 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c769 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c771 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c769 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi378 ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c771 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi347 ;
+    .
+
+dts767:link84311 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "16"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c769 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c769 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi378 ;
+    .
+
+dts767:link84312 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "17"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c772 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c772 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi367 ;
+    .
+
+dts767:link84313 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "18"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c773 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c773 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi346 ;
+    .
+
+dts767:link84314 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_a2.root ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c734 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_a2.root 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    xbrli:merge "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c734 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    .
+
+dts767:link84315 arcrole4:definition-node-subtree [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_a2.root ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_c774 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_a2.root 
+    xl:type table:ruleNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    xbrli:merge "true"^^xsd:boolean ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_c774 
+    xl:type table:ruleNode ;
+    formula:concept s2md_met:mi294 ;
+    .
+
+dts767:link84316 arcrole4:table-breakdown [
+    xl:type xl:link ;
+    xl:role role2:S.02.01.02.01 ;
+    xl:axis """y"""^^rdf:XMLLiteral ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_tS.02.01.02.01 ;
+    xl:to s2md_tab_S.02.01.02.01:s2md_a2 ;
+    ] .
+
+s2md_tab_S.02.01.02.01:s2md_tS.02.01.02.01 
+    xl:type table:table ;
+    .
+
+s2md_tab_S.02.01.02.01:s2md_a2 
+    xl:type table:breakdown ;
+    xl:parentChildOrder """parent-first"""^^rdf:XMLLiteral ;
+    .
+

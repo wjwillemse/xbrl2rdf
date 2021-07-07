@@ -1,0 +1,32 @@
+# Source HREF: http://www.xbrl.org/2008/validation.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix variable: <http://xbrl.org/2008/variable#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix validation: <http://xbrl.org/2008/validation#>.
+
+
+# SCHEMAS
+# target namespace:http://xbrl.org/2008/validation# base: http://www.xbrl.org/2008/validation.xsd
+
+validation:assertion 
+    rdf:type validation:assertion.type ;
+    xbrli:substitutionGroup variable:resource ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+validation:variableSetAssertion 
+    rdf:type validation:assertion.variableSet.type ;
+    xbrli:substitutionGroup variable:variableSet ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+validation:assertionSet 
+    rdf:type validation:assertionSet.type ;
+    xbrli:substitutionGroup variable:resource ;
+    . 
+

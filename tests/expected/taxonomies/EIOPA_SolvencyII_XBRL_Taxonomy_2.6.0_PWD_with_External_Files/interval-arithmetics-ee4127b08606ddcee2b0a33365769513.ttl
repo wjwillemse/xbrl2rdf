@@ -1,0 +1,780 @@
+# Source HREF: http://www.eurofiling.info/eu/fr/xbrl/func/interval-arithmetics.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix variable: <http://xbrl.org/2008/variable#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix role1: <http://www.xbrl.org/2003/role#>.
+@prefix arcrole6: <http://xbrl.org/arcrole/2010#>.
+@prefix role6: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.28.02.01.05#>.
+@prefix cfi: <http://xbrl.org/2010/custom-function#>.
+@prefix dts2458: <http://www.eurofiling.info/eu/fr/xbrl/func/interval-arithmetics.xml#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://www.eurofiling.info/eu/fr/xbrl/func/interval-arithmetics.xml
+
+dts2458:link90806 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_sum ;
+    xl:to dts2458:resource4169 ;
+    ] .
+
+dts2458:function_sum 
+    xl:type variable:function ;
+    xl:name """iaf:sum"""^^rdf:XMLLiteral ;
+    xl:output """item()+"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4169 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """if (empty($params)) then (0) else one-or-more($params)"""^^rdf:XMLLiteral ;
+    cfi:step """for $i in $facts return (iaf:splitValueThreshold($i)[1])"""^^rdf:XMLLiteral ;
+    cfi:step """for $i in $facts return (iaf:splitValueThreshold($i)[2])"""^^rdf:XMLLiteral ;
+    cfi:step """sum($values)"""^^rdf:XMLLiteral ;
+    cfi:step """sum($thresholds)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:joinValueThreshold($sumValues, $sumThresholds)"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90807 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-equal ;
+    xl:to dts2458:resource4170 ;
+    ] .
+
+dts2458:function_numeric-equal 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-equal"""^^rdf:XMLLiteral ;
+    xl:output """xs:boolean"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4170 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """abs($itemA[1] - $itemB[1]) le ($itemA[2] + $itemB[2])"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90808 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-less-than ;
+    xl:to dts2458:resource4171 ;
+    ] .
+
+dts2458:function_numeric-less-than 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-less-than"""^^rdf:XMLLiteral ;
+    xl:output """xs:boolean"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4171 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """($itemA[1] - $itemB[1]) lt ($itemA[2] + $itemB[2])"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90809 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-less-equal-than ;
+    xl:to dts2458:resource4172 ;
+    ] .
+
+dts2458:function_numeric-less-equal-than 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-less-equal-than"""^^rdf:XMLLiteral ;
+    xl:output """xs:boolean"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4172 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """($itemA[1] - $itemB[1]) le ($itemA[2] + $itemB[2])"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90810 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-greater-than ;
+    xl:to dts2458:resource4173 ;
+    ] .
+
+dts2458:function_numeric-greater-than 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-greater-than"""^^rdf:XMLLiteral ;
+    xl:output """xs:boolean"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4173 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """$itemA[1] gt ($itemB[1] - ($itemA[2] + $itemB[2]))"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90811 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-greater-equal-than ;
+    xl:to dts2458:resource4174 ;
+    ] .
+
+dts2458:function_numeric-greater-equal-than 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-greater-equal-than"""^^rdf:XMLLiteral ;
+    xl:output """xs:boolean"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4174 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """$itemA[1] ge ($itemB[1] - ($itemA[2] + $itemB[2]))"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90812 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-add ;
+    xl:to dts2458:resource4175 ;
+    ] .
+
+dts2458:function_numeric-add 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-add"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4175 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """$itemA[1]+$itemB[1]"""^^rdf:XMLLiteral ;
+    cfi:step """$itemA[2]+$itemB[2]"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:joinValueThreshold($value,$threshold)"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90813 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-subtract ;
+    xl:to dts2458:resource4176 ;
+    ] .
+
+dts2458:function_numeric-subtract 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-subtract"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4176 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """$itemA[1]-$itemB[1]"""^^rdf:XMLLiteral ;
+    cfi:step """$itemA[2]+$itemB[2]"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:joinValueThreshold($value,$threshold)"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90814 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-divide ;
+    xl:to dts2458:resource4177 ;
+    ] .
+
+dts2458:function_numeric-divide 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-divide"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4177 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """$itemA[1]"""^^rdf:XMLLiteral ;
+    cfi:step """$itemB[1]"""^^rdf:XMLLiteral ;
+    cfi:step """$itemA[2]"""^^rdf:XMLLiteral ;
+    cfi:step """$itemB[2]"""^^rdf:XMLLiteral ;
+    cfi:step """$A div $B"""^^rdf:XMLLiteral ;
+    cfi:step """($A + $deltaA) div ($B + $deltaB)"""^^rdf:XMLLiteral ;
+    cfi:step """($A + $deltaA) div ($B - $deltaB)"""^^rdf:XMLLiteral ;
+    cfi:step """($A - $deltaA) div ($B + $deltaB)"""^^rdf:XMLLiteral ;
+    cfi:step """($A - $deltaA) div ($B - $deltaB)"""^^rdf:XMLLiteral ;
+    cfi:step """max((abs($AdivB - $J0), abs($AdivB - $J1), abs($AdivB - $J2), abs($AdivB - $J3)))"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:joinValueThreshold($AdivB, $threshold)"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90815 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-multiply-simple ;
+    xl:to dts2458:resource4178 ;
+    ] .
+
+dts2458:function_numeric-multiply-simple 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-multiply"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4178 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:output """iaf:multiply-two-elements($paramA, $paramB)"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90816 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-multiply ;
+    xl:to dts2458:resource4179 ;
+    ] .
+
+dts2458:function_numeric-multiply 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-multiply"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4179 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:multiply-recursive($params, 1, 0)"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90817 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_abs ;
+    xl:to dts2458:resource4180 ;
+    ] .
+
+dts2458:function_abs 
+    xl:type variable:function ;
+    xl:name """iaf:abs"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4180 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """if (empty($input)) then 0 else $input"""^^rdf:XMLLiteral ;
+    cfi:step """if ($item instance of element() and empty($item[2])) then
+    iaf:joinValueThreshold(abs($item), iaf-int:fact-threshold($item)) else (if (not($item instance of
+    element()) and empty($item[2]) and not(contains(string($item), ";"))) then
+    iaf:joinValueThreshold(abs($item), 0) else
+    iaf:joinValueThreshold(abs(xs:decimal(substring-before($item, ";"))),
+    xs:decimal(substring-after($item, ";")))) """^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90818 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-unary-minus ;
+    xl:to dts2458:resource4181 ;
+    ] .
+
+dts2458:function_numeric-unary-minus 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-unary-minus"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4181 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """if ($item instance of element() and empty($item[2])) then
+    iaf:joinValueThreshold(-($item), iaf-int:fact-threshold($item)) else (if (not($item instance of
+    element()) and empty($item[2]) and not(contains(string($item), ";"))) then
+    iaf:joinValueThreshold(-($item), 0) else
+    iaf:joinValueThreshold(-(xs:decimal(substring-before($item, ";"))),
+    xs:decimal(substring-after($item, ";")))) """^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90819 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_min ;
+    xl:to dts2458:resource4182 ;
+    ] .
+
+dts2458:function_min 
+    xl:type variable:function ;
+    xl:name """iaf:min"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4182 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """if (empty($params)) then (0) else one-or-more($params)"""^^rdf:XMLLiteral ;
+    cfi:step """for $i in $facts return (iaf:splitValueThreshold($i)[1])"""^^rdf:XMLLiteral ;
+    cfi:step """for $i in $facts return (iaf:splitValueThreshold($i)[2])"""^^rdf:XMLLiteral ;
+    cfi:step """min($values)"""^^rdf:XMLLiteral ;
+    cfi:step """index-of($values, $minValue)[1]"""^^rdf:XMLLiteral ;
+    cfi:step """$thresholds[$indexMin]"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:joinValueThreshold($minValue,$minThreshold)"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90820 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_max ;
+    xl:to dts2458:resource4183 ;
+    ] .
+
+dts2458:function_max 
+    xl:type variable:function ;
+    xl:name """iaf:max"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4183 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """if (empty($params)) then (0) else one-or-more($params)"""^^rdf:XMLLiteral ;
+    cfi:step """for $i in $facts return (iaf:splitValueThreshold($i)[1])"""^^rdf:XMLLiteral ;
+    cfi:step """for $i in $facts return (iaf:splitValueThreshold($i)[2])"""^^rdf:XMLLiteral ;
+    cfi:step """max($values)"""^^rdf:XMLLiteral ;
+    cfi:step """index-of($values, $maxValue)[1]"""^^rdf:XMLLiteral ;
+    cfi:step """$thresholds[$indexMax]"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:joinValueThreshold($maxValue,$maxThreshold)"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90821 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_splitValueThreshold ;
+    xl:to dts2458:resource4184 ;
+    ] .
+
+dts2458:function_splitValueThreshold 
+    xl:type variable:function ;
+    xl:name """iaf:splitValueThreshold"""^^rdf:XMLLiteral ;
+    xl:output """item()+"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4184 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """if ($item instance of element() and empty($item[2])) then ($item,
+    iaf-int:fact-threshold($item)) else (if (not($item instance of element()) and empty($item[2])
+    and not(contains(string($item), ";"))) then ($item, 0) else
+    (xs:decimal(substring-before($item, ";")), xs:decimal(substring-after($item, ";")))) """^^rdf:XMLLiteral ;
+    cfi:output """$valorUmbral"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90822 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_joinValueThreshold ;
+    xl:to dts2458:resource4185 ;
+    ] .
+
+dts2458:function_joinValueThreshold 
+    xl:type variable:function ;
+    xl:name """iaf:joinValueThreshold"""^^rdf:XMLLiteral ;
+    xl:output """xs:string"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4185 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """concat(string($value),";",string($threshold))"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90823 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_precision ;
+    xl:to dts2458:resource4186 ;
+    ] .
+
+dts2458:function_precision 
+    xl:type variable:function ;
+    xl:name """iaf:precision"""^^rdf:XMLLiteral ;
+    xl:output """xs:decimal"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4186 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """xfi:decimals($item)"""^^rdf:XMLLiteral ;
+    cfi:output """$ouput"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90824 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_multiply-recursive ;
+    xl:to dts2458:resource4187 ;
+    ] .
+
+dts2458:function_multiply-recursive 
+    xl:type variable:function ;
+    xl:name """iaf:multiply-recursive"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4187 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """if (empty($sequence)) then (0) else
+    one-or-more($sequence)"""^^rdf:XMLLiteral ;
+    cfi:step """count($facts)"""^^rdf:XMLLiteral ;
+    cfi:step """if ($count eq 1) then $facts[1] else $subtotalParam"""^^rdf:XMLLiteral ;
+    cfi:step """if($count lt $numberOfParams) then iaf:multiply-two-elements($subtotal,
+    $facts[$count + 1]) else $subtotal"""^^rdf:XMLLiteral ;
+    cfi:step """if($count lt $numberOfParams) then iaf:multiply-recursive($sequence,
+    ($count +1), $multiply) else $multiply"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90825 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_multiply-two-elements ;
+    xl:to dts2458:resource4188 ;
+    ] .
+
+dts2458:function_multiply-two-elements 
+    xl:type variable:function ;
+    xl:name """iaf:multiply-two-elements"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4188 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """$itemA[1]"""^^rdf:XMLLiteral ;
+    cfi:step """$itemB[1]"""^^rdf:XMLLiteral ;
+    cfi:step """$itemA[2]"""^^rdf:XMLLiteral ;
+    cfi:step """$itemB[2]"""^^rdf:XMLLiteral ;
+    cfi:step """$A * $B"""^^rdf:XMLLiteral ;
+    cfi:step """sum((abs($A * $deltaB), abs($B * $deltaA), $deltaA * $deltaB))"""^^rdf:XMLLiteral ;
+    cfi:output """iaf:joinValueThreshold($AxB, $threshold)"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90826 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-equal-threshold ;
+    xl:to dts2458:resource4189 ;
+    ] .
+
+dts2458:function_numeric-equal-threshold 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-equal-threshold"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4189 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """($itemA[2] + $itemB[2])"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90827 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-less-than-threshold ;
+    xl:to dts2458:resource4190 ;
+    ] .
+
+dts2458:function_numeric-less-than-threshold 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-less-than-threshold"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4190 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """($itemA[2] + $itemB[2])"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90828 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-less-equal-than-threshold ;
+    xl:to dts2458:resource4191 ;
+    ] .
+
+dts2458:function_numeric-less-equal-than-threshold 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-less-equal-than-threshold"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4191 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """($itemA[2] + $itemB[2])"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90829 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-greater-than-threshold ;
+    xl:to dts2458:resource4192 ;
+    ] .
+
+dts2458:function_numeric-greater-than-threshold 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-greater-than-threshold"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4192 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """($itemA[2] + $itemB[2])"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90830 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-greater-equal-than-threshold ;
+    xl:to dts2458:resource4193 ;
+    ] .
+
+dts2458:function_numeric-greater-equal-than-threshold 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-greater-equal-than-threshold"""^^rdf:XMLLiteral ;
+    xl:output """item()"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4193 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)"""^^rdf:XMLLiteral ;
+    cfi:step """($itemA[2] + $itemB[2])"""^^rdf:XMLLiteral ;
+    cfi:output """$output"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90831 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2458:function_numeric-equal-test ;
+    xl:to dts2458:resource4194 ;
+    ] .
+
+dts2458:function_numeric-equal-test 
+    xl:type variable:function ;
+    xl:name """iaf:numeric-equal-test"""^^rdf:XMLLiteral ;
+    xl:output """item()+"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4194 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """iaf:splitValueThreshold($paramA)[1]"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)[1]"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramA)[2]"""^^rdf:XMLLiteral ;
+    cfi:step """iaf:splitValueThreshold($paramB)[2]"""^^rdf:XMLLiteral ;
+    cfi:step """abs($valueA - $valueB)"""^^rdf:XMLLiteral ;
+    cfi:step """$thA + $thB"""^^rdf:XMLLiteral ;
+    cfi:output """($valueA, $valueB, $thA, $thB, $absol, $sumTh)"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90832 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from dts2458:function_exp10 ;
+    xl:to dts2458:resource4195 ;
+    ] .
+
+dts2458:function_exp10 
+    xl:type variable:function ;
+    xl:name """iaf-int:exp10"""^^rdf:XMLLiteral ;
+    xl:output """xs:decimal"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4195 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:output """if ($power eq 0) then 1 else if ($power gt 0) then 10 * iaf-int:exp10($power - 1) else 1 div iaf-int:exp10(-$power)"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90833 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from dts2458:function_fact-threshold ;
+    xl:to dts2458:resource4196 ;
+    ] .
+
+dts2458:function_fact-threshold 
+    xl:type variable:function ;
+    xl:name """iaf-int:fact-threshold"""^^rdf:XMLLiteral ;
+    xl:output """xs:decimal"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2458:resource4196 
+    xl:type cfi:implementation ;
+    rdf:value """
+   """; 
+    cfi:step """xfi:decimals($fact)"""^^rdf:XMLLiteral ;
+    cfi:output """if (string($decimals) = 'INF') then 0 else iaf-int:exp10(-xs:integer($decimals)) div 2"""^^rdf:XMLLiteral ;
+    .
+

@@ -1,0 +1,81 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/func/isin-check.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix variable: <http://xbrl.org/2008/variable#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix func: <http://www.eurofiling.info/xbrl/func#>.
+@prefix eiopa_func: <http://eiopa.europa.eu/xbrl/func#>.
+@prefix role3: <http://www.xbrl.org/2008/role#>.
+@prefix arcrole6: <http://xbrl.org/arcrole/2010#>.
+@prefix role6: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.28.02.01.05#>.
+@prefix cfi: <http://xbrl.org/2010/custom-function#>.
+@prefix dts2464: <http://eiopa.europa.eu/eu/xbrl/func/isin-check.xml#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2008/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/func/isin-check.xml
+
+dts2464:link90848 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role3:link ;
+    xl:from eiopa_func:isin-checksum ;
+    xl:to eiopa_func:isin-checksum-impl ;
+    ] .
+
+eiopa_func:isin-checksum 
+    xl:type variable:function ;
+    xl:name """isin_fn:_isin-checksum"""^^rdf:XMLLiteral ;
+    xl:output """xs:integer"""^^rdf:XMLLiteral ;
+    .
+
+eiopa_func:isin-checksum-impl 
+    xl:type cfi:implementation ;
+    cfi:step """if ($mod eq 1) then 2 else 1"""^^rdf:XMLLiteral ;
+    cfi:step """xs:integer(substring($isin_number,$position,1)) * $mod"""^^rdf:XMLLiteral ;
+    cfi:step """
+		if ($part lt 10) 
+			then $part 
+			else xs:integer(substring(string($part),1,1)) + xs:integer(substring(string($part),2,1))"""^^rdf:XMLLiteral ;
+    cfi:output """
+		if ($position lt $isin_numberlength) 
+			then (isin_fn:_isin-checksum($isin_number,$position+1,$isin_numberlength,$nextmod,$checksum+$numbervalue)) 
+			else ($checksum+$numbervalue)
+			"""^^rdf:XMLLiteral ;
+    .
+
+dts2464:link90849 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role3:link ;
+    xl:from eiopa_func:validate-isin ;
+    xl:to eiopa_func:validate-isin-impl ;
+    ] .
+
+eiopa_func:validate-isin 
+    xl:type variable:function ;
+    xl:name """isin_fn:validate-isin"""^^rdf:XMLLiteral ;
+    xl:output """xs:boolean"""^^rdf:XMLLiteral ;
+    .
+
+eiopa_func:validate-isin-impl 
+    xl:type cfi:implementation ;
+    cfi:step """
+	  string-join((for $c in string-to-codepoints(substring($isin_code,1,11)) return xs:string(if ($c le 57) then ($c - 48) else ($c - 55))),'')"""^^rdf:XMLLiteral ;
+    cfi:output """
+	  if (string-length($isin_code) ne 12) 
+			then false() 
+			else 
+				(if (not(matches(substring($isin_code,1,2),"[A-Z]{2}")) or not(matches(substring($isin_code,12,1),"[0-9]"))) 
+					then false() 
+					else 
+						(if (((10 - (isin_fn:_isin-checksum($charttonumber,1,string-length($charttonumber),(xs:integer(string-length($charttonumber)) mod 2)+1,0) mod 10)) mod 10) eq xs:integer(substring($isin_code,12,1))) 
+						then 
+							true() 
+							else false()) )"""^^rdf:XMLLiteral ;
+    .
+

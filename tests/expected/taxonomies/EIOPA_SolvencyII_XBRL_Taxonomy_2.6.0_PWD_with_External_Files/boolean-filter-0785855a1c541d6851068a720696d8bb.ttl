@@ -1,0 +1,24 @@
+# Source HREF: http://www.xbrl.org/2008/boolean-filter.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix variable: <http://xbrl.org/2008/variable#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix bf: <http://xbrl.org/2008/filter/boolean#>.
+
+
+# SCHEMAS
+# target namespace:http://xbrl.org/2008/filter/boolean# base: http://www.xbrl.org/2008/boolean-filter.xsd
+
+bf:andFilter 
+    rdf:type variable:resource.type ;
+    xbrli:substitutionGroup variable:filter ;
+    . 
+
+bf:orFilter 
+    rdf:type variable:resource.type ;
+    xbrli:substitutionGroup variable:filter ;
+    . 
+

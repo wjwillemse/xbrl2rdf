@@ -1,0 +1,9 @@
+# Source HREF: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01.xsd
+
+# RDF triples (turtle syntax)
+
+
+
+# SCHEMAS
+# target namespace:http://ferc.gov/form/2020-01-01/sched-F1Q-DepreciationDepletionAndAmortizationOfElectricPlant# base: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01.xsd
+

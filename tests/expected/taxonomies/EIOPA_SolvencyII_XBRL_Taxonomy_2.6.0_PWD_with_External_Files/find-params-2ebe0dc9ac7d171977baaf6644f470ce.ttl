@@ -1,0 +1,12 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/find-params.xml
+
+# RDF triples (turtle syntax)
+
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/find-params.xml
+

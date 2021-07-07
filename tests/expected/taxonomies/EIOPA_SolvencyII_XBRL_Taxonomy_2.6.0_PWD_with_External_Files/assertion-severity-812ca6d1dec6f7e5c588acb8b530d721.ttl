@@ -1,0 +1,29 @@
+# Source HREF: http://www.xbrl.org/2016/assertion-severity.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix sev: <http://xbrl.org/2016/assertion-severity#>.
+
+
+# SCHEMAS
+# target namespace:http://xbrl.org/2016/assertion-severity# base: http://www.xbrl.org/2016/assertion-severity.xsd
+
+sev:error 
+    rdf:type xl:resourceType ;
+    xbrli:substitutionGroup xl:resource ;
+    . 
+
+sev:warning 
+    rdf:type xl:resourceType ;
+    xbrli:substitutionGroup xl:resource ;
+    . 
+
+sev:ok 
+    rdf:type xl:resourceType ;
+    xbrli:substitutionGroup xl:resource ;
+    . 
+

@@ -1,0 +1,225 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs-find-check.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix variable: <http://xbrl.org/2008/variable#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix cf: <http://xbrl.org/2008/filter/concept#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix gf: <http://xbrl.org/2008/filter/general#>.
+@prefix va: <http://xbrl.org/2008/assertion/value#>.
+@prefix s2md_mod_qrs: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs#>.
+@prefix find: <http://www.eurofiling.info/xbrl/ext/filing-indicators#>.
+@prefix arcrole1: <http://xbrl.org/arcrole/2008#>.
+@prefix role1: <http://www.xbrl.org/2003/role#>.
+@prefix dts1659: <http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs-find-check.xml#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs-find-check.xml
+
+dts1659:link86832 arcrole1:variable-set [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:name """filingIndicator"""^^rdf:XMLLiteral ;
+    xl:from dts1659:fc_qrs ;
+    xl:to dts1659:fc.fv_qrs ;
+    ] .
+
+dts1659:fc_qrs 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """$filingIndicator = ('S.01.01','S.01.02','S.02.01','S.05.01','S.06.02','S.06.03','S.08.01','S.08.02','S.12.01','S.17.01','S.23.01','S.28.01','S.28.02','T.99.01')"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:fc.fv_qrs 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    .
+
+dts1659:link86833 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:from dts1659:fc.fv_qrs ;
+    xl:to dts1659:fc.fv.cn_qrs ;
+    ] .
+
+dts1659:fc.fv_qrs 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    .
+
+dts1659:fc.fv.cn_qrs 
+    xl:type cf:conceptName ;
+    cf:concept find:filingIndicator ;
+    .
+
+dts1659:link86834 arcrole1:variable-set [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:name """f1"""^^rdf:XMLLiteral ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from dts1659:fc_qrs_f1 ;
+    xl:to dts1659:fc.fv_qrs_f1 ;
+    ] .
+
+dts1659:fc_qrs_f1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """not(empty($f1))"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:fc.fv_qrs_f1 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    xl:fallbackValue """()"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:link86835 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from dts1659:fc.fv_qrs_f1 ;
+    xl:to dts1659:fc.fv.cn_qrs_f1 ;
+    ] .
+
+dts1659:fc.fv_qrs_f1 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    xl:fallbackValue """()"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:fc.fv.cn_qrs_f1 
+    xl:type cf:conceptName ;
+    cf:concept find:filingIndicator ;
+    .
+
+dts1659:link86836 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from dts1659:fc.fv_qrs_f1 ;
+    xl:to dts1659:fc_qrs_f1g ;
+    ] .
+
+dts1659:fc.fv_qrs_f1 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    xl:fallbackValue """()"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:fc_qrs_f1g 
+    xl:type gf:general ;
+    xl:test """. = 'S.01.02'"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:link86837 arcrole1:variable-set [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:name """pv"""^^rdf:XMLLiteral ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from dts1659:fc_qrs_f1 ;
+    xl:to s2md_mod_qrs:pivot-var ;
+    ] .
+
+dts1659:fc_qrs_f1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """not(empty($f1))"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:link86838 arcrole1:variable-set [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:name """f2"""^^rdf:XMLLiteral ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from dts1659:fc_qrs_f2 ;
+    xl:to dts1659:fc.fv_qrs_f2 ;
+    ] .
+
+dts1659:fc_qrs_f2 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """not(empty($f2))"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:fc.fv_qrs_f2 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    xl:fallbackValue """()"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:link86839 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from dts1659:fc.fv_qrs_f2 ;
+    xl:to dts1659:fc.fv.cn_qrs_f2 ;
+    ] .
+
+dts1659:fc.fv_qrs_f2 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    xl:fallbackValue """()"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:fc.fv.cn_qrs_f2 
+    xl:type cf:conceptName ;
+    cf:concept find:filingIndicator ;
+    .
+
+dts1659:link86840 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from dts1659:fc.fv_qrs_f2 ;
+    xl:to dts1659:fc_qrs_f2g ;
+    ] .
+
+dts1659:fc.fv_qrs_f2 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    xl:fallbackValue """()"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:fc_qrs_f2g 
+    xl:type gf:general ;
+    xl:test """. = 'S.01.01'"""^^rdf:XMLLiteral ;
+    .
+
+dts1659:link86841 arcrole1:variable-set [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:name """pv"""^^rdf:XMLLiteral ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from dts1659:fc_qrs_f2 ;
+    xl:to s2md_mod_qrs:pivot-var ;
+    ] .
+
+dts1659:fc_qrs_f2 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """not(empty($f2))"""^^rdf:XMLLiteral ;
+    .
+

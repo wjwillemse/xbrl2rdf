@@ -1,0 +1,51 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/vr-bv6-1_w-lab-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix s2md_mod_qrs: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs#>.
+@prefix arcrole1: <http://xbrl.org/arcrole/2008#>.
+@prefix role1: <http://www.xbrl.org/2003/role#>.
+@prefix label: <http://xbrl.org/2008/label#>.
+@prefix role3: <http://www.xbrl.org/2008/role#>.
+@prefix dts2083: <http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/vr-bv6-1_w-lab-en.xml#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/vr-bv6-1_w-lab-en.xml
+
+dts2083:link87854 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_mod_qrs:s2md_BV6-1_W ;
+    xl:to dts2083:resource2460 ;
+    ] .
+
+dts2083:resource2460 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """BV6: The item 'Issuer country' in S.06.02 - List of assets should not be reported for assets with CIC  '##71', '##75' or '##9#'. -->Template 1: S.06.02; Expression: If {c0290} like '##71' or {c0290} like '##75' or {c0290} like '##9#' then {c0270}= empty"""@en ;
+    .
+
+dts2083:link87855 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_mod_qrs:s2md_BV6-1_W ;
+    xl:to dts2083:resource2461 ;
+    ] .
+
+dts2083:resource2461 
+    xl:type label:label ;
+    xlink:role role3:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """BV6: The item 'Issuer country' in S.06.02 - List of assets should not be reported for assets with CIC  '##71', '##75' or '##9#'. -->Template 1: S.06.02; Expression: If {c0290} like '##71' or {c0290} like '##75' or {c0290} like '##9#' then {c0270}= empty"""@en ;
+    .
+

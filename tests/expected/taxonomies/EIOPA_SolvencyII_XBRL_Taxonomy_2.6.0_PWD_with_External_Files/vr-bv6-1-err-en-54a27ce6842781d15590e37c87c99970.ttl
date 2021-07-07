@@ -1,0 +1,52 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/vr-bv6-1-err-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix s2md_mod_qrs: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs#>.
+@prefix role1: <http://www.xbrl.org/2003/role#>.
+@prefix msg: <http://xbrl.org/2010/message#>.
+@prefix arcrole6: <http://xbrl.org/arcrole/2010#>.
+@prefix role4: <http://www.xbrl.org/2010/role#>.
+@prefix dts1220: <http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/vr-bv6-1-err-en.xml#>.
+@prefix role6: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.28.02.01.05#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/vr-bv6-1-err-en.xml
+
+dts1220:link85954 arcrole6:assertion-unsatisfied-message [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_mod_qrs:s2md_BV6-1 ;
+    xl:to dts1220:resource792 ;
+    ] .
+
+dts1220:resource792 
+    xl:type msg:message ;
+    xlink:role role4:message ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """BV6-1: empty({{S.06.02.01.02,c0270}}) where matches({{S.06.02.01.02,c0290}},'^..((71)|(75)|(9.))$')"""@en ;
+    .
+
+dts1220:link85955 arcrole6:assertion-unsatisfied-message [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_mod_qrs:s2md_BV6-1 ;
+    xl:to dts1220:resource793 ;
+    ] .
+
+dts1220:resource793 
+    xl:type msg:message ;
+    xlink:role role4:terseMessage ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """BV6-1: empty({{S.06.02.01.02,c0270}}) where matches({{S.06.02.01.02,c0290}},'^..((71)|(75)|(9.))$')"""@en ;
+    .
+

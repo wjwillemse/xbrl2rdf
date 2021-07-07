@@ -1,0 +1,9 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/func/func.xsd
+
+# RDF triples (turtle syntax)
+
+
+
+# SCHEMAS
+# target namespace:http://eiopa.europa.eu/xbrl/func# base: http://eiopa.europa.eu/eu/xbrl/func/func.xsd
+

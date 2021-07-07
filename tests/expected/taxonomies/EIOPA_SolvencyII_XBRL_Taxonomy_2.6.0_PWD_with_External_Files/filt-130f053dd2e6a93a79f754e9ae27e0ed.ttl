@@ -1,0 +1,12 @@
+# Source HREF: http://www.eurofiling.info/eu/fr/xbrl/val/filt.xml
+
+# RDF triples (turtle syntax)
+
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://www.eurofiling.info/eu/fr/xbrl/val/filt.xml
+

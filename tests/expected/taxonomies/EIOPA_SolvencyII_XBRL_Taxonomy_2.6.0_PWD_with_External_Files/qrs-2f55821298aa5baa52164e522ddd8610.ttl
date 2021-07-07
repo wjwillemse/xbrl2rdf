@@ -1,0 +1,24 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix s2md_mod_qrs: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs#>.
+@prefix model: <http://www.eurofiling.info/xbrl/ext/model#>.
+
+
+# SCHEMAS
+# target namespace:http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs.xsd
+
+s2md_mod_qrs:qrs 
+    rdf:type model:moduleType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+

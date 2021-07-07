@@ -1,0 +1,9 @@
+# Source HREF: http://www.xbrl.org/2010/validation-message.xsd
+
+# RDF triples (turtle syntax)
+
+
+
+# SCHEMAS
+# target namespace:http://xbrl.org/2010/message/validation# base: http://www.xbrl.org/2010/validation-message.xsd
+

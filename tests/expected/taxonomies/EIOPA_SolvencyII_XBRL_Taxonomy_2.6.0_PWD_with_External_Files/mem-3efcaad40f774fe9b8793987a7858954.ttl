@@ -1,0 +1,178 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ce/mem.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix num: <http://www.xbrl.org/dtr/type/numeric#>.
+@prefix s2c_CE: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/CE#>.
+@prefix model: <http://www.eurofiling.info/xbrl/ext/model#>.
+@prefix nonnum: <http://www.xbrl.org/dtr/type/non-numeric#>.
+
+
+# SCHEMAS
+# target namespace:http://eiopa.europa.eu/xbrl/s2c/dict/dom/CE# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ce/mem.xsd
+
+s2c_CE:x0 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:isDefaultMember """true"""^^rdf:XMLLiteral ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x1 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x2 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x3 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x4 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x5 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x6 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x7 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x8 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x9 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x10 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x11 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x12 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x13 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x14 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x15 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x5000 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x5001 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x7000 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_CE:x7001 
+    rdf:type nonnum:domainItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+

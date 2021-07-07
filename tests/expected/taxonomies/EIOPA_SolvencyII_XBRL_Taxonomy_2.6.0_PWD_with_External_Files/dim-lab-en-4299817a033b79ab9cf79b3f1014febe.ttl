@@ -1,0 +1,4096 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dim/dim-lab-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix role1: <http://www.xbrl.org/2003/role#>.
+@prefix arcrole3: <http://www.xbrl.org/2003/arcrole#>.
+@prefix role3: <http://www.xbrl.org/2008/role#>.
+@prefix s2c_dim: <http://eiopa.europa.eu/xbrl/s2c/dict/dim#>.
+@prefix dts2469: <http://eiopa.europa.eu/eu/xbrl/s2c/dict/dim/dim-lab-en.xml#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+
+
+# XLINKS
+# localname: labelLink
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dim/dim-lab-en.xml
+
+dts2469:link91052 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:BC ;
+    xl:to dts2469:resource4399 ;
+    ] .
+
+dts2469:resource4399 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Basic concepts"""@en ;
+    .
+
+dts2469:link91053 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AL ;
+    xl:to dts2469:resource4400 ;
+    ] .
+
+dts2469:resource4400 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of assets and/or liabilities"""@en ;
+    .
+
+dts2469:link91054 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TT ;
+    xl:to dts2469:resource4401 ;
+    ] .
+
+dts2469:resource4401 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of transaction"""@en ;
+    .
+
+dts2469:link91055 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:GR ;
+    xl:to dts2469:resource4402 ;
+    ] .
+
+dts2469:resource4402 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of guarantees received [on- and off- balance]"""@en ;
+    .
+
+dts2469:link91056 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AS ;
+    xl:to dts2469:resource4403 ;
+    ] .
+
+dts2469:resource4403 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of assets"""@en ;
+    .
+
+dts2469:link91057 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LB ;
+    xl:to dts2469:resource4404 ;
+    ] .
+
+dts2469:resource4404 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of liabilities"""@en ;
+    .
+
+dts2469:link91058 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OB ;
+    xl:to dts2469:resource4405 ;
+    ] .
+
+dts2469:resource4405 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of off balance sheets concepts"""@en ;
+    .
+
+dts2469:link91059 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LS ;
+    xl:to dts2469:resource4406 ;
+    ] .
+
+dts2469:resource4406 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Long or short positions"""@en ;
+    .
+
+dts2469:link91060 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OS ;
+    xl:to dts2469:resource4407 ;
+    ] .
+
+dts2469:resource4407 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of sum insured"""@en ;
+    .
+
+dts2469:link91061 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OZ ;
+    xl:to dts2469:resource4408 ;
+    ] .
+
+dts2469:resource4408 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Sum insured by the reporting entity including technical provisions [other than local GAAP specific]"""@en ;
+    .
+
+dts2469:link91062 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OF ;
+    xl:to dts2469:resource4409 ;
+    ] .
+
+dts2469:resource4409 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Own funds"""@en ;
+    .
+
+dts2469:link91063 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:PF ;
+    xl:to dts2469:resource4410 ;
+    ] .
+
+dts2469:resource4410 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of performance"""@en ;
+    .
+
+dts2469:link91064 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:VG ;
+    xl:to dts2469:resource4411 ;
+    ] .
+
+dts2469:resource4411 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Valuation general"""@en ;
+    .
+
+dts2469:link91065 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TA ;
+    xl:to dts2469:resource4412 ;
+    ] .
+
+dts2469:resource4412 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of amount"""@en ;
+    .
+
+dts2469:link91066 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DD ;
+    xl:to dts2469:resource4413 ;
+    ] .
+
+dts2469:resource4413 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Discounted or undiscounted"""@en ;
+    .
+
+dts2469:link91067 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:VP ;
+    xl:to dts2469:resource4414 ;
+    ] .
+
+dts2469:resource4414 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Valuation of provisions"""@en ;
+    .
+
+dts2469:link91068 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AD ;
+    xl:to dts2469:resource4415 ;
+    ] .
+
+dts2469:resource4415 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Prospective or retrospective"""@en ;
+    .
+
+dts2469:link91069 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TQ ;
+    xl:to dts2469:resource4416 ;
+    ] .
+
+dts2469:resource4416 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of capital requirement"""@en ;
+    .
+
+dts2469:link91070 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:VM ;
+    xl:to dts2469:resource4417 ;
+    ] .
+
+dts2469:resource4417 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Valuation method"""@en ;
+    .
+
+dts2469:link91071 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:VL ;
+    xl:to dts2469:resource4418 ;
+    ] .
+
+dts2469:resource4418 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Valuation of provisions [general]"""@en ;
+    .
+
+dts2469:link91072 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AG ;
+    xl:to dts2469:resource4419 ;
+    ] .
+
+dts2469:resource4419 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Changes in own funds"""@en ;
+    .
+
+dts2469:link91073 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:HH ;
+    xl:to dts2469:resource4420 ;
+    ] .
+
+dts2469:resource4420 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Changes in technical provisions"""@en ;
+    .
+
+dts2469:link91074 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SY ;
+    xl:to dts2469:resource4421 ;
+    ] .
+
+dts2469:resource4421 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Status of share payment, initial fund or mutual members account"""@en ;
+    .
+
+dts2469:link91075 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DU ;
+    xl:to dts2469:resource4422 ;
+    ] .
+
+dts2469:resource4422 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Dated or undated"""@en ;
+    .
+
+dts2469:link91076 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XS ;
+    xl:to dts2469:resource4423 ;
+    ] .
+
+dts2469:resource4423 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Changes in excess of assets over liabilities"""@en ;
+    .
+
+dts2469:link91077 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:EA ;
+    xl:to dts2469:resource4424 ;
+    ] .
+
+dts2469:resource4424 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """SCR calculation"""@en ;
+    .
+
+dts2469:link91078 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DI ;
+    xl:to dts2469:resource4425 ;
+    ] .
+
+dts2469:resource4425 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Instant or duration"""@en ;
+    .
+
+dts2469:link91079 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RR ;
+    xl:to dts2469:resource4426 ;
+    ] .
+
+dts2469:resource4426 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Valuation of recoverables"""@en ;
+    .
+
+dts2469:link91080 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IT ;
+    xl:to dts2469:resource4427 ;
+    ] .
+
+dts2469:resource4427 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Treatment of risk mitigation"""@en ;
+    .
+
+dts2469:link91081 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CC ;
+    xl:to dts2469:resource4428 ;
+    ] .
+
+dts2469:resource4428 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Ceded and not ceded"""@en ;
+    .
+
+dts2469:link91082 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:HS ;
+    xl:to dts2469:resource4429 ;
+    ] .
+
+dts2469:resource4429 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of hedging strategies"""@en ;
+    .
+
+dts2469:link91083 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AX ;
+    xl:to dts2469:resource4430 ;
+    ] .
+
+dts2469:resource4430 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Applicable standard"""@en ;
+    .
+
+dts2469:link91084 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TU ;
+    xl:to dts2469:resource4431 ;
+    ] .
+
+dts2469:resource4431 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of underwriting model"""@en ;
+    .
+
+dts2469:link91085 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TR ;
+    xl:to dts2469:resource4432 ;
+    ] .
+
+dts2469:resource4432 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of reinsurance [traditional or not]"""@en ;
+    .
+
+dts2469:link91086 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RX ;
+    xl:to dts2469:resource4433 ;
+    ] .
+
+dts2469:resource4433 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of reinsurance treaty"""@en ;
+    .
+
+dts2469:link91087 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XL ;
+    xl:to dts2469:resource4434 ;
+    ] .
+
+dts2469:resource4434 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """XL premiums"""@en ;
+    .
+
+dts2469:link91088 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IY ;
+    xl:to dts2469:resource4435 ;
+    ] .
+
+dts2469:resource4435 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Insurance/trade"""@en ;
+    .
+
+dts2469:link91089 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IO ;
+    xl:to dts2469:resource4436 ;
+    ] .
+
+dts2469:resource4436 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Investment or own use"""@en ;
+    .
+
+dts2469:link91090 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OU ;
+    xl:to dts2469:resource4437 ;
+    ] .
+
+dts2469:resource4437 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Treatment of participations in relation to own funds"""@en ;
+    .
+
+dts2469:link91091 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:PO ;
+    xl:to dts2469:resource4438 ;
+    ] .
+
+dts2469:resource4438 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Portfolio"""@en ;
+    .
+
+dts2469:link91092 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:PS ;
+    xl:to dts2469:resource4439 ;
+    ] .
+
+dts2469:resource4439 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Purpose"""@en ;
+    .
+
+dts2469:link91093 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AR ;
+    xl:to dts2469:resource4440 ;
+    ] .
+
+dts2469:resource4440 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Securitisation assets related and not related to cedant held in trust with other third party than cedant/sponsor"""@en ;
+    .
+
+dts2469:link91094 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:EZ ;
+    xl:to dts2469:resource4441 ;
+    ] .
+
+dts2469:resource4441 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Role of reporting entity in repo or securities lending"""@en ;
+    .
+
+dts2469:link91095 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CT ;
+    xl:to dts2469:resource4442 ;
+    ] .
+
+dts2469:resource4442 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Counterparties"""@en ;
+    .
+
+dts2469:link91096 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SV ;
+    xl:to dts2469:resource4443 ;
+    ] .
+
+dts2469:resource4443 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Reinsurance counterparties"""@en ;
+    .
+
+dts2469:link91097 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SO ;
+    xl:to dts2469:resource4444 ;
+    ] .
+
+dts2469:resource4444 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Entities under consolidation"""@en ;
+    .
+
+dts2469:link91098 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IS ;
+    xl:to dts2469:resource4445 ;
+    ] .
+
+dts2469:resource4445 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Issuer sector"""@en ;
+    .
+
+dts2469:link91099 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LF ;
+    xl:to dts2469:resource4446 ;
+    ] .
+
+dts2469:resource4446 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Legal form"""@en ;
+    .
+
+dts2469:link91100 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AY ;
+    xl:to dts2469:resource4447 ;
+    ] .
+
+dts2469:resource4447 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Activity of broker"""@en ;
+    .
+
+dts2469:link91101 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AC ;
+    xl:to dts2469:resource4448 ;
+    ] .
+
+dts2469:resource4448 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """SPV authorisation conditions"""@en ;
+    .
+
+dts2469:link91102 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CG ;
+    xl:to dts2469:resource4449 ;
+    ] .
+
+dts2469:resource4449 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Collateral/Guarantee"""@en ;
+    .
+
+dts2469:link91103 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LW ;
+    xl:to dts2469:resource4450 ;
+    ] .
+
+dts2469:resource4450 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Being collateral or not"""@en ;
+    .
+
+dts2469:link91104 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:FF ;
+    xl:to dts2469:resource4451 ;
+    ] .
+
+dts2469:resource4451 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """SPV sufficiently collateralised or not"""@en ;
+    .
+
+dts2469:link91105 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OT ;
+    xl:to dts2469:resource4452 ;
+    ] .
+
+dts2469:resource4452 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Capital protection"""@en ;
+    .
+
+dts2469:link91106 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TG ;
+    xl:to dts2469:resource4453 ;
+    ] .
+
+dts2469:resource4453 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of guarantee"""@en ;
+    .
+
+dts2469:link91107 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CB ;
+    xl:to dts2469:resource4454 ;
+    ] .
+
+dts2469:resource4454 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Insurance classes"""@en ;
+    .
+
+dts2469:link91108 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:BL ;
+    xl:to dts2469:resource4455 ;
+    ] .
+
+dts2469:resource4455 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Line of business [general]"""@en ;
+    .
+
+dts2469:link91109 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RB ;
+    xl:to dts2469:resource4456 ;
+    ] .
+
+dts2469:resource4456 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Related line of business"""@en ;
+    .
+
+dts2469:link91110 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TB ;
+    xl:to dts2469:resource4457 ;
+    ] .
+
+dts2469:resource4457 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Insurance/reinsurance business"""@en ;
+    .
+
+dts2469:link91111 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:HG ;
+    xl:to dts2469:resource4458 ;
+    ] .
+
+dts2469:resource4458 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Homogenous risk groups"""@en ;
+    .
+
+dts2469:link91112 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TZ ;
+    xl:to dts2469:resource4459 ;
+    ] .
+
+dts2469:resource4459 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of activity"""@en ;
+    .
+
+dts2469:link91113 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SX ;
+    xl:to dts2469:resource4460 ;
+    ] .
+
+dts2469:resource4460 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Product with surrender option or not"""@en ;
+    .
+
+dts2469:link91114 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RZ ;
+    xl:to dts2469:resource4461 ;
+    ] .
+
+dts2469:resource4461 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of contracts"""@en ;
+    .
+
+dts2469:link91115 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CZ ;
+    xl:to dts2469:resource4462 ;
+    ] .
+
+dts2469:resource4462 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Products commercialized or not"""@en ;
+    .
+
+dts2469:link91116 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IU ;
+    xl:to dts2469:resource4463 ;
+    ] .
+
+dts2469:resource4463 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of premium"""@en ;
+    .
+
+dts2469:link91117 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RI ;
+    xl:to dts2469:resource4464 ;
+    ] .
+
+dts2469:resource4464 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Replication of product by a financial instrument"""@en ;
+    .
+
+dts2469:link91118 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:UC ;
+    xl:to dts2469:resource4465 ;
+    ] .
+
+dts2469:resource4465 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of structured products"""@en ;
+    .
+
+dts2469:link91119 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:BE ;
+    xl:to dts2469:resource4466 ;
+    ] .
+
+dts2469:resource4466 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Solvency II own funds eligibility"""@en ;
+    .
+
+dts2469:link91120 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TX ;
+    xl:to dts2469:resource4467 ;
+    ] .
+
+dts2469:resource4467 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Tiers"""@en ;
+    .
+
+dts2469:link91121 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OE ;
+    xl:to dts2469:resource4468 ;
+    ] .
+
+dts2469:resource4468 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of equity"""@en ;
+    .
+
+dts2469:link91122 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:EI ;
+    xl:to dts2469:resource4469 ;
+    ] .
+
+dts2469:resource4469 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Treatment in relation to ring fencing"""@en ;
+    .
+
+dts2469:link91123 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:MS ;
+    xl:to dts2469:resource4470 ;
+    ] .
+
+dts2469:resource4470 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Availability to meet SCR criteria"""@en ;
+    .
+
+dts2469:link91124 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:MX ;
+    xl:to dts2469:resource4471 ;
+    ] .
+
+dts2469:resource4471 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Availability to meet MCR criteria"""@en ;
+    .
+
+dts2469:link91125 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:QX ;
+    xl:to dts2469:resource4472 ;
+    ] .
+
+dts2469:resource4472 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Consolidated capital requirement or solo"""@en ;
+    .
+
+dts2469:link91126 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LV ;
+    xl:to dts2469:resource4473 ;
+    ] .
+
+dts2469:resource4473 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Counting under transitionals"""@en ;
+    .
+
+dts2469:link91127 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CS ;
+    xl:to dts2469:resource4474 ;
+    ] .
+
+dts2469:resource4474 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Consolidation scope"""@en ;
+    .
+
+dts2469:link91128 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AA ;
+    xl:to dts2469:resource4475 ;
+    ] .
+
+dts2469:resource4475 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Availability of excess of assets over liabilities for RFF or MP"""@en ;
+    .
+
+dts2469:link91129 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RO ;
+    xl:to dts2469:resource4476 ;
+    ] .
+
+dts2469:resource4476 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Relation to group"""@en ;
+    .
+
+dts2469:link91130 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LZ ;
+    xl:to dts2469:resource4477 ;
+    ] .
+
+dts2469:resource4477 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Level of influence"""@en ;
+    .
+
+dts2469:link91131 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SM ;
+    xl:to dts2469:resource4478 ;
+    ] .
+
+dts2469:resource4478 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Group solvency assessment [method chosen]"""@en ;
+    .
+
+dts2469:link91132 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IG ;
+    xl:to dts2469:resource4479 ;
+    ] .
+
+dts2469:resource4479 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Treatment of intra-group transactions"""@en ;
+    .
+
+dts2469:link91133 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LL ;
+    xl:to dts2469:resource4480 ;
+    ] .
+
+dts2469:resource4480 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Minority or controlling interests"""@en ;
+    .
+
+dts2469:link91134 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OC ;
+    xl:to dts2469:resource4481 ;
+    ] .
+
+dts2469:resource4481 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Original/exposure currency"""@en ;
+    .
+
+dts2469:link91135 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CR ;
+    xl:to dts2469:resource4482 ;
+    ] .
+
+dts2469:resource4482 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Currency received"""@en ;
+    .
+
+dts2469:link91136 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CD ;
+    xl:to dts2469:resource4483 ;
+    ] .
+
+dts2469:resource4483 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Currency delivered/settlement/obligation currency"""@en ;
+    .
+
+dts2469:link91137 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RC ;
+    xl:to dts2469:resource4484 ;
+    ] .
+
+dts2469:resource4484 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Reporting currency"""@en ;
+    .
+
+dts2469:link91138 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:UR ;
+    xl:to dts2469:resource4485 ;
+    ] .
+
+dts2469:resource4485 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Placement currency/currency of contract"""@en ;
+    .
+
+dts2469:link91139 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:UU ;
+    xl:to dts2469:resource4486 ;
+    ] .
+
+dts2469:resource4486 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Original currency of underlying"""@en ;
+    .
+
+dts2469:link91140 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CJ ;
+    xl:to dts2469:resource4487 ;
+    ] .
+
+dts2469:resource4487 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Country of custody"""@en ;
+    .
+
+dts2469:link91141 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LA ;
+    xl:to dts2469:resource4488 ;
+    ] .
+
+dts2469:resource4488 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Localization of activity [based on place of underwriting]"""@en ;
+    .
+
+dts2469:link91142 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LX ;
+    xl:to dts2469:resource4489 ;
+    ] .
+
+dts2469:resource4489 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Localization of activity [based on localization of risk]"""@en ;
+    .
+
+dts2469:link91143 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:EE ;
+    xl:to dts2469:resource4490 ;
+    ] .
+
+dts2469:resource4490 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """EEA or not EEA"""@en ;
+    .
+
+dts2469:link91144 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:BI ;
+    xl:to dts2469:resource4491 ;
+    ] .
+
+dts2469:resource4491 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Countries by amount of gross premiums written"""@en ;
+    .
+
+dts2469:link91145 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CY ;
+    xl:to dts2469:resource4492 ;
+    ] .
+
+dts2469:resource4492 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Issuer country/country of residence"""@en ;
+    .
+
+dts2469:link91146 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AH ;
+    xl:to dts2469:resource4493 ;
+    ] .
+
+dts2469:resource4493 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Country of authorisation"""@en ;
+    .
+
+dts2469:link91147 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CW ;
+    xl:to dts2469:resource4494 ;
+    ] .
+
+dts2469:resource4494 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Regions"""@en ;
+    .
+
+dts2469:link91148 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:PI ;
+    xl:to dts2469:resource4495 ;
+    ] .
+
+dts2469:resource4495 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Threshold"""@en ;
+    .
+
+dts2469:link91149 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TS ;
+    xl:to dts2469:resource4496 ;
+    ] .
+
+dts2469:resource4496 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of string"""@en ;
+    .
+
+dts2469:link91150 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:ZR ;
+    xl:to dts2469:resource4497 ;
+    ] .
+
+dts2469:resource4497 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of triggering events"""@en ;
+    .
+
+dts2469:link91151 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TD ;
+    xl:to dts2469:resource4498 ;
+    ] .
+
+dts2469:resource4498 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of dates"""@en ;
+    .
+
+dts2469:link91152 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:NT ;
+    xl:to dts2469:resource4499 ;
+    ] .
+
+dts2469:resource4499 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of number"""@en ;
+    .
+
+dts2469:link91153 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:NB ;
+    xl:to dts2469:resource4500 ;
+    ] .
+
+dts2469:resource4500 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Number of bracket [loss distribution]"""@en ;
+    .
+
+dts2469:link91154 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:NZ ;
+    xl:to dts2469:resource4501 ;
+    ] .
+
+dts2469:resource4501 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Number of bracket [risk portfolio]"""@en ;
+    .
+
+dts2469:link91155 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:PP ;
+    xl:to dts2469:resource4502 ;
+    ] .
+
+dts2469:resource4502 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of percentage"""@en ;
+    .
+
+dts2469:link91156 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DC ;
+    xl:to dts2469:resource4503 ;
+    ] .
+
+dts2469:resource4503 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of decimal"""@en ;
+    .
+
+dts2469:link91157 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TE ;
+    xl:to dts2469:resource4504 ;
+    ] .
+
+dts2469:resource4504 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of income/expenses"""@en ;
+    .
+
+dts2469:link91158 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:PY ;
+    xl:to dts2469:resource4505 ;
+    ] .
+
+dts2469:resource4505 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Projected years"""@en ;
+    .
+
+dts2469:link91159 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DY ;
+    xl:to dts2469:resource4506 ;
+    ] .
+
+dts2469:resource4506 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Development years"""@en ;
+    .
+
+dts2469:link91160 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RM ;
+    xl:to dts2469:resource4507 ;
+    ] .
+
+dts2469:resource4507 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Previous months/years"""@en ;
+    .
+
+dts2469:link91161 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:HD ;
+    xl:to dts2469:resource4508 ;
+    ] .
+
+dts2469:resource4508 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of hedged risks"""@en ;
+    .
+
+dts2469:link91162 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:FZ ;
+    xl:to dts2469:resource4509 ;
+    ] .
+
+dts2469:resource4509 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risks inside or outside ring fenced funds"""@en ;
+    .
+
+dts2469:link91163 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IZ ;
+    xl:to dts2469:resource4510 ;
+    ] .
+
+dts2469:resource4510 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Acceptance/cover of risks"""@en ;
+    .
+
+dts2469:link91164 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RT ;
+    xl:to dts2469:resource4511 ;
+    ] .
+
+dts2469:resource4511 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk types"""@en ;
+    .
+
+dts2469:link91165 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TV ;
+    xl:to dts2469:resource4512 ;
+    ] .
+
+dts2469:resource4512 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Treatment of components"""@en ;
+    .
+
+dts2469:link91166 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:HC ;
+    xl:to dts2469:resource4513 ;
+    ] .
+
+dts2469:resource4513 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Hedge application"""@en ;
+    .
+
+dts2469:link91167 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SH ;
+    xl:to dts2469:resource4514 ;
+    ] .
+
+dts2469:resource4514 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Scenarios related to hedging"""@en ;
+    .
+
+dts2469:link91168 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AB ;
+    xl:to dts2469:resource4515 ;
+    ] .
+
+dts2469:resource4515 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk scenario"""@en ;
+    .
+
+dts2469:link91169 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DV ;
+    xl:to dts2469:resource4516 ;
+    ] .
+
+dts2469:resource4516 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Diversification of risk [on indicated level of risk aggregation]"""@en ;
+    .
+
+dts2469:link91170 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SB ;
+    xl:to dts2469:resource4517 ;
+    ] .
+
+dts2469:resource4517 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Status of claim at a beginning of period"""@en ;
+    .
+
+dts2469:link91171 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SD ;
+    xl:to dts2469:resource4518 ;
+    ] .
+
+dts2469:resource4518 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Status of claim at the end of period"""@en ;
+    .
+
+dts2469:link91172 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CH ;
+    xl:to dts2469:resource4519 ;
+    ] .
+
+dts2469:resource4519 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Change of status during the period"""@en ;
+    .
+
+dts2469:link91173 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AI ;
+    xl:to dts2469:resource4520 ;
+    ] .
+
+dts2469:resource4520 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of claim"""@en ;
+    .
+
+dts2469:link91174 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LY ;
+    xl:to dts2469:resource4521 ;
+    ] .
+
+dts2469:resource4521 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Callable or Putable"""@en ;
+    .
+
+dts2469:link91175 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:US ;
+    xl:to dts2469:resource4522 ;
+    ] .
+
+dts2469:resource4522 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Underlying security"""@en ;
+    .
+
+dts2469:link91176 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YP ;
+    xl:to dts2469:resource4523 ;
+    ] .
+
+dts2469:resource4523 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Prepayments for structured products"""@en ;
+    .
+
+dts2469:link91177 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:EX ;
+    xl:to dts2469:resource4524 ;
+    ] .
+
+dts2469:resource4524 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Exposure types"""@en ;
+    .
+
+dts2469:link91178 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:II ;
+    xl:to dts2469:resource4525 ;
+    ] .
+
+dts2469:resource4525 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Standard or internal model"""@en ;
+    .
+
+dts2469:link91179 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IP ;
+    xl:to dts2469:resource4526 ;
+    ] .
+
+dts2469:resource4526 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """ID code of product"""@en ;
+    .
+
+dts2469:link91180 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IB ;
+    xl:to dts2469:resource4527 ;
+    ] .
+
+dts2469:resource4527 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """ID code of underlying"""@en ;
+    .
+
+dts2469:link91181 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:HX ;
+    xl:to dts2469:resource4528 ;
+    ] .
+
+dts2469:resource4528 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """ID code of HRG"""@en ;
+    .
+
+dts2469:link91182 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RD ;
+    xl:to dts2469:resource4529 ;
+    ] .
+
+dts2469:resource4529 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk identification code"""@en ;
+    .
+
+dts2469:link91183 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RE ;
+    xl:to dts2469:resource4530 ;
+    ] .
+
+dts2469:resource4530 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Reinsurance program code"""@en ;
+    .
+
+dts2469:link91184 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:FC ;
+    xl:to dts2469:resource4531 ;
+    ] .
+
+dts2469:resource4531 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Facultative reinsurance placement identification code"""@en ;
+    .
+
+dts2469:link91185 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CE ;
+    xl:to dts2469:resource4532 ;
+    ] .
+
+dts2469:resource4532 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Identification code of entity"""@en ;
+    .
+
+dts2469:link91186 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IX ;
+    xl:to dts2469:resource4533 ;
+    ] .
+
+dts2469:resource4533 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Identification code of investor/buyer/transferee/payer/reinsured/beneficiary"""@en ;
+    .
+
+dts2469:link91187 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:ZS ;
+    xl:to dts2469:resource4534 ;
+    ] .
+
+dts2469:resource4534 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Identification code of issuer/seller/transferor/receiver/reinsurer/provider"""@en ;
+    .
+
+dts2469:link91188 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CI ;
+    xl:to dts2469:resource4535 ;
+    ] .
+
+dts2469:resource4535 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Code of guarantee"""@en ;
+    .
+
+dts2469:link91189 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RF ;
+    xl:to dts2469:resource4536 ;
+    ] .
+
+dts2469:resource4536 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Code reinsurer"""@en ;
+    .
+
+dts2469:link91190 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:UB ;
+    xl:to dts2469:resource4537 ;
+    ] .
+
+dts2469:resource4537 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.03 line identification"""@en ;
+    .
+
+dts2469:link91191 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SI ;
+    xl:to dts2469:resource4538 ;
+    ] .
+
+dts2469:resource4538 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.04 line identification"""@en ;
+    .
+
+dts2469:link91192 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CA ;
+    xl:to dts2469:resource4539 ;
+    ] .
+
+dts2469:resource4539 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Code broker"""@en ;
+    .
+
+dts2469:link91193 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OV ;
+    xl:to dts2469:resource4540 ;
+    ] .
+
+dts2469:resource4540 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Code of SPV"""@en ;
+    .
+
+dts2469:link91194 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:MM ;
+    xl:to dts2469:resource4541 ;
+    ] .
+
+dts2469:resource4541 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91195 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CP ;
+    xl:to dts2469:resource4542 ;
+    ] .
+
+dts2469:resource4542 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.02 line identification"""@en ;
+    .
+
+dts2469:link91196 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SZ ;
+    xl:to dts2469:resource4543 ;
+    ] .
+
+dts2469:resource4543 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.05 line identification"""@en ;
+    .
+
+dts2469:link91197 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CK ;
+    xl:to dts2469:resource4544 ;
+    ] .
+
+dts2469:resource4544 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.06 line identification"""@en ;
+    .
+
+dts2469:link91198 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:UX ;
+    xl:to dts2469:resource4545 ;
+    ] .
+
+dts2469:resource4545 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Code of group of debtor pledging the collateral"""@en ;
+    .
+
+dts2469:link91199 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:NX ;
+    xl:to dts2469:resource4546 ;
+    ] .
+
+dts2469:resource4546 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Code of component"""@en ;
+    .
+
+dts2469:link91200 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IR ;
+    xl:to dts2469:resource4547 ;
+    ] .
+
+dts2469:resource4547 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """ID of counterparty [in repo/securities lending]"""@en ;
+    .
+
+dts2469:link91201 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CF ;
+    xl:to dts2469:resource4548 ;
+    ] .
+
+dts2469:resource4548 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """CIC code"""@en ;
+    .
+
+dts2469:link91202 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:FI ;
+    xl:to dts2469:resource4549 ;
+    ] .
+
+dts2469:resource4549 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Product classification ID"""@en ;
+    .
+
+dts2469:link91203 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LM ;
+    xl:to dts2469:resource4550 ;
+    ] .
+
+dts2469:resource4550 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """CIC code [third digit] of most significant collateral"""@en ;
+    .
+
+dts2469:link91204 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LC ;
+    xl:to dts2469:resource4551 ;
+    ] .
+
+dts2469:resource4551 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Limited CIC code"""@en ;
+    .
+
+dts2469:link91205 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CL ;
+    xl:to dts2469:resource4552 ;
+    ] .
+
+dts2469:resource4552 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Composite limited CIC code of underlying"""@en ;
+    .
+
+dts2469:link91206 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:ST ;
+    xl:to dts2469:resource4553 ;
+    ] .
+
+dts2469:resource4553 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Section code in the treaty"""@en ;
+    .
+
+dts2469:link91207 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OD ;
+    xl:to dts2469:resource4554 ;
+    ] .
+
+dts2469:resource4554 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Treaty identification code"""@en ;
+    .
+
+dts2469:link91208 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:GX ;
+    xl:to dts2469:resource4555 ;
+    ] .
+
+dts2469:resource4555 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """ID of intragroup transaction"""@en ;
+    .
+
+dts2469:link91209 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AZ ;
+    xl:to dts2469:resource4556 ;
+    ] .
+
+dts2469:resource4556 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Group identification code"""@en ;
+    .
+
+dts2469:link91210 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:VN ;
+    xl:to dts2469:resource4557 ;
+    ] .
+
+dts2469:resource4557 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Name of vessel"""@en ;
+    .
+
+dts2469:link91211 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:NP ;
+    xl:to dts2469:resource4558 ;
+    ] .
+
+dts2469:resource4558 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Name of platform"""@en ;
+    .
+
+dts2469:link91212 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:NS ;
+    xl:to dts2469:resource4559 ;
+    ] .
+
+dts2469:resource4559 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Name of reinsured entity"""@en ;
+    .
+
+dts2469:link91213 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:NR ;
+    xl:to dts2469:resource4560 ;
+    ] .
+
+dts2469:resource4560 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Name of related party"""@en ;
+    .
+
+dts2469:link91214 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:WW ;
+    xl:to dts2469:resource4561 ;
+    ] .
+
+dts2469:resource4561 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Name of debtor pledging the collateral"""@en ;
+    .
+
+dts2469:link91215 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LP ;
+    xl:to dts2469:resource4562 ;
+    ] .
+
+dts2469:resource4562 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Progressive number of surplus/layer in program"""@en ;
+    .
+
+dts2469:link91216 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:WX ;
+    xl:to dts2469:resource4563 ;
+    ] .
+
+dts2469:resource4563 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of asset for which collateral is held"""@en ;
+    .
+
+dts2469:link91217 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:MZ ;
+    xl:to dts2469:resource4564 ;
+    ] .
+
+dts2469:resource4564 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Nature of exposure"""@en ;
+    .
+
+dts2469:link91218 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:ER ;
+    xl:to dts2469:resource4565 ;
+    ] .
+
+dts2469:resource4565 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """External rating"""@en ;
+    .
+
+dts2469:link91219 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RA ;
+    xl:to dts2469:resource4566 ;
+    ] .
+
+dts2469:resource4566 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Rating agency"""@en ;
+    .
+
+dts2469:link91220 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LT ;
+    xl:to dts2469:resource4567 ;
+    ] .
+
+dts2469:resource4567 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Loss-absorbing capacity of technical provisions"""@en ;
+    .
+
+dts2469:link91221 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LD ;
+    xl:to dts2469:resource4568 ;
+    ] .
+
+dts2469:resource4568 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Loss-absorbing capacity of deferred taxes"""@en ;
+    .
+
+dts2469:link91222 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:NF ;
+    xl:to dts2469:resource4569 ;
+    ] .
+
+dts2469:resource4569 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Number of fund"""@en ;
+    .
+
+dts2469:link91223 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XA ;
+    xl:to dts2469:resource4570 ;
+    ] .
+
+dts2469:resource4570 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.06.02.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91224 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XB ;
+    xl:to dts2469:resource4571 ;
+    ] .
+
+dts2469:resource4571 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.08.01.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91225 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XC ;
+    xl:to dts2469:resource4572 ;
+    ] .
+
+dts2469:resource4572 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.08.02.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91226 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XD ;
+    xl:to dts2469:resource4573 ;
+    ] .
+
+dts2469:resource4573 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.09.01.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91227 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XE ;
+    xl:to dts2469:resource4574 ;
+    ] .
+
+dts2469:resource4574 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.06.03.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91228 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XF ;
+    xl:to dts2469:resource4575 ;
+    ] .
+
+dts2469:resource4575 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.10.01.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91229 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XG ;
+    xl:to dts2469:resource4576 ;
+    ] .
+
+dts2469:resource4576 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.11.01.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91230 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XH ;
+    xl:to dts2469:resource4577 ;
+    ] .
+
+dts2469:resource4577 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.14.01.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91231 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XI ;
+    xl:to dts2469:resource4578 ;
+    ] .
+
+dts2469:resource4578 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.15.01 line identification"""@en ;
+    .
+
+dts2469:link91232 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XK ;
+    xl:to dts2469:resource4579 ;
+    ] .
+
+dts2469:resource4579 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.30.02 line identification, non-life"""@en ;
+    .
+
+dts2469:link91233 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XM ;
+    xl:to dts2469:resource4580 ;
+    ] .
+
+dts2469:resource4580 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.30.02 line identification, life"""@en ;
+    .
+
+dts2469:link91234 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XN ;
+    xl:to dts2469:resource4581 ;
+    ] .
+
+dts2469:resource4581 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Re-J2 line identification"""@en ;
+    .
+
+dts2469:link91235 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XO ;
+    xl:to dts2469:resource4582 ;
+    ] .
+
+dts2469:resource4582 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.31.01 line identification"""@en ;
+    .
+
+dts2469:link91236 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XU ;
+    xl:to dts2469:resource4583 ;
+    ] .
+
+dts2469:resource4583 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.31.02.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91237 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XP ;
+    xl:to dts2469:resource4584 ;
+    ] .
+
+dts2469:resource4584 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.30.03 line identification"""@en ;
+    .
+
+dts2469:link91238 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:BX ;
+    xl:to dts2469:resource4585 ;
+    ] .
+
+dts2469:resource4585 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of boolean"""@en ;
+    .
+
+dts2469:link91239 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:UG ;
+    xl:to dts2469:resource4586 ;
+    ] .
+
+dts2469:resource4586 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Not recognized diversification of risk [on indicated level of risk aggregation between RFF and remaining]"""@en ;
+    .
+
+dts2469:link91240 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TP ;
+    xl:to dts2469:resource4587 ;
+    ] .
+
+dts2469:resource4587 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Templates"""@en ;
+    .
+
+dts2469:link91241 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IC ;
+    xl:to dts2469:resource4588 ;
+    ] .
+
+dts2469:resource4588 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Issuer ID"""@en ;
+    .
+
+dts2469:link91242 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:GC ;
+    xl:to dts2469:resource4589 ;
+    ] .
+
+dts2469:resource4589 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Issuer Group ID"""@en ;
+    .
+
+dts2469:link91243 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:UI ;
+    xl:to dts2469:resource4590 ;
+    ] .
+
+dts2469:resource4590 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """URI"""@en ;
+    .
+
+dts2469:link91244 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CO ;
+    xl:to dts2469:resource4591 ;
+    ] .
+
+dts2469:resource4591 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Counterparty ID"""@en ;
+    .
+
+dts2469:link91245 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:GO ;
+    xl:to dts2469:resource4592 ;
+    ] .
+
+dts2469:resource4592 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Counterparty Group ID"""@en ;
+    .
+
+dts2469:link91246 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AO ;
+    xl:to dts2469:resource4593 ;
+    ] .
+
+dts2469:resource4593 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Article 112"""@en ;
+    .
+
+dts2469:link91247 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:HO ;
+    xl:to dts2469:resource4594 ;
+    ] .
+
+dts2469:resource4594 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Home Country"""@en ;
+    .
+
+dts2469:link91248 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RY ;
+    xl:to dts2469:resource4595 ;
+    ] .
+
+dts2469:resource4595 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Reporting Country"""@en ;
+    .
+
+dts2469:link91249 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CN ;
+    xl:to dts2469:resource4596 ;
+    ] .
+
+dts2469:resource4596 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Content"""@en ;
+    .
+
+dts2469:link91250 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TL ;
+    xl:to dts2469:resource4597 ;
+    ] .
+
+dts2469:resource4597 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of URI"""@en ;
+    .
+
+dts2469:link91251 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SU ;
+    xl:to dts2469:resource4598 ;
+    ] .
+
+dts2469:resource4598 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of instruments or transactions"""@en ;
+    .
+
+dts2469:link91252 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:PN ;
+    xl:to dts2469:resource4599 ;
+    ] .
+
+dts2469:resource4599 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Proportional or Non-proportional"""@en ;
+    .
+
+dts2469:link91253 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TC ;
+    xl:to dts2469:resource4600 ;
+    ] .
+
+dts2469:resource4600 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of collateral"""@en ;
+    .
+
+dts2469:link91254 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CV ;
+    xl:to dts2469:resource4601 ;
+    ] .
+
+dts2469:resource4601 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Code collateral/guarantee provider"""@en ;
+    .
+
+dts2469:link91255 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:PC ;
+    xl:to dts2469:resource4602 ;
+    ] .
+
+dts2469:resource4602 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Collateral portfolio"""@en ;
+    .
+
+dts2469:link91256 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TH ;
+    xl:to dts2469:resource4603 ;
+    ] .
+
+dts2469:resource4603 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of Asset for which collateral is held"""@en ;
+    .
+
+dts2469:link91257 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:QS ;
+    xl:to dts2469:resource4604 ;
+    ] .
+
+dts2469:resource4604 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Credit Quality Step"""@en ;
+    .
+
+dts2469:link91258 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DO ;
+    xl:to dts2469:resource4605 ;
+    ] .
+
+dts2469:resource4605 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Datapoint Owner"""@en ;
+    .
+
+dts2469:link91259 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:NC ;
+    xl:to dts2469:resource4606 ;
+    ] .
+
+dts2469:resource4606 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """NACE"""@en ;
+    .
+
+dts2469:link91260 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LI ;
+    xl:to dts2469:resource4607 ;
+    ] .
+
+dts2469:resource4607 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Languages"""@en ;
+    .
+
+dts2469:link91261 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:FN ;
+    xl:to dts2469:resource4608 ;
+    ] .
+
+dts2469:resource4608 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Fund/Matching portfolio Number"""@en ;
+    .
+
+dts2469:link91262 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SN ;
+    xl:to dts2469:resource4609 ;
+    ] .
+
+dts2469:resource4609 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Sub Fund/Portfolio Number"""@en ;
+    .
+
+dts2469:link91263 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:MT ;
+    xl:to dts2469:resource4610 ;
+    ] .
+
+dts2469:resource4610 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Material"""@en ;
+    .
+
+dts2469:link91264 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:MP ;
+    xl:to dts2469:resource4611 ;
+    ] .
+
+dts2469:resource4611 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Matching portfolio number"""@en ;
+    .
+
+dts2469:link91265 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CX ;
+    xl:to dts2469:resource4612 ;
+    ] .
+
+dts2469:resource4612 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Code collateral/guarantee receiver"""@en ;
+    .
+
+dts2469:link91266 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LR ;
+    xl:to dts2469:resource4613 ;
+    ] .
+
+dts2469:resource4613 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Location of the branch"""@en ;
+    .
+
+dts2469:link91267 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IW ;
+    xl:to dts2469:resource4614 ;
+    ] .
+
+dts2469:resource4614 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Code of underlying derivative"""@en ;
+    .
+
+dts2469:link91268 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TF ;
+    xl:to dts2469:resource4615 ;
+    ] .
+
+dts2469:resource4615 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Transitional measure on technical provisions"""@en ;
+    .
+
+dts2469:link91269 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:VV ;
+    xl:to dts2469:resource4616 ;
+    ] .
+
+dts2469:resource4616 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Transitional adjustment on Technical Provisions"""@en ;
+    .
+
+dts2469:link91270 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:UW ;
+    xl:to dts2469:resource4617 ;
+    ] .
+
+dts2469:resource4617 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Use of undertaking specific parameters"""@en ;
+    .
+
+dts2469:link91271 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AE ;
+    xl:to dts2469:resource4618 ;
+    ] .
+
+dts2469:resource4618 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Article 304"""@en ;
+    .
+
+dts2469:link91272 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:UD ;
+    xl:to dts2469:resource4619 ;
+    ] .
+
+dts2469:resource4619 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """USP Standard Deviation gross/net"""@en ;
+    .
+
+dts2469:link91273 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:VI ;
+    xl:to dts2469:resource4620 ;
+    ] .
+
+dts2469:resource4620 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Impact of the long term guarantees and transitional measures"""@en ;
+    .
+
+dts2469:link91274 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TM ;
+    xl:to dts2469:resource4621 ;
+    ] .
+
+dts2469:resource4621 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Identification of material investments"""@en ;
+    .
+
+dts2469:link91275 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LN ;
+    xl:to dts2469:resource4622 ;
+    ] .
+
+dts2469:resource4622 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Legal nature of SPV"""@en ;
+    .
+
+dts2469:link91276 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:VB ;
+    xl:to dts2469:resource4623 ;
+    ] .
+
+dts2469:resource4623 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Impact on Assets/Liability/Off Balance Sheet"""@en ;
+    .
+
+dts2469:link91277 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TK ;
+    xl:to dts2469:resource4624 ;
+    ] .
+
+dts2469:resource4624 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Time reference"""@en ;
+    .
+
+dts2469:link91278 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:FM ;
+    xl:to dts2469:resource4625 ;
+    ] .
+
+dts2469:resource4625 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Future management actions regarding technical provisions and/or deferred taxes"""@en ;
+    .
+
+dts2469:link91279 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LE ;
+    xl:to dts2469:resource4626 ;
+    ] .
+
+dts2469:resource4626 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life/non-life activity"""@en ;
+    .
+
+dts2469:link91280 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XR ;
+    xl:to dts2469:resource4627 ;
+    ] .
+
+dts2469:resource4627 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.07.01.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91281 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TO ;
+    xl:to dts2469:resource4628 ;
+    ] .
+
+dts2469:resource4628 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Total line of business or by currency"""@en ;
+    .
+
+dts2469:link91282 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:UH ;
+    xl:to dts2469:resource4629 ;
+    ] .
+
+dts2469:resource4629 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Recognized diversification of risk [on indicated level of risk aggregation between RFF and remaining]"""@en ;
+    .
+
+dts2469:link91283 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AT ;
+    xl:to dts2469:resource4630 ;
+    ] .
+
+dts2469:resource4630 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Article 167"""@en ;
+    .
+
+dts2469:link91284 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:EN ;
+    xl:to dts2469:resource4631 ;
+    ] .
+
+dts2469:resource4631 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Encumbrance"""@en ;
+    .
+
+dts2469:link91285 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XT ;
+    xl:to dts2469:resource4632 ;
+    ] .
+
+dts2469:resource4632 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.02.03.zz.03 line identification"""@en ;
+    .
+
+dts2469:link91286 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XZ ;
+    xl:to dts2469:resource4633 ;
+    ] .
+
+dts2469:resource4633 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """E.01.01.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91287 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LG ;
+    xl:to dts2469:resource4634 ;
+    ] .
+
+dts2469:resource4634 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Localization of activity"""@en ;
+    .
+
+dts2469:link91288 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DA ;
+    xl:to dts2469:resource4635 ;
+    ] .
+
+dts2469:resource4635 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Description of the material class of assets"""@en ;
+    .
+
+dts2469:link91289 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DL ;
+    xl:to dts2469:resource4636 ;
+    ] .
+
+dts2469:resource4636 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Description of the material class of liabilities"""@en ;
+    .
+
+dts2469:link91290 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DE ;
+    xl:to dts2469:resource4637 ;
+    ] .
+
+dts2469:resource4637 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Description of the material equity items"""@en ;
+    .
+
+dts2469:link91291 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DB ;
+    xl:to dts2469:resource4638 ;
+    ] .
+
+dts2469:resource4638 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Description of the off-balance sheet obligation"""@en ;
+    .
+
+dts2469:link91292 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:RS ;
+    xl:to dts2469:resource4639 ;
+    ] .
+
+dts2469:resource4639 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk arrangement code"""@en ;
+    .
+
+dts2469:link91293 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:IA ;
+    xl:to dts2469:resource4640 ;
+    ] .
+
+dts2469:resource4640 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Issues/ uses commenced prior to implementation"""@en ;
+    .
+
+dts2469:link91294 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:FR ;
+    xl:to dts2469:resource4641 ;
+    ] .
+
+dts2469:resource4641 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Compliance with the fully funded requirement for the arrangement"""@en ;
+    .
+
+dts2469:link91295 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:NA ;
+    xl:to dts2469:resource4642 ;
+    ] .
+
+dts2469:resource4642 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Name of a branch included under Article 167"""@en ;
+    .
+
+dts2469:link91296 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:CM ;
+    xl:to dts2469:resource4643 ;
+    ] .
+
+dts2469:resource4643 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Method of consolidation"""@en ;
+    .
+
+dts2469:link91297 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AF ;
+    xl:to dts2469:resource4644 ;
+    ] .
+
+dts2469:resource4644 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Currency conversion approach"""@en ;
+    .
+
+dts2469:link91298 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DF ;
+    xl:to dts2469:resource4645 ;
+    ] .
+
+dts2469:resource4645 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Description of the off-balance sheet item"""@en ;
+    .
+
+dts2469:link91299 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XY ;
+    xl:to dts2469:resource4646 ;
+    ] .
+
+dts2469:resource4646 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.10 line identification"""@en ;
+    .
+
+dts2469:link91300 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:ET ;
+    xl:to dts2469:resource4647 ;
+    ] .
+
+dts2469:resource4647 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of equity"""@en ;
+    .
+
+dts2469:link91301 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YA ;
+    xl:to dts2469:resource4648 ;
+    ] .
+
+dts2469:resource4648 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.36.01.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91302 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YB ;
+    xl:to dts2469:resource4649 ;
+    ] .
+
+dts2469:resource4649 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.36.02.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91303 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YC ;
+    xl:to dts2469:resource4650 ;
+    ] .
+
+dts2469:resource4650 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.36.03.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91304 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YD ;
+    xl:to dts2469:resource4651 ;
+    ] .
+
+dts2469:resource4651 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.36.04.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91305 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YE ;
+    xl:to dts2469:resource4652 ;
+    ] .
+
+dts2469:resource4652 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.30.04.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91306 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YF ;
+    xl:to dts2469:resource4653 ;
+    ] .
+
+dts2469:resource4653 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.37.01.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91307 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:LH ;
+    xl:to dts2469:resource4654 ;
+    ] .
+
+dts2469:resource4654 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Long term guarantees transitionals and measures adjustments"""@en ;
+    .
+
+dts2469:link91308 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YG ;
+    xl:to dts2469:resource4655 ;
+    ] .
+
+dts2469:resource4655 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91309 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YH ;
+    xl:to dts2469:resource4656 ;
+    ] .
+
+dts2469:resource4656 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.02 line identification"""@en ;
+    .
+
+dts2469:link91310 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YI ;
+    xl:to dts2469:resource4657 ;
+    ] .
+
+dts2469:resource4657 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.03 line identification"""@en ;
+    .
+
+dts2469:link91311 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YJ ;
+    xl:to dts2469:resource4658 ;
+    ] .
+
+dts2469:resource4658 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.04 line identification"""@en ;
+    .
+
+dts2469:link91312 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YK ;
+    xl:to dts2469:resource4659 ;
+    ] .
+
+dts2469:resource4659 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.05 line identification"""@en ;
+    .
+
+dts2469:link91313 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YL ;
+    xl:to dts2469:resource4660 ;
+    ] .
+
+dts2469:resource4660 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.23.04.zz.06 line identification"""@en ;
+    .
+
+dts2469:link91314 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YM ;
+    xl:to dts2469:resource4661 ;
+    ] .
+
+dts2469:resource4661 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """T.99.01.01.01 line identification (Table)"""@en ;
+    .
+
+dts2469:link91315 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YN ;
+    xl:to dts2469:resource4662 ;
+    ] .
+
+dts2469:resource4662 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """T.99.01.01.01 line identification (X axis)"""@en ;
+    .
+
+dts2469:link91316 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YO ;
+    xl:to dts2469:resource4663 ;
+    ] .
+
+dts2469:resource4663 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """T.99.01.01.01 line identification (Y axis)"""@en ;
+    .
+
+dts2469:link91317 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YR ;
+    xl:to dts2469:resource4664 ;
+    ] .
+
+dts2469:resource4664 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """T.99.01.01.01 line identification (Z axis)"""@en ;
+    .
+
+dts2469:link91318 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XJ ;
+    xl:to dts2469:resource4665 ;
+    ] .
+
+dts2469:resource4665 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PF.06.02.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91319 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XW ;
+    xl:to dts2469:resource4666 ;
+    ] .
+
+dts2469:resource4666 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PF.06.03.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91320 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:TW ;
+    xl:to dts2469:resource4667 ;
+    ] .
+
+dts2469:resource4667 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Type of contribution"""@en ;
+    .
+
+dts2469:link91321 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:PE ;
+    xl:to dts2469:resource4668 ;
+    ] .
+
+dts2469:resource4668 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Pension fund category"""@en ;
+    .
+
+dts2469:link91322 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:BA ;
+    xl:to dts2469:resource4669 ;
+    ] .
+
+dts2469:resource4669 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Assets value brackets"""@en ;
+    .
+
+dts2469:link91323 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:ZZ ;
+    xl:to dts2469:resource4670 ;
+    ] .
+
+dts2469:resource4670 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """IORP identification code"""@en ;
+    .
+
+dts2469:link91324 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:UA ;
+    xl:to dts2469:resource4671 ;
+    ] .
+
+dts2469:resource4671 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Underlying assets"""@en ;
+    .
+
+dts2469:link91325 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YS ;
+    xl:to dts2469:resource4672 ;
+    ] .
+
+dts2469:resource4672 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PT.99.01.24.01 line identification (Table)"""@en ;
+    .
+
+dts2469:link91326 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YT ;
+    xl:to dts2469:resource4673 ;
+    ] .
+
+dts2469:resource4673 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PT.99.01.24.01 line identification (X axis)"""@en ;
+    .
+
+dts2469:link91327 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YU ;
+    xl:to dts2469:resource4674 ;
+    ] .
+
+dts2469:resource4674 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PT.99.01.24.01 line identification (Y axis)"""@en ;
+    .
+
+dts2469:link91328 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YW ;
+    xl:to dts2469:resource4675 ;
+    ] .
+
+dts2469:resource4675 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PT.99.01.24.01 line identification (Z axis)"""@en ;
+    .
+
+dts2469:link91329 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OM ;
+    xl:to dts2469:resource4676 ;
+    ] .
+
+dts2469:resource4676 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Original maturity"""@en ;
+    .
+
+dts2469:link91330 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:DZ ;
+    xl:to dts2469:resource4677 ;
+    ] .
+
+dts2469:resource4677 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Issuer country/country of residence - for statistical purposes"""@en ;
+    .
+
+dts2469:link91331 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XX ;
+    xl:to dts2469:resource4678 ;
+    ] .
+
+dts2469:resource4678 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Simplification category or type"""@en ;
+    .
+
+dts2469:link91332 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:XV ;
+    xl:to dts2469:resource4679 ;
+    ] .
+
+dts2469:resource4679 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PF.08.01.zz.01 line identification"""@en ;
+    .
+
+dts2469:link91333 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:AP ;
+    xl:to dts2469:resource4680 ;
+    ] .
+
+dts2469:resource4680 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Age of PEPP saver"""@en ;
+    .
+
+dts2469:link91334 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:PR ;
+    xl:to dts2469:resource4681 ;
+    ] .
+
+dts2469:resource4681 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PEPP investment performance"""@en ;
+    .
+
+dts2469:link91335 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:PL ;
+    xl:to dts2469:resource4682 ;
+    ] .
+
+dts2469:resource4682 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Payment intervals"""@en ;
+    .
+
+dts2469:link91336 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:SC ;
+    xl:to dts2469:resource4683 ;
+    ] .
+
+dts2469:resource4683 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PEPP performance scenario"""@en ;
+    .
+
+dts2469:link91337 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OP ;
+    xl:to dts2469:resource4684 ;
+    ] .
+
+dts2469:resource4684 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Forms of out-payments"""@en ;
+    .
+
+dts2469:link91338 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:OR ;
+    xl:to dts2469:resource4685 ;
+    ] .
+
+dts2469:resource4685 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """One-off or recurring"""@en ;
+    .
+
+dts2469:link91339 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YV ;
+    xl:to dts2469:resource4686 ;
+    ] .
+
+dts2469:resource4686 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PET.99.01.24.01 line identification (Table)"""@en ;
+    .
+
+dts2469:link91340 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YX ;
+    xl:to dts2469:resource4687 ;
+    ] .
+
+dts2469:resource4687 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PET.99.01.24.01 line identification (X axis)"""@en ;
+    .
+
+dts2469:link91341 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YY ;
+    xl:to dts2469:resource4688 ;
+    ] .
+
+dts2469:resource4688 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PET.99.01.24.01 line identification (Y axis)"""@en ;
+    .
+
+dts2469:link91342 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_dim:YZ ;
+    xl:to dts2469:resource4689 ;
+    ] .
+
+dts2469:resource4689 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """PET.99.01.24.01 line identification (Z axis)"""@en ;
+    .
+

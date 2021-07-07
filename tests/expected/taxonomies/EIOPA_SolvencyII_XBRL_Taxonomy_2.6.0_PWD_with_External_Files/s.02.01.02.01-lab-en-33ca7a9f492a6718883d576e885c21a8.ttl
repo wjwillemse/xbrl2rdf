@@ -1,0 +1,1283 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-lab-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix s2md_tab_S.02.01.02.01: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01#>.
+@prefix arcrole1: <http://xbrl.org/arcrole/2008#>.
+@prefix role1: <http://www.xbrl.org/2003/role#>.
+@prefix label: <http://xbrl.org/2008/label#>.
+@prefix role3: <http://www.xbrl.org/2008/role#>.
+@prefix dts2447: <http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-lab-en.xml#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-lab-en.xml
+
+dts2447:link90338 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_tS.02.01.02.01 ;
+    xl:to dts2447:resource3904 ;
+    ] .
+
+dts2447:resource3904 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Balance sheet"""@en ;
+    .
+
+dts2447:link90339 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_tS.02.01.02.01 ;
+    xl:to dts2447:resource3905 ;
+    ] .
+
+dts2447:resource3905 
+    xl:type label:label ;
+    xlink:role role3:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.02.01.02.01 Balance sheet"""@en ;
+    .
+
+dts2447:link90340 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_a1 ;
+    xl:to dts2447:resource3906 ;
+    ] .
+
+dts2447:resource3906 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Columns"""@en ;
+    .
+
+dts2447:link90341 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c689 ;
+    xl:to dts2447:resource3907 ;
+    ] .
+
+dts2447:resource3907 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Solvency II value"""@en ;
+    .
+
+dts2447:link90342 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_a2 ;
+    xl:to dts2447:resource3908 ;
+    ] .
+
+dts2447:resource3908 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Rows"""@en ;
+    .
+
+dts2447:link90343 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c690 ;
+    xl:to dts2447:resource3909 ;
+    ] .
+
+dts2447:resource3909 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Assets"""@en ;
+    .
+
+dts2447:link90344 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c691 ;
+    xl:to dts2447:resource3910 ;
+    ] .
+
+dts2447:resource3910 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Goodwill"""@en ;
+    .
+
+dts2447:link90345 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c692 ;
+    xl:to dts2447:resource3911 ;
+    ] .
+
+dts2447:resource3911 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Deferred acquisition costs"""@en ;
+    .
+
+dts2447:link90346 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c693 ;
+    xl:to dts2447:resource3912 ;
+    ] .
+
+dts2447:resource3912 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Intangible assets"""@en ;
+    .
+
+dts2447:link90347 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c694 ;
+    xl:to dts2447:resource3913 ;
+    ] .
+
+dts2447:resource3913 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Deferred tax assets"""@en ;
+    .
+
+dts2447:link90348 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c695 ;
+    xl:to dts2447:resource3914 ;
+    ] .
+
+dts2447:resource3914 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Pension benefit surplus"""@en ;
+    .
+
+dts2447:link90349 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c696 ;
+    xl:to dts2447:resource3915 ;
+    ] .
+
+dts2447:resource3915 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Property, plant & equipment held for own use"""@en ;
+    .
+
+dts2447:link90350 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c697 ;
+    xl:to dts2447:resource3916 ;
+    ] .
+
+dts2447:resource3916 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Investments (other than assets held for index-linked and unit-linked contracts)"""@en ;
+    .
+
+dts2447:link90351 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c698 ;
+    xl:to dts2447:resource3917 ;
+    ] .
+
+dts2447:resource3917 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Property (other than for own use)"""@en ;
+    .
+
+dts2447:link90352 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c699 ;
+    xl:to dts2447:resource3918 ;
+    ] .
+
+dts2447:resource3918 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Holdings in related undertakings, including participations"""@en ;
+    .
+
+dts2447:link90353 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c700 ;
+    xl:to dts2447:resource3919 ;
+    ] .
+
+dts2447:resource3919 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Equities"""@en ;
+    .
+
+dts2447:link90354 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c701 ;
+    xl:to dts2447:resource3920 ;
+    ] .
+
+dts2447:resource3920 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Equities - listed"""@en ;
+    .
+
+dts2447:link90355 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c702 ;
+    xl:to dts2447:resource3921 ;
+    ] .
+
+dts2447:resource3921 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Equities - unlisted"""@en ;
+    .
+
+dts2447:link90356 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c703 ;
+    xl:to dts2447:resource3922 ;
+    ] .
+
+dts2447:resource3922 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Bonds"""@en ;
+    .
+
+dts2447:link90357 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c704 ;
+    xl:to dts2447:resource3923 ;
+    ] .
+
+dts2447:resource3923 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Government Bonds"""@en ;
+    .
+
+dts2447:link90358 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c705 ;
+    xl:to dts2447:resource3924 ;
+    ] .
+
+dts2447:resource3924 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Corporate Bonds"""@en ;
+    .
+
+dts2447:link90359 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c706 ;
+    xl:to dts2447:resource3925 ;
+    ] .
+
+dts2447:resource3925 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Structured notes"""@en ;
+    .
+
+dts2447:link90360 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c707 ;
+    xl:to dts2447:resource3926 ;
+    ] .
+
+dts2447:resource3926 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Collateralised securities"""@en ;
+    .
+
+dts2447:link90361 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c708 ;
+    xl:to dts2447:resource3927 ;
+    ] .
+
+dts2447:resource3927 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Collective Investments Undertakings"""@en ;
+    .
+
+dts2447:link90362 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c709 ;
+    xl:to dts2447:resource3928 ;
+    ] .
+
+dts2447:resource3928 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Derivatives"""@en ;
+    .
+
+dts2447:link90363 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c710 ;
+    xl:to dts2447:resource3929 ;
+    ] .
+
+dts2447:resource3929 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Deposits other than cash equivalents"""@en ;
+    .
+
+dts2447:link90364 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c711 ;
+    xl:to dts2447:resource3930 ;
+    ] .
+
+dts2447:resource3930 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other investments"""@en ;
+    .
+
+dts2447:link90365 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c712 ;
+    xl:to dts2447:resource3931 ;
+    ] .
+
+dts2447:resource3931 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Assets held for index-linked and unit-linked contracts"""@en ;
+    .
+
+dts2447:link90366 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c713 ;
+    xl:to dts2447:resource3932 ;
+    ] .
+
+dts2447:resource3932 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Loans and mortgages"""@en ;
+    .
+
+dts2447:link90367 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c714 ;
+    xl:to dts2447:resource3933 ;
+    ] .
+
+dts2447:resource3933 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Loans on policies"""@en ;
+    .
+
+dts2447:link90368 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c715 ;
+    xl:to dts2447:resource3934 ;
+    ] .
+
+dts2447:resource3934 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Loans and mortgages to individuals"""@en ;
+    .
+
+dts2447:link90369 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c716 ;
+    xl:to dts2447:resource3935 ;
+    ] .
+
+dts2447:resource3935 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other loans and mortgages"""@en ;
+    .
+
+dts2447:link90370 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c717 ;
+    xl:to dts2447:resource3936 ;
+    ] .
+
+dts2447:resource3936 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Reinsurance recoverables from:"""@en ;
+    .
+
+dts2447:link90371 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c718 ;
+    xl:to dts2447:resource3937 ;
+    ] .
+
+dts2447:resource3937 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life and health similar to non-life"""@en ;
+    .
+
+dts2447:link90372 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c719 ;
+    xl:to dts2447:resource3938 ;
+    ] .
+
+dts2447:resource3938 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life excluding health"""@en ;
+    .
+
+dts2447:link90373 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c720 ;
+    xl:to dts2447:resource3939 ;
+    ] .
+
+dts2447:resource3939 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health similar to non-life"""@en ;
+    .
+
+dts2447:link90374 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c721 ;
+    xl:to dts2447:resource3940 ;
+    ] .
+
+dts2447:resource3940 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life and health similar to life, excluding health and index-linked and unit-linked"""@en ;
+    .
+
+dts2447:link90375 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c722 ;
+    xl:to dts2447:resource3941 ;
+    ] .
+
+dts2447:resource3941 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health similar to life"""@en ;
+    .
+
+dts2447:link90376 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c723 ;
+    xl:to dts2447:resource3942 ;
+    ] .
+
+dts2447:resource3942 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life excluding health and index-linked and unit-linked"""@en ;
+    .
+
+dts2447:link90377 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c724 ;
+    xl:to dts2447:resource3943 ;
+    ] .
+
+dts2447:resource3943 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life index-linked and unit-linked"""@en ;
+    .
+
+dts2447:link90378 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c725 ;
+    xl:to dts2447:resource3944 ;
+    ] .
+
+dts2447:resource3944 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Deposits to cedants"""@en ;
+    .
+
+dts2447:link90379 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c726 ;
+    xl:to dts2447:resource3945 ;
+    ] .
+
+dts2447:resource3945 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Insurance and intermediaries receivables"""@en ;
+    .
+
+dts2447:link90380 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c727 ;
+    xl:to dts2447:resource3946 ;
+    ] .
+
+dts2447:resource3946 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Reinsurance receivables"""@en ;
+    .
+
+dts2447:link90381 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c728 ;
+    xl:to dts2447:resource3947 ;
+    ] .
+
+dts2447:resource3947 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Receivables (trade, not insurance)"""@en ;
+    .
+
+dts2447:link90382 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c729 ;
+    xl:to dts2447:resource3948 ;
+    ] .
+
+dts2447:resource3948 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Own shares (held directly)"""@en ;
+    .
+
+dts2447:link90383 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c730 ;
+    xl:to dts2447:resource3949 ;
+    ] .
+
+dts2447:resource3949 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Amounts due in respect of own fund items or initial fund called up but not yet paid in"""@en ;
+    .
+
+dts2447:link90384 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c731 ;
+    xl:to dts2447:resource3950 ;
+    ] .
+
+dts2447:resource3950 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Cash and cash equivalents"""@en ;
+    .
+
+dts2447:link90385 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c732 ;
+    xl:to dts2447:resource3951 ;
+    ] .
+
+dts2447:resource3951 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Any other assets, not elsewhere shown"""@en ;
+    .
+
+dts2447:link90386 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c733 ;
+    xl:to dts2447:resource3952 ;
+    ] .
+
+dts2447:resource3952 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Total assets"""@en ;
+    .
+
+dts2447:link90387 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c734 ;
+    xl:to dts2447:resource3953 ;
+    ] .
+
+dts2447:resource3953 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Liabilities"""@en ;
+    .
+
+dts2447:link90388 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c735 ;
+    xl:to dts2447:resource3954 ;
+    ] .
+
+dts2447:resource3954 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions - non-life"""@en ;
+    .
+
+dts2447:link90389 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c736 ;
+    xl:to dts2447:resource3955 ;
+    ] .
+
+dts2447:resource3955 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions - non-life (excluding health)"""@en ;
+    .
+
+dts2447:link90390 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c737 ;
+    xl:to dts2447:resource3956 ;
+    ] .
+
+dts2447:resource3956 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions calculated as a whole"""@en ;
+    .
+
+dts2447:link90391 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c738 ;
+    xl:to dts2447:resource3957 ;
+    ] .
+
+dts2447:resource3957 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Best Estimate"""@en ;
+    .
+
+dts2447:link90392 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c739 ;
+    xl:to dts2447:resource3958 ;
+    ] .
+
+dts2447:resource3958 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk margin"""@en ;
+    .
+
+dts2447:link90393 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c740 ;
+    xl:to dts2447:resource3959 ;
+    ] .
+
+dts2447:resource3959 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions - health (similar to non-life)"""@en ;
+    .
+
+dts2447:link90394 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c741 ;
+    xl:to dts2447:resource3960 ;
+    ] .
+
+dts2447:resource3960 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions calculated as a whole"""@en ;
+    .
+
+dts2447:link90395 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c742 ;
+    xl:to dts2447:resource3961 ;
+    ] .
+
+dts2447:resource3961 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Best Estimate"""@en ;
+    .
+
+dts2447:link90396 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c743 ;
+    xl:to dts2447:resource3962 ;
+    ] .
+
+dts2447:resource3962 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk margin"""@en ;
+    .
+
+dts2447:link90397 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c744 ;
+    xl:to dts2447:resource3963 ;
+    ] .
+
+dts2447:resource3963 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions - life (excluding index-linked and unit-linked)"""@en ;
+    .
+
+dts2447:link90398 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c745 ;
+    xl:to dts2447:resource3964 ;
+    ] .
+
+dts2447:resource3964 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions - health (similar to life)"""@en ;
+    .
+
+dts2447:link90399 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c746 ;
+    xl:to dts2447:resource3965 ;
+    ] .
+
+dts2447:resource3965 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions calculated as a whole"""@en ;
+    .
+
+dts2447:link90400 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c747 ;
+    xl:to dts2447:resource3966 ;
+    ] .
+
+dts2447:resource3966 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Best Estimate"""@en ;
+    .
+
+dts2447:link90401 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c748 ;
+    xl:to dts2447:resource3967 ;
+    ] .
+
+dts2447:resource3967 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk margin"""@en ;
+    .
+
+dts2447:link90402 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c749 ;
+    xl:to dts2447:resource3968 ;
+    ] .
+
+dts2447:resource3968 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions - life (excluding health and index-linked and unit-linked)"""@en ;
+    .
+
+dts2447:link90403 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c750 ;
+    xl:to dts2447:resource3969 ;
+    ] .
+
+dts2447:resource3969 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions calculated as a whole"""@en ;
+    .
+
+dts2447:link90404 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c751 ;
+    xl:to dts2447:resource3970 ;
+    ] .
+
+dts2447:resource3970 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Best Estimate"""@en ;
+    .
+
+dts2447:link90405 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c752 ;
+    xl:to dts2447:resource3971 ;
+    ] .
+
+dts2447:resource3971 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk margin"""@en ;
+    .
+
+dts2447:link90406 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c753 ;
+    xl:to dts2447:resource3972 ;
+    ] .
+
+dts2447:resource3972 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions - index-linked and unit-linked"""@en ;
+    .
+
+dts2447:link90407 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c754 ;
+    xl:to dts2447:resource3973 ;
+    ] .
+
+dts2447:resource3973 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Technical provisions calculated as a whole"""@en ;
+    .
+
+dts2447:link90408 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c755 ;
+    xl:to dts2447:resource3974 ;
+    ] .
+
+dts2447:resource3974 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Best Estimate"""@en ;
+    .
+
+dts2447:link90409 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c756 ;
+    xl:to dts2447:resource3975 ;
+    ] .
+
+dts2447:resource3975 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk margin"""@en ;
+    .
+
+dts2447:link90410 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c757 ;
+    xl:to dts2447:resource3976 ;
+    ] .
+
+dts2447:resource3976 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other technical provisions"""@en ;
+    .
+
+dts2447:link90411 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c758 ;
+    xl:to dts2447:resource3977 ;
+    ] .
+
+dts2447:resource3977 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Contingent liabilities"""@en ;
+    .
+
+dts2447:link90412 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c759 ;
+    xl:to dts2447:resource3978 ;
+    ] .
+
+dts2447:resource3978 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Provisions other than technical provisions"""@en ;
+    .
+
+dts2447:link90413 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c760 ;
+    xl:to dts2447:resource3979 ;
+    ] .
+
+dts2447:resource3979 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Pension benefit obligations"""@en ;
+    .
+
+dts2447:link90414 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c761 ;
+    xl:to dts2447:resource3980 ;
+    ] .
+
+dts2447:resource3980 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Deposits from reinsurers"""@en ;
+    .
+
+dts2447:link90415 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c762 ;
+    xl:to dts2447:resource3981 ;
+    ] .
+
+dts2447:resource3981 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Deferred tax liabilities"""@en ;
+    .
+
+dts2447:link90416 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c763 ;
+    xl:to dts2447:resource3982 ;
+    ] .
+
+dts2447:resource3982 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Derivatives"""@en ;
+    .
+
+dts2447:link90417 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c764 ;
+    xl:to dts2447:resource3983 ;
+    ] .
+
+dts2447:resource3983 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Debts owed to credit institutions"""@en ;
+    .
+
+dts2447:link90418 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c765 ;
+    xl:to dts2447:resource3984 ;
+    ] .
+
+dts2447:resource3984 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Financial liabilities other than debts owed to credit institutions"""@en ;
+    .
+
+dts2447:link90419 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c766 ;
+    xl:to dts2447:resource3985 ;
+    ] .
+
+dts2447:resource3985 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Insurance & intermediaries payables"""@en ;
+    .
+
+dts2447:link90420 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c767 ;
+    xl:to dts2447:resource3986 ;
+    ] .
+
+dts2447:resource3986 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Reinsurance payables"""@en ;
+    .
+
+dts2447:link90421 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c768 ;
+    xl:to dts2447:resource3987 ;
+    ] .
+
+dts2447:resource3987 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Payables (trade, not insurance)"""@en ;
+    .
+
+dts2447:link90422 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c769 ;
+    xl:to dts2447:resource3988 ;
+    ] .
+
+dts2447:resource3988 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Subordinated liabilities"""@en ;
+    .
+
+dts2447:link90423 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c770 ;
+    xl:to dts2447:resource3989 ;
+    ] .
+
+dts2447:resource3989 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Subordinated liabilities not in Basic Own Funds"""@en ;
+    .
+
+dts2447:link90424 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c771 ;
+    xl:to dts2447:resource3990 ;
+    ] .
+
+dts2447:resource3990 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Subordinated liabilities in Basic Own Funds"""@en ;
+    .
+
+dts2447:link90425 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c772 ;
+    xl:to dts2447:resource3991 ;
+    ] .
+
+dts2447:resource3991 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Any other liabilities, not elsewhere shown"""@en ;
+    .
+
+dts2447:link90426 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c773 ;
+    xl:to dts2447:resource3992 ;
+    ] .
+
+dts2447:resource3992 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Total liabilities"""@en ;
+    .
+
+dts2447:link90427 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c774 ;
+    xl:to dts2447:resource3993 ;
+    ] .
+
+dts2447:resource3993 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Excess of assets over liabilities"""@en ;
+    .
+

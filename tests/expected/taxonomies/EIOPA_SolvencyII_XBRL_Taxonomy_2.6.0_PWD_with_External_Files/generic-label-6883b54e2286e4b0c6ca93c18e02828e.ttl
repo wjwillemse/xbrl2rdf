@@ -1,0 +1,16 @@
+# Source HREF: http://www.xbrl.org/2008/generic-label.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix label: <http://xbrl.org/2008/label#>.
+
+
+# SCHEMAS
+# target namespace:http://xbrl.org/2008/label# base: http://www.xbrl.org/2008/generic-label.xsd
+
+label:label 
+    xbrli:substitutionGroup xl:resource ;
+    . 
+

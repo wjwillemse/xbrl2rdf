@@ -1,0 +1,9 @@
+# Source HREF: http://www.xbrl.org/2014/extensible-enumerations.xsd
+
+# RDF triples (turtle syntax)
+
+
+
+# SCHEMAS
+# target namespace:http://xbrl.org/2014/extensible-enumerations# base: http://www.xbrl.org/2014/extensible-enumerations.xsd
+

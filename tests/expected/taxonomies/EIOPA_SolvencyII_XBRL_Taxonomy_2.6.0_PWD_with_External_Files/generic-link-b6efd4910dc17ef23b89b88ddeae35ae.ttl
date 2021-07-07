@@ -1,0 +1,24 @@
+# Source HREF: http://www.xbrl.org/2008/generic-link.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix gen: <http://xbrl.org/2008/generic#>.
+
+
+# SCHEMAS
+# target namespace:http://xbrl.org/2008/generic# base: http://www.xbrl.org/2008/generic-link.xsd
+
+gen:arc 
+    rdf:type gen:genericArcType ;
+    xbrli:substitutionGroup xl:arc ;
+    . 
+
+gen:link 
+    rdf:type gen:linkTypeWithOpenAttrs ;
+    xbrli:substitutionGroup xl:extended ;
+    . 
+

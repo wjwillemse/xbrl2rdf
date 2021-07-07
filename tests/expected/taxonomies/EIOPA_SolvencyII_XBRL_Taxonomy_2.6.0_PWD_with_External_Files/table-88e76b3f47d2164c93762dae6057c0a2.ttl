@@ -1,0 +1,112 @@
+# Source HREF: http://www.xbrl.org/2014/table.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix table: <http://xbrl.org/2014/table#>.
+@prefix gen: <http://xbrl.org/2008/generic#>.
+
+
+# SCHEMAS
+# target namespace:http://xbrl.org/2014/table# base: http://www.xbrl.org/2014/table.xsd
+
+table:aspectSpec 
+    rdf:type xsd:anyType ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+table:conceptAspect 
+    rdf:type table:simpleAspectSpec.type ;
+    xbrli:substitutionGroup table:aspectSpec ;
+    . 
+
+table:unitAspect 
+    rdf:type table:simpleAspectSpec.type ;
+    xbrli:substitutionGroup table:aspectSpec ;
+    . 
+
+table:entityIdentifierAspect 
+    rdf:type table:simpleAspectSpec.type ;
+    xbrli:substitutionGroup table:aspectSpec ;
+    . 
+
+table:periodAspect 
+    rdf:type table:simpleAspectSpec.type ;
+    xbrli:substitutionGroup table:aspectSpec ;
+    . 
+
+table:dimensionAspect 
+    rdf:type table:dimensionAspectSpec.type ;
+    xbrli:substitutionGroup table:aspectSpec ;
+    . 
+
+table:table 
+    rdf:type table:table.type ;
+    xbrli:substitutionGroup xl:resource ;
+    . 
+
+table:breakdown 
+    rdf:type table:breakdown.type ;
+    xbrli:substitutionGroup xl:resource ;
+    . 
+
+table:definitionNode 
+    rdf:type table:definitionNode.type ;
+    xbrli:substitutionGroup xl:resource ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+table:closedDefinitionNode 
+    rdf:type table:closedDefinitionNode.type ;
+    xbrli:substitutionGroup table:definitionNode ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+table:tableBreakdownArc 
+    xbrli:substitutionGroup gen:arc ;
+    . 
+
+table:breakdownTreeArc 
+    xbrli:substitutionGroup gen:arc ;
+    . 
+
+table:tableFilterArc 
+    xbrli:substitutionGroup gen:arc ;
+    . 
+
+table:tableParameterArc 
+    xbrli:substitutionGroup gen:arc ;
+    . 
+
+table:definitionNodeSubtreeArc 
+    xbrli:substitutionGroup gen:arc ;
+    . 
+
+table:ruleNode 
+    rdf:type table:ruleNode.type ;
+    xbrli:substitutionGroup table:closedDefinitionNode ;
+    . 
+
+table:conceptRelationshipNode 
+    rdf:type table:conceptRelationshipNode.type ;
+    xbrli:substitutionGroup table:closedDefinitionNode ;
+    . 
+
+table:dimensionRelationshipNode 
+    rdf:type table:dimensionRelationshipNode.type ;
+    xbrli:substitutionGroup table:closedDefinitionNode ;
+    . 
+
+table:aspectNode 
+    rdf:type table:aspectNode.type ;
+    xbrli:substitutionGroup table:definitionNode ;
+    . 
+
+table:aspectNodeFilterArc 
+    xbrli:substitutionGroup gen:arc ;
+    . 
+

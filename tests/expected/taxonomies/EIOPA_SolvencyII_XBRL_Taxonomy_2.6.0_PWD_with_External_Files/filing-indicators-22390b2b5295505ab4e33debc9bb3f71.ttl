@@ -1,0 +1,25 @@
+# Source HREF: http://www.eurofiling.info/eu/fr/xbrl/ext/filing-indicators.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix find: <http://www.eurofiling.info/xbrl/ext/filing-indicators#>.
+
+
+# SCHEMAS
+# target namespace:http://www.eurofiling.info/xbrl/ext/filing-indicators# base: http://www.eurofiling.info/eu/fr/xbrl/ext/filing-indicators.xsd
+
+find:fIndicators 
+    xbrli:substitutionGroup xbrli:tuple ;
+    . 
+
+find:filingIndicator 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    . 
+

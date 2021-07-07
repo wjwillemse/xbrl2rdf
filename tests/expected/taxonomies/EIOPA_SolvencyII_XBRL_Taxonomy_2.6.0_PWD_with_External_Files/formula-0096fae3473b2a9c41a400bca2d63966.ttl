@@ -1,0 +1,76 @@
+# Source HREF: http://www.xbrl.org/2008/formula.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix variable: <http://xbrl.org/2008/variable#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix formula: <http://xbrl.org/2008/formula#>.
+
+
+# SCHEMAS
+# target namespace:http://xbrl.org/2008/formula# base: http://www.xbrl.org/2008/formula.xsd
+
+formula:formula 
+    xbrli:substitutionGroup variable:variableSet ;
+    . 
+
+formula:aspects 
+    . 
+
+formula:abstract.aspect 
+    rdf:type formula:abstract.aspect.type ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+formula:concept 
+    xbrli:substitutionGroup formula:abstract.aspect ;
+    . 
+
+formula:entityIdentifier 
+    xbrli:substitutionGroup formula:abstract.aspect ;
+    . 
+
+formula:period 
+    xbrli:substitutionGroup formula:abstract.aspect ;
+    . 
+
+formula:unit 
+    xbrli:substitutionGroup formula:abstract.aspect ;
+    . 
+
+formula:abstract.occ.aspect 
+    rdf:type formula:abstract.occ.aspect.type ;
+    xbrli:substitutionGroup formula:abstract.aspect ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+formula:occEmpty 
+    rdf:type formula:abstract.occ.aspect.type ;
+    xbrli:substitutionGroup formula:abstract.occ.aspect ;
+    . 
+
+formula:occFragments 
+    xbrli:substitutionGroup formula:abstract.occ.aspect ;
+    . 
+
+formula:occXpath 
+    xbrli:substitutionGroup formula:abstract.occ.aspect ;
+    . 
+
+formula:abstract.dimension.aspect 
+    rdf:type formula:abstract.dimension.aspect.type ;
+    xbrli:substitutionGroup formula:abstract.aspect ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+formula:explicitDimension 
+    xbrli:substitutionGroup formula:abstract.dimension.aspect ;
+    . 
+
+formula:typedDimension 
+    xbrli:substitutionGroup formula:abstract.dimension.aspect ;
+    . 
+

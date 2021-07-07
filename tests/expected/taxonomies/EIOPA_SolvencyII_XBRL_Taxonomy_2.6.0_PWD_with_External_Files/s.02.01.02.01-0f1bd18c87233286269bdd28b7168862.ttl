@@ -1,0 +1,9 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01.xsd
+
+# RDF triples (turtle syntax)
+
+
+
+# SCHEMAS
+# target namespace:http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01.xsd
+

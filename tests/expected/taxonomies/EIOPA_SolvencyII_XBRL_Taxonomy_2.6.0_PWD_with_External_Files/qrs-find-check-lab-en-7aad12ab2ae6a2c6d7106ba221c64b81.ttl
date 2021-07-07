@@ -1,0 +1,65 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs-find-check-lab-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix s2md_mod_qrs: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs#>.
+@prefix arcrole1: <http://xbrl.org/arcrole/2008#>.
+@prefix role1: <http://www.xbrl.org/2003/role#>.
+@prefix label: <http://xbrl.org/2008/label#>.
+@prefix role3: <http://www.xbrl.org/2008/role#>.
+@prefix dts1661: <http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs-find-check-lab-en.xml#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs-find-check-lab-en.xml
+
+dts1661:link86845 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_mod_qrs:fc_qrs ;
+    xl:to dts1661:resource1673 ;
+    ] .
+
+dts1661:resource1673 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Filing indicator value is incorrect for a module."""@en ;
+    .
+
+dts1661:link86846 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_mod_qrs:fc_qrs_f1 ;
+    xl:to dts1661:resource1674 ;
+    ] .
+
+dts1661:resource1674 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Mandatory filing indicator missing"""@en ;
+    .
+
+dts1661:link86847 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2md_mod_qrs:fc_qrs_f2 ;
+    xl:to dts1661:resource1675 ;
+    ] .
+
+dts1661:resource1675 
+    xl:type label:label ;
+    xlink:role role3:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Mandatory filing indicator missing"""@en ;
+    .
+

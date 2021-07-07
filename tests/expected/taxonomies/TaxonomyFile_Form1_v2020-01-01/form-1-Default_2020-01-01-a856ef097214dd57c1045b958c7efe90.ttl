@@ -1,0 +1,9 @@
+# Source HREF: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/default/form-1-Default_2020-01-01.xsd
+
+# RDF triples (turtle syntax)
+
+
+
+# SCHEMAS
+# target namespace:http://ferc.gov/form/2020-01-01/Default# base: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/default/form-1-Default_2020-01-01.xsd
+

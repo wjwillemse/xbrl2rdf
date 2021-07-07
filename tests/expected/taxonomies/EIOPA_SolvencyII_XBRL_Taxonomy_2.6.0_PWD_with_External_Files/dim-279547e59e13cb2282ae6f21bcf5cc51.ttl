@@ -1,0 +1,2874 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dim/dim.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrldt: <http://xbrl.org/2005/xbrldt#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix s2c_dim: <http://eiopa.europa.eu/xbrl/s2c/dict/dim#>.
+@prefix model: <http://www.eurofiling.info/xbrl/ext/model#>.
+
+
+# SCHEMAS
+# target namespace:http://eiopa.europa.eu/xbrl/s2c/dict/dim# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dim/dim.xsd
+
+s2c_dim:BC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AL 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TT 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:GR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:PF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:VG 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:VP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TQ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:VM 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:VL 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AG 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:HH 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SY 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DU 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:EA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IT 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:HS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TU 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XL 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IY 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OU 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:PO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2018-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:PS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:EZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CT 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SV 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2018-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AY 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CG 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LW 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:FF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OT 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TG 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:BL 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:HG 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IU 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:UC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:BE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:EI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:MS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:MX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:QX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LV 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SM 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IG 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LL 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:UR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:UU 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CJ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:EE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:BI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CY 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2019-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AH 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CW 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:PI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:ZR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:NT 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:NB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:NZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:PP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:PY 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DY 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RM 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:HD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:FZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RT 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TV 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:HC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SH 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DV 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CH 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LY 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:US 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:EX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:II 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:HX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:FC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:ZS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:UB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2017-07-15"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2017-07-15"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OV 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:MM 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2017-07-15"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2017-07-15"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2017-07-15"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CK 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2017-07-15"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:UX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:NX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:FI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LM 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CL 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:ST 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:GX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:VN 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NA> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:NP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NA> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:NS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NA> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:NR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NA> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:WW 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NA> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:WX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_TY> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:MZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_TY> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:ER 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ER> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_RA> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LT 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:NF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XG 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XH 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XK 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XM 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XN 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XU 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:BX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:UG 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:GC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:UI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:GO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:HO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RY 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CN 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TL 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SU 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:PN 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CV 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:modificationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:PC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TH 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:QS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:NC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2014-07-07"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:FN 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SN 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:MT 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:MP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IW 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:VV 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:UW 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:UD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:VI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TM 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LN 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:VB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TK 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:FM 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:UH 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AT 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:EN 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XT 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LG 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NA> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DL 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NA> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NA> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NA> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:RS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:IA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:FR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:NA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NA> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:toDate "2013-12-31"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:CM 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NA> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XY 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2015-09-30"^^xsd:dateTime ;
+    model:modificationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:ET 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YB 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YD 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2016-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YF 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:LH 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YG 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YH 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YI 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YJ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YK 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YL 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YM 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YN 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YO 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2017-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XJ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XW 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:TW 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:PE 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:BA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:ZZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_ID> ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:UA 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YS 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YT 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YU 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YW 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OM 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:DZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2018-11-01"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2019-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:XV 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2020-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:AP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:PR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:PL 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:SC 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OP 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:OR 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YV 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YX 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YY 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+s2c_dim:YZ 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrldt:typedDomainRef <http://eiopa.europa.eu/xbrl/s2c/dict/dom/typ.xsd#s2c_NB> ;
+    model:creationDate "2021-07-15"^^xsd:dateTime ;
+    xbrli:substitutionGroup xbrldt:dimensionItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+

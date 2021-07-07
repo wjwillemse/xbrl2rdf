@@ -1,0 +1,16 @@
+# Source HREF: http://www.xbrl.org/2010/generic-message.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix msg: <http://xbrl.org/2010/message#>.
+
+
+# SCHEMAS
+# target namespace:http://xbrl.org/2010/message# base: http://www.xbrl.org/2010/generic-message.xsd
+
+msg:message 
+    xbrli:substitutionGroup xl:resource ;
+    . 
+

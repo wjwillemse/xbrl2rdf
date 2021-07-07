@@ -1,0 +1,12 @@
+# Source HREF: https://dev.eiopa.europa.eu/Taxonomy/Full/deactivations/260/qrs-ignore-val.xml
+
+# RDF triples (turtle syntax)
+
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: https://dev.eiopa.europa.eu/Taxonomy/Full/deactivations/260/qrs-ignore-val.xml
+

@@ -1,0 +1,9 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ex/hier.xsd
+
+# RDF triples (turtle syntax)
+
+
+
+# SCHEMAS
+# target namespace:http://eiopa.europa.eu/xbrl/s2c/dict/dom/EX/hier# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ex/hier.xsd
+

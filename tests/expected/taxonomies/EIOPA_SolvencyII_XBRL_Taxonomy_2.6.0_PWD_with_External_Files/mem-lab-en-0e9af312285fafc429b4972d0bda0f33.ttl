@@ -1,0 +1,3788 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/lb/mem-lab-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix role1: <http://www.xbrl.org/2003/role#>.
+@prefix arcrole3: <http://www.xbrl.org/2003/arcrole#>.
+@prefix role3: <http://www.xbrl.org/2008/role#>.
+@prefix s2c_LB: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+@prefix dts2620: <http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/lb/mem-lab-en.xml#>.
+
+
+# XLINKS
+# localname: labelLink
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/lb/mem-lab-en.xml
+
+dts2620:link133332 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x0 ;
+    xl:to dts2620:resource18125 ;
+    ] .
+
+dts2620:resource18125 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Total/NA"""@en ;
+    .
+
+dts2620:link133333 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x1 ;
+    xl:to dts2620:resource18126 ;
+    ] .
+
+dts2620:resource18126 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Accident and sickness"""@en ;
+    .
+
+dts2620:link133334 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x2 ;
+    xl:to dts2620:resource18127 ;
+    ] .
+
+dts2620:resource18127 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Motor"""@en ;
+    .
+
+dts2620:link133335 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x3 ;
+    xl:to dts2620:resource18128 ;
+    ] .
+
+dts2620:resource18128 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Fire and other damage to property"""@en ;
+    .
+
+dts2620:link133336 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x4 ;
+    xl:to dts2620:resource18129 ;
+    ] .
+
+dts2620:resource18129 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Aviation, marine and transport"""@en ;
+    .
+
+dts2620:link133337 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5 ;
+    xl:to dts2620:resource18130 ;
+    ] .
+
+dts2620:resource18130 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """General liability"""@en ;
+    .
+
+dts2620:link133338 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x6 ;
+    xl:to dts2620:resource18131 ;
+    ] .
+
+dts2620:resource18131 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Credit and suretyship"""@en ;
+    .
+
+dts2620:link133339 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x7 ;
+    xl:to dts2620:resource18132 ;
+    ] .
+
+dts2620:resource18132 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life other than accident and sickness, motor, fire and other damage to property, aviation, marine and transport, general liability, credit and suretyship"""@en ;
+    .
+
+dts2620:link133340 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x8 ;
+    xl:to dts2620:resource18133 ;
+    ] .
+
+dts2620:resource18133 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """ABS [asset backed securities]"""@en ;
+    .
+
+dts2620:link133341 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x9 ;
+    xl:to dts2620:resource18134 ;
+    ] .
+
+dts2620:resource18134 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Annuities stemming from non-life insurance contracts"""@en ;
+    .
+
+dts2620:link133342 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x10 ;
+    xl:to dts2620:resource18135 ;
+    ] .
+
+dts2620:resource18135 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Annuities stemming from non-life insurance contracts and relating to health insurance obligations"""@en ;
+    .
+
+dts2620:link133343 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x11 ;
+    xl:to dts2620:resource18136 ;
+    ] .
+
+dts2620:resource18136 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Annuities stemming from non-life insurance contracts and relating to insurance obligations other than health insurance obligations"""@en ;
+    .
+
+dts2620:link133344 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x12 ;
+    xl:to dts2620:resource18137 ;
+    ] .
+
+dts2620:resource18137 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Assistance [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133345 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x13 ;
+    xl:to dts2620:resource18138 ;
+    ] .
+
+dts2620:resource18138 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Branch"""@en ;
+    .
+
+dts2620:link133346 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x14 ;
+    xl:to dts2620:resource18139 ;
+    ] .
+
+dts2620:resource18139 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Casualty [accepted non-proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133347 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x15 ;
+    xl:to dts2620:resource18140 ;
+    ] .
+
+dts2620:resource18140 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """CDO [collateralised debt obligations]"""@en ;
+    .
+
+dts2620:link133348 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x16 ;
+    xl:to dts2620:resource18141 ;
+    ] .
+
+dts2620:resource18141 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """CDOp [credit default options]"""@en ;
+    .
+
+dts2620:link133349 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x17 ;
+    xl:to dts2620:resource18142 ;
+    ] .
+
+dts2620:resource18142 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """CDS [credit default swaps]"""@en ;
+    .
+
+dts2620:link133350 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x18 ;
+    xl:to dts2620:resource18143 ;
+    ] .
+
+dts2620:resource18143 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """CLN [credit linked notes and deposits]"""@en ;
+    .
+
+dts2620:link133351 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x19 ;
+    xl:to dts2620:resource18144 ;
+    ] .
+
+dts2620:resource18144 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """CLO [collateralised loan obligations]"""@en ;
+    .
+
+dts2620:link133352 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x20 ;
+    xl:to dts2620:resource18145 ;
+    ] .
+
+dts2620:resource18145 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """CMBS [commercial mortgage backed securities]"""@en ;
+    .
+
+dts2620:link133353 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x21 ;
+    xl:to dts2620:resource18146 ;
+    ] .
+
+dts2620:resource18146 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """CMO [collateralised mortgage obligations]"""@en ;
+    .
+
+dts2620:link133354 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x22 ;
+    xl:to dts2620:resource18147 ;
+    ] .
+
+dts2620:resource18147 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """CMS [constant maturity swaps]"""@en ;
+    .
+
+dts2620:link133355 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x23 ;
+    xl:to dts2620:resource18148 ;
+    ] .
+
+dts2620:resource18148 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Still commercialised"""@en ;
+    .
+
+dts2620:link133356 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x24 ;
+    xl:to dts2620:resource18149 ;
+    ] .
+
+dts2620:resource18149 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Common to other products"""@en ;
+    .
+
+dts2620:link133357 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x25 ;
+    xl:to dts2620:resource18150 ;
+    ] .
+
+dts2620:resource18150 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Contracts with options and guarantees"""@en ;
+    .
+
+dts2620:link133358 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x26 ;
+    xl:to dts2620:resource18151 ;
+    ] .
+
+dts2620:resource18151 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Contracts without options and guarantees"""@en ;
+    .
+
+dts2620:link133359 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x27 ;
+    xl:to dts2620:resource18152 ;
+    ] .
+
+dts2620:resource18152 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Credit and suretyship insurance [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133360 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x28 ;
+    xl:to dts2620:resource18153 ;
+    ] .
+
+dts2620:resource18153 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Direct Business"""@en ;
+    .
+
+dts2620:link133361 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x29 ;
+    xl:to dts2620:resource18154 ;
+    ] .
+
+dts2620:resource18154 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Direct Business and proportional reinsurance accepted"""@en ;
+    .
+
+dts2620:link133362 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x30 ;
+    xl:to dts2620:resource18155 ;
+    ] .
+
+dts2620:resource18155 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """ELN [Equity-linked and Equity Index Linked notes and deposits]"""@en ;
+    .
+
+dts2620:link133363 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x31 ;
+    xl:to dts2620:resource18156 ;
+    ] .
+
+dts2620:resource18156 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Fire and other damage to property insurance [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133364 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x32 ;
+    xl:to dts2620:resource18157 ;
+    ] .
+
+dts2620:resource18157 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Freedom to provide services by undertaking"""@en ;
+    .
+
+dts2620:link133365 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x33 ;
+    xl:to dts2620:resource18158 ;
+    ] .
+
+dts2620:resource18158 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """FXCLN [FX and commodity-linked notes and deposits]"""@en ;
+    .
+
+dts2620:link133366 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x34 ;
+    xl:to dts2620:resource18159 ;
+    ] .
+
+dts2620:resource18159 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """General liability insurance [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133367 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x35 ;
+    xl:to dts2620:resource18160 ;
+    ] .
+
+dts2620:resource18160 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health"""@en ;
+    .
+
+dts2620:link133368 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x36 ;
+    xl:to dts2620:resource18161 ;
+    ] .
+
+dts2620:resource18161 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health - collective [HC]"""@en ;
+    .
+
+dts2620:link133369 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x37 ;
+    xl:to dts2620:resource18162 ;
+    ] .
+
+dts2620:resource18162 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health - hybrid [HH]"""@en ;
+    .
+
+dts2620:link133370 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x38 ;
+    xl:to dts2620:resource18163 ;
+    ] .
+
+dts2620:resource18163 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health - join life [HJ]"""@en ;
+    .
+
+dts2620:link133371 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x39 ;
+    xl:to dts2620:resource18164 ;
+    ] .
+
+dts2620:resource18164 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health - other [HO]"""@en ;
+    .
+
+dts2620:link133372 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x40 ;
+    xl:to dts2620:resource18165 ;
+    ] .
+
+dts2620:resource18165 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health - pension funds [HP]"""@en ;
+    .
+
+dts2620:link133373 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x41 ;
+    xl:to dts2620:resource18166 ;
+    ] .
+
+dts2620:resource18166 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health - single life [HS]"""@en ;
+    .
+
+dts2620:link133374 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x42 ;
+    xl:to dts2620:resource18167 ;
+    ] .
+
+dts2620:resource18167 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health [accepted non-proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133375 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x43 ;
+    xl:to dts2620:resource18168 ;
+    ] .
+
+dts2620:resource18168 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health non-SLT"""@en ;
+    .
+
+dts2620:link133376 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x44 ;
+    xl:to dts2620:resource18169 ;
+    ] .
+
+dts2620:resource18169 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health non-SLT [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133377 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x45 ;
+    xl:to dts2620:resource18170 ;
+    ] .
+
+dts2620:resource18170 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health SLT"""@en ;
+    .
+
+dts2620:link133378 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x46 ;
+    xl:to dts2620:resource18171 ;
+    ] .
+
+dts2620:resource18171 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health SLT and annuities stemming from non-life insurance contracts and relating to health insurance obligations"""@en ;
+    .
+
+dts2620:link133379 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x47 ;
+    xl:to dts2620:resource18172 ;
+    ] .
+
+dts2620:resource18172 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """HLN [Hybrid linked notes and deposits - includes Real Estate and equity securities]"""@en ;
+    .
+
+dts2620:link133380 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x48 ;
+    xl:to dts2620:resource18173 ;
+    ] .
+
+dts2620:resource18173 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """The life insurance referred to in points [a][i], [ii] and [iii] of Article 2[3] excluding those referred to in II and III"""@en ;
+    .
+
+dts2620:link133381 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x49 ;
+    xl:to dts2620:resource18174 ;
+    ] .
+
+dts2620:resource18174 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Marriage assurance, birth assurance"""@en ;
+    .
+
+dts2620:link133382 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x50 ;
+    xl:to dts2620:resource18175 ;
+    ] .
+
+dts2620:resource18175 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """The insurance referred to in points [a][i] and [ii] of Article 2[3], which are linked to investment funds"""@en ;
+    .
+
+dts2620:link133383 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x51 ;
+    xl:to dts2620:resource18176 ;
+    ] .
+
+dts2620:resource18176 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """ILN [Insurance-linked Notes and deposits, including Catastrophe and Weather Risk as well as Mortality Risk]"""@en ;
+    .
+
+dts2620:link133384 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x52 ;
+    xl:to dts2620:resource18177 ;
+    ] .
+
+dts2620:resource18177 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Income protection insurance [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133385 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x53 ;
+    xl:to dts2620:resource18178 ;
+    ] .
+
+dts2620:resource18178 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Insurance with profit participation"""@en ;
+    .
+
+dts2620:link133386 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x54 ;
+    xl:to dts2620:resource18179 ;
+    ] .
+
+dts2620:resource18179 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Insurance with profit participation [future discretionary benefits]"""@en ;
+    .
+
+dts2620:link133387 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x55 ;
+    xl:to dts2620:resource18180 ;
+    ] .
+
+dts2620:resource18180 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Insurance with profit participation [guaranteed benefits]"""@en ;
+    .
+
+dts2620:link133388 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x56 ;
+    xl:to dts2620:resource18181 ;
+    ] .
+
+dts2620:resource18181 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """IRLN [Interest rate-linked notes and deposits]"""@en ;
+    .
+
+dts2620:link133389 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x57 ;
+    xl:to dts2620:resource18182 ;
+    ] .
+
+dts2620:resource18182 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Permanent health insurance, referred to in point [a][iv] of Article 2[3]"""@en ;
+    .
+
+dts2620:link133390 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x58 ;
+    xl:to dts2620:resource18183 ;
+    ] .
+
+dts2620:resource18183 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """The operations referred to in Article 2[3][c]"""@en ;
+    .
+
+dts2620:link133391 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x59 ;
+    xl:to dts2620:resource18184 ;
+    ] .
+
+dts2620:resource18184 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Legal expenses insurance [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133392 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x60 ;
+    xl:to dts2620:resource18185 ;
+    ] .
+
+dts2620:resource18185 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life"""@en ;
+    .
+
+dts2620:link133393 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x61 ;
+    xl:to dts2620:resource18186 ;
+    ] .
+
+dts2620:resource18186 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life [other than annuities stemming from non-life insurance contracts and relating to health insurance obligations]"""@en ;
+    .
+
+dts2620:link133394 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x62 ;
+    xl:to dts2620:resource18187 ;
+    ] .
+
+dts2620:resource18187 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life [other than health]"""@en ;
+    .
+
+dts2620:link133395 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x63 ;
+    xl:to dts2620:resource18188 ;
+    ] .
+
+dts2620:resource18188 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life [other than Index-linked and unit-linked insurance and Health SLT]"""@en ;
+    .
+
+dts2620:link133396 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x64 ;
+    xl:to dts2620:resource18189 ;
+    ] .
+
+dts2620:resource18189 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life [other than unit-linked or index-linked]"""@en ;
+    .
+
+dts2620:link133397 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x65 ;
+    xl:to dts2620:resource18190 ;
+    ] .
+
+dts2620:resource18190 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life and Health SLT"""@en ;
+    .
+
+dts2620:link133398 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x66 ;
+    xl:to dts2620:resource18191 ;
+    ] .
+
+dts2620:resource18191 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Marine, aviation and transport insurance [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133399 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x67 ;
+    xl:to dts2620:resource18192 ;
+    ] .
+
+dts2620:resource18192 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Marine, aviation, transport [accepted non-proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133400 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x68 ;
+    xl:to dts2620:resource18193 ;
+    ] .
+
+dts2620:resource18193 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """MBS [mortgage backed securities]"""@en ;
+    .
+
+dts2620:link133401 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x69 ;
+    xl:to dts2620:resource18194 ;
+    ] .
+
+dts2620:resource18194 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Medical expense insurance [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133402 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x70 ;
+    xl:to dts2620:resource18195 ;
+    ] .
+
+dts2620:resource18195 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Miscellaneous financial loss [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133403 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x71 ;
+    xl:to dts2620:resource18196 ;
+    ] .
+
+dts2620:resource18196 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """MLN [Market-linked notes and deposits]"""@en ;
+    .
+
+dts2620:link133404 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x72 ;
+    xl:to dts2620:resource18197 ;
+    ] .
+
+dts2620:resource18197 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Motor other than motor vehicle liability insurance [except carrier's liability]"""@en ;
+    .
+
+dts2620:link133405 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x73 ;
+    xl:to dts2620:resource18198 ;
+    ] .
+
+dts2620:resource18198 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Motor vehicle liability insurance [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133406 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x74 ;
+    xl:to dts2620:resource18199 ;
+    ] .
+
+dts2620:resource18199 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Motor vehicle liability insurance [except carrier's liability]"""@en ;
+    .
+
+dts2620:link133407 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x75 ;
+    xl:to dts2620:resource18200 ;
+    ] .
+
+dts2620:resource18200 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life"""@en ;
+    .
+
+dts2620:link133408 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x76 ;
+    xl:to dts2620:resource18201 ;
+    ] .
+
+dts2620:resource18201 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life [accepted non-proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133409 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x77 ;
+    xl:to dts2620:resource18202 ;
+    ] .
+
+dts2620:resource18202 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133410 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x78 ;
+    xl:to dts2620:resource18203 ;
+    ] .
+
+dts2620:resource18203 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life [other than health non-SLT]"""@en ;
+    .
+
+dts2620:link133411 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x79 ;
+    xl:to dts2620:resource18204 ;
+    ] .
+
+dts2620:resource18204 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life and Health non-SLT"""@en ;
+    .
+
+dts2620:link133412 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x80 ;
+    xl:to dts2620:resource18205 ;
+    ] .
+
+dts2620:resource18205 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life and Health non-SLT [accepted non-proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133413 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x81 ;
+    xl:to dts2620:resource18206 ;
+    ] .
+
+dts2620:resource18206 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life and Health non-SLT [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133414 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x82 ;
+    xl:to dts2620:resource18207 ;
+    ] .
+
+dts2620:resource18207 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life annuities - collective [AC]"""@en ;
+    .
+
+dts2620:link133415 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x83 ;
+    xl:to dts2620:resource18208 ;
+    ] .
+
+dts2620:resource18208 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life annuities - hybrid [AH]"""@en ;
+    .
+
+dts2620:link133416 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x84 ;
+    xl:to dts2620:resource18209 ;
+    ] .
+
+dts2620:resource18209 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life annuities - join life [AJ]"""@en ;
+    .
+
+dts2620:link133417 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x85 ;
+    xl:to dts2620:resource18210 ;
+    ] .
+
+dts2620:resource18210 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life annuities - other [AO]"""@en ;
+    .
+
+dts2620:link133418 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x86 ;
+    xl:to dts2620:resource18211 ;
+    ] .
+
+dts2620:resource18211 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life annuities - pension funds [AP]"""@en ;
+    .
+
+dts2620:link133419 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x87 ;
+    xl:to dts2620:resource18212 ;
+    ] .
+
+dts2620:resource18212 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life annuities - single life [AS]"""@en ;
+    .
+
+dts2620:link133420 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x88 ;
+    xl:to dts2620:resource18213 ;
+    ] .
+
+dts2620:resource18213 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-proportional reinsurance accepted"""@en ;
+    .
+
+dts2620:link133421 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x89 ;
+    xl:to dts2620:resource18214 ;
+    ] .
+
+dts2620:resource18214 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """In run-off"""@en ;
+    .
+
+dts2620:link133422 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x90 ;
+    xl:to dts2620:resource18215 ;
+    ] .
+
+dts2620:resource18215 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Not common to other products"""@en ;
+    .
+
+dts2620:link133423 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x91 ;
+    xl:to dts2620:resource18216 ;
+    ] .
+
+dts2620:resource18216 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Neither unit-linked nor index-linked"""@en ;
+    .
+
+dts2620:link133424 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x92 ;
+    xl:to dts2620:resource18217 ;
+    ] .
+
+dts2620:resource18217 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other [O]"""@en ;
+    .
+
+dts2620:link133425 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x93 ;
+    xl:to dts2620:resource18218 ;
+    ] .
+
+dts2620:resource18218 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other life"""@en ;
+    .
+
+dts2620:link133426 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x94 ;
+    xl:to dts2620:resource18219 ;
+    ] .
+
+dts2620:resource18219 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other life - collective [OC]"""@en ;
+    .
+
+dts2620:link133427 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x95 ;
+    xl:to dts2620:resource18220 ;
+    ] .
+
+dts2620:resource18220 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other life - hybrid [OH]"""@en ;
+    .
+
+dts2620:link133428 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x96 ;
+    xl:to dts2620:resource18221 ;
+    ] .
+
+dts2620:resource18221 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other life - join life [OJ]"""@en ;
+    .
+
+dts2620:link133429 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x97 ;
+    xl:to dts2620:resource18222 ;
+    ] .
+
+dts2620:resource18222 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other life - other [OO]"""@en ;
+    .
+
+dts2620:link133430 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x98 ;
+    xl:to dts2620:resource18223 ;
+    ] .
+
+dts2620:resource18223 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other life - pension funds [OP]"""@en ;
+    .
+
+dts2620:link133431 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x99 ;
+    xl:to dts2620:resource18224 ;
+    ] .
+
+dts2620:resource18224 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other life - single life [OS]"""@en ;
+    .
+
+dts2620:link133432 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x100 ;
+    xl:to dts2620:resource18225 ;
+    ] .
+
+dts2620:resource18225 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other life, annuities and Health SLT"""@en ;
+    .
+
+dts2620:link133433 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x101 ;
+    xl:to dts2620:resource18226 ;
+    ] .
+
+dts2620:resource18226 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other motor insurance [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133434 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x102 ;
+    xl:to dts2620:resource18227 ;
+    ] .
+
+dts2620:resource18227 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Product is considered replicable by a financial instrument"""@en ;
+    .
+
+dts2620:link133435 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x103 ;
+    xl:to dts2620:resource18228 ;
+    ] .
+
+dts2620:resource18228 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Product is not considered replicable by a financial instrument"""@en ;
+    .
+
+dts2620:link133436 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x104 ;
+    xl:to dts2620:resource18229 ;
+    ] .
+
+dts2620:resource18229 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Product with surrender option"""@en ;
+    .
+
+dts2620:link133437 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x105 ;
+    xl:to dts2620:resource18230 ;
+    ] .
+
+dts2620:resource18230 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Product without surrender option"""@en ;
+    .
+
+dts2620:link133438 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x106 ;
+    xl:to dts2620:resource18231 ;
+    ] .
+
+dts2620:resource18231 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Property [accepted non-proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133439 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x107 ;
+    xl:to dts2620:resource18232 ;
+    ] .
+
+dts2620:resource18232 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Proportional reinsurance accepted"""@en ;
+    .
+
+dts2620:link133440 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x158 ;
+    xl:to dts2620:resource18233 ;
+    ] .
+
+dts2620:resource18233 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Assistance [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133441 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x159 ;
+    xl:to dts2620:resource18234 ;
+    ] .
+
+dts2620:resource18234 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Miscellaneous financial loss [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133442 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x160 ;
+    xl:to dts2620:resource18235 ;
+    ] .
+
+dts2620:resource18235 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health reinsurance"""@en ;
+    .
+
+dts2620:link133443 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x161 ;
+    xl:to dts2620:resource18236 ;
+    ] .
+
+dts2620:resource18236 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life reinsurance"""@en ;
+    .
+
+dts2620:link133444 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x162 ;
+    xl:to dts2620:resource18237 ;
+    ] .
+
+dts2620:resource18237 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Freedom to provide services by the branch"""@en ;
+    .
+
+dts2620:link133445 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x163 ;
+    xl:to dts2620:resource18238 ;
+    ] .
+
+dts2620:resource18238 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Freedom to provide services [FPS] and Freedom to provide services by the branches"""@en ;
+    .
+
+dts2620:link133446 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x164 ;
+    xl:to dts2620:resource18239 ;
+    ] .
+
+dts2620:resource18239 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health - pension entitlements [HE]"""@en ;
+    .
+
+dts2620:link133447 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x165 ;
+    xl:to dts2620:resource18240 ;
+    ] .
+
+dts2620:resource18240 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Single premium with possibility of additional premiums with additional guarantee according to amount paid"""@en ;
+    .
+
+dts2620:link133448 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x166 ;
+    xl:to dts2620:resource18241 ;
+    ] .
+
+dts2620:resource18241 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Contracts linked to inflation"""@en ;
+    .
+
+dts2620:link133449 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x167 ;
+    xl:to dts2620:resource18242 ;
+    ] .
+
+dts2620:resource18242 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health insurance"""@en ;
+    .
+
+dts2620:link133450 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x168 ;
+    xl:to dts2620:resource18243 ;
+    ] .
+
+dts2620:resource18243 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Multiline"""@en ;
+    .
+
+dts2620:link133451 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x169 ;
+    xl:to dts2620:resource18244 ;
+    ] .
+
+dts2620:resource18244 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Typical branch activity"""@en ;
+    .
+
+dts2620:link133452 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x170 ;
+    xl:to dts2620:resource18245 ;
+    ] .
+
+dts2620:resource18245 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Total amount of LoB for all currencies"""@en ;
+    .
+
+dts2620:link133453 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x171 ;
+    xl:to dts2620:resource18246 ;
+    ] .
+
+dts2620:resource18246 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """By currency"""@en ;
+    .
+
+dts2620:link133454 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x172 ;
+    xl:to dts2620:resource18247 ;
+    ] .
+
+dts2620:resource18247 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life and annuities stemming from non-life insurance contracts and relating to insurance obligations other than health insurance obligations"""@en ;
+    .
+
+dts2620:link133455 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x173 ;
+    xl:to dts2620:resource18248 ;
+    ] .
+
+dts2620:resource18248 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life and annuities stemming from non-life insurance contracts and relating to insurance obligations other than health insurance obligations [other than unit-linked or index-linked]"""@en ;
+    .
+
+dts2620:link133456 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x174 ;
+    xl:to dts2620:resource18249 ;
+    ] .
+
+dts2620:resource18249 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Undertaking"""@en ;
+    .
+
+dts2620:link133457 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x175 ;
+    xl:to dts2620:resource18250 ;
+    ] .
+
+dts2620:resource18250 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Typical undertaking activity"""@en ;
+    .
+
+dts2620:link133458 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x176 ;
+    xl:to dts2620:resource18251 ;
+    ] .
+
+dts2620:resource18251 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life and Health SLT [other than unit-linked or index-linked]"""@en ;
+    .
+
+dts2620:link133459 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x177 ;
+    xl:to dts2620:resource18252 ;
+    ] .
+
+dts2620:resource18252 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Pillar II pension entitlements"""@en ;
+    .
+
+dts2620:link133460 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x178 ;
+    xl:to dts2620:resource18253 ;
+    ] .
+
+dts2620:resource18253 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Pillar II defined benefit pension entitlements"""@en ;
+    .
+
+dts2620:link133461 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x179 ;
+    xl:to dts2620:resource18254 ;
+    ] .
+
+dts2620:resource18254 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Pillar II defined contribution pension entitlements"""@en ;
+    .
+
+dts2620:link133462 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x180 ;
+    xl:to dts2620:resource18255 ;
+    ] .
+
+dts2620:resource18255 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Pillar II hybrid pension entitlements"""@en ;
+    .
+
+dts2620:link133463 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x181 ;
+    xl:to dts2620:resource18256 ;
+    ] .
+
+dts2620:resource18256 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life and Health non-SLT [accepted reinsurance]"""@en ;
+    .
+
+dts2620:link133464 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x182 ;
+    xl:to dts2620:resource18257 ;
+    ] .
+
+dts2620:resource18257 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Pension entitlements"""@en ;
+    .
+
+dts2620:link133465 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x183 ;
+    xl:to dts2620:resource18258 ;
+    ] .
+
+dts2620:resource18258 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Medical expense insurance"""@en ;
+    .
+
+dts2620:link133466 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x184 ;
+    xl:to dts2620:resource18259 ;
+    ] .
+
+dts2620:resource18259 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Income protection insurance"""@en ;
+    .
+
+dts2620:link133467 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x185 ;
+    xl:to dts2620:resource18260 ;
+    ] .
+
+dts2620:resource18260 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Workers' compensation insurance"""@en ;
+    .
+
+dts2620:link133468 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x186 ;
+    xl:to dts2620:resource18261 ;
+    ] .
+
+dts2620:resource18261 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Motor vehicle liability insurance"""@en ;
+    .
+
+dts2620:link133469 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x187 ;
+    xl:to dts2620:resource18262 ;
+    ] .
+
+dts2620:resource18262 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other motor insurance"""@en ;
+    .
+
+dts2620:link133470 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x188 ;
+    xl:to dts2620:resource18263 ;
+    ] .
+
+dts2620:resource18263 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Marine, aviation and transport insurance"""@en ;
+    .
+
+dts2620:link133471 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x189 ;
+    xl:to dts2620:resource18264 ;
+    ] .
+
+dts2620:resource18264 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Fire and other damage to property insurance"""@en ;
+    .
+
+dts2620:link133472 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x190 ;
+    xl:to dts2620:resource18265 ;
+    ] .
+
+dts2620:resource18265 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """General liability insurance"""@en ;
+    .
+
+dts2620:link133473 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x191 ;
+    xl:to dts2620:resource18266 ;
+    ] .
+
+dts2620:resource18266 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Credit and suretyship insurance"""@en ;
+    .
+
+dts2620:link133474 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x192 ;
+    xl:to dts2620:resource18267 ;
+    ] .
+
+dts2620:resource18267 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Legal expenses insurance"""@en ;
+    .
+
+dts2620:link133475 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x193 ;
+    xl:to dts2620:resource18268 ;
+    ] .
+
+dts2620:resource18268 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Assistance"""@en ;
+    .
+
+dts2620:link133476 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x194 ;
+    xl:to dts2620:resource18269 ;
+    ] .
+
+dts2620:resource18269 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Miscellaneous financial loss"""@en ;
+    .
+
+dts2620:link133477 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x195 ;
+    xl:to dts2620:resource18270 ;
+    ] .
+
+dts2620:resource18270 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Casualty"""@en ;
+    .
+
+dts2620:link133478 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x196 ;
+    xl:to dts2620:resource18271 ;
+    ] .
+
+dts2620:resource18271 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Marine, aviation, transport"""@en ;
+    .
+
+dts2620:link133479 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x197 ;
+    xl:to dts2620:resource18272 ;
+    ] .
+
+dts2620:resource18272 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Property"""@en ;
+    .
+
+dts2620:link133480 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x198 ;
+    xl:to dts2620:resource18273 ;
+    ] .
+
+dts2620:resource18273 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Single life"""@en ;
+    .
+
+dts2620:link133481 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x199 ;
+    xl:to dts2620:resource18274 ;
+    ] .
+
+dts2620:resource18274 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Joint life"""@en ;
+    .
+
+dts2620:link133482 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x200 ;
+    xl:to dts2620:resource18275 ;
+    ] .
+
+dts2620:resource18275 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Collective"""@en ;
+    .
+
+dts2620:link133483 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x201 ;
+    xl:to dts2620:resource18276 ;
+    ] .
+
+dts2620:resource18276 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other"""@en ;
+    .
+
+dts2620:link133484 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x202 ;
+    xl:to dts2620:resource18277 ;
+    ] .
+
+dts2620:resource18277 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Structured products other than CLN, CMS, ABS, MBS, CMBS, CDO, CLO, CMO, IRLN, ELN, FXCLN, HLN, MLN and ILN"""@en ;
+    .
+
+dts2620:link133485 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x203 ;
+    xl:to dts2620:resource18278 ;
+    ] .
+
+dts2620:resource18278 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life underwriting risk / revision risk"""@en ;
+    .
+
+dts2620:link133486 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x204 ;
+    xl:to dts2620:resource18279 ;
+    ] .
+
+dts2620:resource18279 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health SLT underwriting risk / revision risk"""@en ;
+    .
+
+dts2620:link133487 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x205 ;
+    xl:to dts2620:resource18280 ;
+    ] .
+
+dts2620:resource18280 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health NSLT premium and reserve risk"""@en ;
+    .
+
+dts2620:link133488 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x206 ;
+    xl:to dts2620:resource18281 ;
+    ] .
+
+dts2620:resource18281 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non Life premium and reserve risk"""@en ;
+    .
+
+dts2620:link133489 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x207 ;
+    xl:to dts2620:resource18282 ;
+    ] .
+
+dts2620:resource18282 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Market risk / spread risk (bonds and loans)"""@en ;
+    .
+
+dts2620:link133490 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x208 ;
+    xl:to dts2620:resource18283 ;
+    ] .
+
+dts2620:resource18283 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Market risk / interest rate risk (captives)"""@en ;
+    .
+
+dts2620:link133491 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x209 ;
+    xl:to dts2620:resource18284 ;
+    ] .
+
+dts2620:resource18284 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Market risk / spread risk (bonds and loans) (captives)"""@en ;
+    .
+
+dts2620:link133492 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x210 ;
+    xl:to dts2620:resource18285 ;
+    ] .
+
+dts2620:resource18285 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Market risk / market risk concentration (captives)"""@en ;
+    .
+
+dts2620:link133493 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x211 ;
+    xl:to dts2620:resource18286 ;
+    ] .
+
+dts2620:resource18286 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Counterparty default risk"""@en ;
+    .
+
+dts2620:link133494 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x212 ;
+    xl:to dts2620:resource18287 ;
+    ] .
+
+dts2620:resource18287 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life underwriting risk / mortality risk"""@en ;
+    .
+
+dts2620:link133495 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x213 ;
+    xl:to dts2620:resource18288 ;
+    ] .
+
+dts2620:resource18288 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life underwriting risk / longevity risk"""@en ;
+    .
+
+dts2620:link133496 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x214 ;
+    xl:to dts2620:resource18289 ;
+    ] .
+
+dts2620:resource18289 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life underwriting risk / disability-morbidity risk"""@en ;
+    .
+
+dts2620:link133497 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x215 ;
+    xl:to dts2620:resource18290 ;
+    ] .
+
+dts2620:resource18290 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life underwriting risk / lapse risk"""@en ;
+    .
+
+dts2620:link133498 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x216 ;
+    xl:to dts2620:resource18291 ;
+    ] .
+
+dts2620:resource18291 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life underwriting risk / life expense risk"""@en ;
+    .
+
+dts2620:link133499 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x217 ;
+    xl:to dts2620:resource18292 ;
+    ] .
+
+dts2620:resource18292 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Life underwriting risk / life catastrophe risk"""@en ;
+    .
+
+dts2620:link133500 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x218 ;
+    xl:to dts2620:resource18293 ;
+    ] .
+
+dts2620:resource18293 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health underwriting risk / mortality risk"""@en ;
+    .
+
+dts2620:link133501 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x219 ;
+    xl:to dts2620:resource18294 ;
+    ] .
+
+dts2620:resource18294 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health underwriting risk / longevity risk"""@en ;
+    .
+
+dts2620:link133502 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x220 ;
+    xl:to dts2620:resource18295 ;
+    ] .
+
+dts2620:resource18295 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health underwriting risk / disability-morbidity risk (medical expenses)"""@en ;
+    .
+
+dts2620:link133503 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x221 ;
+    xl:to dts2620:resource18296 ;
+    ] .
+
+dts2620:resource18296 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health underwriting risk / disability-morbidity risk (income protection)"""@en ;
+    .
+
+dts2620:link133504 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x222 ;
+    xl:to dts2620:resource18297 ;
+    ] .
+
+dts2620:resource18297 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health SLT underwriting risk / lapse risk"""@en ;
+    .
+
+dts2620:link133505 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x223 ;
+    xl:to dts2620:resource18298 ;
+    ] .
+
+dts2620:resource18298 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Health underwriting risk / life expense risk"""@en ;
+    .
+
+dts2620:link133506 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x224 ;
+    xl:to dts2620:resource18299 ;
+    ] .
+
+dts2620:resource18299 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-Life underwriting risk / premium and reserve risk (captives)"""@en ;
+    .
+
+dts2620:link133507 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5000 ;
+    xl:to dts2620:resource18300 ;
+    ] .
+
+dts2620:resource18300 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """IORP providing protection in line with Art. 15(1) of IORP Directive"""@en ;
+    .
+
+dts2620:link133508 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5001 ;
+    xl:to dts2620:resource18301 ;
+    ] .
+
+dts2620:resource18301 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """IORP not providing protection in line with Art. 15(1) of IORP Directive"""@en ;
+    .
+
+dts2620:link133509 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5002 ;
+    xl:to dts2620:resource18302 ;
+    ] .
+
+dts2620:resource18302 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Occupational retirement business of insurance undertakings as referred to in Art. 4 of IORP Directive"""@en ;
+    .
+
+dts2620:link133510 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5003 ;
+    xl:to dts2620:resource18303 ;
+    ] .
+
+dts2620:resource18303 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Pension fund provides DB schemes only"""@en ;
+    .
+
+dts2620:link133511 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5004 ;
+    xl:to dts2620:resource18304 ;
+    ] .
+
+dts2620:resource18304 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Pension fund provides DC schemes only"""@en ;
+    .
+
+dts2620:link133512 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5005 ;
+    xl:to dts2620:resource18305 ;
+    ] .
+
+dts2620:resource18305 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Nationally regulated occupational pension fund not regulated by IORP Directive ('non-IORP')"""@en ;
+    .
+
+dts2620:link133513 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5006 ;
+    xl:to dts2620:resource18306 ;
+    ] .
+
+dts2620:resource18306 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Mixed pension fund"""@en ;
+    .
+
+dts2620:link133514 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5007 ;
+    xl:to dts2620:resource18307 ;
+    ] .
+
+dts2620:resource18307 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Single-employer"""@en ;
+    .
+
+dts2620:link133515 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5008 ;
+    xl:to dts2620:resource18308 ;
+    ] .
+
+dts2620:resource18308 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Multi-employer"""@en ;
+    .
+
+dts2620:link133516 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5009 ;
+    xl:to dts2620:resource18309 ;
+    ] .
+
+dts2620:resource18309 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Support from the employer in the form of increased contributions"""@en ;
+    .
+
+dts2620:link133517 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5010 ;
+    xl:to dts2620:resource18310 ;
+    ] .
+
+dts2620:resource18310 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """No support from the employer in the form of increased contributions"""@en ;
+    .
+
+dts2620:link133518 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5011 ;
+    xl:to dts2620:resource18311 ;
+    ] .
+
+dts2620:resource18311 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Support from the employees in the form of increased contributions"""@en ;
+    .
+
+dts2620:link133519 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5012 ;
+    xl:to dts2620:resource18312 ;
+    ] .
+
+dts2620:resource18312 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """No support from the employees in the form of increased contributions"""@en ;
+    .
+
+dts2620:link133520 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5013 ;
+    xl:to dts2620:resource18313 ;
+    ] .
+
+dts2620:resource18313 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Subsidiary liability of the sponsor"""@en ;
+    .
+
+dts2620:link133521 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5014 ;
+    xl:to dts2620:resource18314 ;
+    ] .
+
+dts2620:resource18314 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """No subsidiary liability of the sponsor"""@en ;
+    .
+
+dts2620:link133522 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5015 ;
+    xl:to dts2620:resource18315 ;
+    ] .
+
+dts2620:resource18315 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Support in the form of other claims on the sponsor"""@en ;
+    .
+
+dts2620:link133523 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5016 ;
+    xl:to dts2620:resource18316 ;
+    ] .
+
+dts2620:resource18316 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """No support in the form of other claims on the sponsor"""@en ;
+    .
+
+dts2620:link133524 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5017 ;
+    xl:to dts2620:resource18317 ;
+    ] .
+
+dts2620:resource18317 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other forms of support"""@en ;
+    .
+
+dts2620:link133525 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5018 ;
+    xl:to dts2620:resource18318 ;
+    ] .
+
+dts2620:resource18318 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """No other forms of support"""@en ;
+    .
+
+dts2620:link133526 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5019 ;
+    xl:to dts2620:resource18319 ;
+    ] .
+
+dts2620:resource18319 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Benefit reductions due to sponsor default were applied"""@en ;
+    .
+
+dts2620:link133527 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5020 ;
+    xl:to dts2620:resource18320 ;
+    ] .
+
+dts2620:resource18320 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """No benefit reductions due to sponsor default were applied"""@en ;
+    .
+
+dts2620:link133528 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5021 ;
+    xl:to dts2620:resource18321 ;
+    ] .
+
+dts2620:resource18321 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Ex-post benefit reductions were applied"""@en ;
+    .
+
+dts2620:link133529 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5022 ;
+    xl:to dts2620:resource18322 ;
+    ] .
+
+dts2620:resource18322 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """No ex-post benefit reductions were applied"""@en ;
+    .
+
+dts2620:link133530 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5023 ;
+    xl:to dts2620:resource18323 ;
+    ] .
+
+dts2620:resource18323 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Ex-ante benefit reductions were applied"""@en ;
+    .
+
+dts2620:link133531 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5024 ;
+    xl:to dts2620:resource18324 ;
+    ] .
+
+dts2620:resource18324 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """No ex-ante benefit reductions were applied"""@en ;
+    .
+
+dts2620:link133532 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5025 ;
+    xl:to dts2620:resource18325 ;
+    ] .
+
+dts2620:resource18325 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other benefit reductions were applied"""@en ;
+    .
+
+dts2620:link133533 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5026 ;
+    xl:to dts2620:resource18326 ;
+    ] .
+
+dts2620:resource18326 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """No other benefit reductions were applied"""@en ;
+    .
+
+dts2620:link133534 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5027 ;
+    xl:to dts2620:resource18327 ;
+    ] .
+
+dts2620:resource18327 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Support from a pension protection scheme was used"""@en ;
+    .
+
+dts2620:link133535 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5028 ;
+    xl:to dts2620:resource18328 ;
+    ] .
+
+dts2620:resource18328 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Support from a pension protection scheme was not used"""@en ;
+    .
+
+dts2620:link133536 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5029 ;
+    xl:to dts2620:resource18329 ;
+    ] .
+
+dts2620:resource18329 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Defined benefit and Defined benefit part of Mixed"""@en ;
+    .
+
+dts2620:link133537 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5030 ;
+    xl:to dts2620:resource18330 ;
+    ] .
+
+dts2620:resource18330 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Defined contribution and Defined contribution part of Mixed"""@en ;
+    .
+
+dts2620:link133538 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5034 ;
+    xl:to dts2620:resource18331 ;
+    ] .
+
+dts2620:resource18331 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Not allocated to a scheme type or specific portfolio"""@en ;
+    .
+
+dts2620:link133539 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5036 ;
+    xl:to dts2620:resource18332 ;
+    ] .
+
+dts2620:resource18332 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Not allocated to occupational or personal pension portfolio"""@en ;
+    .
+
+dts2620:link133540 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5037 ;
+    xl:to dts2620:resource18333 ;
+    ] .
+
+dts2620:resource18333 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """IORP providing protection in line with Art. 15(1) of IORP Directive (all activity under the Directive)"""@en ;
+    .
+
+dts2620:link133541 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5038 ;
+    xl:to dts2620:resource18334 ;
+    ] .
+
+dts2620:resource18334 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """IORP part of an IORP providing protection in line with Art. 15(1) of IORP Directive"""@en ;
+    .
+
+dts2620:link133542 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5039 ;
+    xl:to dts2620:resource18335 ;
+    ] .
+
+dts2620:resource18335 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-IORP part of an IORP providing protection in line with Art. 15(1) of IORP Directive"""@en ;
+    .
+
+dts2620:link133543 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5040 ;
+    xl:to dts2620:resource18336 ;
+    ] .
+
+dts2620:resource18336 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """IORP not providing protection in line with Art. 15(1) of IORP Directive (all activity under the Directive)"""@en ;
+    .
+
+dts2620:link133544 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5041 ;
+    xl:to dts2620:resource18337 ;
+    ] .
+
+dts2620:resource18337 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """IORP part of an IORP not providing protection in line with Art. 15(1) of IORP Directive"""@en ;
+    .
+
+dts2620:link133545 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x5042 ;
+    xl:to dts2620:resource18338 ;
+    ] .
+
+dts2620:resource18338 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-IORP part of an IORP not providing protection in line with Art. 15(1) of IORP Directive"""@en ;
+    .
+
+dts2620:link133546 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x6000 ;
+    xl:to dts2620:resource18339 ;
+    ] .
+
+dts2620:resource18339 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Claims of pension funds on pension managers"""@en ;
+    .
+
+dts2620:link133547 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x6001 ;
+    xl:to dts2620:resource18340 ;
+    ] .
+
+dts2620:resource18340 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Entitlements to non-pension benefits"""@en ;
+    .
+
+dts2620:link133548 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x7000 ;
+    xl:to dts2620:resource18341 ;
+    ] .
+
+dts2620:resource18341 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Generic"""@en ;
+    .
+
+dts2620:link133549 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x7001 ;
+    xl:to dts2620:resource18342 ;
+    ] .
+
+dts2620:resource18342 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Basic PEPP variant"""@en ;
+    .
+
+dts2620:link133550 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x7002 ;
+    xl:to dts2620:resource18343 ;
+    ] .
+
+dts2620:resource18343 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Variant with alternative investment options"""@en ;
+    .
+
+dts2620:link133551 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x108 ;
+    xl:to dts2620:resource18344 ;
+    ] .
+
+dts2620:resource18344 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Regular premium [R]"""@en ;
+    .
+
+dts2620:link133552 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x109 ;
+    xl:to dts2620:resource18345 ;
+    ] .
+
+dts2620:resource18345 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Reinsurance accepted"""@en ;
+    .
+
+dts2620:link133553 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x110 ;
+    xl:to dts2620:resource18346 ;
+    ] .
+
+dts2620:resource18346 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Single premium paid under a pre-determined schedule without pre-determined amounts and with additional guarantee according to amount paid [S]"""@en ;
+    .
+
+dts2620:link133554 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x111 ;
+    xl:to dts2620:resource18347 ;
+    ] .
+
+dts2620:resource18347 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Single premium without any pre-determined schedule with additional guarantee according to amount paid [NS]"""@en ;
+    .
+
+dts2620:link133555 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x112 ;
+    xl:to dts2620:resource18348 ;
+    ] .
+
+dts2620:resource18348 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Single premium without possibility to pay an additional premium in the future [NF]"""@en ;
+    .
+
+dts2620:link133556 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x113 ;
+    xl:to dts2620:resource18349 ;
+    ] .
+
+dts2620:resource18349 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Unit-linked - collective [UC]"""@en ;
+    .
+
+dts2620:link133557 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x114 ;
+    xl:to dts2620:resource18350 ;
+    ] .
+
+dts2620:resource18350 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Unit-linked - hybrid [UH]"""@en ;
+    .
+
+dts2620:link133558 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x115 ;
+    xl:to dts2620:resource18351 ;
+    ] .
+
+dts2620:resource18351 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Unit-linked - join life [UJ]"""@en ;
+    .
+
+dts2620:link133559 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x116 ;
+    xl:to dts2620:resource18352 ;
+    ] .
+
+dts2620:resource18352 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Unit-linked - other [UO]"""@en ;
+    .
+
+dts2620:link133560 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x117 ;
+    xl:to dts2620:resource18353 ;
+    ] .
+
+dts2620:resource18353 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Unit-linked - pension funds [UP]"""@en ;
+    .
+
+dts2620:link133561 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x118 ;
+    xl:to dts2620:resource18354 ;
+    ] .
+
+dts2620:resource18354 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Unit-linked - single life [US]"""@en ;
+    .
+
+dts2620:link133562 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x119 ;
+    xl:to dts2620:resource18355 ;
+    ] .
+
+dts2620:resource18355 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Unit-linked or index-linked"""@en ;
+    .
+
+dts2620:link133563 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x120 ;
+    xl:to dts2620:resource18356 ;
+    ] .
+
+dts2620:resource18356 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Unit-linked or index-linked other than variable annuities"""@en ;
+    .
+
+dts2620:link133564 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x121 ;
+    xl:to dts2620:resource18357 ;
+    ] .
+
+dts2620:resource18357 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Tontines, referred to in point [b][i] of Article 2[3]"""@en ;
+    .
+
+dts2620:link133565 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x122 ;
+    xl:to dts2620:resource18358 ;
+    ] .
+
+dts2620:resource18358 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Variable annuities"""@en ;
+    .
+
+dts2620:link133566 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x123 ;
+    xl:to dts2620:resource18359 ;
+    ] .
+
+dts2620:resource18359 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Capital redemption operations, referred to in point [b][ii] of Article 2[3]"""@en ;
+    .
+
+dts2620:link133567 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x124 ;
+    xl:to dts2620:resource18360 ;
+    ] .
+
+dts2620:resource18360 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Management of group pension funds, referred to in point [b][iii] and [iv] of Article 2[3]"""@en ;
+    .
+
+dts2620:link133568 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x125 ;
+    xl:to dts2620:resource18361 ;
+    ] .
+
+dts2620:resource18361 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """The operations referred to in point [b][v] of Article 2[3]"""@en ;
+    .
+
+dts2620:link133569 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x126 ;
+    xl:to dts2620:resource18362 ;
+    ] .
+
+dts2620:resource18362 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """With-profit - collective [PC]"""@en ;
+    .
+
+dts2620:link133570 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x127 ;
+    xl:to dts2620:resource18363 ;
+    ] .
+
+dts2620:resource18363 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """With-profit - hybrid [PH]"""@en ;
+    .
+
+dts2620:link133571 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x128 ;
+    xl:to dts2620:resource18364 ;
+    ] .
+
+dts2620:resource18364 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """With-profit - join life [PJ]"""@en ;
+    .
+
+dts2620:link133572 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x129 ;
+    xl:to dts2620:resource18365 ;
+    ] .
+
+dts2620:resource18365 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """With-profit - other [PO]"""@en ;
+    .
+
+dts2620:link133573 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x130 ;
+    xl:to dts2620:resource18366 ;
+    ] .
+
+dts2620:resource18366 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """With-profit - pension funds [PP]"""@en ;
+    .
+
+dts2620:link133574 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x131 ;
+    xl:to dts2620:resource18367 ;
+    ] .
+
+dts2620:resource18367 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """With-profit - single life [PS]"""@en ;
+    .
+
+dts2620:link133575 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x132 ;
+    xl:to dts2620:resource18368 ;
+    ] .
+
+dts2620:resource18368 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Workers' compensation insurance [direct business and accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133576 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x133 ;
+    xl:to dts2620:resource18369 ;
+    ] .
+
+dts2620:resource18369 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Product is considered partially replicable by a financial instrument"""@en ;
+    .
+
+dts2620:link133577 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x134 ;
+    xl:to dts2620:resource18370 ;
+    ] .
+
+dts2620:resource18370 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life and Health non-SLT [direct business]"""@en ;
+    .
+
+dts2620:link133578 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x135 ;
+    xl:to dts2620:resource18371 ;
+    ] .
+
+dts2620:resource18371 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Medical expense insurance [direct business]"""@en ;
+    .
+
+dts2620:link133579 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x136 ;
+    xl:to dts2620:resource18372 ;
+    ] .
+
+dts2620:resource18372 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Income protection insurance [direct business]"""@en ;
+    .
+
+dts2620:link133580 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x137 ;
+    xl:to dts2620:resource18373 ;
+    ] .
+
+dts2620:resource18373 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Workers' compensation insurance [direct business]"""@en ;
+    .
+
+dts2620:link133581 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x138 ;
+    xl:to dts2620:resource18374 ;
+    ] .
+
+dts2620:resource18374 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Motor vehicle liability insurance [direct business]"""@en ;
+    .
+
+dts2620:link133582 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x139 ;
+    xl:to dts2620:resource18375 ;
+    ] .
+
+dts2620:resource18375 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other motor insurance [direct business]"""@en ;
+    .
+
+dts2620:link133583 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x140 ;
+    xl:to dts2620:resource18376 ;
+    ] .
+
+dts2620:resource18376 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Marine, aviation and transport insurance [direct business]"""@en ;
+    .
+
+dts2620:link133584 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x141 ;
+    xl:to dts2620:resource18377 ;
+    ] .
+
+dts2620:resource18377 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Fire and other damage to property insurance [direct business]"""@en ;
+    .
+
+dts2620:link133585 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x142 ;
+    xl:to dts2620:resource18378 ;
+    ] .
+
+dts2620:resource18378 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """General liability insurance [direct business]"""@en ;
+    .
+
+dts2620:link133586 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x143 ;
+    xl:to dts2620:resource18379 ;
+    ] .
+
+dts2620:resource18379 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Credit and suretyship insurance [direct business]"""@en ;
+    .
+
+dts2620:link133587 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x144 ;
+    xl:to dts2620:resource18380 ;
+    ] .
+
+dts2620:resource18380 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Legal expenses insurance [direct business]"""@en ;
+    .
+
+dts2620:link133588 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x145 ;
+    xl:to dts2620:resource18381 ;
+    ] .
+
+dts2620:resource18381 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Assistance [direct business]"""@en ;
+    .
+
+dts2620:link133589 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x146 ;
+    xl:to dts2620:resource18382 ;
+    ] .
+
+dts2620:resource18382 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Miscellaneous financial loss [direct business]"""@en ;
+    .
+
+dts2620:link133590 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x147 ;
+    xl:to dts2620:resource18383 ;
+    ] .
+
+dts2620:resource18383 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Non-life and Health non-SLT [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133591 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x148 ;
+    xl:to dts2620:resource18384 ;
+    ] .
+
+dts2620:resource18384 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Medical expense insurance [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133592 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x149 ;
+    xl:to dts2620:resource18385 ;
+    ] .
+
+dts2620:resource18385 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Income protection insurance [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133593 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x150 ;
+    xl:to dts2620:resource18386 ;
+    ] .
+
+dts2620:resource18386 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Workers' compensation insurance [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133594 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x151 ;
+    xl:to dts2620:resource18387 ;
+    ] .
+
+dts2620:resource18387 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Motor vehicle liability insurance [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133595 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x152 ;
+    xl:to dts2620:resource18388 ;
+    ] .
+
+dts2620:resource18388 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Other motor insurance [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133596 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x153 ;
+    xl:to dts2620:resource18389 ;
+    ] .
+
+dts2620:resource18389 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Marine, aviation and transport insurance [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133597 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x154 ;
+    xl:to dts2620:resource18390 ;
+    ] .
+
+dts2620:resource18390 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Fire and other damage to property insurance [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133598 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x155 ;
+    xl:to dts2620:resource18391 ;
+    ] .
+
+dts2620:resource18391 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """General liability insurance [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133599 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x156 ;
+    xl:to dts2620:resource18392 ;
+    ] .
+
+dts2620:resource18392 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Credit and suretyship insurance [accepted proportional reinsurance]"""@en ;
+    .
+
+dts2620:link133600 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from s2c_LB:x157 ;
+    xl:to dts2620:resource18393 ;
+    ] .
+
+dts2620:resource18393 
+    xl:type link:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Legal expenses insurance [accepted proportional reinsurance]"""@en ;
+    .
+

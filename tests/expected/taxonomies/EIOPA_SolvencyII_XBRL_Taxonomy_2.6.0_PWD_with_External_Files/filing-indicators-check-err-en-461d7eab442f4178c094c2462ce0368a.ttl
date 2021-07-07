@@ -1,0 +1,53 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/ext/filing-indicators-check-err-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix eiopa_find: <http://eiopa.europa.eu/xbrl/ext/filing-indicators#>.
+@prefix find: <http://www.eurofiling.info/xbrl/ext/filing-indicators#>.
+@prefix role1: <http://www.xbrl.org/2003/role#>.
+@prefix msg: <http://xbrl.org/2010/message#>.
+@prefix arcrole6: <http://xbrl.org/arcrole/2010#>.
+@prefix role4: <http://www.xbrl.org/2010/role#>.
+@prefix role6: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.28.02.01.05#>.
+@prefix dts2462: <http://eiopa.europa.eu/eu/xbrl/ext/filing-indicators-check-err-en.xml#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/ext/filing-indicators-check-err-en.xml
+
+dts2462:link90844 arcrole6:assertion-unsatisfied-message [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from eiopa_find:filingIndicatorOutsidefIndicatorsTupleAssertion ;
+    xl:to dts2462:resource4201 ;
+    ] .
+
+dts2462:resource4201 
+    xl:type msg:message ;
+    xlink:role role4:message ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Filing indicator not in find:fIndicators tuple."""@en ;
+    .
+
+dts2462:link90845 arcrole6:assertion-unsatisfied-message [
+    xl:type xl:link ;
+    xl:role role1:link ;
+    xl:from eiopa_find:filingIndicatorsExistanceAssertion ;
+    xl:to dts2462:resource4202 ;
+    ] .
+
+dts2462:resource4202 
+    xl:type msg:message ;
+    xlink:role role4:message ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Filing indicators missing in the report."""@en ;
+    .
+

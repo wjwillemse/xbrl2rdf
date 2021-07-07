@@ -1,0 +1,9 @@
+# Source HREF: http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd
+
+# RDF triples (turtle syntax)
+
+
+
+# SCHEMAS
+# target namespace:http://www.xbrl.org/dtr/type/non-numeric# base: http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd
+
