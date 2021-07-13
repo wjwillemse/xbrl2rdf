@@ -1,9 +1,0 @@
-# Source HREF: http://www.eurofiling.info/eu/fr/xbrl/func/func.xsd
-
-# RDF triples (turtle syntax)
-
-
-
-# SCHEMAS
-# target namespace:http://www.eurofiling.info/xbrl/func# base: http://www.eurofiling.info/eu/fr/xbrl/func/func.xsd
-

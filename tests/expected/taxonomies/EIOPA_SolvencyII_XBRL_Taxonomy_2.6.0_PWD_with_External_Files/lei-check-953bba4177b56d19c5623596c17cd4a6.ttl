@@ -1,0 +1,95 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/func/lei-check.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix variable: <http://xbrl.org/2008/variable#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix customfunction: <http://xbrl.org/2010/custom-function#>.
+@prefix func: <http://www.eurofiling.info/xbrl/func#>.
+@prefix eiopa_func: <http://eiopa.europa.eu/xbrl/func#>.
+@prefix role2: <http://www.xbrl.org/2003/role#>.
+@prefix arcrole6: <http://xbrl.org/arcrole/2010#>.
+@prefix role6: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.28.02.01.05#>.
+@prefix dts2458: <http://eiopa.europa.eu/eu/xbrl/func/lei-check.xml#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/func/lei-check.xml
+
+dts2458:link90850 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from eiopa_func:function1 ;
+    xl:to eiopa_func:functionImplementation1 ;
+    ] .
+
+eiopa_func:function1 
+    xl:type variable:function ;
+    xl:name """lei-fn:validate-format"""^^rdf:XMLLiteral ;
+    xl:output """xs:boolean"""^^rdf:XMLLiteral ;
+    .
+
+eiopa_func:functionImplementation1 
+    xl:type customfunction:implementation ;
+    customfunction:output """matches( $s , '^[A-Z0-9]{18}[0-9]{2}$' )"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90851 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from eiopa_func:function2 ;
+    xl:to eiopa_func:functionImplementation2 ;
+    ] .
+
+eiopa_func:function2 
+    xl:type variable:function ;
+    xl:name """lei-fn:identifier-scheme"""^^rdf:XMLLiteral ;
+    xl:output """xs:anyURI"""^^rdf:XMLLiteral ;
+    .
+
+eiopa_func:functionImplementation2 
+    xl:type customfunction:implementation ;
+    customfunction:output """xs:anyURI( 'http://standards.iso.org/iso/17442' )"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90852 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from eiopa_func:function3 ;
+    xl:to eiopa_func:functionImplementation3 ;
+    ] .
+
+eiopa_func:function3 
+    xl:type variable:function ;
+    xl:name """lei-fn:_checksum-97-10"""^^rdf:XMLLiteral ;
+    xl:output """xs:integer"""^^rdf:XMLLiteral ;
+    .
+
+eiopa_func:functionImplementation3 
+    xl:type customfunction:implementation ;
+    customfunction:output """( if ( string-length( $s ) > 13 ) then 10000000000000 * lei-fn:_checksum-97-10( substring( $s , 1 , string-length( $s ) - 13 ) ) + xs:integer( substring( $s , string-length( $s ) +1 - 13 , 13 ) ) else xs:integer( substring( $s , 1 , string-length( $s ) ) ) ) mod 97"""^^rdf:XMLLiteral ;
+    .
+
+dts2458:link90853 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from eiopa_func:function4 ;
+    xl:to eiopa_func:functionImplementation4 ;
+    ] .
+
+eiopa_func:function4 
+    xl:type variable:function ;
+    xl:name """lei-fn:validate-checksum"""^^rdf:XMLLiteral ;
+    xl:output """xs:boolean"""^^rdf:XMLLiteral ;
+    .
+
+eiopa_func:functionImplementation4 
+    xl:type customfunction:implementation ;
+    customfunction:output """not( lei-fn:validate-format( $s ) ) or ( lei-fn:_checksum-97-10( string-join( ( for $c in string-to-codepoints( $s ) return xs:string( if ( $c <= 57 ) then $c - 48 else $c - 55 ) ) , '' ) ) = 1 and not( matches( $s , "(00|01|99)$" ) ) )"""^^rdf:XMLLiteral ;
+    .
+

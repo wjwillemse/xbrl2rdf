@@ -1,0 +1,213 @@
+# Source HREF: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01_def.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrldt: <http://xbrl.org/2005/xbrldt#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix ferc: <http://ferc.gov/form/2020-01-01/ferc#>.
+@prefix role1: <http://ferc.gov/form/2020-01-01/roles/Schedule/F1Q#>.
+@prefix role3: <http://ferc.gov/form/2020-01-01/roles/label#>.
+@prefix arcrole3: <http://xbrl.org/int/dim/arcrole#>.
+@prefix dts123: <https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01_def.xml#>.
+
+
+# XLINKS
+# localname: definitionLink
+# role: http://ferc.gov/form/2020-01-01/roles/Schedule/F1Q/DepreciationDepletionAndAmortizationOfElectricPlant
+# base: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01_def.xml
+
+dts123:link22610 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:ScheduleDepreciationDepletionAndAmortizationsAbstract ;
+    xl:to ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    ] .
+
+dts123:link22611 arcrole3:all [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xbrldt:contextElement """segment"""^^rdf:XMLLiteral ;
+    xbrldt:closed "true"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    xl:to ferc:DepreciationDepletionAndAmortizationChargesTable ;
+    ] .
+
+dts123:link22612 arcrole3:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesTable ;
+    xl:to ferc:UtilityTypeAxis ;
+    ] .
+
+dts123:link22613 arcrole3:dimension-domain [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:UtilityTypeAxis ;
+    xl:to ferc:UtilityTypeDomain ;
+    ] .
+
+dts123:link22614 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:UtilityTypeDomain ;
+    xl:to ferc:ElectricUtilityMember ;
+    ] .
+
+dts123:link22615 arcrole3:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesTable ;
+    xl:to ferc:FunctionalClassificationAxis ;
+    ] .
+
+dts123:link22616 arcrole3:dimension-domain [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationAxis ;
+    xl:to ferc:FunctionalClassificationDomain ;
+    ] .
+
+dts123:link22617 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:IntangiblePlantMember ;
+    ] .
+
+dts123:link22618 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:SteamProductionPlantMember ;
+    ] .
+
+dts123:link22619 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:NuclearProductionPlantMember ;
+    ] .
+
+dts123:link22620 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:HydraulicProductionPlantConventionalMember ;
+    ] .
+
+dts123:link22621 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:HydraulicProductionPlantPumpedStorageMember ;
+    ] .
+
+dts123:link22622 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "6"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:OtherProductionPlantMember ;
+    ] .
+
+dts123:link22623 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "7"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:TransmissionPlantMember ;
+    ] .
+
+dts123:link22624 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "8"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:DistributionPlantMember ;
+    ] .
+
+dts123:link22625 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "9"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:GeneralPlantMember ;
+    ] .
+
+dts123:link22626 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "10"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:CommonPlantElectricMember ;
+    ] .
+
+dts123:link22627 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    xl:to ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments ;
+    ] .
+
+dts123:link22628 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    xl:to ferc:DepreciationExpenseForAssetRetirementCostsExcludingAmortizationgOfAcquisitionAdjustments ;
+    ] .
+
+dts123:link22629 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    xl:to ferc:AmortizationOfLimitedTermPlantOrProperty ;
+    ] .
+
+dts123:link22630 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    xl:to ferc:AmortizationOfOtherElectricPlant ;
+    ] .
+
+dts123:link22631 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "6"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    xl:to ferc:DepreciationAndAmortization ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://ferc.gov/form/2020-01-01/roles/Schedule/F1Q/DepreciationDepletionAndAmortizationOfElectricPlant
+# base: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01_def.xml
+
+dts123:link22632 arcrole3:dimension-default [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationAxis ;
+    xl:to ferc:FunctionalClassificationDomain ;
+    ] .
+

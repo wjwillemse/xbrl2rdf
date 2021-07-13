@@ -1,0 +1,9 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/ext/filing-indicators.xsd
+
+# RDF triples (turtle syntax)
+
+
+
+# SCHEMAS
+# target namespace:http://eiopa.europa.eu/xbrl/ext/filing-indicators# base: http://eiopa.europa.eu/eu/xbrl/ext/filing-indicators.xsd
+

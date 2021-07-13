@@ -1,0 +1,1493 @@
+# Source HREF: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/default/form-1-Default_2020-01-01_def.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrldt: <http://xbrl.org/2005/xbrldt#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix ferc: <http://ferc.gov/form/2020-01-01/ferc#>.
+@prefix role3: <http://ferc.gov/form/2020-01-01/roles/label#>.
+@prefix arcrole3: <http://xbrl.org/int/dim/arcrole#>.
+@prefix dts128: <https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/default/form-1-Default_2020-01-01_def.xml#>.
+@prefix role6: <http://ferc.gov/form/2020-01-01/roles#>.
+
+
+# XLINKS
+# localname: definitionLink
+# role: http://ferc.gov/form/2020-01-01/roles/Default
+# base: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/default/form-1-Default_2020-01-01_def.xml
+
+dts128:link23088 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:DefaultAbstract ;
+    xl:to ferc:DefaultLineItems ;
+    ] .
+
+dts128:link23089 arcrole3:all [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xbrldt:contextElement """segment"""^^rdf:XMLLiteral ;
+    xbrldt:closed "true"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:DefaultTable ;
+    ] .
+
+dts128:link23090 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ElectricPlantLeasedToOthers ;
+    ] .
+
+dts128:link23091 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ElectricPlantHeldForFutureUse ;
+    ] .
+
+dts128:link23092 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ConstructionWorkInProgress ;
+    ] .
+
+dts128:link23093 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedProvisionForDepreciationOfElectricUtilityPlant ;
+    ] .
+
+dts128:link23094 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "6"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CostOfInvestmentsInSubsidiaryCompanies ;
+    ] .
+
+dts128:link23095 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "7"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EquityInEarningsOfSubsidiaryCompanies ;
+    ] .
+
+dts128:link23096 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "8"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InterestAndDividendRevenueFromInvestments ;
+    ] .
+
+dts128:link23097 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "9"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InvestmentInSubsidiaryCompanies ;
+    ] .
+
+dts128:link23098 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "10"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InvestmentGainLossOnDisplosal ;
+    ] .
+
+dts128:link23099 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "11"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InvestmentGainLossOnDisplosal ;
+    ] .
+
+dts128:link23100 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "12"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ExtraordinaryPropertyLossesNotYetRecognized ;
+    ] .
+
+dts128:link23101 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "13"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ExtraordinaryPropertyLossesRecognized ;
+    ] .
+
+dts128:link23102 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "14"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ExtraordinaryPropertyLossesWrittenOff ;
+    ] .
+
+dts128:link23103 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "15"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ExtraordinaryPropertyLosses ;
+    ] .
+
+dts128:link23104 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "16"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:UnrecoveredPlantAndRegulatoryStudyCostsNotYetRecognized ;
+    ] .
+
+dts128:link23105 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "17"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:UnrecoveredPlantAndRegulatoryStudyCostsRecognized ;
+    ] .
+
+dts128:link23106 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "18"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:UnrecoveredPlantAndRegulatoryStudyCostsWrittenOff ;
+    ] .
+
+dts128:link23107 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "19"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:UnrecoveredPlantAndRegulatoryStudyCosts ;
+    ] .
+
+dts128:link23108 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "20"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:StudyCostsIncurred ;
+    ] .
+
+dts128:link23109 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "21"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:StudyCostsReimbursements ;
+    ] .
+
+dts128:link23110 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "22"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:IncreaseDecreaseInOtherRegulatoryAssets ;
+    ] .
+
+dts128:link23111 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "23"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherRegulatoryAssetsWrittenOffRecovered ;
+    ] .
+
+dts128:link23112 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "24"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherRegulatoryAssets ;
+    ] .
+
+dts128:link23113 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "25"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CommonStockSharesAuthorized ;
+    ] .
+
+dts128:link23114 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "26"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CommonStockSharesOutstanding ;
+    ] .
+
+dts128:link23115 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "27"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CommonStockIssued ;
+    ] .
+
+dts128:link23116 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "28"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:PreferredStockSharesAuthorized ;
+    ] .
+
+dts128:link23117 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "29"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:PreferredStockSharesOutstanding ;
+    ] .
+
+dts128:link23118 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "30"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:PreferredStockIssued ;
+    ] .
+
+dts128:link23119 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "31"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CapitalStockSharesAuthorized ;
+    ] .
+
+dts128:link23120 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "32"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CapitalStockSharesOutstanding ;
+    ] .
+
+dts128:link23121 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "33"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CapitalStockValueOutstanding ;
+    ] .
+
+dts128:link23122 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "34"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CapitalStockExpense ;
+    ] .
+
+dts128:link23123 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "35"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:BondsPrincipalAmountIssued ;
+    ] .
+
+dts128:link23124 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "36"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LongTermDebtPremium ;
+    ] .
+
+dts128:link23125 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "37"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LongTermDebtDiscount ;
+    ] .
+
+dts128:link23126 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "38"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:Bonds ;
+    ] .
+
+dts128:link23127 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "39"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InterestExpenseBonds ;
+    ] .
+
+dts128:link23128 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "40"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ReacquiredBondsPrincipalAmount ;
+    ] .
+
+dts128:link23129 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "41"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LongTermDebtPremium ;
+    ] .
+
+dts128:link23130 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "42"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LongTermDebtDiscount ;
+    ] .
+
+dts128:link23131 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "43"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ReacquiredBonds ;
+    ] .
+
+dts128:link23132 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "44"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InterestExpenseReacquiredBonds ;
+    ] .
+
+dts128:link23133 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "45"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AdvancesFromAssociatedCompaniesPrincipalAmountIssued ;
+    ] .
+
+dts128:link23134 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "46"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LongTermDebtPremium ;
+    ] .
+
+dts128:link23135 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "47"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LongTermDebtDiscount ;
+    ] .
+
+dts128:link23136 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "48"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AdvancesFromAssociatedCompanies ;
+    ] .
+
+dts128:link23137 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "49"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InterestExpenseDebtAdvancesFromAssociatedCompanies ;
+    ] .
+
+dts128:link23138 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "50"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherLongTermDebtPrincipalAmountIssued ;
+    ] .
+
+dts128:link23139 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "51"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LongTermDebtPremium ;
+    ] .
+
+dts128:link23140 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "52"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LongTermDebtDiscount ;
+    ] .
+
+dts128:link23141 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "53"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherLongTermDebt ;
+    ] .
+
+dts128:link23142 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "54"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InterestExpenseOtherLongTermDebt ;
+    ] .
+
+dts128:link23143 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "55"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LongTermDebtPrincipalAmountIssued ;
+    ] .
+
+dts128:link23144 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "56"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LongTermDebtIssuanceExpensePremiumOrDiscount ;
+    ] .
+
+dts128:link23145 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "57"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LongTermDebtOutstanding ;
+    ] .
+
+dts128:link23146 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "58"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InterestExpenseOnLongTermDebtIssued ;
+    ] .
+
+dts128:link23147 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "59"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TaxesAccrued ;
+    ] .
+
+dts128:link23148 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "60"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:PrepaidTaxes ;
+    ] .
+
+dts128:link23149 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "61"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TaxesCharged ;
+    ] .
+
+dts128:link23150 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "62"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TaxesPaid ;
+    ] .
+
+dts128:link23151 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "63"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TaxAdjustments ;
+    ] .
+
+dts128:link23152 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "64"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TaxesAccrued ;
+    ] .
+
+dts128:link23153 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "65"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:PrepaidTaxes ;
+    ] .
+
+dts128:link23154 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "66"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TaxesAccruedPrepaidAndCharged ;
+    ] .
+
+dts128:link23155 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "67"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:IncomeTaxesExtraordinaryItems ;
+    ] .
+
+dts128:link23156 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "68"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AdjustmentsToRetainedEarnings ;
+    ] .
+
+dts128:link23157 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "69"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TaxesIncurredOther ;
+    ] .
+
+dts128:link23158 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "70"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedDeferredInvestmentTaxCredits ;
+    ] .
+
+dts128:link23159 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "71"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedDeferredInvestmentTaxCreditsDeferredAmount ;
+    ] .
+
+dts128:link23160 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "72"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedDeferredInvestmentTaxCreditsAllocationToIncomeAmount ;
+    ] .
+
+dts128:link23161 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "73"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedDeferredInvestmentTaxCreditsAdjustments ;
+    ] .
+
+dts128:link23162 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "74"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedDeferredInvestmentTaxCredits ;
+    ] .
+
+dts128:link23163 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "75"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedDeferredInvestmentTaxCredits ;
+    ] .
+
+dts128:link23164 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "76"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedDeferredInvestmentTaxCreditsDeferredAmount ;
+    ] .
+
+dts128:link23165 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "77"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedDeferredInvestmentTaxCreditsAllocationToIncomeAmount ;
+    ] .
+
+dts128:link23166 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "78"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedDeferredInvestmentTaxCreditsAdjustments ;
+    ] .
+
+dts128:link23167 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "79"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedDeferredInvestmentTaxCredits ;
+    ] .
+
+dts128:link23168 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "80"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:DecreaseInOtherDeferredCredits ;
+    ] .
+
+dts128:link23169 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "81"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:IncreaseInOtherDeferredCredits ;
+    ] .
+
+dts128:link23170 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "82"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherDeferredCredits ;
+    ] .
+
+dts128:link23171 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "83"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:DecreaseInOtherRegulatoryLiabilities ;
+    ] .
+
+dts128:link23172 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "84"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:IncreaseInOtherRegulatoryLiabilities ;
+    ] .
+
+dts128:link23173 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "85"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherRegulatoryLiabilities ;
+    ] .
+
+dts128:link23174 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "86"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RegionalTransmissionServiceRevenues ;
+    ] .
+
+dts128:link23175 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "87"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:MegawattHoursOfElectricitySoldByRateSchedules ;
+    ] .
+
+dts128:link23176 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "88"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RevenueFromSalesOfElectricityByRateSchedules ;
+    ] .
+
+dts128:link23177 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "89"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AverageNumberOfCustomersPerMonthSalesOfElectricityByRateSchedules ;
+    ] .
+
+dts128:link23178 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "90"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AverageKilowattHoursOfSalesPerCustomerSalesOfElectricityByRateSchedules ;
+    ] .
+
+dts128:link23179 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "91"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AverageRevenuePerKilowattHourSoldSalesOfElectricityByRateSchedules ;
+    ] .
+
+dts128:link23180 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "92"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:MegawattHoursSoldSalesForResale ;
+    ] .
+
+dts128:link23181 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "93"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:MegawattHoursPurchasedOtherThanStorage ;
+    ] .
+
+dts128:link23182 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "94"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:MegawattHoursPurchasedForEnergyStorage ;
+    ] .
+
+dts128:link23183 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "95"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergyReceivedThroughPowerExchanges ;
+    ] .
+
+dts128:link23184 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "96"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergyDeliveredThroughPowerExchanges ;
+    ] .
+
+dts128:link23185 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "97"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:DemandChargesOfPurchasedPower ;
+    ] .
+
+dts128:link23186 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "98"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergyChargesOfPurchasedPower ;
+    ] .
+
+dts128:link23187 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "99"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherChargesOfPurchasedPower ;
+    ] .
+
+dts128:link23188 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "100"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:SettlementOfPower ;
+    ] .
+
+dts128:link23189 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "101"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:BillingDemand ;
+    ] .
+
+dts128:link23190 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "102"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TransmissionOfElectricityForOthersEnergyReceived ;
+    ] .
+
+dts128:link23191 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "103"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TransmissionOfElectricityForOthersEnergyDelivered ;
+    ] .
+
+dts128:link23192 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "104"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RevenuesFromTransmissionOfElectricityForOthers ;
+    ] .
+
+dts128:link23193 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "105"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RevenuesByRateOrTariff ;
+    ] .
+
+dts128:link23194 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "106"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TransmissionOfElectricityByIsosOrRtosRevenue ;
+    ] .
+
+dts128:link23195 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "107"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TransmissionOfElectricityByOthersEnergyReceived ;
+    ] .
+
+dts128:link23196 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "108"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TransmissionOfElectricityByOthersEnergyDelivered ;
+    ] .
+
+dts128:link23197 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "109"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:DemandChargesTransmissionOfElectricityByOthers ;
+    ] .
+
+dts128:link23198 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "110"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergyChargesTransmissionOfElectricityByOthers ;
+    ] .
+
+dts128:link23199 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "111"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherChargesTransmissionOfElectricityByOthers ;
+    ] .
+
+dts128:link23200 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "112"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ChargesForTransmissionOfElectricityByOthers ;
+    ] .
+
+dts128:link23201 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "113"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RegulatoryExpensesAssessedByRegulatoryCommission ;
+    ] .
+
+dts128:link23202 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "114"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RegulatoryExpensesOfUtility ;
+    ] .
+
+dts128:link23203 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "115"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RegulatoryCommissionExpensesAmount ;
+    ] .
+
+dts128:link23204 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "116"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherRegulatoryAssetsRegulatoryCommissionExpenses ;
+    ] .
+
+dts128:link23205 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "117"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RegulatoryCommissionExpenses ;
+    ] .
+
+dts128:link23206 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "118"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RegulatoryCommissionExpensesDeferredToOtherRegulatoryAssets ;
+    ] .
+
+dts128:link23207 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "119"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:DeferredRegulatoryCommissionExpensesAmortized ;
+    ] .
+
+dts128:link23208 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "120"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergyPurchasedGeneratedReceivedForStorage ;
+    ] .
+
+dts128:link23209 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "121"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergyDeliveredToSupportProductionPlant ;
+    ] .
+
+dts128:link23210 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "122"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergyDeliveredToSupportTransmissionPlant ;
+    ] .
+
+dts128:link23211 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "123"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergyDeliveredToSupportDistributionPlant ;
+    ] .
+
+dts128:link23212 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "124"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergyLostDuringConversionStorageDischargeAndDischargeOfEnergyProductionPlant ;
+    ] .
+
+dts128:link23213 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "125"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergyLostDuringConversionStorageDischargeAndDischargeOfEnergyTransmissionPlant ;
+    ] .
+
+dts128:link23214 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "126"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergyLostDuringConversionStorageDischargeAndDischargeOfEnergyDistributionplant ;
+    ] .
+
+dts128:link23215 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "127"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:EnergySold ;
+    ] .
+
+dts128:link23216 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "128"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RevenuesFromEnergyStorageOperations ;
+    ] .
+
+dts128:link23217 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "129"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:PowerPurchasedForStorageOperations ;
+    ] .
+
+dts128:link23218 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "130"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:FuelCostsStorageOperationsSelfGeneratedPower ;
+    ] .
+
+dts128:link23219 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "131"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherCostsSelfGeneratedPower ;
+    ] .
+
+dts128:link23220 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "132"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ProjectPlantCostProduction ;
+    ] .
+
+dts128:link23221 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "133"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ProjectPlantCostTransmission ;
+    ] .
+
+dts128:link23222 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "134"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ProjectPlantCostDistribution ;
+    ] .
+
+dts128:link23223 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "135"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ProjectPlantCost ;
+    ] .
+
+dts128:link23224 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "136"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OperationExpenseExcludingFuel ;
+    ] .
+
+dts128:link23225 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "137"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:MaintenanceExpense ;
+    ] .
+
+dts128:link23226 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "138"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:FuelUsedInStorageOperations ;
+    ] .
+
+dts128:link23227 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "139"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:PowerPurchasedForStorageOperations ;
+    ] .
+
+dts128:link23228 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "140"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherExpenses ;
+    ] .
+
+dts128:link23229 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "141"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LengthForStandAloneTransmissionLines ;
+    ] .
+
+dts128:link23230 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "142"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LengthForTransmissionLinesAggregatedWithOtherStructures ;
+    ] .
+
+dts128:link23231 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "143"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:NumberOfTransmissionCircuits ;
+    ] .
+
+dts128:link23232 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "144"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CostOfLandAndLandRightsTransmissionLines ;
+    ] .
+
+dts128:link23233 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "145"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ConstructionAndOtherCostsTransmissionLines ;
+    ] .
+
+dts128:link23234 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "146"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OverallCostOfTransmissionLine ;
+    ] .
+
+dts128:link23235 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "147"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OperatingExpensesOfTransmissionLine ;
+    ] .
+
+dts128:link23236 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "148"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:MaintenanceExpensesOfTransmissionLine ;
+    ] .
+
+dts128:link23237 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "149"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RentExpensesOfTransmissionLine ;
+    ] .
+
+dts128:link23238 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "150"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OverallExpensesOfTransmissionLine ;
+    ] .
+
+dts128:link23239 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "151"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:LengthOfTransmissionLineAdded ;
+    ] .
+
+dts128:link23240 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "152"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AverageNumberOfSupportingStructuresOfTransmissionLinePerMiles ;
+    ] .
+
+dts128:link23241 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "153"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:NumberOfTransmissionCircuitsPerStructurePresent ;
+    ] .
+
+dts128:link23242 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "154"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:NumberOfTransmissionCircuitsPerStructureUltimate ;
+    ] .
+
+dts128:link23243 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "155"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CostOfLandAndLandRightsTransmissionLines ;
+    ] .
+
+dts128:link23244 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "156"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CostOfPolesTowersAndFixturesTransmissionLines ;
+    ] .
+
+dts128:link23245 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "157"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CostOfConductorsAndDevicesTransmissionLines ;
+    ] .
+
+dts128:link23246 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "158"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AssetRetirementCostsTransmissionLines ;
+    ] .
+
+dts128:link23247 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "159"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:CostOfTransmissionLinesAdded ;
+    ] .
+
+dts128:link23248 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "160"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ResearchDevelopmentAndDemonstrationExpenditures ;
+    ] .
+
+dts128:link23249 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "161"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:RetainedEarnings ;
+    ] .
+
+dts128:link23250 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "162"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:UnappropriatedUndistributedSubsidiaryEarnings ;
+    ] .
+
+dts128:link23251 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "163"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:TaxesAccrued ;
+    ] .
+
+dts128:link23252 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "164"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AccumulatedDeferredInvestmentTaxCredits ;
+    ] .
+
+dts128:link23253 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "165"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OperatingRevenues ;
+    ] .
+
+dts128:link23254 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "166"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OperationExpense ;
+    ] .
+
+dts128:link23255 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "167"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherMiscellaneousGeneralExpenses ;
+    ] .
+
+dts128:link23256 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "168"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:IncreaseDecreaseInOtherRegulatoryAssets ;
+    ] .
+
+dts128:link23257 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "169"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherRegulatoryAssetsWrittenOffRecovered ;
+    ] .
+
+dts128:link23258 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "170"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherRegulatoryAssets ;
+    ] .
+
+dts128:link23259 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "171"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:Bonds ;
+    ] .
+
+dts128:link23260 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "172"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InterestExpenseBonds ;
+    ] .
+
+dts128:link23261 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "173"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:ReacquiredBonds ;
+    ] .
+
+dts128:link23262 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "174"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InterestExpenseReacquiredBonds ;
+    ] .
+
+dts128:link23263 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "175"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:AdvancesFromAssociatedCompanies ;
+    ] .
+
+dts128:link23264 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "176"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InterestExpenseDebtAdvancesFromAssociatedCompanies ;
+    ] .
+
+dts128:link23265 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "177"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherLongTermDebt ;
+    ] .
+
+dts128:link23266 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "178"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:InterestExpenseOtherLongTermDebt ;
+    ] .
+
+dts128:link23267 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "179"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherUtilityPlantAdditions ;
+    ] .
+
+dts128:link23268 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "180"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherUtilityPlantRetirements ;
+    ] .
+
+dts128:link23269 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "181"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherUtilityPlantTransfersAndAdjustments ;
+    ] .
+
+dts128:link23270 arcrole3:domain-member [
+    xl:type xl:link ;
+    xl:role role6:Default ;
+    xl:order "182"^^xsd:decimal ;
+    xl:from ferc:DefaultLineItems ;
+    xl:to ferc:OtherUtilityPlant ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://ferc.gov/form/2020-01-01/roles/Default
+# base: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/default/form-1-Default_2020-01-01_def.xml
+

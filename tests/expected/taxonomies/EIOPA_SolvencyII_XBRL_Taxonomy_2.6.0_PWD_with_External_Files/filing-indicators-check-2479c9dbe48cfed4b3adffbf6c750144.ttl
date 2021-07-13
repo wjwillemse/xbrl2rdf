@@ -1,0 +1,146 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/ext/filing-indicators-check.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix variable: <http://xbrl.org/2008/variable#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix cf: <http://xbrl.org/2008/filter/concept#>.
+@prefix tf: <http://xbrl.org/2008/filter/tuple#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix va: <http://xbrl.org/2008/assertion/value#>.
+@prefix ea: <http://xbrl.org/2008/assertion/existence#>.
+@prefix find: <http://www.eurofiling.info/xbrl/ext/filing-indicators#>.
+@prefix role1: <http://www.xbrl.org/2008/role#>.
+@prefix arcrole1: <http://xbrl.org/arcrole/2008#>.
+@prefix role2: <http://www.xbrl.org/2003/role#>.
+@prefix dts2453: <http://eiopa.europa.eu/eu/xbrl/ext/filing-indicators-check.xml#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/ext/filing-indicators-check.xml
+
+dts2453:link90836 arcrole1:variable-set [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:name """filingIndicator"""^^rdf:XMLLiteral ;
+    xl:from dts2453:filingIndicatorOutsidefIndicatorsTupleAssertion ;
+    xl:to dts2453:filingIndicatorOutsidefIndicatorsVariable ;
+    ] .
+
+dts2453:filingIndicatorOutsidefIndicatorsTupleAssertion 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """false()"""^^rdf:XMLLiteral ;
+    .
+
+dts2453:filingIndicatorOutsidefIndicatorsVariable 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    .
+
+dts2453:link90837 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:from dts2453:filingIndicatorOutsidefIndicatorsVariable ;
+    xl:to dts2453:filingIndicator ;
+    ] .
+
+dts2453:filingIndicatorOutsidefIndicatorsVariable 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    .
+
+dts2453:filingIndicator 
+    xl:type cf:conceptName ;
+    cf:concept find:filingIndicator ;
+    .
+
+dts2453:link90838 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:from dts2453:filingIndicatorOutsidefIndicatorsVariable ;
+    xl:to dts2453:fIndicators ;
+    ] .
+
+dts2453:filingIndicatorOutsidefIndicatorsVariable 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    .
+
+dts2453:fIndicators 
+    xl:type tf:parentFilter ;
+    tf:parent find:fIndicators ;
+    .
+
+dts2453:link90839 arcrole1:variable-set [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:name """filingIndicator"""^^rdf:XMLLiteral ;
+    xl:from dts2453:filingIndicatorsExistanceAssertion ;
+    xl:to dts2453:filingIndicatorsExistaneVariable ;
+    ] .
+
+dts2453:filingIndicatorsExistanceAssertion 
+    xl:type ea:existenceAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """. gt 0"""^^rdf:XMLLiteral ;
+    .
+
+dts2453:filingIndicatorsExistaneVariable 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "true"^^xsd:boolean ;
+    xl:fallbackValue """."""^^rdf:XMLLiteral ;
+    .
+
+dts2453:link90840 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:from dts2453:filingIndicatorsExistaneVariable ;
+    xl:to dts2453:filingIndicator ;
+    ] .
+
+dts2453:filingIndicatorsExistaneVariable 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "true"^^xsd:boolean ;
+    xl:fallbackValue """."""^^rdf:XMLLiteral ;
+    .
+
+dts2453:filingIndicator 
+    xl:type cf:conceptName ;
+    cf:concept find:filingIndicator ;
+    .
+
+dts2453:link90841 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:from dts2453:filingIndicatorsExistaneVariable ;
+    xl:to dts2453:fIndicators ;
+    ] .
+
+dts2453:filingIndicatorsExistaneVariable 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "true"^^xsd:boolean ;
+    xl:fallbackValue """."""^^rdf:XMLLiteral ;
+    .
+
+dts2453:fIndicators 
+    xl:type tf:parentFilter ;
+    tf:parent find:fIndicators ;
+    .
+

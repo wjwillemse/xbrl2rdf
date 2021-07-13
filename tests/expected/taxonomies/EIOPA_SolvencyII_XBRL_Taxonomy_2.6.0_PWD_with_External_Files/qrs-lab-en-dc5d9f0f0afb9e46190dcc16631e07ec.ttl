@@ -1,0 +1,36 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs-lab-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix s2md_mod_qrs: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs#>.
+@prefix role2: <http://www.xbrl.org/2003/role#>.
+@prefix dts732: <http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs-lab-en.xml#>.
+@prefix arcrole3: <http://www.xbrl.org/2003/arcrole#>.
+@prefix role3: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+
+
+# XLINKS
+# localname: labelLink
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs-lab-en.xml
+
+dts732:link83657 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_mod_qrs:qrs ;
+    xl:to dts732:resource1 ;
+    ] .
+
+dts732:resource1 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Quarterly Solvency II reporting Solo"""@en ;
+    .
+

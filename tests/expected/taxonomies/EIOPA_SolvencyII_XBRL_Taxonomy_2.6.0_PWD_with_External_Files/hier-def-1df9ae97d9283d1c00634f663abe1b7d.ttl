@@ -1,0 +1,57 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ao/hier-def.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix s2c_exp: <http://eiopa.europa.eu/xbrl/s2c/dict/exp#>.
+@prefix arcrole7: <http://xbrl.org/int/dim/arcrole#>.
+@prefix role7: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.28.02.01.03#>.
+@prefix s2c_AO: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO#>.
+@prefix dts2501: <http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ao/hier-def.xml#>.
+@prefix role29: <http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AO#>.
+
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AO/1
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ao/hier-def.xml
+
+dts2501:link98555 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role29:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:AO ;
+    xl:to s2c_AO:x0 ;
+    ] .
+
+dts2501:link98556 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role29:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_AO:x0 ;
+    xl:to s2c_AO:x1 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AO/2
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ao/hier-def.xml
+
+dts2501:link98557 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role29:2 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:AO ;
+    xl:to s2c_AO:x1 ;
+    ] .
+
+dts2501:link98558 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role29:2 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:AO ;
+    xl:to s2c_AO:x0 ;
+    ] .
+

@@ -1,0 +1,213 @@
+# Source HREF: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01_pre.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix ferc: <http://ferc.gov/form/2020-01-01/ferc#>.
+@prefix role1: <http://ferc.gov/form/2020-01-01/roles/Schedule/F1Q#>.
+@prefix role2: <http://ferc.gov/form/2020-01-01/roles/Schedule/F1#>.
+@prefix arcrole2: <http://www.xbrl.org/2003/arcrole#>.
+@prefix dts122: <https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01_pre.xml#>.
+
+
+# XLINKS
+# localname: presentationLink
+# role: http://ferc.gov/form/2020-01-01/roles/Schedule/F1Q/DepreciationDepletionAndAmortizationOfElectricPlant
+# base: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01_pre.xml
+
+dts122:link22588 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:ScheduleDepreciationDepletionAndAmortizationsAbstract ;
+    xl:to ferc:DepreciationDepletionAndAmortizationChargesTable ;
+    ] .
+
+dts122:link22589 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesTable ;
+    xl:to ferc:UtilityTypeAxis ;
+    ] .
+
+dts122:link22590 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:UtilityTypeAxis ;
+    xl:to ferc:UtilityTypeDomain ;
+    ] .
+
+dts122:link22591 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:UtilityTypeDomain ;
+    xl:to ferc:ElectricUtilityMember ;
+    ] .
+
+dts122:link22592 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesTable ;
+    xl:to ferc:FunctionalClassificationAxis ;
+    ] .
+
+dts122:link22593 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1Total"""^^rdf:XMLLiteral ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationAxis ;
+    xl:to ferc:FunctionalClassificationDomain ;
+    ] .
+
+dts122:link22594 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:IntangiblePlantMember ;
+    ] .
+
+dts122:link22595 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:SteamProductionPlantMember ;
+    ] .
+
+dts122:link22596 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:NuclearProductionPlantMember ;
+    ] .
+
+dts122:link22597 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:HydraulicProductionPlantConventionalMember ;
+    ] .
+
+dts122:link22598 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:HydraulicProductionPlantPumpedStorageMember ;
+    ] .
+
+dts122:link22599 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "6"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:OtherProductionPlantMember ;
+    ] .
+
+dts122:link22600 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "7"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:TransmissionPlantMember ;
+    ] .
+
+dts122:link22601 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "8"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:DistributionPlantMember ;
+    ] .
+
+dts122:link22602 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "9"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:GeneralPlantMember ;
+    ] .
+
+dts122:link22603 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "10"^^xsd:decimal ;
+    xl:from ferc:FunctionalClassificationDomain ;
+    xl:to ferc:CommonPlantElectricMember ;
+    ] .
+
+dts122:link22604 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesTable ;
+    xl:to ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    ] .
+
+dts122:link22605 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    xl:to ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments ;
+    ] .
+
+dts122:link22606 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    xl:to ferc:DepreciationExpenseForAssetRetirementCostsExcludingAmortizationgOfAcquisitionAdjustments ;
+    ] .
+
+dts122:link22607 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    xl:to ferc:AmortizationOfLimitedTermPlantOrProperty ;
+    ] .
+
+dts122:link22608 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1DepreciationDepletionAndAmortizationOfElectricPlant"""^^rdf:XMLLiteral ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    xl:to ferc:AmortizationOfOtherElectricPlant ;
+    ] .
+
+dts122:link22609 arcrole2:parent-child [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:preferredLabel """http://ferc.gov/form/2020-01-01/roles/label/F1Total"""^^rdf:XMLLiteral ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from ferc:DepreciationDepletionAndAmortizationChargesLineItems ;
+    xl:to ferc:DepreciationAndAmortization ;
+    ] .
+

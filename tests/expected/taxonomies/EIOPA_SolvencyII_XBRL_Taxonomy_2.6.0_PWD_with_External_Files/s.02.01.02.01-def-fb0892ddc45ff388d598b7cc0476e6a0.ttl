@@ -1,0 +1,1487 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrldt: <http://xbrl.org/2005/xbrldt#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix s2c_dim: <http://eiopa.europa.eu/xbrl/s2c/dict/dim#>.
+@prefix s2md_met: <http://eiopa.europa.eu/xbrl/s2md/dict/met#>.
+@prefix s2c_AM: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/AM#>.
+@prefix s2c_exp: <http://eiopa.europa.eu/xbrl/s2c/dict/exp#>.
+@prefix s2c_VM: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/VM#>.
+@prefix arcrole7: <http://xbrl.org/int/dim/arcrole#>.
+@prefix s2c_LB: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB#>.
+@prefix role7: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.28.02.01.03#>.
+@prefix dts2442: <http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml#>.
+@prefix role25: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01#>.
+@prefix model: <http://www.eurofiling.info/xbrl/ext/model#>.
+
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/1
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90514 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi222 ;
+    ] .
+
+dts2442:link90515 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi256 ;
+    ] .
+
+dts2442:link90516 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi266 ;
+    ] .
+
+dts2442:link90517 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi276 ;
+    ] .
+
+dts2442:link90518 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi267 ;
+    ] .
+
+dts2442:link90519 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi268 ;
+    ] .
+
+dts2442:link90520 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi269 ;
+    ] .
+
+dts2442:link90521 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi279 ;
+    ] .
+
+dts2442:link90522 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "9"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi225 ;
+    ] .
+
+dts2442:link90523 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "10"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi239 ;
+    ] .
+
+dts2442:link90524 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "11"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi2301 ;
+    ] .
+
+dts2442:link90525 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "12"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi201 ;
+    ] .
+
+dts2442:link90526 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "13"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi355 ;
+    ] .
+
+dts2442:link90527 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "14"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi372 ;
+    ] .
+
+dts2442:link90528 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "15"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi369 ;
+    ] .
+
+dts2442:link90529 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "16"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi377 ;
+    ] .
+
+dts2442:link90530 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "17"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi359 ;
+    ] .
+
+dts2442:link90531 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "18"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi360 ;
+    ] .
+
+dts2442:link90532 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "19"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi357 ;
+    ] .
+
+dts2442:link90533 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "20"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi358 ;
+    ] .
+
+dts2442:link90534 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "21"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi373 ;
+    ] .
+
+dts2442:link90535 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "22"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi374 ;
+    ] .
+
+dts2442:link90536 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "23"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi375 ;
+    ] .
+
+dts2442:link90537 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "24"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi378 ;
+    ] .
+
+dts2442:link90538 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "25"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi348 ;
+    ] .
+
+dts2442:link90539 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "26"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi347 ;
+    ] .
+
+dts2442:link90540 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "27"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi367 ;
+    ] .
+
+dts2442:link90541 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "28"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi346 ;
+    ] .
+
+dts2442:link90542 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "29"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to s2md_met:mi294 ;
+    ] .
+
+dts2442:link90543 arcrole7:all [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xbrldt:contextElement """scenario"""^^rdf:XMLLiteral ;
+    xbrldt:closed "true"^^xsd:boolean ;
+    xl:order "30"^^xsd:decimal ;
+    xl:from s2md_met:mi251 ;
+    xl:to model:hyp ;
+    ] .
+
+dts2442:link90544 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VG ;
+    ] .
+
+dts2442:link90545 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VG ;
+    xl:to s2c_exp:AM ;
+    ] .
+
+dts2442:link90546 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:AM ;
+    xl:to s2c_AM:x80 ;
+    ] .
+
+dts2442:link90547 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:BL ;
+    ] .
+
+dts2442:link90548 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:BL ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90549 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x0 ;
+    ] .
+
+dts2442:link90550 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xbrldt:targetRole role25:2 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:TB ;
+    ] .
+
+dts2442:link90551 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VL ;
+    ] .
+
+dts2442:link90552 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VL ;
+    xl:to s2c_exp:VM ;
+    ] .
+
+dts2442:link90553 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:VM ;
+    xl:to s2c_VM:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/2
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90554 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:2 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:TB ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90555 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:2 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/3
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90556 arcrole7:all [
+    xl:type xl:link ;
+    xl:role role25:3 ;
+    xbrldt:contextElement """scenario"""^^rdf:XMLLiteral ;
+    xbrldt:closed "true"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_met:mi278 ;
+    xl:to model:hyp ;
+    ] .
+
+dts2442:link90557 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VG ;
+    ] .
+
+dts2442:link90558 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:3 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VG ;
+    xl:to s2c_exp:AM ;
+    ] .
+
+dts2442:link90559 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:AM ;
+    xl:to s2c_AM:x80 ;
+    ] .
+
+dts2442:link90560 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:3 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:TB ;
+    ] .
+
+dts2442:link90561 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:3 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:TB ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90562 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x109 ;
+    ] .
+
+dts2442:link90563 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:3 ;
+    xbrldt:targetRole role25:4 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:BL ;
+    ] .
+
+dts2442:link90564 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:3 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VL ;
+    ] .
+
+dts2442:link90565 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:3 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VL ;
+    xl:to s2c_exp:VM ;
+    ] .
+
+dts2442:link90566 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:VM ;
+    xl:to s2c_VM:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/4
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90567 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:4 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:BL ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90568 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:4 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/5
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90569 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi265 ;
+    ] .
+
+dts2442:link90570 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi243 ;
+    ] .
+
+dts2442:link90571 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi238 ;
+    ] .
+
+dts2442:link90572 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi226 ;
+    ] .
+
+dts2442:link90573 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi227 ;
+    ] .
+
+dts2442:link90574 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi213 ;
+    ] .
+
+dts2442:link90575 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi212 ;
+    ] .
+
+dts2442:link90576 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi211 ;
+    ] .
+
+dts2442:link90577 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "9"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi280 ;
+    ] .
+
+dts2442:link90578 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "10"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi220 ;
+    ] .
+
+dts2442:link90579 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "11"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi1964 ;
+    ] .
+
+dts2442:link90580 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "12"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi224 ;
+    ] .
+
+dts2442:link90581 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "13"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi223 ;
+    ] .
+
+dts2442:link90582 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "14"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi1965 ;
+    ] .
+
+dts2442:link90583 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "15"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi252 ;
+    ] .
+
+dts2442:link90584 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "16"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi202 ;
+    ] .
+
+dts2442:link90585 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "17"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi203 ;
+    ] .
+
+dts2442:link90586 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "18"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi204 ;
+    ] .
+
+dts2442:link90587 arcrole7:all [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xbrldt:contextElement """scenario"""^^rdf:XMLLiteral ;
+    xbrldt:closed "true"^^xsd:boolean ;
+    xl:order "19"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to model:hyp ;
+    ] .
+
+dts2442:link90588 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VG ;
+    ] .
+
+dts2442:link90589 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VG ;
+    xl:to s2c_exp:AM ;
+    ] .
+
+dts2442:link90590 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:AM ;
+    xl:to s2c_AM:x80 ;
+    ] .
+
+dts2442:link90591 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:BL ;
+    ] .
+
+dts2442:link90592 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:BL ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90593 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x91 ;
+    ] .
+
+dts2442:link90594 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xbrldt:targetRole role25:6 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:TB ;
+    ] .
+
+dts2442:link90595 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VL ;
+    ] .
+
+dts2442:link90596 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VL ;
+    xl:to s2c_exp:VM ;
+    ] .
+
+dts2442:link90597 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:VM ;
+    xl:to s2c_VM:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/6
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90598 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:6 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:TB ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90599 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/7
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90600 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi276 ;
+    ] .
+
+dts2442:link90601 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to s2md_met:mi363 ;
+    ] .
+
+dts2442:link90602 arcrole7:all [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xbrldt:contextElement """scenario"""^^rdf:XMLLiteral ;
+    xbrldt:closed "true"^^xsd:boolean ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2md_met:mi263 ;
+    xl:to model:hyp ;
+    ] .
+
+dts2442:link90603 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VG ;
+    ] .
+
+dts2442:link90604 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VG ;
+    xl:to s2c_exp:AM ;
+    ] .
+
+dts2442:link90605 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:AM ;
+    xl:to s2c_AM:x80 ;
+    ] .
+
+dts2442:link90606 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:BL ;
+    ] .
+
+dts2442:link90607 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:BL ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90608 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x119 ;
+    ] .
+
+dts2442:link90609 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xbrldt:targetRole role25:8 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:TB ;
+    ] .
+
+dts2442:link90610 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VL ;
+    ] .
+
+dts2442:link90611 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VL ;
+    xl:to s2c_exp:VM ;
+    ] .
+
+dts2442:link90612 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:VM ;
+    xl:to s2c_VM:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/8
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90613 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:8 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:TB ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90614 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/9
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90615 arcrole7:all [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xbrldt:contextElement """scenario"""^^rdf:XMLLiteral ;
+    xbrldt:closed "true"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_met:mi363 ;
+    xl:to model:hyp ;
+    ] .
+
+dts2442:link90616 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VG ;
+    ] .
+
+dts2442:link90617 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VG ;
+    xl:to s2c_exp:AM ;
+    ] .
+
+dts2442:link90618 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:AM ;
+    xl:to s2c_AM:x80 ;
+    ] .
+
+dts2442:link90619 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VL ;
+    ] .
+
+dts2442:link90620 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VL ;
+    xl:to s2c_exp:VM ;
+    ] .
+
+dts2442:link90621 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:VM ;
+    xl:to s2c_VM:x8 ;
+    ] .
+
+dts2442:link90622 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:VM ;
+    xl:to s2c_VM:x5 ;
+    ] .
+
+dts2442:link90623 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2c_exp:VM ;
+    xl:to s2c_VM:x47 ;
+    ] .
+
+dts2442:link90624 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:BL ;
+    ] .
+
+dts2442:link90625 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:BL ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90626 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x119 ;
+    ] .
+
+dts2442:link90627 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x75 ;
+    ] .
+
+dts2442:link90628 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x43 ;
+    ] .
+
+dts2442:link90629 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x46 ;
+    ] .
+
+dts2442:link90630 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x173 ;
+    ] .
+
+dts2442:link90631 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:9 ;
+    xbrldt:targetRole role25:10 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:TB ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/10
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90632 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:10 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:TB ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90633 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:10 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/11
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90634 arcrole7:all [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xbrldt:contextElement """scenario"""^^rdf:XMLLiteral ;
+    xbrldt:closed "true"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_met:mi363 ;
+    xl:to model:hyp ;
+    ] .
+
+dts2442:link90635 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VG ;
+    ] .
+
+dts2442:link90636 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VG ;
+    xl:to s2c_exp:AM ;
+    ] .
+
+dts2442:link90637 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:AM ;
+    xl:to s2c_AM:x80 ;
+    ] .
+
+dts2442:link90638 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:BL ;
+    ] .
+
+dts2442:link90639 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:BL ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90640 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x176 ;
+    ] .
+
+dts2442:link90641 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x46 ;
+    ] .
+
+dts2442:link90642 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x173 ;
+    ] .
+
+dts2442:link90643 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xbrldt:targetRole role25:12 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:TB ;
+    ] .
+
+dts2442:link90644 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VL ;
+    ] .
+
+dts2442:link90645 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VL ;
+    xl:to s2c_exp:VM ;
+    ] .
+
+dts2442:link90646 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:11 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:VM ;
+    xl:to s2c_VM:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/12
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90647 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:12 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:TB ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90648 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:12 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/13
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90649 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_met:mi276 ;
+    xl:to s2md_met:mi363 ;
+    ] .
+
+dts2442:link90650 arcrole7:all [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xbrldt:contextElement """scenario"""^^rdf:XMLLiteral ;
+    xbrldt:closed "true"^^xsd:boolean ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2md_met:mi276 ;
+    xl:to model:hyp ;
+    ] .
+
+dts2442:link90651 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VG ;
+    ] .
+
+dts2442:link90652 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VG ;
+    xl:to s2c_exp:AM ;
+    ] .
+
+dts2442:link90653 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:AM ;
+    xl:to s2c_AM:x80 ;
+    ] .
+
+dts2442:link90654 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:BL ;
+    ] .
+
+dts2442:link90655 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:BL ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90656 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x79 ;
+    ] .
+
+dts2442:link90657 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x75 ;
+    ] .
+
+dts2442:link90658 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x43 ;
+    ] .
+
+dts2442:link90659 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xbrldt:targetRole role25:14 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:TB ;
+    ] .
+
+dts2442:link90660 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VL ;
+    ] .
+
+dts2442:link90661 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VL ;
+    xl:to s2c_exp:VM ;
+    ] .
+
+dts2442:link90662 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:13 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:VM ;
+    xl:to s2c_VM:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/14
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90663 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:14 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:TB ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90664 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:14 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/15
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90665 arcrole7:all [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xbrldt:contextElement """scenario"""^^rdf:XMLLiteral ;
+    xbrldt:closed "true"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2md_met:mi276 ;
+    xl:to model:hyp ;
+    ] .
+
+dts2442:link90666 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VG ;
+    ] .
+
+dts2442:link90667 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VG ;
+    xl:to s2c_exp:AM ;
+    ] .
+
+dts2442:link90668 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:AM ;
+    xl:to s2c_AM:x80 ;
+    ] .
+
+dts2442:link90669 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:BL ;
+    ] .
+
+dts2442:link90670 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:BL ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90671 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x64 ;
+    ] .
+
+dts2442:link90672 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x45 ;
+    ] .
+
+dts2442:link90673 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x63 ;
+    ] .
+
+dts2442:link90674 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xbrldt:targetRole role25:16 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:TB ;
+    ] .
+
+dts2442:link90675 arcrole7:hypercube-dimension [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from model:hyp ;
+    xl:to s2c_dim:VL ;
+    ] .
+
+dts2442:link90676 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:VL ;
+    xl:to s2c_exp:VM ;
+    ] .
+
+dts2442:link90677 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:15 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:VM ;
+    xl:to s2c_VM:x0 ;
+    ] .
+
+# XLINKS
+# localname: definitionLink
+# role: http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01/16
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-def.xml
+
+dts2442:link90678 arcrole7:dimension-domain [
+    xl:type xl:link ;
+    xl:role role25:16 ;
+    xbrldt:usable "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_dim:TB ;
+    xl:to s2c_exp:LB ;
+    ] .
+
+dts2442:link90679 arcrole7:domain-member [
+    xl:type xl:link ;
+    xl:role role25:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:LB ;
+    xl:to s2c_LB:x0 ;
+    ] .
+

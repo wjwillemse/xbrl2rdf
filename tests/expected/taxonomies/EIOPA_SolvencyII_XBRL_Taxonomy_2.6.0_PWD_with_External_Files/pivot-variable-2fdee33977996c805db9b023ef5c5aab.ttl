@@ -1,0 +1,68 @@
+# Source HREF: http://www.eurofiling.info/eu/fr/xbrl/ext/pivot-variable.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix variable: <http://xbrl.org/2008/variable#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix cf: <http://xbrl.org/2008/filter/concept#>.
+@prefix tf: <http://xbrl.org/2008/filter/tuple#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix acf: <http://xbrl.org/2010/filter/aspect-cover#>.
+@prefix find: <http://www.eurofiling.info/xbrl/ext/filing-indicators#>.
+@prefix role1: <http://www.xbrl.org/2008/role#>.
+@prefix arcrole1: <http://xbrl.org/arcrole/2008#>.
+@prefix role2: <http://www.xbrl.org/2003/role#>.
+@prefix dts258: <http://www.eurofiling.info/eu/fr/xbrl/ext/pivot-variable.xml#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://www.eurofiling.info/eu/fr/xbrl/ext/pivot-variable.xml
+
+dts258:link26796 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from dts258:pivot-var ;
+    xl:to dts258:find-tuple-filter ;
+    ] .
+
+dts258:pivot-var 
+    xl:type variable:factVariable ;
+    xbrli:matches "true"^^xsd:boolean ;
+    xl:bindAsSequence "true"^^xsd:boolean ;
+    .
+
+dts258:find-tuple-filter 
+    xl:type tf:parentFilter ;
+    tf:parent find:fIndicators ;
+    .
+
+dts258:link26797 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from dts258:pivot-var ;
+    xl:to dts258:all-cover-filter ;
+    ] .
+
+dts258:pivot-var 
+    xl:type variable:factVariable ;
+    xbrli:matches "true"^^xsd:boolean ;
+    xl:bindAsSequence "true"^^xsd:boolean ;
+    .
+
+dts258:all-cover-filter 
+    xl:type acf:aspectCover ;
+    acf:aspect """all"""^^rdf:XMLLiteral ;
+    .
+

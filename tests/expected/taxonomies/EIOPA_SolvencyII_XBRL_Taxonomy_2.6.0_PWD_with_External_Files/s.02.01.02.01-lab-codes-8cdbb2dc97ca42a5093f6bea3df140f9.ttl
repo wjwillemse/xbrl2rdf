@@ -1,0 +1,1228 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-lab-codes.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix eurofiling: <http://www.eurofiling.info/xbrl/role#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix s2md_tab_S.02.01.02.01: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/S.02.01.02.01#>.
+@prefix role1: <http://www.xbrl.org/2008/role#>.
+@prefix arcrole1: <http://xbrl.org/arcrole/2008#>.
+@prefix role2: <http://www.xbrl.org/2003/role#>.
+@prefix label: <http://xbrl.org/2008/label#>.
+@prefix dts2441: <http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-lab-codes.xml#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/tab/s.02.01.02.01/s.02.01.02.01-lab-codes.xml
+
+dts2441:link90428 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_tS.02.01.02.01 ;
+    xl:to dts2441:resource3994 ;
+    ] .
+
+dts2441:resource3994 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.02.01.02.01"""@en ;
+    .
+
+dts2441:link90429 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c689 ;
+    xl:to dts2441:resource3995 ;
+    ] .
+
+dts2441:resource3995 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """C0010"""@en ;
+    .
+
+dts2441:link90430 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c691 ;
+    xl:to dts2441:resource3996 ;
+    ] .
+
+dts2441:resource3996 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0010"""@en ;
+    .
+
+dts2441:link90431 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c692 ;
+    xl:to dts2441:resource3997 ;
+    ] .
+
+dts2441:resource3997 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0020"""@en ;
+    .
+
+dts2441:link90432 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c693 ;
+    xl:to dts2441:resource3998 ;
+    ] .
+
+dts2441:resource3998 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0030"""@en ;
+    .
+
+dts2441:link90433 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c694 ;
+    xl:to dts2441:resource3999 ;
+    ] .
+
+dts2441:resource3999 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0040"""@en ;
+    .
+
+dts2441:link90434 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c695 ;
+    xl:to dts2441:resource4000 ;
+    ] .
+
+dts2441:resource4000 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0050"""@en ;
+    .
+
+dts2441:link90435 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c696 ;
+    xl:to dts2441:resource4001 ;
+    ] .
+
+dts2441:resource4001 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0060"""@en ;
+    .
+
+dts2441:link90436 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c697 ;
+    xl:to dts2441:resource4002 ;
+    ] .
+
+dts2441:resource4002 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0070"""@en ;
+    .
+
+dts2441:link90437 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c698 ;
+    xl:to dts2441:resource4003 ;
+    ] .
+
+dts2441:resource4003 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0080"""@en ;
+    .
+
+dts2441:link90438 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c699 ;
+    xl:to dts2441:resource4004 ;
+    ] .
+
+dts2441:resource4004 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0090"""@en ;
+    .
+
+dts2441:link90439 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c700 ;
+    xl:to dts2441:resource4005 ;
+    ] .
+
+dts2441:resource4005 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0100"""@en ;
+    .
+
+dts2441:link90440 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c701 ;
+    xl:to dts2441:resource4006 ;
+    ] .
+
+dts2441:resource4006 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0110"""@en ;
+    .
+
+dts2441:link90441 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c702 ;
+    xl:to dts2441:resource4007 ;
+    ] .
+
+dts2441:resource4007 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0120"""@en ;
+    .
+
+dts2441:link90442 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c703 ;
+    xl:to dts2441:resource4008 ;
+    ] .
+
+dts2441:resource4008 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0130"""@en ;
+    .
+
+dts2441:link90443 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c704 ;
+    xl:to dts2441:resource4009 ;
+    ] .
+
+dts2441:resource4009 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0140"""@en ;
+    .
+
+dts2441:link90444 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c705 ;
+    xl:to dts2441:resource4010 ;
+    ] .
+
+dts2441:resource4010 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0150"""@en ;
+    .
+
+dts2441:link90445 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c706 ;
+    xl:to dts2441:resource4011 ;
+    ] .
+
+dts2441:resource4011 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0160"""@en ;
+    .
+
+dts2441:link90446 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c707 ;
+    xl:to dts2441:resource4012 ;
+    ] .
+
+dts2441:resource4012 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0170"""@en ;
+    .
+
+dts2441:link90447 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c708 ;
+    xl:to dts2441:resource4013 ;
+    ] .
+
+dts2441:resource4013 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0180"""@en ;
+    .
+
+dts2441:link90448 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c709 ;
+    xl:to dts2441:resource4014 ;
+    ] .
+
+dts2441:resource4014 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0190"""@en ;
+    .
+
+dts2441:link90449 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c710 ;
+    xl:to dts2441:resource4015 ;
+    ] .
+
+dts2441:resource4015 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0200"""@en ;
+    .
+
+dts2441:link90450 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c711 ;
+    xl:to dts2441:resource4016 ;
+    ] .
+
+dts2441:resource4016 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0210"""@en ;
+    .
+
+dts2441:link90451 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c712 ;
+    xl:to dts2441:resource4017 ;
+    ] .
+
+dts2441:resource4017 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0220"""@en ;
+    .
+
+dts2441:link90452 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c713 ;
+    xl:to dts2441:resource4018 ;
+    ] .
+
+dts2441:resource4018 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0230"""@en ;
+    .
+
+dts2441:link90453 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c714 ;
+    xl:to dts2441:resource4019 ;
+    ] .
+
+dts2441:resource4019 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0240"""@en ;
+    .
+
+dts2441:link90454 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c715 ;
+    xl:to dts2441:resource4020 ;
+    ] .
+
+dts2441:resource4020 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0250"""@en ;
+    .
+
+dts2441:link90455 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c716 ;
+    xl:to dts2441:resource4021 ;
+    ] .
+
+dts2441:resource4021 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0260"""@en ;
+    .
+
+dts2441:link90456 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c717 ;
+    xl:to dts2441:resource4022 ;
+    ] .
+
+dts2441:resource4022 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0270"""@en ;
+    .
+
+dts2441:link90457 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c718 ;
+    xl:to dts2441:resource4023 ;
+    ] .
+
+dts2441:resource4023 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0280"""@en ;
+    .
+
+dts2441:link90458 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c719 ;
+    xl:to dts2441:resource4024 ;
+    ] .
+
+dts2441:resource4024 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0290"""@en ;
+    .
+
+dts2441:link90459 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c720 ;
+    xl:to dts2441:resource4025 ;
+    ] .
+
+dts2441:resource4025 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0300"""@en ;
+    .
+
+dts2441:link90460 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c721 ;
+    xl:to dts2441:resource4026 ;
+    ] .
+
+dts2441:resource4026 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0310"""@en ;
+    .
+
+dts2441:link90461 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c722 ;
+    xl:to dts2441:resource4027 ;
+    ] .
+
+dts2441:resource4027 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0320"""@en ;
+    .
+
+dts2441:link90462 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c723 ;
+    xl:to dts2441:resource4028 ;
+    ] .
+
+dts2441:resource4028 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0330"""@en ;
+    .
+
+dts2441:link90463 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c724 ;
+    xl:to dts2441:resource4029 ;
+    ] .
+
+dts2441:resource4029 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0340"""@en ;
+    .
+
+dts2441:link90464 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c725 ;
+    xl:to dts2441:resource4030 ;
+    ] .
+
+dts2441:resource4030 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0350"""@en ;
+    .
+
+dts2441:link90465 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c726 ;
+    xl:to dts2441:resource4031 ;
+    ] .
+
+dts2441:resource4031 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0360"""@en ;
+    .
+
+dts2441:link90466 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c727 ;
+    xl:to dts2441:resource4032 ;
+    ] .
+
+dts2441:resource4032 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0370"""@en ;
+    .
+
+dts2441:link90467 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c728 ;
+    xl:to dts2441:resource4033 ;
+    ] .
+
+dts2441:resource4033 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0380"""@en ;
+    .
+
+dts2441:link90468 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c729 ;
+    xl:to dts2441:resource4034 ;
+    ] .
+
+dts2441:resource4034 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0390"""@en ;
+    .
+
+dts2441:link90469 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c730 ;
+    xl:to dts2441:resource4035 ;
+    ] .
+
+dts2441:resource4035 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0400"""@en ;
+    .
+
+dts2441:link90470 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c731 ;
+    xl:to dts2441:resource4036 ;
+    ] .
+
+dts2441:resource4036 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0410"""@en ;
+    .
+
+dts2441:link90471 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c732 ;
+    xl:to dts2441:resource4037 ;
+    ] .
+
+dts2441:resource4037 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0420"""@en ;
+    .
+
+dts2441:link90472 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c733 ;
+    xl:to dts2441:resource4038 ;
+    ] .
+
+dts2441:resource4038 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0500"""@en ;
+    .
+
+dts2441:link90473 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c735 ;
+    xl:to dts2441:resource4039 ;
+    ] .
+
+dts2441:resource4039 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0510"""@en ;
+    .
+
+dts2441:link90474 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c736 ;
+    xl:to dts2441:resource4040 ;
+    ] .
+
+dts2441:resource4040 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0520"""@en ;
+    .
+
+dts2441:link90475 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c737 ;
+    xl:to dts2441:resource4041 ;
+    ] .
+
+dts2441:resource4041 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0530"""@en ;
+    .
+
+dts2441:link90476 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c738 ;
+    xl:to dts2441:resource4042 ;
+    ] .
+
+dts2441:resource4042 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0540"""@en ;
+    .
+
+dts2441:link90477 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c739 ;
+    xl:to dts2441:resource4043 ;
+    ] .
+
+dts2441:resource4043 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0550"""@en ;
+    .
+
+dts2441:link90478 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c740 ;
+    xl:to dts2441:resource4044 ;
+    ] .
+
+dts2441:resource4044 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0560"""@en ;
+    .
+
+dts2441:link90479 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c741 ;
+    xl:to dts2441:resource4045 ;
+    ] .
+
+dts2441:resource4045 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0570"""@en ;
+    .
+
+dts2441:link90480 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c742 ;
+    xl:to dts2441:resource4046 ;
+    ] .
+
+dts2441:resource4046 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0580"""@en ;
+    .
+
+dts2441:link90481 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c743 ;
+    xl:to dts2441:resource4047 ;
+    ] .
+
+dts2441:resource4047 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0590"""@en ;
+    .
+
+dts2441:link90482 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c744 ;
+    xl:to dts2441:resource4048 ;
+    ] .
+
+dts2441:resource4048 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0600"""@en ;
+    .
+
+dts2441:link90483 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c745 ;
+    xl:to dts2441:resource4049 ;
+    ] .
+
+dts2441:resource4049 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0610"""@en ;
+    .
+
+dts2441:link90484 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c746 ;
+    xl:to dts2441:resource4050 ;
+    ] .
+
+dts2441:resource4050 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0620"""@en ;
+    .
+
+dts2441:link90485 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c747 ;
+    xl:to dts2441:resource4051 ;
+    ] .
+
+dts2441:resource4051 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0630"""@en ;
+    .
+
+dts2441:link90486 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c748 ;
+    xl:to dts2441:resource4052 ;
+    ] .
+
+dts2441:resource4052 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0640"""@en ;
+    .
+
+dts2441:link90487 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c749 ;
+    xl:to dts2441:resource4053 ;
+    ] .
+
+dts2441:resource4053 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0650"""@en ;
+    .
+
+dts2441:link90488 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c750 ;
+    xl:to dts2441:resource4054 ;
+    ] .
+
+dts2441:resource4054 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0660"""@en ;
+    .
+
+dts2441:link90489 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c751 ;
+    xl:to dts2441:resource4055 ;
+    ] .
+
+dts2441:resource4055 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0670"""@en ;
+    .
+
+dts2441:link90490 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c752 ;
+    xl:to dts2441:resource4056 ;
+    ] .
+
+dts2441:resource4056 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0680"""@en ;
+    .
+
+dts2441:link90491 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c753 ;
+    xl:to dts2441:resource4057 ;
+    ] .
+
+dts2441:resource4057 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0690"""@en ;
+    .
+
+dts2441:link90492 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c754 ;
+    xl:to dts2441:resource4058 ;
+    ] .
+
+dts2441:resource4058 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0700"""@en ;
+    .
+
+dts2441:link90493 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c755 ;
+    xl:to dts2441:resource4059 ;
+    ] .
+
+dts2441:resource4059 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0710"""@en ;
+    .
+
+dts2441:link90494 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c756 ;
+    xl:to dts2441:resource4060 ;
+    ] .
+
+dts2441:resource4060 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0720"""@en ;
+    .
+
+dts2441:link90495 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c757 ;
+    xl:to dts2441:resource4061 ;
+    ] .
+
+dts2441:resource4061 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0730"""@en ;
+    .
+
+dts2441:link90496 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c758 ;
+    xl:to dts2441:resource4062 ;
+    ] .
+
+dts2441:resource4062 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0740"""@en ;
+    .
+
+dts2441:link90497 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c759 ;
+    xl:to dts2441:resource4063 ;
+    ] .
+
+dts2441:resource4063 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0750"""@en ;
+    .
+
+dts2441:link90498 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c760 ;
+    xl:to dts2441:resource4064 ;
+    ] .
+
+dts2441:resource4064 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0760"""@en ;
+    .
+
+dts2441:link90499 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c761 ;
+    xl:to dts2441:resource4065 ;
+    ] .
+
+dts2441:resource4065 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0770"""@en ;
+    .
+
+dts2441:link90500 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c762 ;
+    xl:to dts2441:resource4066 ;
+    ] .
+
+dts2441:resource4066 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0780"""@en ;
+    .
+
+dts2441:link90501 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c763 ;
+    xl:to dts2441:resource4067 ;
+    ] .
+
+dts2441:resource4067 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0790"""@en ;
+    .
+
+dts2441:link90502 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c764 ;
+    xl:to dts2441:resource4068 ;
+    ] .
+
+dts2441:resource4068 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0800"""@en ;
+    .
+
+dts2441:link90503 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c765 ;
+    xl:to dts2441:resource4069 ;
+    ] .
+
+dts2441:resource4069 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0810"""@en ;
+    .
+
+dts2441:link90504 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c766 ;
+    xl:to dts2441:resource4070 ;
+    ] .
+
+dts2441:resource4070 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0820"""@en ;
+    .
+
+dts2441:link90505 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c767 ;
+    xl:to dts2441:resource4071 ;
+    ] .
+
+dts2441:resource4071 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0830"""@en ;
+    .
+
+dts2441:link90506 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c768 ;
+    xl:to dts2441:resource4072 ;
+    ] .
+
+dts2441:resource4072 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0840"""@en ;
+    .
+
+dts2441:link90507 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c769 ;
+    xl:to dts2441:resource4073 ;
+    ] .
+
+dts2441:resource4073 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0850"""@en ;
+    .
+
+dts2441:link90508 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c770 ;
+    xl:to dts2441:resource4074 ;
+    ] .
+
+dts2441:resource4074 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0860"""@en ;
+    .
+
+dts2441:link90509 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c771 ;
+    xl:to dts2441:resource4075 ;
+    ] .
+
+dts2441:resource4075 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0870"""@en ;
+    .
+
+dts2441:link90510 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c772 ;
+    xl:to dts2441:resource4076 ;
+    ] .
+
+dts2441:resource4076 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0880"""@en ;
+    .
+
+dts2441:link90511 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c773 ;
+    xl:to dts2441:resource4077 ;
+    ] .
+
+dts2441:resource4077 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R0900"""@en ;
+    .
+
+dts2441:link90512 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_c774 ;
+    xl:to dts2441:resource4078 ;
+    ] .
+
+dts2441:resource4078 
+    xl:type label:label ;
+    xlink:role eurofiling:rc-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """R1000"""@en ;
+    .
+
+dts2441:link90513 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2md_tab_S.02.01.02.01:s2md_tS.02.01.02.01 ;
+    xl:to dts2441:resource4079 ;
+    ] .
+
+dts2441:resource4079 
+    xl:type label:label ;
+    xlink:role eurofiling:filing-indicator-code ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """S.02.01"""@en ;
+    .
+

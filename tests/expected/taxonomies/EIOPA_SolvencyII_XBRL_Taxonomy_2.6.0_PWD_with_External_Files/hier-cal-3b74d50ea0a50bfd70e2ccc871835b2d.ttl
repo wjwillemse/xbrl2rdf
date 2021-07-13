@@ -1,0 +1,5930 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix arcrole5: <http://www.eurofiling.info/xbrl/arcrole#>.
+@prefix role5: <http://eiopa.europa.eu/eu/xbrl/role#>.
+@prefix s2c_MC: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/MC#>.
+@prefix dts2553: <http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml#>.
+@prefix role40: <http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC#>.
+
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/1
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link109934 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link109935 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x25 ;
+    ] .
+
+dts2553:link109936 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x37 ;
+    ] .
+
+dts2553:link109937 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x43 ;
+    ] .
+
+dts2553:link109938 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x43 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link109939 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x43 ;
+    xl:to s2c_MC:x82 ;
+    ] .
+
+dts2553:link109940 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x83 ;
+    ] .
+
+dts2553:link109941 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x138 ;
+    ] .
+
+dts2553:link109942 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x140 ;
+    ] .
+
+dts2553:link109943 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x95 ;
+    ] .
+
+dts2553:link109944 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x95 ;
+    xl:to s2c_MC:x30 ;
+    ] .
+
+dts2553:link109945 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:1 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x95 ;
+    xl:to s2c_MC:x96 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/2
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link109946 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link109947 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x34 ;
+    ] .
+
+dts2553:link109948 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x33 ;
+    ] .
+
+dts2553:link109949 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x35 ;
+    ] .
+
+dts2553:link109950 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x35 ;
+    xl:to s2c_MC:x201 ;
+    ] .
+
+dts2553:link109951 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x35 ;
+    xl:to s2c_MC:x202 ;
+    ] .
+
+dts2553:link109952 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x36 ;
+    ] .
+
+dts2553:link109953 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x65 ;
+    ] .
+
+dts2553:link109954 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x66 ;
+    ] .
+
+dts2553:link109955 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x151 ;
+    ] .
+
+dts2553:link109956 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x153 ;
+    ] .
+
+dts2553:link109957 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "9"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x152 ;
+    ] .
+
+dts2553:link109958 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "10"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x154 ;
+    ] .
+
+dts2553:link109959 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x47 ;
+    ] .
+
+dts2553:link109960 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x8 ;
+    ] .
+
+dts2553:link109961 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x9 ;
+    ] .
+
+dts2553:link109962 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x44 ;
+    ] .
+
+dts2553:link109963 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x46 ;
+    ] .
+
+dts2553:link109964 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x45 ;
+    ] .
+
+dts2553:link109965 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x90 ;
+    ] .
+
+dts2553:link109966 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x89 ;
+    ] .
+
+dts2553:link109967 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x125 ;
+    ] .
+
+dts2553:link109968 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x24 ;
+    ] .
+
+dts2553:link109969 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x24 ;
+    xl:to s2c_MC:x20 ;
+    ] .
+
+dts2553:link109970 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x24 ;
+    xl:to s2c_MC:x85 ;
+    ] .
+
+dts2553:link109971 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x24 ;
+    xl:to s2c_MC:x23 ;
+    ] .
+
+dts2553:link109972 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:2 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x24 ;
+    xl:to s2c_MC:x106 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/3
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link109973 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link109974 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x57 ;
+    ] .
+
+dts2553:link109975 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x57 ;
+    xl:to s2c_MC:x34 ;
+    ] .
+
+dts2553:link109976 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x57 ;
+    xl:to s2c_MC:x33 ;
+    ] .
+
+dts2553:link109977 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x57 ;
+    xl:to s2c_MC:x35 ;
+    ] .
+
+dts2553:link109978 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x35 ;
+    xl:to s2c_MC:x201 ;
+    ] .
+
+dts2553:link109979 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x35 ;
+    xl:to s2c_MC:x202 ;
+    ] .
+
+dts2553:link109980 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x57 ;
+    xl:to s2c_MC:x36 ;
+    ] .
+
+dts2553:link109981 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x26 ;
+    ] .
+
+dts2553:link109982 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x26 ;
+    xl:to s2c_MC:x65 ;
+    ] .
+
+dts2553:link109983 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x26 ;
+    xl:to s2c_MC:x66 ;
+    ] .
+
+dts2553:link109984 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x32 ;
+    xl:to s2c_MC:x150 ;
+    ] .
+
+dts2553:link109985 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x150 ;
+    xl:to s2c_MC:x151 ;
+    ] .
+
+dts2553:link109986 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x150 ;
+    xl:to s2c_MC:x153 ;
+    ] .
+
+dts2553:link109987 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x150 ;
+    xl:to s2c_MC:x152 ;
+    ] .
+
+dts2553:link109988 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x150 ;
+    xl:to s2c_MC:x154 ;
+    ] .
+
+dts2553:link109989 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x47 ;
+    ] .
+
+dts2553:link109990 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x8 ;
+    ] .
+
+dts2553:link109991 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x9 ;
+    ] .
+
+dts2553:link109992 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x44 ;
+    ] .
+
+dts2553:link109993 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x46 ;
+    ] .
+
+dts2553:link109994 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x45 ;
+    ] .
+
+dts2553:link109995 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x90 ;
+    ] .
+
+dts2553:link109996 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x47 ;
+    xl:to s2c_MC:x89 ;
+    ] .
+
+dts2553:link109997 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x125 ;
+    ] .
+
+dts2553:link109998 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:3 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x24 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/4
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link109999 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:4 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x16 ;
+    ] .
+
+dts2553:link110000 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:4 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x51 ;
+    ] .
+
+dts2553:link110001 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:4 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/5
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110002 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x116 ;
+    ] .
+
+dts2553:link110003 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x116 ;
+    xl:to s2c_MC:x115 ;
+    ] .
+
+dts2553:link110004 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x116 ;
+    xl:to s2c_MC:x49 ;
+    ] .
+
+dts2553:link110005 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x11 ;
+    ] .
+
+dts2553:link110006 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110007 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x31 ;
+    ] .
+
+dts2553:link110008 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x82 ;
+    ] .
+
+dts2553:link110009 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110010 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x7 ;
+    ] .
+
+dts2553:link110011 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x137 ;
+    ] .
+
+dts2553:link110012 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x137 ;
+    xl:to s2c_MC:x139 ;
+    ] .
+
+dts2553:link110013 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x137 ;
+    xl:to s2c_MC:x141 ;
+    ] .
+
+dts2553:link110014 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x10 ;
+    ] .
+
+dts2553:link110015 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110016 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x40 ;
+    ] .
+
+dts2553:link110017 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x41 ;
+    ] .
+
+dts2553:link110018 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x52 ;
+    ] .
+
+dts2553:link110019 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x127 ;
+    ] .
+
+dts2553:link110020 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110021 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110022 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110023 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110024 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x124 ;
+    ] .
+
+dts2553:link110025 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x124 ;
+    xl:to s2c_MC:x114 ;
+    ] .
+
+dts2553:link110026 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x124 ;
+    xl:to s2c_MC:x14 ;
+    ] .
+
+dts2553:link110027 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x101 ;
+    ] .
+
+dts2553:link110028 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x71 ;
+    ] .
+
+dts2553:link110029 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x62 ;
+    ] .
+
+dts2553:link110030 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x29 ;
+    ] .
+
+dts2553:link110031 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x72 ;
+    ] .
+
+dts2553:link110032 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x30 ;
+    ] .
+
+dts2553:link110033 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x122 ;
+    ] .
+
+dts2553:link110034 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x111 ;
+    ] .
+
+dts2553:link110035 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x38 ;
+    ] .
+
+dts2553:link110036 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:5 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x97 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/6
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110037 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x117 ;
+    ] .
+
+dts2553:link110038 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x117 ;
+    xl:to s2c_MC:x116 ;
+    ] .
+
+dts2553:link110039 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x116 ;
+    xl:to s2c_MC:x115 ;
+    ] .
+
+dts2553:link110040 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x116 ;
+    xl:to s2c_MC:x49 ;
+    ] .
+
+dts2553:link110041 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x11 ;
+    ] .
+
+dts2553:link110042 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110043 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x31 ;
+    ] .
+
+dts2553:link110044 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x82 ;
+    ] .
+
+dts2553:link110045 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110046 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x7 ;
+    ] .
+
+dts2553:link110047 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x136 ;
+    ] .
+
+dts2553:link110048 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x18 ;
+    ] .
+
+dts2553:link110049 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x10 ;
+    ] .
+
+dts2553:link110050 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110051 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x40 ;
+    ] .
+
+dts2553:link110052 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x41 ;
+    ] .
+
+dts2553:link110053 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x52 ;
+    ] .
+
+dts2553:link110054 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x117 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110055 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x100 ;
+    ] .
+
+dts2553:link110056 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x100 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110057 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110058 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110059 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x100 ;
+    xl:to s2c_MC:x124 ;
+    ] .
+
+dts2553:link110060 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x124 ;
+    xl:to s2c_MC:x114 ;
+    ] .
+
+dts2553:link110061 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x124 ;
+    xl:to s2c_MC:x14 ;
+    ] .
+
+dts2553:link110062 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x100 ;
+    xl:to s2c_MC:x101 ;
+    ] .
+
+dts2553:link110063 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x71 ;
+    ] .
+
+dts2553:link110064 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x62 ;
+    ] .
+
+dts2553:link110065 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x29 ;
+    ] .
+
+dts2553:link110066 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x72 ;
+    ] .
+
+dts2553:link110067 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x30 ;
+    ] .
+
+dts2553:link110068 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x122 ;
+    ] .
+
+dts2553:link110069 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x111 ;
+    ] .
+
+dts2553:link110070 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x38 ;
+    ] .
+
+dts2553:link110071 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:6 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x97 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/7
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110072 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x82 ;
+    ] .
+
+dts2553:link110073 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110074 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x7 ;
+    ] .
+
+dts2553:link110075 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x136 ;
+    ] .
+
+dts2553:link110076 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x18 ;
+    ] .
+
+dts2553:link110077 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x10 ;
+    ] .
+
+dts2553:link110078 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110079 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110080 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x98 ;
+    ] .
+
+dts2553:link110081 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x98 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110082 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x135 ;
+    ] .
+
+dts2553:link110083 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x135 ;
+    xl:to s2c_MC:x87 ;
+    ] .
+
+dts2553:link110084 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x135 ;
+    xl:to s2c_MC:x112 ;
+    ] .
+
+dts2553:link110085 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x42 ;
+    ] .
+
+dts2553:link110086 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:7 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x98 ;
+    xl:to s2c_MC:x99 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/8
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110087 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x155 ;
+    ] .
+
+dts2553:link110088 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x155 ;
+    xl:to s2c_MC:x63 ;
+    ] .
+
+dts2553:link110089 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x155 ;
+    xl:to s2c_MC:x64 ;
+    ] .
+
+dts2553:link110090 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x64 ;
+    xl:to s2c_MC:x113 ;
+    ] .
+
+dts2553:link110091 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x64 ;
+    xl:to s2c_MC:x12 ;
+    ] .
+
+dts2553:link110092 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x12 ;
+    xl:to s2c_MC:x84 ;
+    ] .
+
+dts2553:link110093 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x12 ;
+    xl:to s2c_MC:x13 ;
+    ] .
+
+dts2553:link110094 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x161 ;
+    ] .
+
+dts2553:link110095 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x161 ;
+    xl:to s2c_MC:x19 ;
+    ] .
+
+dts2553:link110096 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x161 ;
+    xl:to s2c_MC:x48 ;
+    ] .
+
+dts2553:link110097 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x48 ;
+    xl:to s2c_MC:x50 ;
+    ] .
+
+dts2553:link110098 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x50 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110099 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x50 ;
+    xl:to s2c_MC:x27 ;
+    ] .
+
+dts2553:link110100 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x48 ;
+    xl:to s2c_MC:x143 ;
+    ] .
+
+dts2553:link110101 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x161 ;
+    xl:to s2c_MC:x127 ;
+    ] .
+
+dts2553:link110102 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110103 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110104 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110105 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110106 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x161 ;
+    xl:to s2c_MC:x105 ;
+    ] .
+
+dts2553:link110107 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x105 ;
+    xl:to s2c_MC:x118 ;
+    ] .
+
+dts2553:link110108 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x105 ;
+    xl:to s2c_MC:x111 ;
+    ] .
+
+dts2553:link110109 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x105 ;
+    xl:to s2c_MC:x30 ;
+    ] .
+
+dts2553:link110110 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x105 ;
+    xl:to s2c_MC:x122 ;
+    ] .
+
+dts2553:link110111 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:8 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x105 ;
+    xl:to s2c_MC:x102 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/9
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110112 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:9 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110113 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:9 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x27 ;
+    ] .
+
+dts2553:link110114 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:9 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110115 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:9 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x93 ;
+    ] .
+
+dts2553:link110116 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:9 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x93 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110117 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:9 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x135 ;
+    ] .
+
+dts2553:link110118 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:9 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x135 ;
+    xl:to s2c_MC:x87 ;
+    ] .
+
+dts2553:link110119 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:9 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x135 ;
+    xl:to s2c_MC:x112 ;
+    ] .
+
+dts2553:link110120 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:9 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x42 ;
+    ] .
+
+dts2553:link110121 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:9 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x93 ;
+    xl:to s2c_MC:x94 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/10
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110122 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:10 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x128 ;
+    ] .
+
+dts2553:link110123 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:10 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x103 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/11
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110124 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x69 ;
+    xl:to s2c_MC:x68 ;
+    ] .
+
+dts2553:link110125 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x68 ;
+    xl:to s2c_MC:x77 ;
+    ] .
+
+dts2553:link110126 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x77 ;
+    xl:to s2c_MC:x79 ;
+    ] .
+
+dts2553:link110127 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x77 ;
+    xl:to s2c_MC:x80 ;
+    ] .
+
+dts2553:link110128 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x68 ;
+    xl:to s2c_MC:x159 ;
+    ] .
+
+dts2553:link110129 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x69 ;
+    xl:to s2c_MC:x16 ;
+    ] .
+
+dts2553:link110130 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x21 ;
+    xl:to s2c_MC:x20 ;
+    ] .
+
+dts2553:link110131 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x20 ;
+    xl:to s2c_MC:x67 ;
+    ] .
+
+dts2553:link110132 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x67 ;
+    xl:to s2c_MC:x158 ;
+    ] .
+
+dts2553:link110133 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x67 ;
+    xl:to s2c_MC:x78 ;
+    ] .
+
+dts2553:link110134 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x20 ;
+    xl:to s2c_MC:x22 ;
+    ] .
+
+dts2553:link110135 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:11 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x21 ;
+    xl:to s2c_MC:x17 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/12
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110136 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x86 ;
+    ] .
+
+dts2553:link110137 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x86 ;
+    xl:to s2c_MC:x163 ;
+    ] .
+
+dts2553:link110138 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x86 ;
+    xl:to s2c_MC:x131 ;
+    ] .
+
+dts2553:link110139 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x86 ;
+    xl:to s2c_MC:x59 ;
+    ] .
+
+dts2553:link110140 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x86 ;
+    xl:to s2c_MC:x61 ;
+    ] .
+
+dts2553:link110141 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x86 ;
+    xl:to s2c_MC:x56 ;
+    ] .
+
+dts2553:link110142 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x86 ;
+    xl:to s2c_MC:x54 ;
+    ] .
+
+dts2553:link110143 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x15 ;
+    ] .
+
+dts2553:link110144 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x15 ;
+    xl:to s2c_MC:x162 ;
+    ] .
+
+dts2553:link110145 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x15 ;
+    xl:to s2c_MC:x130 ;
+    ] .
+
+dts2553:link110146 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x15 ;
+    xl:to s2c_MC:x58 ;
+    ] .
+
+dts2553:link110147 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x15 ;
+    xl:to s2c_MC:x60 ;
+    ] .
+
+dts2553:link110148 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x15 ;
+    xl:to s2c_MC:x55 ;
+    ] .
+
+dts2553:link110149 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:12 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x15 ;
+    xl:to s2c_MC:x53 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/13
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110150 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:13 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x129 ;
+    ] .
+
+dts2553:link110151 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:13 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x104 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/14
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110152 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:14 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x145 ;
+    ] .
+
+dts2553:link110153 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:14 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x156 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/15
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110154 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x107 ;
+    ] .
+
+dts2553:link110155 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x107 ;
+    xl:to s2c_MC:x123 ;
+    ] .
+
+dts2553:link110156 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x107 ;
+    xl:to s2c_MC:x109 ;
+    ] .
+
+dts2553:link110157 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x87 ;
+    ] .
+
+dts2553:link110158 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x133 ;
+    ] .
+
+dts2553:link110159 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x70 ;
+    ] .
+
+dts2553:link110160 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x144 ;
+    ] .
+
+dts2553:link110161 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x149 ;
+    ] .
+
+dts2553:link110162 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x160 ;
+    ] .
+
+dts2553:link110163 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x160 ;
+    xl:to s2c_MC:x112 ;
+    ] .
+
+dts2553:link110164 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x160 ;
+    xl:to s2c_MC:x132 ;
+    ] .
+
+dts2553:link110165 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x143 ;
+    ] .
+
+dts2553:link110166 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x110 ;
+    ] .
+
+dts2553:link110167 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "9"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x91 ;
+    ] .
+
+dts2553:link110168 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "-1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x28 ;
+    ] .
+
+dts2553:link110169 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x28 ;
+    xl:to s2c_MC:x5 ;
+    ] .
+
+dts2553:link110170 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5 ;
+    xl:to s2c_MC:x4 ;
+    ] .
+
+dts2553:link110171 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5 ;
+    xl:to s2c_MC:x6 ;
+    ] .
+
+dts2553:link110172 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x28 ;
+    xl:to s2c_MC:x2 ;
+    ] .
+
+dts2553:link110173 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x28 ;
+    xl:to s2c_MC:x3 ;
+    ] .
+
+dts2553:link110174 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:15 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x28 ;
+    xl:to s2c_MC:x1 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/16
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110175 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x107 ;
+    ] .
+
+dts2553:link110176 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x107 ;
+    xl:to s2c_MC:x108 ;
+    ] .
+
+dts2553:link110177 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x108 ;
+    xl:to s2c_MC:x123 ;
+    ] .
+
+dts2553:link110178 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x108 ;
+    xl:to s2c_MC:x109 ;
+    ] .
+
+dts2553:link110179 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x88 ;
+    ] .
+
+dts2553:link110180 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x88 ;
+    xl:to s2c_MC:x87 ;
+    ] .
+
+dts2553:link110181 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x88 ;
+    xl:to s2c_MC:x112 ;
+    ] .
+
+dts2553:link110182 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x88 ;
+    xl:to s2c_MC:x70 ;
+    ] .
+
+dts2553:link110183 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x134 ;
+    ] .
+
+dts2553:link110184 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x134 ;
+    xl:to s2c_MC:x133 ;
+    ] .
+
+dts2553:link110185 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x134 ;
+    xl:to s2c_MC:x132 ;
+    ] .
+
+dts2553:link110186 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x142 ;
+    ] .
+
+dts2553:link110187 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x142 ;
+    xl:to s2c_MC:x144 ;
+    ] .
+
+dts2553:link110188 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x142 ;
+    xl:to s2c_MC:x143 ;
+    ] .
+
+dts2553:link110189 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x74 ;
+    ] .
+
+dts2553:link110190 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x68 ;
+    ] .
+
+dts2553:link110191 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x68 ;
+    xl:to s2c_MC:x76 ;
+    ] .
+
+dts2553:link110192 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x68 ;
+    xl:to s2c_MC:x75 ;
+    ] .
+
+dts2553:link110193 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x146 ;
+    ] .
+
+dts2553:link110194 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x146 ;
+    xl:to s2c_MC:x148 ;
+    ] .
+
+dts2553:link110195 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x146 ;
+    xl:to s2c_MC:x147 ;
+    ] .
+
+dts2553:link110196 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x149 ;
+    ] .
+
+dts2553:link110197 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x109 ;
+    xl:to s2c_MC:x110 ;
+    ] .
+
+dts2553:link110198 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x108 ;
+    xl:to s2c_MC:x92 ;
+    ] .
+
+dts2553:link110199 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "-1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x28 ;
+    ] .
+
+dts2553:link110200 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x28 ;
+    xl:to s2c_MC:x5 ;
+    ] .
+
+dts2553:link110201 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5 ;
+    xl:to s2c_MC:x4 ;
+    ] .
+
+dts2553:link110202 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5 ;
+    xl:to s2c_MC:x6 ;
+    ] .
+
+dts2553:link110203 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x28 ;
+    xl:to s2c_MC:x2 ;
+    ] .
+
+dts2553:link110204 arcrole5:partial-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x2 ;
+    xl:to s2c_MC:x243 ;
+    ] .
+
+dts2553:link110205 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x28 ;
+    xl:to s2c_MC:x3 ;
+    ] .
+
+dts2553:link110206 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:16 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x28 ;
+    xl:to s2c_MC:x1 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/17
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/18
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/19
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/20
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/21
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110207 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x116 ;
+    ] .
+
+dts2553:link110208 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x116 ;
+    xl:to s2c_MC:x115 ;
+    ] .
+
+dts2553:link110209 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x116 ;
+    xl:to s2c_MC:x49 ;
+    ] .
+
+dts2553:link110210 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x11 ;
+    ] .
+
+dts2553:link110211 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110212 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x31 ;
+    ] .
+
+dts2553:link110213 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x82 ;
+    ] .
+
+dts2553:link110214 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110215 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x7 ;
+    ] .
+
+dts2553:link110216 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x137 ;
+    ] .
+
+dts2553:link110217 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x137 ;
+    xl:to s2c_MC:x139 ;
+    ] .
+
+dts2553:link110218 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x137 ;
+    xl:to s2c_MC:x141 ;
+    ] .
+
+dts2553:link110219 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x10 ;
+    ] .
+
+dts2553:link110220 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110221 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x40 ;
+    ] .
+
+dts2553:link110222 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x41 ;
+    ] .
+
+dts2553:link110223 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x52 ;
+    ] .
+
+dts2553:link110224 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x127 ;
+    ] .
+
+dts2553:link110225 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110226 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110227 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110228 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110229 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x184 ;
+    ] .
+
+dts2553:link110230 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x184 ;
+    xl:to s2c_MC:x206 ;
+    ] .
+
+dts2553:link110231 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x184 ;
+    xl:to s2c_MC:x207 ;
+    ] .
+
+dts2553:link110232 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x185 ;
+    ] .
+
+dts2553:link110233 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x101 ;
+    ] .
+
+dts2553:link110234 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x71 ;
+    ] .
+
+dts2553:link110235 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x62 ;
+    ] .
+
+dts2553:link110236 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x29 ;
+    ] .
+
+dts2553:link110237 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x72 ;
+    ] .
+
+dts2553:link110238 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x30 ;
+    ] .
+
+dts2553:link110239 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x122 ;
+    ] .
+
+dts2553:link110240 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x111 ;
+    ] .
+
+dts2553:link110241 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x38 ;
+    ] .
+
+dts2553:link110242 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:21 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x97 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/22
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110243 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x63 ;
+    ] .
+
+dts2553:link110244 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x64 ;
+    ] .
+
+dts2553:link110245 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x64 ;
+    xl:to s2c_MC:x113 ;
+    ] .
+
+dts2553:link110246 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x64 ;
+    xl:to s2c_MC:x12 ;
+    ] .
+
+dts2553:link110247 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x12 ;
+    xl:to s2c_MC:x84 ;
+    ] .
+
+dts2553:link110248 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x12 ;
+    xl:to s2c_MC:x13 ;
+    ] .
+
+dts2553:link110249 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x19 ;
+    ] .
+
+dts2553:link110250 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110251 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x27 ;
+    ] .
+
+dts2553:link110252 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x27 ;
+    xl:to s2c_MC:x213 ;
+    ] .
+
+dts2553:link110253 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x27 ;
+    xl:to s2c_MC:x214 ;
+    ] .
+
+dts2553:link110254 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x214 ;
+    xl:to s2c_MC:x215 ;
+    ] .
+
+dts2553:link110255 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x214 ;
+    xl:to s2c_MC:x216 ;
+    ] .
+
+dts2553:link110256 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x127 ;
+    ] .
+
+dts2553:link110257 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110258 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110259 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110260 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110261 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x205 ;
+    ] .
+
+dts2553:link110262 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x205 ;
+    xl:to s2c_MC:x118 ;
+    ] .
+
+dts2553:link110263 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x205 ;
+    xl:to s2c_MC:x111 ;
+    ] .
+
+dts2553:link110264 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x205 ;
+    xl:to s2c_MC:x30 ;
+    ] .
+
+dts2553:link110265 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x205 ;
+    xl:to s2c_MC:x122 ;
+    ] .
+
+dts2553:link110266 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x205 ;
+    xl:to s2c_MC:x143 ;
+    ] .
+
+dts2553:link110267 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:22 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x205 ;
+    xl:to s2c_MC:x102 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/23
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110268 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x117 ;
+    ] .
+
+dts2553:link110269 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x117 ;
+    xl:to s2c_MC:x115 ;
+    ] .
+
+dts2553:link110270 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x117 ;
+    xl:to s2c_MC:x186 ;
+    ] .
+
+dts2553:link110271 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x186 ;
+    xl:to s2c_MC:x11 ;
+    ] .
+
+dts2553:link110272 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x186 ;
+    xl:to s2c_MC:x31 ;
+    ] .
+
+dts2553:link110273 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x186 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110274 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x117 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110275 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x117 ;
+    xl:to s2c_MC:x82 ;
+    ] .
+
+dts2553:link110276 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110277 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x81 ;
+    xl:to s2c_MC:x208 ;
+    ] .
+
+dts2553:link110278 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x81 ;
+    xl:to s2c_MC:x209 ;
+    ] .
+
+dts2553:link110279 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x175 ;
+    ] .
+
+dts2553:link110280 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x176 ;
+    ] .
+
+dts2553:link110281 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x136 ;
+    ] .
+
+dts2553:link110282 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x18 ;
+    ] .
+
+dts2553:link110283 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x117 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110284 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x40 ;
+    ] .
+
+dts2553:link110285 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x41 ;
+    ] .
+
+dts2553:link110286 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x117 ;
+    xl:to s2c_MC:x52 ;
+    ] .
+
+dts2553:link110287 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x100 ;
+    ] .
+
+dts2553:link110288 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x100 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110289 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110290 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110291 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x100 ;
+    xl:to s2c_MC:x124 ;
+    ] .
+
+dts2553:link110292 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x124 ;
+    xl:to s2c_MC:x114 ;
+    ] .
+
+dts2553:link110293 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x124 ;
+    xl:to s2c_MC:x14 ;
+    ] .
+
+dts2553:link110294 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x100 ;
+    xl:to s2c_MC:x101 ;
+    ] .
+
+dts2553:link110295 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x71 ;
+    ] .
+
+dts2553:link110296 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x62 ;
+    ] .
+
+dts2553:link110297 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x29 ;
+    ] .
+
+dts2553:link110298 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x72 ;
+    ] .
+
+dts2553:link110299 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x30 ;
+    ] .
+
+dts2553:link110300 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x122 ;
+    ] .
+
+dts2553:link110301 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x111 ;
+    ] .
+
+dts2553:link110302 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x38 ;
+    ] .
+
+dts2553:link110303 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:23 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x97 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/24
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/25
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110304 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x212 ;
+    ] .
+
+dts2553:link110305 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x212 ;
+    xl:to s2c_MC:x190 ;
+    ] .
+
+dts2553:link110306 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x190 ;
+    xl:to s2c_MC:x115 ;
+    ] .
+
+dts2553:link110307 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x190 ;
+    xl:to s2c_MC:x191 ;
+    ] .
+
+dts2553:link110308 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x11 ;
+    ] .
+
+dts2553:link110309 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110310 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x31 ;
+    ] .
+
+dts2553:link110311 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x7 ;
+    ] .
+
+dts2553:link110312 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x137 ;
+    ] .
+
+dts2553:link110313 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x10 ;
+    ] .
+
+dts2553:link110314 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x10 ;
+    xl:to s2c_MC:x175 ;
+    ] .
+
+dts2553:link110315 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x10 ;
+    xl:to s2c_MC:x176 ;
+    ] .
+
+dts2553:link110316 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x192 ;
+    ] .
+
+dts2553:link110317 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110318 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x40 ;
+    ] .
+
+dts2553:link110319 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x41 ;
+    ] .
+
+dts2553:link110320 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x179 ;
+    ] .
+
+dts2553:link110321 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x177 ;
+    ] .
+
+dts2553:link110322 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x212 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110323 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x81 ;
+    xl:to s2c_MC:x183 ;
+    ] .
+
+dts2553:link110324 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x81 ;
+    xl:to s2c_MC:x181 ;
+    ] .
+
+dts2553:link110325 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x81 ;
+    xl:to s2c_MC:x182 ;
+    ] .
+
+dts2553:link110326 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x127 ;
+    ] .
+
+dts2553:link110327 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110328 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110329 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110330 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110331 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x124 ;
+    ] .
+
+dts2553:link110332 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x124 ;
+    xl:to s2c_MC:x184 ;
+    ] .
+
+dts2553:link110333 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x124 ;
+    xl:to s2c_MC:x185 ;
+    ] .
+
+dts2553:link110334 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x71 ;
+    ] .
+
+dts2553:link110335 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x62 ;
+    ] .
+
+dts2553:link110336 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x29 ;
+    ] .
+
+dts2553:link110337 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x72 ;
+    ] .
+
+dts2553:link110338 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x30 ;
+    ] .
+
+dts2553:link110339 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x122 ;
+    ] .
+
+dts2553:link110340 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x111 ;
+    ] .
+
+dts2553:link110341 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x38 ;
+    ] .
+
+dts2553:link110342 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:25 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x101 ;
+    xl:to s2c_MC:x97 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/26
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/27
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/28
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/29
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/30
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/31
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/32
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/33
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/34
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/35
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/36
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/37
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/38
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/39
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/40
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110343 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:40 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x220 ;
+    ] .
+
+dts2553:link110344 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:40 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x221 ;
+    ] .
+
+dts2553:link110345 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:40 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x222 ;
+    ] .
+
+dts2553:link110346 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:40 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x223 ;
+    ] .
+
+dts2553:link110347 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:40 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x224 ;
+    ] .
+
+dts2553:link110348 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:40 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110349 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:40 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x225 ;
+    ] .
+
+dts2553:link110350 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:40 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x226 ;
+    ] .
+
+dts2553:link110351 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:40 ;
+    xl:order "9"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x227 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/41
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110352 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:41 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x228 ;
+    ] .
+
+dts2553:link110353 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:41 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x229 ;
+    ] .
+
+dts2553:link110354 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:41 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110355 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:41 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x230 ;
+    ] .
+
+dts2553:link110356 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:41 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x231 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/42
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110357 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:42 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x69 ;
+    xl:to s2c_MC:x68 ;
+    ] .
+
+dts2553:link110358 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:42 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x68 ;
+    xl:to s2c_MC:x232 ;
+    ] .
+
+dts2553:link110359 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:42 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x68 ;
+    xl:to s2c_MC:x233 ;
+    ] .
+
+dts2553:link110360 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:42 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x69 ;
+    xl:to s2c_MC:x16 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/43
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/44
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110361 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:44 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x236 ;
+    xl:to s2c_MC:x232 ;
+    ] .
+
+dts2553:link110362 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:44 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x236 ;
+    xl:to s2c_MC:x16 ;
+    ] .
+
+dts2553:link110363 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:44 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x236 ;
+    xl:to s2c_MC:x237 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/45
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110364 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:45 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x238 ;
+    xl:to s2c_MC:x17 ;
+    ] .
+
+dts2553:link110365 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:45 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x238 ;
+    xl:to s2c_MC:x239 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/46
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110366 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:46 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x21 ;
+    xl:to s2c_MC:x20 ;
+    ] .
+
+dts2553:link110367 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:46 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x20 ;
+    xl:to s2c_MC:x67 ;
+    ] .
+
+dts2553:link110368 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:46 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x67 ;
+    xl:to s2c_MC:x158 ;
+    ] .
+
+dts2553:link110369 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:46 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x67 ;
+    xl:to s2c_MC:x78 ;
+    ] .
+
+dts2553:link110370 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:46 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x20 ;
+    xl:to s2c_MC:x22 ;
+    ] .
+
+dts2553:link110371 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:46 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x21 ;
+    xl:to s2c_MC:x17 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/47
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110372 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x116 ;
+    ] .
+
+dts2553:link110373 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x116 ;
+    xl:to s2c_MC:x115 ;
+    ] .
+
+dts2553:link110374 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x116 ;
+    xl:to s2c_MC:x49 ;
+    ] .
+
+dts2553:link110375 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x11 ;
+    ] .
+
+dts2553:link110376 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110377 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x31 ;
+    ] .
+
+dts2553:link110378 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x82 ;
+    ] .
+
+dts2553:link110379 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110380 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x7 ;
+    ] .
+
+dts2553:link110381 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x137 ;
+    ] .
+
+dts2553:link110382 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x137 ;
+    xl:to s2c_MC:x139 ;
+    ] .
+
+dts2553:link110383 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x137 ;
+    xl:to s2c_MC:x141 ;
+    ] .
+
+dts2553:link110384 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x10 ;
+    ] .
+
+dts2553:link110385 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110386 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x40 ;
+    ] .
+
+dts2553:link110387 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x41 ;
+    ] .
+
+dts2553:link110388 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x52 ;
+    ] .
+
+dts2553:link110389 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x127 ;
+    ] .
+
+dts2553:link110390 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110391 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110392 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110393 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110394 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x184 ;
+    ] .
+
+dts2553:link110395 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x184 ;
+    xl:to s2c_MC:x206 ;
+    ] .
+
+dts2553:link110396 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x184 ;
+    xl:to s2c_MC:x207 ;
+    ] .
+
+dts2553:link110397 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x241 ;
+    ] .
+
+dts2553:link110398 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x71 ;
+    ] .
+
+dts2553:link110399 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x62 ;
+    ] .
+
+dts2553:link110400 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x29 ;
+    ] .
+
+dts2553:link110401 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x72 ;
+    ] .
+
+dts2553:link110402 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x30 ;
+    ] .
+
+dts2553:link110403 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x122 ;
+    ] .
+
+dts2553:link110404 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x111 ;
+    ] .
+
+dts2553:link110405 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x38 ;
+    ] .
+
+dts2553:link110406 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:47 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x242 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/48
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/49
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/50
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110407 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x200 ;
+    ] .
+
+dts2553:link110408 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x196 ;
+    ] .
+
+dts2553:link110409 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x196 ;
+    xl:to s2c_MC:x253 ;
+    ] .
+
+dts2553:link110410 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x196 ;
+    xl:to s2c_MC:x254 ;
+    ] .
+
+dts2553:link110411 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x197 ;
+    ] .
+
+dts2553:link110412 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x197 ;
+    xl:to s2c_MC:x255 ;
+    ] .
+
+dts2553:link110413 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x197 ;
+    xl:to s2c_MC:x256 ;
+    ] .
+
+dts2553:link110414 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x198 ;
+    ] .
+
+dts2553:link110415 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x198 ;
+    xl:to s2c_MC:x257 ;
+    ] .
+
+dts2553:link110416 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x198 ;
+    xl:to s2c_MC:x258 ;
+    ] .
+
+dts2553:link110417 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x199 ;
+    ] .
+
+dts2553:link110418 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x199 ;
+    xl:to s2c_MC:x259 ;
+    ] .
+
+dts2553:link110419 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x199 ;
+    xl:to s2c_MC:x260 ;
+    ] .
+
+dts2553:link110420 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:50 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x262 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/51
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110421 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x116 ;
+    ] .
+
+dts2553:link110422 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x116 ;
+    xl:to s2c_MC:x115 ;
+    ] .
+
+dts2553:link110423 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x116 ;
+    xl:to s2c_MC:x49 ;
+    ] .
+
+dts2553:link110424 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x186 ;
+    ] .
+
+dts2553:link110425 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x186 ;
+    xl:to s2c_MC:x11 ;
+    ] .
+
+dts2553:link110426 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x186 ;
+    xl:to s2c_MC:x31 ;
+    ] .
+
+dts2553:link110427 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110428 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x192 ;
+    ] .
+
+dts2553:link110429 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x82 ;
+    ] .
+
+dts2553:link110430 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110431 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x81 ;
+    xl:to s2c_MC:x209 ;
+    ] .
+
+dts2553:link110432 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x81 ;
+    xl:to s2c_MC:x208 ;
+    ] .
+
+dts2553:link110433 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x82 ;
+    xl:to s2c_MC:x7 ;
+    ] .
+
+dts2553:link110434 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x137 ;
+    ] .
+
+dts2553:link110435 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x137 ;
+    xl:to s2c_MC:x139 ;
+    ] .
+
+dts2553:link110436 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x137 ;
+    xl:to s2c_MC:x141 ;
+    ] .
+
+dts2553:link110437 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x10 ;
+    ] .
+
+dts2553:link110438 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110439 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x40 ;
+    ] .
+
+dts2553:link110440 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x41 ;
+    ] .
+
+dts2553:link110441 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x177 ;
+    ] .
+
+dts2553:link110442 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x49 ;
+    xl:to s2c_MC:x179 ;
+    ] .
+
+dts2553:link110443 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x127 ;
+    ] .
+
+dts2553:link110444 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110445 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110446 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110447 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110448 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x184 ;
+    ] .
+
+dts2553:link110449 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x184 ;
+    xl:to s2c_MC:x206 ;
+    ] .
+
+dts2553:link110450 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x184 ;
+    xl:to s2c_MC:x207 ;
+    ] .
+
+dts2553:link110451 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x241 ;
+    ] .
+
+dts2553:link110452 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x71 ;
+    ] .
+
+dts2553:link110453 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x62 ;
+    ] .
+
+dts2553:link110454 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x29 ;
+    ] .
+
+dts2553:link110455 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x72 ;
+    ] .
+
+dts2553:link110456 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x30 ;
+    ] .
+
+dts2553:link110457 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x122 ;
+    ] .
+
+dts2553:link110458 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x111 ;
+    ] .
+
+dts2553:link110459 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x38 ;
+    ] .
+
+dts2553:link110460 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:51 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x242 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/52
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110461 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x212 ;
+    ] .
+
+dts2553:link110462 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x212 ;
+    xl:to s2c_MC:x190 ;
+    ] .
+
+dts2553:link110463 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x190 ;
+    xl:to s2c_MC:x115 ;
+    ] .
+
+dts2553:link110464 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x190 ;
+    xl:to s2c_MC:x191 ;
+    ] .
+
+dts2553:link110465 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x11 ;
+    ] .
+
+dts2553:link110466 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110467 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x31 ;
+    ] .
+
+dts2553:link110468 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x7 ;
+    ] .
+
+dts2553:link110469 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x137 ;
+    ] .
+
+dts2553:link110470 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x10 ;
+    ] .
+
+dts2553:link110471 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x10 ;
+    xl:to s2c_MC:x175 ;
+    ] .
+
+dts2553:link110472 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x10 ;
+    xl:to s2c_MC:x176 ;
+    ] .
+
+dts2553:link110473 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x192 ;
+    ] .
+
+dts2553:link110474 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110475 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x40 ;
+    ] .
+
+dts2553:link110476 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x41 ;
+    ] .
+
+dts2553:link110477 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x179 ;
+    ] .
+
+dts2553:link110478 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x191 ;
+    xl:to s2c_MC:x177 ;
+    ] .
+
+dts2553:link110479 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x212 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110480 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x81 ;
+    xl:to s2c_MC:x183 ;
+    ] .
+
+dts2553:link110481 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x81 ;
+    xl:to s2c_MC:x181 ;
+    ] .
+
+dts2553:link110482 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x81 ;
+    xl:to s2c_MC:x182 ;
+    ] .
+
+dts2553:link110483 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x127 ;
+    ] .
+
+dts2553:link110484 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x126 ;
+    ] .
+
+dts2553:link110485 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x127 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110486 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110487 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110488 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x184 ;
+    ] .
+
+dts2553:link110489 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x184 ;
+    xl:to s2c_MC:x206 ;
+    ] .
+
+dts2553:link110490 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x184 ;
+    xl:to s2c_MC:x207 ;
+    ] .
+
+dts2553:link110491 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x241 ;
+    ] .
+
+dts2553:link110492 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x71 ;
+    ] .
+
+dts2553:link110493 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x62 ;
+    ] .
+
+dts2553:link110494 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x29 ;
+    ] .
+
+dts2553:link110495 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x71 ;
+    xl:to s2c_MC:x72 ;
+    ] .
+
+dts2553:link110496 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x30 ;
+    ] .
+
+dts2553:link110497 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x30 ;
+    xl:to s2c_MC:x263 ;
+    ] .
+
+dts2553:link110498 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x30 ;
+    xl:to s2c_MC:x264 ;
+    ] .
+
+dts2553:link110499 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x122 ;
+    ] .
+
+dts2553:link110500 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x111 ;
+    ] .
+
+dts2553:link110501 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x38 ;
+    ] .
+
+dts2553:link110502 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:52 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x241 ;
+    xl:to s2c_MC:x242 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/53
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/500
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110503 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x5013 ;
+    ] .
+
+dts2553:link110504 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5013 ;
+    xl:to s2c_MC:x115 ;
+    ] .
+
+dts2553:link110505 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5013 ;
+    xl:to s2c_MC:x7 ;
+    ] .
+
+dts2553:link110506 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x137 ;
+    ] .
+
+dts2553:link110507 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x137 ;
+    xl:to s2c_MC:x136 ;
+    ] .
+
+dts2553:link110508 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x137 ;
+    xl:to s2c_MC:x18 ;
+    ] .
+
+dts2553:link110509 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x7 ;
+    xl:to s2c_MC:x10 ;
+    ] .
+
+dts2553:link110510 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x10 ;
+    xl:to s2c_MC:x175 ;
+    ] .
+
+dts2553:link110511 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x10 ;
+    xl:to s2c_MC:x176 ;
+    ] .
+
+dts2553:link110512 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5013 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110513 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x40 ;
+    ] .
+
+dts2553:link110514 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x39 ;
+    xl:to s2c_MC:x41 ;
+    ] .
+
+dts2553:link110515 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5013 ;
+    xl:to s2c_MC:x177 ;
+    ] .
+
+dts2553:link110516 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x177 ;
+    xl:to s2c_MC:x5003 ;
+    ] .
+
+dts2553:link110517 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x177 ;
+    xl:to s2c_MC:x5011 ;
+    ] .
+
+dts2553:link110518 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x5014 ;
+    ] .
+
+dts2553:link110519 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5014 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110520 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5014 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110521 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5014 ;
+    xl:to s2c_MC:x184 ;
+    ] .
+
+dts2553:link110522 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5014 ;
+    xl:to s2c_MC:x186 ;
+    ] .
+
+dts2553:link110523 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:500 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x5014 ;
+    xl:to s2c_MC:x5000 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/501
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110524 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:501 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x5007 ;
+    ] .
+
+dts2553:link110525 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:501 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x5008 ;
+    ] .
+
+dts2553:link110526 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:501 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x5009 ;
+    ] .
+
+dts2553:link110527 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:501 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x5010 ;
+    ] .
+
+dts2553:link110528 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:501 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x5012 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/502
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110529 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:502 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x155 ;
+    ] .
+
+dts2553:link110530 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:502 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110531 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:502 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x5001 ;
+    ] .
+
+dts2553:link110532 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:502 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x5002 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/503
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/504
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110533 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:504 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x5005 ;
+    ] .
+
+dts2553:link110534 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:504 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x5006 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/600
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110535 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:600 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x186 ;
+    ] .
+
+dts2553:link110536 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:600 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x7 ;
+    ] .
+
+dts2553:link110537 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:600 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110538 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:600 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x39 ;
+    ] .
+
+dts2553:link110539 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:600 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x177 ;
+    ] .
+
+dts2553:link110540 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:600 ;
+    xl:order "6"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x6001 ;
+    ] .
+
+dts2553:link110541 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:600 ;
+    xl:order "7"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110542 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:600 ;
+    xl:order "8"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x6002 ;
+    ] .
+
+dts2553:link110543 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:600 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110544 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:600 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110545 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:600 ;
+    xl:order "9"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x6003 ;
+    ] .
+
+# XLINKS
+# localname: calculationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/MC/601
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/mc/hier-cal.xml
+
+dts2553:link110546 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x81 ;
+    ] .
+
+dts2553:link110547 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x7 ;
+    ] .
+
+dts2553:link110548 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x6006 ;
+    ] .
+
+dts2553:link110549 arcrole5:partial-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x6006 ;
+    xl:to s2c_MC:x155 ;
+    ] .
+
+dts2553:link110550 arcrole5:partial-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x6006 ;
+    xl:to s2c_MC:x5001 ;
+    ] .
+
+dts2553:link110551 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x32 ;
+    ] .
+
+dts2553:link110552 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x0 ;
+    xl:to s2c_MC:x6002 ;
+    ] .
+
+dts2553:link110553 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x6002 ;
+    xl:to s2c_MC:x6004 ;
+    ] .
+
+dts2553:link110554 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x6004 ;
+    xl:to s2c_MC:x120 ;
+    ] .
+
+dts2553:link110555 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x119 ;
+    ] .
+
+dts2553:link110556 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x120 ;
+    xl:to s2c_MC:x121 ;
+    ] .
+
+dts2553:link110557 arcrole5:complete-breakdown [
+    xl:type xl:link ;
+    xl:role role40:601 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from s2c_MC:x6004 ;
+    xl:to s2c_MC:x122 ;
+    ] .
+

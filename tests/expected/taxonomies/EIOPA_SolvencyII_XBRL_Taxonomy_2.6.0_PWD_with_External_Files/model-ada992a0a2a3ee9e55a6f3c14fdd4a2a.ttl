@@ -1,0 +1,37 @@
+# Source HREF: http://www.eurofiling.info/eu/fr/xbrl/ext/model.xsd
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix xbrldt: <http://xbrl.org/2005/xbrldt#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix model: <http://www.eurofiling.info/xbrl/ext/model#>.
+
+
+# SCHEMAS
+# target namespace:http://www.eurofiling.info/xbrl/ext/model# base: http://www.eurofiling.info/eu/fr/xbrl/ext/model.xsd
+
+model:met 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrli:substitutionGroup xbrli:item ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+model:hyp 
+    rdf:type xbrli:stringItemType ;
+    xbrli:periodType """instant"""^^rdf:XMLLiteral ;
+    xbrli:substitutionGroup xbrldt:hypercubeItem ;
+    xbrli:nillable "true"^^xsd:boolean ;
+    xbrli:abstract "true"^^xsd:boolean ;
+    . 
+
+model:properties 
+    xbrli:substitutionGroup xl:resource ;
+    xbrli:abstract "false"^^xsd:boolean ;
+    . 
+

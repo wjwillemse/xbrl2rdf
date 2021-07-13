@@ -1,0 +1,432 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix arcrole3: <http://www.xbrl.org/2003/arcrole#>.
+@prefix role3: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab#>.
+@prefix s2c_exp: <http://eiopa.europa.eu/xbrl/s2c/dict/exp#>.
+@prefix s2c_CG: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/CG#>.
+@prefix role48: <http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG#>.
+@prefix dts2594: <http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml#>.
+
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/1
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131653 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x0 ;
+    ] .
+
+dts2594:link131654 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_CG:x0 ;
+    xl:to s2c_CG:x6 ;
+    ] .
+
+dts2594:link131655 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:1 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_CG:x6 ;
+    xl:to s2c_CG:x5 ;
+    ] .
+
+dts2594:link131656 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:1 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_CG:x6 ;
+    xl:to s2c_CG:x8 ;
+    ] .
+
+dts2594:link131657 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:1 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_CG:x0 ;
+    xl:to s2c_CG:x16 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/2
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131658 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:2 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x4 ;
+    ] .
+
+dts2594:link131659 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:2 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x2 ;
+    ] .
+
+dts2594:link131660 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:2 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x3 ;
+    ] .
+
+dts2594:link131661 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:2 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x22 ;
+    ] .
+
+dts2594:link131662 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:2 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x15 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/3
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131663 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x0 ;
+    ] .
+
+dts2594:link131664 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:3 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_CG:x0 ;
+    xl:to s2c_CG:x18 ;
+    ] .
+
+dts2594:link131665 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:3 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_CG:x0 ;
+    xl:to s2c_CG:x19 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/4
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131666 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:4 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x24 ;
+    ] .
+
+dts2594:link131667 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:4 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x23 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/5
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131668 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:5 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x7 ;
+    ] .
+
+dts2594:link131669 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:5 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x21 ;
+    ] .
+
+dts2594:link131670 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:5 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x14 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/6
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131671 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x0 ;
+    ] .
+
+dts2594:link131672 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:6 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_CG:x0 ;
+    xl:to s2c_CG:x10 ;
+    ] .
+
+dts2594:link131673 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:6 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_CG:x0 ;
+    xl:to s2c_CG:x9 ;
+    ] .
+
+dts2594:link131674 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:6 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2c_CG:x0 ;
+    xl:to s2c_CG:x11 ;
+    ] .
+
+dts2594:link131675 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:6 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from s2c_CG:x0 ;
+    xl:to s2c_CG:x12 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/7
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131676 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:7 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x25 ;
+    ] .
+
+dts2594:link131677 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:7 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x13 ;
+    ] .
+
+dts2594:link131678 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:7 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x20 ;
+    ] .
+
+dts2594:link131679 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:7 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x17 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/8
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131680 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:8 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x26 ;
+    ] .
+
+dts2594:link131681 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:8 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x27 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/9
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131682 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:9 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x10 ;
+    ] .
+
+dts2594:link131683 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:9 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x9 ;
+    ] .
+
+dts2594:link131684 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:9 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x11 ;
+    ] .
+
+dts2594:link131685 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:9 ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x12 ;
+    ] .
+
+dts2594:link131686 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:9 ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x28 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/10
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131687 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:10 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x29 ;
+    ] .
+
+dts2594:link131688 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:10 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x30 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/11
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131689 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:11 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x26 ;
+    ] .
+
+dts2594:link131690 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:11 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x27 ;
+    ] .
+
+dts2594:link131691 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:11 ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x31 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/500
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131692 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:500 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x0 ;
+    ] .
+
+dts2594:link131693 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:500 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_CG:x0 ;
+    xl:to s2c_CG:x5000 ;
+    ] .
+
+dts2594:link131694 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:500 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_CG:x0 ;
+    xl:to s2c_CG:x5001 ;
+    ] .
+
+# XLINKS
+# localname: presentationLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/CG/700
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/cg/hier-pre.xml
+
+dts2594:link131695 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:700 ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x8 ;
+    ] .
+
+dts2594:link131696 arcrole3:parent-child [
+    xl:type xl:link ;
+    xl:role role48:700 ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from s2c_exp:CG ;
+    xl:to s2c_CG:x7000 ;
+    ] .
+

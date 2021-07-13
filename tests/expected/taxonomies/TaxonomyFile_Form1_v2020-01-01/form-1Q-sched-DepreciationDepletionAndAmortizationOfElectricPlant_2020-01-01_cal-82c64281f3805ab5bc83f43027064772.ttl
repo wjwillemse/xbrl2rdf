@@ -1,0 +1,55 @@
+# Source HREF: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01_cal.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ferc: <http://ferc.gov/form/2020-01-01/ferc#>.
+@prefix role1: <http://ferc.gov/form/2020-01-01/roles/Schedule/F1Q#>.
+@prefix role2: <http://ferc.gov/form/2020-01-01/roles/Schedule/F1#>.
+@prefix arcrole2: <http://www.xbrl.org/2003/arcrole#>.
+@prefix dts124: <https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01_cal.xml#>.
+
+
+# XLINKS
+# localname: calculationLink
+# role: http://ferc.gov/form/2020-01-01/roles/Schedule/F1Q/DepreciationDepletionAndAmortizationOfElectricPlant
+# base: https://eCollection.ferc.gov/taxonomy/form1/2020-01-01/schedule/F1Q-DepreciationDepletionAndAmortizationOfElectricPlant/form-1Q-sched-DepreciationDepletionAndAmortizationOfElectricPlant_2020-01-01_cal.xml
+
+dts124:link22633 arcrole2:summation-item [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from ferc:DepreciationAndAmortization ;
+    xl:to ferc:DepreciationExpenseExcludingAmortizationOfAcquisitionAdjustments ;
+    ] .
+
+dts124:link22634 arcrole2:summation-item [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from ferc:DepreciationAndAmortization ;
+    xl:to ferc:DepreciationExpenseForAssetRetirementCostsExcludingAmortizationgOfAcquisitionAdjustments ;
+    ] .
+
+dts124:link22635 arcrole2:summation-item [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from ferc:DepreciationAndAmortization ;
+    xl:to ferc:AmortizationOfLimitedTermPlantOrProperty ;
+    ] .
+
+dts124:link22636 arcrole2:summation-item [
+    xl:type xl:link ;
+    xl:role role1:DepreciationDepletionAndAmortizationOfElectricPlant ;
+    xl:order "1"^^xsd:decimal ;
+    xl:weight "1"^^xsd:decimal ;
+    xl:from ferc:DepreciationAndAmortization ;
+    xl:to ferc:AmortizationOfOtherElectricPlant ;
+    ] .
+

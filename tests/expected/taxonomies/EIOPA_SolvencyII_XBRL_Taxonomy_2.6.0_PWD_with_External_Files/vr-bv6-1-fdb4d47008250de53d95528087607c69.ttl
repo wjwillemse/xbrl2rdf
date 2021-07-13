@@ -1,0 +1,2485 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/vr-bv6-1.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix variable: <http://xbrl.org/2008/variable#>.
+@prefix xbrli: <http://www.xbrl.org/2003/instance#>.
+@prefix cf: <http://xbrl.org/2008/filter/concept#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix gf: <http://xbrl.org/2008/filter/general#>.
+@prefix va: <http://xbrl.org/2008/assertion/value#>.
+@prefix s2md_mod_qrs: <http://eiopa.europa.eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/mod/qrs#>.
+@prefix role1: <http://www.xbrl.org/2008/role#>.
+@prefix arcrole1: <http://xbrl.org/arcrole/2008#>.
+@prefix role2: <http://www.xbrl.org/2003/role#>.
+@prefix arcrole2: <http://xbrl.org/arcrole/2016#>.
+@prefix dts731: <http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/vr-bv6-1.xml#>.
+@prefix s2c_dim: <http://eiopa.europa.eu/xbrl/s2c/dict/dim#>.
+@prefix s2md_met: <http://eiopa.europa.eu/xbrl/s2md/dict/met#>.
+@prefix s2c_AM: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/AM#>.
+@prefix s2c_VM: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/VM#>.
+@prefix s2c_TB: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/TB#>.
+@prefix s2c_LB: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/LB#>.
+@prefix s2c_RT: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/RT#>.
+@prefix s2c_DI: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/DI#>.
+@prefix s2c_EL: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/EL#>.
+@prefix s2c_MC: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/MC#>.
+@prefix s2c_CA: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/CA#>.
+@prefix s2c_TF: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/TF#>.
+@prefix s2c_AO: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/AO#>.
+@prefix s2c_AP: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP#>.
+@prefix s2c_EX: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/EX#>.
+@prefix s2c_TI: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/TI#>.
+@prefix s2c_BR: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/BR#>.
+@prefix s2c_PI: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/PI#>.
+@prefix s2c_GA: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/GA#>.
+@prefix s2c_CU: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/CU#>.
+@prefix s2c_CS: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/CS#>.
+@prefix s2c_CG: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/CG#>.
+@prefix s2c_SE: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/SE#>.
+@prefix s2c_PU: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/PU#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2md/fws/solvency/solvency2/2021-07-15/val/vr-bv6-1.xml
+
+dts731:link83543 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f7 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f7 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:PO ;
+    df:member s2c_PU:x0 ;
+    .
+
+dts731:link83544 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f8 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f8 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:LG ;
+    df:member s2c_GA:x0 ;
+    .
+
+dts731:link83545 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "3"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f9 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f9 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:VG ;
+    df:member s2c_AM:x0 ;
+    .
+
+dts731:link83546 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "4"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f10 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f10 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:BL ;
+    df:member s2c_LB:x0 ;
+    .
+
+dts731:link83547 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "5"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f11 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f11 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:TB ;
+    df:member s2c_LB:x0 ;
+    .
+
+dts731:link83548 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "6"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f12 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f12 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:VL ;
+    df:member s2c_VM:x0 ;
+    .
+
+dts731:link83549 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "7"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f13 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f13 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:DZ ;
+    df:member s2c_GA:x0 ;
+    .
+
+dts731:link83550 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "8"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f14 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f14 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:RC ;
+    df:member s2c_CU:x0 ;
+    .
+
+dts731:link83551 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "9"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f15 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f15 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:MT ;
+    df:member s2c_AP:x0 ;
+    .
+
+dts731:link83552 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "10"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f16 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f16 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:OC ;
+    df:member s2c_CU:x0 ;
+    .
+
+dts731:link83553 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "11"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f17 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f17 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:TA ;
+    df:member s2c_AM:x0 ;
+    .
+
+dts731:link83554 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "12"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f18 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f18 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:EN ;
+    df:member s2c_CG:x0 ;
+    .
+
+dts731:link83555 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "13"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f19 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f19 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:TZ ;
+    df:member s2c_LB:x0 ;
+    .
+
+dts731:link83556 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "14"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f20 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f20 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:LA ;
+    df:member s2c_GA:x0 ;
+    .
+
+dts731:link83557 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "15"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f21 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f21 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:LR ;
+    df:member s2c_GA:x0 ;
+    .
+
+dts731:link83558 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "16"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f22 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f22 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:IZ ;
+    df:member s2c_RT:x0 ;
+    .
+
+dts731:link83559 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "17"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f23 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f23 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:DI ;
+    df:member s2c_DI:x0 ;
+    .
+
+dts731:link83560 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "18"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f24 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f24 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:EE ;
+    df:member s2c_GA:x0 ;
+    .
+
+dts731:link83561 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "19"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f25 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f25 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:BI ;
+    df:member s2c_GA:x0 ;
+    .
+
+dts731:link83562 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "20"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f26 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f26 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:RZ ;
+    df:member s2c_LB:x0 ;
+    .
+
+dts731:link83563 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "21"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f27 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f27 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:PY ;
+    df:member s2c_TI:x0 ;
+    .
+
+dts731:link83564 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "22"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f28 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f28 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:RM ;
+    df:member s2c_TI:x0 ;
+    .
+
+dts731:link83565 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "23"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f29 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f29 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:RB ;
+    df:member s2c_LB:x0 ;
+    .
+
+dts731:link83566 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "24"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f30 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f30 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:AX ;
+    df:member s2c_AM:x0 ;
+    .
+
+dts731:link83567 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "25"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f31 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f31 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:TK ;
+    df:member s2c_TF:x0 ;
+    .
+
+dts731:link83568 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "26"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f32 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f32 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:AF ;
+    df:member s2c_CA:x0 ;
+    .
+
+dts731:link83569 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "27"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f33 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f33 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:DY ;
+    df:member s2c_TI:x0 ;
+    .
+
+dts731:link83570 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "28"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f34 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f34 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:NB ;
+    df:member s2c_BR:x0 ;
+    .
+
+dts731:link83571 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "29"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f35 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f35 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:NZ ;
+    df:member s2c_BR:x0 ;
+    .
+
+dts731:link83572 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "30"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f36 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f36 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:VI ;
+    df:member s2c_VM:x0 ;
+    .
+
+dts731:link83573 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "31"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f37 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f37 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:TX ;
+    df:member s2c_EL:x0 ;
+    .
+
+dts731:link83574 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "32"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f38 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f38 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:PI ;
+    df:member s2c_PI:x0 ;
+    .
+
+dts731:link83575 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "33"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f39 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f39 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:CM ;
+    df:member s2c_CS:x0 ;
+    .
+
+dts731:link83576 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "34"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f40 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f40 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:SO ;
+    df:member s2c_SE:x0 ;
+    .
+
+dts731:link83577 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "35"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f41 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f41 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:LV ;
+    df:member s2c_EL:x0 ;
+    .
+
+dts731:link83578 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "36"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f42 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f42 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:AG ;
+    df:member s2c_VM:x0 ;
+    .
+
+dts731:link83579 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "37"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f43 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f43 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:ET ;
+    df:member s2c_EX:x0 ;
+    .
+
+dts731:link83580 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "38"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f44 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f44 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:EA ;
+    df:member s2c_VM:x0 ;
+    .
+
+dts731:link83581 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "39"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f45 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f45 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:RT ;
+    df:member s2c_RT:x0 ;
+    .
+
+dts731:link83582 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "40"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f46 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f46 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:DV ;
+    df:member s2c_RT:x0 ;
+    .
+
+dts731:link83583 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "41"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f47 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f47 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:AO ;
+    df:member s2c_AO:x0 ;
+    .
+
+dts731:link83584 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "42"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f48 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f48 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:EX ;
+    df:member s2c_EX:x0 ;
+    .
+
+dts731:link83585 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "43"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f49 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f49 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:QS ;
+    df:member s2c_BR:x0 ;
+    .
+
+dts731:link83586 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "44"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f50 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f50 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:LX ;
+    df:member s2c_GA:x0 ;
+    .
+
+dts731:link83587 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "45"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f51 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f51 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:LE ;
+    df:member s2c_TB:x0 ;
+    .
+
+dts731:link83588 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "46"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f52 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f52 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:HH ;
+    df:member s2c_VM:x0 ;
+    .
+
+dts731:link83589 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "47"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f53 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f53 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:CC ;
+    df:member s2c_TB:x0 ;
+    .
+
+dts731:link83590 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "48"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f54 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f54 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:FN ;
+    .
+
+dts731:link83591 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "49"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f55 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f55 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:SN ;
+    .
+
+dts731:link83592 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "50"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f56 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f56 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:CE ;
+    .
+
+dts731:link83593 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "51"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f57 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f57 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:NF ;
+    .
+
+dts731:link83594 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "52"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f58 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f58 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XT ;
+    .
+
+dts731:link83595 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "53"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f59 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f59 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:CI ;
+    .
+
+dts731:link83596 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "54"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f60 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f60 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XA ;
+    .
+
+dts731:link83597 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "55"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f61 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f61 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:MP ;
+    .
+
+dts731:link83598 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "56"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f62 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f62 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XE ;
+    .
+
+dts731:link83599 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "57"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f63 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f63 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XR ;
+    .
+
+dts731:link83600 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "58"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f64 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f64 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XB ;
+    .
+
+dts731:link83601 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "59"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f65 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f65 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:IW ;
+    .
+
+dts731:link83602 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "60"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f66 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f66 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XC ;
+    .
+
+dts731:link83603 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "61"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f67 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f67 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XD ;
+    .
+
+dts731:link83604 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "62"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f68 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f68 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XF ;
+    .
+
+dts731:link83605 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "63"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f69 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f69 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XG ;
+    .
+
+dts731:link83606 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "64"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f70 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f70 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XH ;
+    .
+
+dts731:link83607 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "65"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f71 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f71 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:IP ;
+    .
+
+dts731:link83608 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "66"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f72 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f72 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:HX ;
+    .
+
+dts731:link83609 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "67"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f73 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f73 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:RD ;
+    .
+
+dts731:link83610 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "68"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f74 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f74 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YG ;
+    .
+
+dts731:link83611 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "69"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f75 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f75 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YH ;
+    .
+
+dts731:link83612 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "70"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f76 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f76 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YI ;
+    .
+
+dts731:link83613 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "71"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f77 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f77 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YJ ;
+    .
+
+dts731:link83614 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "72"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f78 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f78 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YK ;
+    .
+
+dts731:link83615 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "73"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f79 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f79 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YL ;
+    .
+
+dts731:link83616 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "74"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f80 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f80 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XY ;
+    .
+
+dts731:link83617 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "75"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f81 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f81 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:NX ;
+    .
+
+dts731:link83618 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "76"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f82 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f82 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:RE ;
+    .
+
+dts731:link83619 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "77"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f83 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f83 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:FC ;
+    .
+
+dts731:link83620 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "78"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f84 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f84 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:RF ;
+    .
+
+dts731:link83621 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "79"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f85 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f85 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:CA ;
+    .
+
+dts731:link83622 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "80"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f86 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f86 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:OD ;
+    .
+
+dts731:link83623 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "81"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f87 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f87 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:ST ;
+    .
+
+dts731:link83624 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "82"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f88 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f88 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:LP ;
+    .
+
+dts731:link83625 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "83"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f89 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f89 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YE ;
+    .
+
+dts731:link83626 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "84"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f90 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f90 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:CV ;
+    .
+
+dts731:link83627 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "85"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f91 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f91 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XU ;
+    .
+
+dts731:link83628 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "86"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f92 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f92 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:OV ;
+    .
+
+dts731:link83629 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "87"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f93 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f93 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YA ;
+    .
+
+dts731:link83630 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "88"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f94 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f94 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:GX ;
+    .
+
+dts731:link83631 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "89"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f95 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f95 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:IX ;
+    .
+
+dts731:link83632 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "90"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f96 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f96 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:ZS ;
+    .
+
+dts731:link83633 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "91"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f97 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f97 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YB ;
+    .
+
+dts731:link83634 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "92"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f98 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f98 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YC ;
+    .
+
+dts731:link83635 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "93"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f99 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f99 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YD ;
+    .
+
+dts731:link83636 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "94"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f100 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f100 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YF ;
+    .
+
+dts731:link83637 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "95"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f101 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f101 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:GO ;
+    .
+
+dts731:link83638 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "96"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f102 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f102 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:XZ ;
+    .
+
+dts731:link83639 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "97"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f103 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f103 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:DA ;
+    .
+
+dts731:link83640 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "98"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f104 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f104 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:DL ;
+    .
+
+dts731:link83641 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "99"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f105 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f105 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:DE ;
+    .
+
+dts731:link83642 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "100"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f106 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f106 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:DF ;
+    .
+
+dts731:link83643 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "101"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f107 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f107 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:DB ;
+    .
+
+dts731:link83644 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "102"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f108 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f108 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:RS ;
+    .
+
+dts731:link83645 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "103"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f109 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f109 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YM ;
+    .
+
+dts731:link83646 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "104"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f110 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f110 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YN ;
+    .
+
+dts731:link83647 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "105"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f111 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f111 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YO ;
+    .
+
+dts731:link83648 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "true"^^xsd:boolean ;
+    xl:order "106"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f112 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f112 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:YR ;
+    .
+
+dts731:link83649 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "107"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f1 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f1 
+    xl:type df:explicitDimension ;
+    df:dimension s2c_dim:SU ;
+    df:member s2c_MC:x168 ;
+    .
+
+dts731:link83650 arcrole1:variable-set-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "108"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.f3 ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.f3 
+    xl:type df:typedDimension ;
+    df:dimension s2c_dim:UI ;
+    .
+
+dts731:link83651 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1.a ;
+    xl:to dts731:s2md_BV6-1.a.f2 ;
+    ] .
+
+dts731:s2md_BV6-1.a 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    xl:fallbackValue """()"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.a.f2 
+    xl:type cf:conceptName ;
+    cf:concept s2md_met:ei1062 ;
+    .
+
+dts731:link83652 arcrole1:variable-set [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:name """a"""^^rdf:XMLLiteral ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.a ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.a 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    xl:fallbackValue """()"""^^rdf:XMLLiteral ;
+    .
+
+dts731:link83653 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:cover """true"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "1"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1.b ;
+    xl:to dts731:s2md_BV6-1.b.f5 ;
+    ] .
+
+dts731:s2md_BV6-1.b 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    .
+
+dts731:s2md_BV6-1.b.f5 
+    xl:type cf:conceptName ;
+    cf:concept s2md_met:si1554 ;
+    .
+
+dts731:link83654 arcrole1:variable-filter [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:cover """false"""^^rdf:XMLLiteral ;
+    xl:complement "false"^^xsd:boolean ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1.b ;
+    xl:to dts731:s2md_BV6-1.b.BV6-1.b.genFilter1 ;
+    ] .
+
+dts731:s2md_BV6-1.b 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    .
+
+dts731:s2md_BV6-1.b.BV6-1.b.genFilter1 
+    xl:type gf:general ;
+    xl:test """matches(. ,"^..((71)|(75)|(9.))$")"""^^rdf:XMLLiteral ;
+    .
+
+dts731:link83655 arcrole1:variable-set [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:name """b"""^^rdf:XMLLiteral ;
+    xl:order "2"^^xsd:decimal ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to dts731:s2md_BV6-1.b ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+
+dts731:s2md_BV6-1.b 
+    xl:type variable:factVariable ;
+    xl:bindAsSequence "false"^^xsd:boolean ;
+    .
+
+dts731:link83656 arcrole2:assertion-unsatisfied-severity [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from dts731:s2md_BV6-1 ;
+    xl:to s2md_mod_qrs:ERROR ;
+    ] .
+
+dts731:s2md_BV6-1 
+    xl:type va:valueAssertion ;
+    xbrli:implicitFiltering "true"^^xsd:boolean ;
+    xl:aspectModel """dimensional"""^^rdf:XMLLiteral ;
+    xl:test """empty($a )"""^^rdf:XMLLiteral ;
+    .
+

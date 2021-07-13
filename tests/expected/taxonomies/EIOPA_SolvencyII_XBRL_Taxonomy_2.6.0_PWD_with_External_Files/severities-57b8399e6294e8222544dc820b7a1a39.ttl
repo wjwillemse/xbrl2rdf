@@ -1,0 +1,12 @@
+# Source HREF: http://www.xbrl.org/2016/severities.xml
+
+# RDF triples (turtle syntax)
+
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2008/role/link
+# base: http://www.xbrl.org/2016/severities.xml
+

@@ -1,0 +1,415 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/el/hier-lab-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix role1: <http://www.xbrl.org/2008/role#>.
+@prefix arcrole1: <http://xbrl.org/arcrole/2008#>.
+@prefix role2: <http://www.xbrl.org/2003/role#>.
+@prefix label: <http://xbrl.org/2008/label#>.
+@prefix s2c_EL_h: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/EL/hier#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+@prefix dts2576: <http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/el/hier-lab-en.xml#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/el/hier-lab-en.xml
+
+dts2576:link129550 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_1 ;
+    xl:to dts2576:resource16682 ;
+    ] .
+
+dts2576:resource16682 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Solvency II own funds eligibility"""@en ;
+    .
+
+dts2576:link129551 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_1 ;
+    xl:to dts2576:resource16683 ;
+    ] .
+
+dts2576:resource16683 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """BE"""@en ;
+    .
+
+dts2576:link129552 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_2 ;
+    xl:to dts2576:resource16684 ;
+    ] .
+
+dts2576:resource16684 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Tiers"""@en ;
+    .
+
+dts2576:link129553 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_2 ;
+    xl:to dts2576:resource16685 ;
+    ] .
+
+dts2576:resource16685 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """TX"""@en ;
+    .
+
+dts2576:link129554 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_3 ;
+    xl:to dts2576:resource16686 ;
+    ] .
+
+dts2576:resource16686 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Tiers"""@en ;
+    .
+
+dts2576:link129555 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_3 ;
+    xl:to dts2576:resource16687 ;
+    ] .
+
+dts2576:resource16687 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """TX"""@en ;
+    .
+
+dts2576:link129556 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_4 ;
+    xl:to dts2576:resource16688 ;
+    ] .
+
+dts2576:resource16688 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types of equity"""@en ;
+    .
+
+dts2576:link129557 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_4 ;
+    xl:to dts2576:resource16689 ;
+    ] .
+
+dts2576:resource16689 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """OE"""@en ;
+    .
+
+dts2576:link129558 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_5 ;
+    xl:to dts2576:resource16690 ;
+    ] .
+
+dts2576:resource16690 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Treatment in relation to ring fencing"""@en ;
+    .
+
+dts2576:link129559 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_5 ;
+    xl:to dts2576:resource16691 ;
+    ] .
+
+dts2576:resource16691 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """N/A"""@en ;
+    .
+
+dts2576:link129560 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_6 ;
+    xl:to dts2576:resource16692 ;
+    ] .
+
+dts2576:resource16692 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Tiers"""@en ;
+    .
+
+dts2576:link129561 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_6 ;
+    xl:to dts2576:resource16693 ;
+    ] .
+
+dts2576:resource16693 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """TX"""@en ;
+    .
+
+dts2576:link129562 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_7 ;
+    xl:to dts2576:resource16694 ;
+    ] .
+
+dts2576:resource16694 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Solvency II own funds eligibility"""@en ;
+    .
+
+dts2576:link129563 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_7 ;
+    xl:to dts2576:resource16695 ;
+    ] .
+
+dts2576:resource16695 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """BE"""@en ;
+    .
+
+dts2576:link129564 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_8 ;
+    xl:to dts2576:resource16696 ;
+    ] .
+
+dts2576:resource16696 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Counting under transitionals"""@en ;
+    .
+
+dts2576:link129565 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_8 ;
+    xl:to dts2576:resource16697 ;
+    ] .
+
+dts2576:resource16697 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """LV"""@en ;
+    .
+
+dts2576:link129566 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_9 ;
+    xl:to dts2576:resource16698 ;
+    ] .
+
+dts2576:resource16698 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Availability to meet SCR criteria"""@en ;
+    .
+
+dts2576:link129567 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_9 ;
+    xl:to dts2576:resource16699 ;
+    ] .
+
+dts2576:resource16699 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """MS"""@en ;
+    .
+
+dts2576:link129568 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_10 ;
+    xl:to dts2576:resource16700 ;
+    ] .
+
+dts2576:resource16700 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Availability to meet MCR criteria"""@en ;
+    .
+
+dts2576:link129569 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_10 ;
+    xl:to dts2576:resource16701 ;
+    ] .
+
+dts2576:resource16701 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """MX"""@en ;
+    .
+
+dts2576:link129570 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_11 ;
+    xl:to dts2576:resource16702 ;
+    ] .
+
+dts2576:resource16702 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Availability of excess of assets over liabilities for RFF or MP"""@en ;
+    .
+
+dts2576:link129571 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_11 ;
+    xl:to dts2576:resource16703 ;
+    ] .
+
+dts2576:resource16703 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """AA"""@en ;
+    .
+
+dts2576:link129572 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_12 ;
+    xl:to dts2576:resource16704 ;
+    ] .
+
+dts2576:resource16704 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Solvency II own funds eligibility"""@en ;
+    .
+
+dts2576:link129573 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_12 ;
+    xl:to dts2576:resource16705 ;
+    ] .
+
+dts2576:resource16705 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """BE"""@en ;
+    .
+
+dts2576:link129574 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_13 ;
+    xl:to dts2576:resource16706 ;
+    ] .
+
+dts2576:resource16706 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Tiers"""@en ;
+    .
+
+dts2576:link129575 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_13 ;
+    xl:to dts2576:resource16707 ;
+    ] .
+
+dts2576:resource16707 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """TX"""@en ;
+    .
+
+dts2576:link129576 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_14 ;
+    xl:to dts2576:resource16708 ;
+    ] .
+
+dts2576:resource16708 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Counting under transitionals"""@en ;
+    .
+
+dts2576:link129577 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_EL_h:s2c_14 ;
+    xl:to dts2576:resource16709 ;
+    ] .
+
+dts2576:resource16709 
+    xl:type label:label ;
+    xlink:role role1:verboseLabel ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """LV"""@en ;
+    .
+

@@ -1,0 +1,162 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/tr/mem-lab-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix role2: <http://www.xbrl.org/2003/role#>.
+@prefix arcrole3: <http://www.xbrl.org/2003/arcrole#>.
+@prefix role3: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab#>.
+@prefix s2c_TR: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/TR#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+@prefix dts2685: <http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/tr/mem-lab-en.xml#>.
+
+
+# XLINKS
+# localname: labelLink
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/tr/mem-lab-en.xml
+
+dts2685:link141090 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_TR:x0 ;
+    xl:to dts2685:resource22004 ;
+    ] .
+
+dts2685:resource22004 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Before risk mitigation"""@en ;
+    .
+
+dts2685:link141091 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_TR:x1 ;
+    xl:to dts2685:resource22005 ;
+    ] .
+
+dts2685:resource22005 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """After risk mitigation"""@en ;
+    .
+
+dts2685:link141092 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_TR:x2 ;
+    xl:to dts2685:resource22006 ;
+    ] .
+
+dts2685:resource22006 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """After risk mitigation [risk mitigation cost for reinstalment premium and other than from finite reinsurance]"""@en ;
+    .
+
+dts2685:link141093 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_TR:x3 ;
+    xl:to dts2685:resource22007 ;
+    ] .
+
+dts2685:resource22007 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """After risk mitigation effect"""@en ;
+    .
+
+dts2685:link141094 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_TR:x4 ;
+    xl:to dts2685:resource22008 ;
+    ] .
+
+dts2685:resource22008 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """After risk mitigation effect other than from finite reinsurance"""@en ;
+    .
+
+dts2685:link141095 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_TR:x6 ;
+    xl:to dts2685:resource22009 ;
+    ] .
+
+dts2685:resource22009 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk mitigation cost for reinstalment premiums"""@en ;
+    .
+
+dts2685:link141096 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_TR:x7 ;
+    xl:to dts2685:resource22010 ;
+    ] .
+
+dts2685:resource22010 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk mitigation effect"""@en ;
+    .
+
+dts2685:link141097 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_TR:x8 ;
+    xl:to dts2685:resource22011 ;
+    ] .
+
+dts2685:resource22011 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk mitigation effect from finite reinsurance"""@en ;
+    .
+
+dts2685:link141098 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_TR:x9 ;
+    xl:to dts2685:resource22012 ;
+    ] .
+
+dts2685:resource22012 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk mitigation effect other than from finite reinsurance"""@en ;
+    .
+
+dts2685:link141099 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_TR:x10 ;
+    xl:to dts2685:resource22013 ;
+    ] .
+
+dts2685:resource22013 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Risk mitigation effect other than from finite reinsurance and risk mitigation cost for reinstalment premiums"""@en ;
+    .
+

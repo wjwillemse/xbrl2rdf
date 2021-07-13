@@ -1,0 +1,107 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/typ-lab-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix role1: <http://www.xbrl.org/2008/role#>.
+@prefix arcrole1: <http://xbrl.org/arcrole/2008#>.
+@prefix role2: <http://www.xbrl.org/2003/role#>.
+@prefix label: <http://xbrl.org/2008/label#>.
+@prefix s2c_typ: <http://eiopa.europa.eu/xbrl/s2c/dict/typ#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+@prefix dts2497: <http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/typ-lab-en.xml#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/typ-lab-en.xml
+
+dts2497:link91343 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_typ:ID ;
+    xl:to dts2497:resource4690 ;
+    ] .
+
+dts2497:resource4690 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Codes"""@en ;
+    .
+
+dts2497:link91344 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_typ:NA ;
+    xl:to dts2497:resource4691 ;
+    ] .
+
+dts2497:resource4691 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Names"""@en ;
+    .
+
+dts2497:link91345 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_typ:NB ;
+    xl:to dts2497:resource4692 ;
+    ] .
+
+dts2497:resource4692 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Line identification"""@en ;
+    .
+
+dts2497:link91346 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_typ:ER ;
+    xl:to dts2497:resource4693 ;
+    ] .
+
+dts2497:resource4693 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Ratings"""@en ;
+    .
+
+dts2497:link91347 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_typ:RA ;
+    xl:to dts2497:resource4694 ;
+    ] .
+
+dts2497:resource4694 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Agencies"""@en ;
+    .
+
+dts2497:link91348 arcrole1:element-label [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:from s2c_typ:TY ;
+    xl:to dts2497:resource4695 ;
+    ] .
+
+dts2497:resource4695 
+    xl:type label:label ;
+    xlink:role role1:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Types"""@en ;
+    .
+

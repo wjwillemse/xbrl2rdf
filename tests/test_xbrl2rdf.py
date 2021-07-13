@@ -29,8 +29,6 @@ class TestXbrl2rdf(unittest.TestCase):
                     "instances",
                     "AepAppalachianTransmissionCompanyInc-436-2018Q1F1.xbrl",
                 ),
-                "--taxo",
-                "6",
                 "--output",
                 join("tests", "actual"),
                 "--output_format",
@@ -73,21 +71,7 @@ class TestXbrl2rdf(unittest.TestCase):
         )
         output = join("tests", "actual")
 
-        # list of the files already processed
-        dts_processed = list()
-        # check to see if json file exists
-        for filename in listdir(output):
-            if filename == "preloads.json":
-                with open(join(output, "preloads.json"), "r") as infile:
-                    dts_processed = json.load(infile)
-
-        result = MainProcessor(
-            data_url=data_url,
-            taxo_url=taxo_url,
-            output=output,
-            output_format=1,
-            dts_processed=dts_processed,
-        )
+        result = MainProcessor(data_url=data_url, output=output, output_format=1)
 
         assert result == 0, "MainProcessor did not return 0"
 
@@ -143,8 +127,6 @@ class TestXbrl2rdf(unittest.TestCase):
             [
                 "--url",
                 join("tests", "instances", "qrs_260_instance.xbrl"),
-                "--taxo",
-                "2",
                 "--output",
                 join("tests", "actual"),
                 "--output_format",
@@ -173,21 +155,7 @@ class TestXbrl2rdf(unittest.TestCase):
         )
         output = join("tests", "actual")
 
-        # list of the files already processed
-        dts_processed = list()
-        # check to see if json file exists
-        for filename in listdir(output):
-            if filename == "preloads.json":
-                with open(join(output, "preloads.json"), "r") as infile:
-                    dts_processed = json.load(infile)
-
-        result = MainProcessor(
-            data_url=data_url,
-            taxo_url=taxo_url,
-            output=output,
-            output_format=1,
-            dts_processed=dts_processed,
-        )
+        result = MainProcessor(data_url=data_url, output=output, output_format=1)
 
         assert result == 0, "MainProcessor did not return 0"
 

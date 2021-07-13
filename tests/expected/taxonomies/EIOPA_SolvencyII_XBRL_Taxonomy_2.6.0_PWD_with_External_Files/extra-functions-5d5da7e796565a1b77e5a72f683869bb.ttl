@@ -1,0 +1,68 @@
+# Source HREF: http://www.eurofiling.info/eu/fr/xbrl/func/extra-functions.xml
+
+# RDF triples (turtle syntax)
+
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix variable: <http://xbrl.org/2008/variable#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix customfunction: <http://xbrl.org/2010/custom-function#>.
+@prefix role2: <http://www.xbrl.org/2003/role#>.
+@prefix arcrole6: <http://xbrl.org/arcrole/2010#>.
+@prefix role6: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab/S.28.02.01.05#>.
+@prefix dts2452: <http://www.eurofiling.info/eu/fr/xbrl/func/extra-functions.xml#>.
+
+
+# XLINKS
+# localname: link
+# role: http://www.xbrl.org/2003/role/link
+# base: http://www.eurofiling.info/eu/fr/xbrl/func/extra-functions.xml
+
+dts2452:link90834 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2452:function_iff ;
+    xl:to dts2452:resource4197 ;
+    ] .
+
+dts2452:function_iff 
+    xl:type variable:function ;
+    xl:name """efn:iff"""^^rdf:XMLLiteral ;
+    xl:output """xs:boolean"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2452:resource4197 
+    xl:type customfunction:implementation ;
+    rdf:value """   
+   """; 
+    customfunction:output """if ($cond1) then $cond2 else not($cond2)"""^^rdf:XMLLiteral ;
+    .
+
+dts2452:link90835 arcrole6:function-implementation [
+    xl:type xl:link ;
+    xl:role role2:link ;
+    xl:order "1.0"^^xsd:decimal ;
+    xl:from dts2452:function_imp ;
+    xl:to dts2452:resource4198 ;
+    ] .
+
+dts2452:function_imp 
+    xl:type variable:function ;
+    xl:name """efn:imp"""^^rdf:XMLLiteral ;
+    xl:output """xs:boolean"""^^rdf:XMLLiteral ;
+    rdf:value """
+   """; 
+    .
+
+dts2452:resource4198 
+    xl:type customfunction:implementation ;
+    rdf:value """   
+   """; 
+    customfunction:output """if ($precond) then $test else true()"""^^rdf:XMLLiteral ;
+    .
+

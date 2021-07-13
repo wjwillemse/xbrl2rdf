@@ -1,0 +1,1840 @@
+# Source HREF: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+# RDF triples (turtle syntax)
+
+@prefix link: <http://www.xbrl.org/2003/linkbase#>.
+@prefix xl: <http://www.xbrl.org/2003/XLink#>.
+@prefix role: <http://www.xbrl.org/2003/role/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix df: <http://xbrl.org/2008/filter/dimension#>.
+@prefix role2: <http://www.xbrl.org/2003/role#>.
+@prefix arcrole3: <http://www.xbrl.org/2003/arcrole#>.
+@prefix role3: <http://eiopa.europa.eu/xbrl/s2md/role/fws/solvency/solvency2/2021-07-15/tab#>.
+@prefix s2c_AP: <http://eiopa.europa.eu/xbrl/s2c/dict/dom/AP#>.
+@prefix xlink: <http://www.w3.org/1999/xlink#>.
+@prefix role49: <http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP#>.
+@prefix dts2600: <http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml#>.
+
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/1
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132056 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:1 ;
+    xl:from s2c_AP:x0 ;
+    xl:to dts2600:resource17467 ;
+    ] .
+
+dts2600:resource17467 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Total/NA"""@en ;
+    .
+
+dts2600:link132057 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:1 ;
+    xl:from s2c_AP:x1 ;
+    xl:to dts2600:resource17468 ;
+    ] .
+
+dts2600:resource17468 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Full internal model"""@en ;
+    .
+
+dts2600:link132058 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:1 ;
+    xl:from s2c_AP:x2 ;
+    xl:to dts2600:resource17469 ;
+    ] .
+
+dts2600:resource17469 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Partial internal model"""@en ;
+    .
+
+dts2600:link132059 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:1 ;
+    xl:from s2c_AP:x3 ;
+    xl:to dts2600:resource17470 ;
+    ] .
+
+dts2600:resource17470 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Standard formula"""@en ;
+    .
+
+dts2600:link132060 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:1 ;
+    xl:from s2c_AP:x4 ;
+    xl:to dts2600:resource17471 ;
+    ] .
+
+dts2600:resource17471 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Standard formula or partial internal model"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/2
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132061 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:2 ;
+    xl:from s2c_AP:x0 ;
+    xl:to dts2600:resource17472 ;
+    ] .
+
+dts2600:resource17472 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Total/NA"""@en ;
+    .
+
+dts2600:link132062 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:2 ;
+    xl:from s2c_AP:x1 ;
+    xl:to dts2600:resource17473 ;
+    ] .
+
+dts2600:resource17473 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Full internal model"""@en ;
+    .
+
+dts2600:link132063 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:2 ;
+    xl:from s2c_AP:x4 ;
+    xl:to dts2600:resource17474 ;
+    ] .
+
+dts2600:resource17474 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Standard formula or partial internal model"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/3
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132064 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:3 ;
+    xl:from s2c_AP:x1 ;
+    xl:to dts2600:resource17475 ;
+    ] .
+
+dts2600:resource17475 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """3 - Full internal model"""@en ;
+    .
+
+dts2600:link132065 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:3 ;
+    xl:from s2c_AP:x2 ;
+    xl:to dts2600:resource17476 ;
+    ] .
+
+dts2600:resource17476 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Partial internal model"""@en ;
+    .
+
+dts2600:link132066 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:3 ;
+    xl:from s2c_AP:x3 ;
+    xl:to dts2600:resource17477 ;
+    ] .
+
+dts2600:resource17477 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Standard formula"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/4
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132067 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:4 ;
+    xl:from s2c_AP:x5 ;
+    xl:to dts2600:resource17478 ;
+    ] .
+
+dts2600:resource17478 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Use of undertaking specific parameters"""@en ;
+    .
+
+dts2600:link132068 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:4 ;
+    xl:from s2c_AP:x6 ;
+    xl:to dts2600:resource17479 ;
+    ] .
+
+dts2600:resource17479 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Don’t use undertaking specific parameters"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/5
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132069 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:5 ;
+    xl:from s2c_AP:x7 ;
+    xl:to dts2600:resource17480 ;
+    ] .
+
+dts2600:resource17480 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1- Use of volatility adjustment"""@en ;
+    .
+
+dts2600:link132070 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:5 ;
+    xl:from s2c_AP:x8 ;
+    xl:to dts2600:resource17481 ;
+    ] .
+
+dts2600:resource17481 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - No use of volatility adjustment"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/6
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132071 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:6 ;
+    xl:from s2c_AP:x9 ;
+    xl:to dts2600:resource17482 ;
+    ] .
+
+dts2600:resource17482 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Use of transitional measure on the risk-free interest rate"""@en ;
+    .
+
+dts2600:link132072 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:6 ;
+    xl:from s2c_AP:x10 ;
+    xl:to dts2600:resource17483 ;
+    ] .
+
+dts2600:resource17483 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - No use of transitional measure on the risk-free interest rate"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/7
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132073 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:7 ;
+    xl:from s2c_AP:x11 ;
+    xl:to dts2600:resource17484 ;
+    ] .
+
+dts2600:resource17484 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Use of transitional measure on technical provisions"""@en ;
+    .
+
+dts2600:link132074 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:7 ;
+    xl:from s2c_AP:x12 ;
+    xl:to dts2600:resource17485 ;
+    ] .
+
+dts2600:resource17485 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - No use of transitional measure on technical provisions"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/8
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132075 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:8 ;
+    xl:from s2c_AP:x13 ;
+    xl:to dts2600:resource17486 ;
+    ] .
+
+dts2600:resource17486 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Use of group specific parameters"""@en ;
+    .
+
+dts2600:link132076 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:8 ;
+    xl:from s2c_AP:x14 ;
+    xl:to dts2600:resource17487 ;
+    ] .
+
+dts2600:resource17487 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Don’t use group specific parameters"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/9
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132077 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:9 ;
+    xl:from s2c_AP:x15 ;
+    xl:to dts2600:resource17488 ;
+    ] .
+
+dts2600:resource17488 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - RFF under article 304 - with the option for the equity risk sub-module"""@en ;
+    .
+
+dts2600:link132078 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:9 ;
+    xl:from s2c_AP:x16 ;
+    xl:to dts2600:resource17489 ;
+    ] .
+
+dts2600:resource17489 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - RFF under article 304 - without the option for the equity risk sub-module"""@en ;
+    .
+
+dts2600:link132079 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:9 ;
+    xl:from s2c_AP:x17 ;
+    xl:to dts2600:resource17490 ;
+    ] .
+
+dts2600:resource17490 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """3 - RFF not under article 304"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/10
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132080 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:10 ;
+    xl:from s2c_AP:x0 ;
+    xl:to dts2600:resource17491 ;
+    ] .
+
+dts2600:resource17491 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Total/NA"""@en ;
+    .
+
+dts2600:link132081 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:10 ;
+    xl:from s2c_AP:x7 ;
+    xl:to dts2600:resource17492 ;
+    ] .
+
+dts2600:resource17492 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Use of volatility adjustment"""@en ;
+    .
+
+dts2600:link132082 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:10 ;
+    xl:from s2c_AP:x9 ;
+    xl:to dts2600:resource17493 ;
+    ] .
+
+dts2600:resource17493 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Use of transitional measure on the risk-free interest rate"""@en ;
+    .
+
+dts2600:link132083 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:10 ;
+    xl:from s2c_AP:x11 ;
+    xl:to dts2600:resource17494 ;
+    ] .
+
+dts2600:resource17494 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Use of transitional measure on technical provisions"""@en ;
+    .
+
+dts2600:link132084 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:10 ;
+    xl:from s2c_AP:x12 ;
+    xl:to dts2600:resource17495 ;
+    ] .
+
+dts2600:resource17495 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """No use of transitional measure on technical provisions"""@en ;
+    .
+
+dts2600:link132085 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:10 ;
+    xl:from s2c_AP:x18 ;
+    xl:to dts2600:resource17496 ;
+    ] .
+
+dts2600:resource17496 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Use of matching adjustment"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/11
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132086 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:11 ;
+    xl:from s2c_AP:x21 ;
+    xl:to dts2600:resource17497 ;
+    ] .
+
+dts2600:resource17497 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Material"""@en ;
+    .
+
+dts2600:link132087 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:11 ;
+    xl:from s2c_AP:x22 ;
+    xl:to dts2600:resource17498 ;
+    ] .
+
+dts2600:resource17498 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Not material"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/12
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132088 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:12 ;
+    xl:from s2c_AP:x19 ;
+    xl:to dts2600:resource17499 ;
+    ] .
+
+dts2600:resource17499 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - USP gross"""@en ;
+    .
+
+dts2600:link132089 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:12 ;
+    xl:from s2c_AP:x20 ;
+    xl:to dts2600:resource17500 ;
+    ] .
+
+dts2600:resource17500 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - USP net"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/13
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132090 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:13 ;
+    xl:from s2c_AP:x23 ;
+    xl:to dts2600:resource17501 ;
+    ] .
+
+dts2600:resource17501 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Individual Internal Model"""@en ;
+    .
+
+dts2600:link132091 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:13 ;
+    xl:from s2c_AP:x24 ;
+    xl:to dts2600:resource17502 ;
+    ] .
+
+dts2600:resource17502 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Group Internal Model"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/14
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132092 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:14 ;
+    xl:from s2c_AP:x25 ;
+    xl:to dts2600:resource17503 ;
+    ] .
+
+dts2600:resource17503 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Future management actions regarding the loss-absorbing capacity of technical provisions embedded within the component"""@en ;
+    .
+
+dts2600:link132093 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:14 ;
+    xl:from s2c_AP:x26 ;
+    xl:to dts2600:resource17504 ;
+    ] .
+
+dts2600:resource17504 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Future management actions regarding the loss-absorbing capacity of deferred taxes embedded within the component"""@en ;
+    .
+
+dts2600:link132094 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:14 ;
+    xl:from s2c_AP:x27 ;
+    xl:to dts2600:resource17505 ;
+    ] .
+
+dts2600:resource17505 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """3 - Future management actions regarding the loss-absorbing capacity of technical provisions and deferred taxes embedded within the component"""@en ;
+    .
+
+dts2600:link132095 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:14 ;
+    xl:from s2c_AP:x28 ;
+    xl:to dts2600:resource17506 ;
+    ] .
+
+dts2600:resource17506 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """4 - No embedded consideration of future management actions"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/15
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132096 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:15 ;
+    xl:from s2c_AP:x29 ;
+    xl:to dts2600:resource17507 ;
+    ] .
+
+dts2600:resource17507 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Compliance with fully-funded"""@en ;
+    .
+
+dts2600:link132097 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:15 ;
+    xl:from s2c_AP:x30 ;
+    xl:to dts2600:resource17508 ;
+    ] .
+
+dts2600:resource17508 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Non-compliance with fully-funded"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/16
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132098 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:16 ;
+    xl:from s2c_AP:x31 ;
+    xl:to dts2600:resource17509 ;
+    ] .
+
+dts2600:resource17509 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Prior to 31 December 2015"""@en ;
+    .
+
+dts2600:link132099 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:16 ;
+    xl:from s2c_AP:x32 ;
+    xl:to dts2600:resource17510 ;
+    ] .
+
+dts2600:resource17510 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - After 31 December 2015"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/17
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132100 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:17 ;
+    xl:from s2c_AP:x33 ;
+    xl:to dts2600:resource17511 ;
+    ] .
+
+dts2600:resource17511 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Simplifications used"""@en ;
+    .
+
+dts2600:link132101 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:17 ;
+    xl:from s2c_AP:x34 ;
+    xl:to dts2600:resource17512 ;
+    ] .
+
+dts2600:resource17512 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Simplifications not used"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/18
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132102 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:18 ;
+    xl:from s2c_AP:x35 ;
+    xl:to dts2600:resource17513 ;
+    ] .
+
+dts2600:resource17513 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Full recalculation"""@en ;
+    .
+
+dts2600:link132103 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:18 ;
+    xl:from s2c_AP:x36 ;
+    xl:to dts2600:resource17514 ;
+    ] .
+
+dts2600:resource17514 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Simplification at risk sub-module level"""@en ;
+    .
+
+dts2600:link132104 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:18 ;
+    xl:from s2c_AP:x37 ;
+    xl:to dts2600:resource17515 ;
+    ] .
+
+dts2600:resource17515 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """3 - Simplification at risk module level"""@en ;
+    .
+
+dts2600:link132105 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:18 ;
+    xl:from s2c_AP:x38 ;
+    xl:to dts2600:resource17516 ;
+    ] .
+
+dts2600:resource17516 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """4 - No adjustment"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/19
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132106 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:19 ;
+    xl:from s2c_AP:x39 ;
+    xl:to dts2600:resource17517 ;
+    ] .
+
+dts2600:resource17517 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Increase in the amount of annuity benefits"""@en ;
+    .
+
+dts2600:link132107 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:19 ;
+    xl:from s2c_AP:x40 ;
+    xl:to dts2600:resource17518 ;
+    ] .
+
+dts2600:resource17518 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - None"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/20
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132108 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:20 ;
+    xl:from s2c_AP:x39 ;
+    xl:to dts2600:resource17519 ;
+    ] .
+
+dts2600:resource17519 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Increase in the amount of annuity benefits"""@en ;
+    .
+
+dts2600:link132109 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:20 ;
+    xl:from s2c_AP:x40 ;
+    xl:to dts2600:resource17520 ;
+    ] .
+
+dts2600:resource17520 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - None"""@en ;
+    .
+
+dts2600:link132110 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:20 ;
+    xl:from s2c_AP:x41 ;
+    xl:to dts2600:resource17521 ;
+    ] .
+
+dts2600:resource17521 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Standard deviation for NSLT health premium risk referred to in Title I Chapter V Section 12 of Delegated Regulation (EU) 2015/35"""@en ;
+    .
+
+dts2600:link132111 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:20 ;
+    xl:from s2c_AP:x42 ;
+    xl:to dts2600:resource17522 ;
+    ] .
+
+dts2600:resource17522 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """3 - Standard deviation for NSLT health gross premium risk referred to in Title I Chapter V Section 12 of Delegated Regulation (EU) 2015/35"""@en ;
+    .
+
+dts2600:link132112 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:20 ;
+    xl:from s2c_AP:x43 ;
+    xl:to dts2600:resource17523 ;
+    ] .
+
+dts2600:resource17523 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """4 - Adjustment factor for non-proportional reinsurance"""@en ;
+    .
+
+dts2600:link132113 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:20 ;
+    xl:from s2c_AP:x44 ;
+    xl:to dts2600:resource17524 ;
+    ] .
+
+dts2600:resource17524 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """5 - Standard deviation for NSLT health reserve risk referred to in Title I Chapter V Section 12 of Delegated Regulation (EU) 2015/35"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/21
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132114 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:21 ;
+    xl:from s2c_AP:x40 ;
+    xl:to dts2600:resource17525 ;
+    ] .
+
+dts2600:resource17525 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - None"""@en ;
+    .
+
+dts2600:link132115 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:21 ;
+    xl:from s2c_AP:x43 ;
+    xl:to dts2600:resource17526 ;
+    ] .
+
+dts2600:resource17526 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """4 - Adjustment factor for non-proportional reinsurance"""@en ;
+    .
+
+dts2600:link132116 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:21 ;
+    xl:from s2c_AP:x45 ;
+    xl:to dts2600:resource17527 ;
+    ] .
+
+dts2600:resource17527 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """6 - Standard deviation for non-life premium risk"""@en ;
+    .
+
+dts2600:link132117 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:21 ;
+    xl:from s2c_AP:x46 ;
+    xl:to dts2600:resource17528 ;
+    ] .
+
+dts2600:resource17528 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """7 - Standard deviation for non-life gross premium risk"""@en ;
+    .
+
+dts2600:link132118 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:21 ;
+    xl:from s2c_AP:x47 ;
+    xl:to dts2600:resource17529 ;
+    ] .
+
+dts2600:resource17529 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """8 - Standard deviation for non-life reserve risk"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/22
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132119 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:22 ;
+    xl:from s2c_AP:x39 ;
+    xl:to dts2600:resource17530 ;
+    ] .
+
+dts2600:resource17530 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Increase in the amount of annuity benefits"""@en ;
+    .
+
+dts2600:link132120 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:22 ;
+    xl:from s2c_AP:x40 ;
+    xl:to dts2600:resource17531 ;
+    ] .
+
+dts2600:resource17531 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - None"""@en ;
+    .
+
+dts2600:link132121 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:22 ;
+    xl:from s2c_AP:x41 ;
+    xl:to dts2600:resource17532 ;
+    ] .
+
+dts2600:resource17532 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Standard deviation for NSLT health premium risk"""@en ;
+    .
+
+dts2600:link132122 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:22 ;
+    xl:from s2c_AP:x42 ;
+    xl:to dts2600:resource17533 ;
+    ] .
+
+dts2600:resource17533 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """3 - Standard deviation for NSLT health gross premium risk"""@en ;
+    .
+
+dts2600:link132123 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:22 ;
+    xl:from s2c_AP:x43 ;
+    xl:to dts2600:resource17534 ;
+    ] .
+
+dts2600:resource17534 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """4 - Adjustment factor for non-proportional reinsurance"""@en ;
+    .
+
+dts2600:link132124 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:22 ;
+    xl:from s2c_AP:x44 ;
+    xl:to dts2600:resource17535 ;
+    ] .
+
+dts2600:resource17535 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """5 - Standard deviation for NSLT health reserve risk"""@en ;
+    .
+
+dts2600:link132125 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:22 ;
+    xl:from s2c_AP:x45 ;
+    xl:to dts2600:resource17536 ;
+    ] .
+
+dts2600:resource17536 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """6 - Standard deviation for non-life premium risk"""@en ;
+    .
+
+dts2600:link132126 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:22 ;
+    xl:from s2c_AP:x46 ;
+    xl:to dts2600:resource17537 ;
+    ] .
+
+dts2600:resource17537 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """7 - Standard deviation for non-life gross premium risk"""@en ;
+    .
+
+dts2600:link132127 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:22 ;
+    xl:from s2c_AP:x47 ;
+    xl:to dts2600:resource17538 ;
+    ] .
+
+dts2600:resource17538 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """8 - Standard deviation for non-life reserve risk"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/23
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132128 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:23 ;
+    xl:from s2c_AP:x48 ;
+    xl:to dts2600:resource17539 ;
+    ] .
+
+dts2600:resource17539 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - CIUs for which a full look through was applied for the purposes of SCR calculation"""@en ;
+    .
+
+dts2600:link132129 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:23 ;
+    xl:from s2c_AP:x49 ;
+    xl:to dts2600:resource17540 ;
+    ] .
+
+dts2600:resource17540 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - CIUs for which the “simplified” look through was applied on the basis of the target underlying asset allocation or last reported asset allocation and for which the data groupings is used according to 84(3) of Delegated Regulation 2015/35"""@en ;
+    .
+
+dts2600:link132130 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:23 ;
+    xl:from s2c_AP:x50 ;
+    xl:to dts2600:resource17541 ;
+    ] .
+
+dts2600:resource17541 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """3 - CIUs for which the “simplified” look through was applied on the basis of the target underlying asset allocation or last reported asset allocation and for which no data groupings is used according to 84(3) of Delegated Regulation 2015/35"""@en ;
+    .
+
+dts2600:link132131 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:23 ;
+    xl:from s2c_AP:x53 ;
+    xl:to dts2600:resource17542 ;
+    ] .
+
+dts2600:resource17542 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """4 - CIUs for which for the “equity risk type 2” was applied article 168(3) of Delegated Regulation 2015/35"""@en ;
+    .
+
+dts2600:link132132 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:23 ;
+    xl:from s2c_AP:x54 ;
+    xl:to dts2600:resource17543 ;
+    ] .
+
+dts2600:resource17543 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - Not applicable"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/24
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132133 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:24 ;
+    xl:from s2c_AP:x55 ;
+    xl:to dts2600:resource17544 ;
+    ] .
+
+dts2600:resource17544 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Yes"""@en ;
+    .
+
+dts2600:link132134 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:24 ;
+    xl:from s2c_AP:x56 ;
+    xl:to dts2600:resource17545 ;
+    ] .
+
+dts2600:resource17545 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - No"""@en ;
+    .
+
+dts2600:link132135 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:24 ;
+    xl:from s2c_AP:x77 ;
+    xl:to dts2600:resource17546 ;
+    ] .
+
+dts2600:resource17546 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """3 - Not applicable as LAC DT is not used (in this case R0600 to R0690 are not applicable) See EIOPA Guidelines on loss-absorbing capacity of technical provisions and deferred taxes"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/25
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132136 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:25 ;
+    xl:from s2c_AP:x34 ;
+    xl:to dts2600:resource17547 ;
+    ] .
+
+dts2600:resource17547 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - Simplifications not used"""@en ;
+    .
+
+dts2600:link132137 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:25 ;
+    xl:from s2c_AP:x57 ;
+    xl:to dts2600:resource17548 ;
+    ] .
+
+dts2600:resource17548 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Simplifications for Article 105a"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/26
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132138 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:26 ;
+    xl:from s2c_AP:x34 ;
+    xl:to dts2600:resource17549 ;
+    ] .
+
+dts2600:resource17549 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - Simplifications not used"""@en ;
+    .
+
+dts2600:link132139 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:26 ;
+    xl:from s2c_AP:x58 ;
+    xl:to dts2600:resource17550 ;
+    ] .
+
+dts2600:resource17550 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Simplification for the Article 96a"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/27
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132140 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:27 ;
+    xl:from s2c_AP:x34 ;
+    xl:to dts2600:resource17551 ;
+    ] .
+
+dts2600:resource17551 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - Simplifications not used"""@en ;
+    .
+
+dts2600:link132141 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:27 ;
+    xl:from s2c_AP:x59 ;
+    xl:to dts2600:resource17552 ;
+    ] .
+
+dts2600:resource17552 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Simplification article 90a"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/28
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132142 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:28 ;
+    xl:from s2c_AP:x34 ;
+    xl:to dts2600:resource17553 ;
+    ] .
+
+dts2600:resource17553 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - Simplifications not used"""@en ;
+    .
+
+dts2600:link132143 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:28 ;
+    xl:from s2c_AP:x60 ;
+    xl:to dts2600:resource17554 ;
+    ] .
+
+dts2600:resource17554 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Simplifications article 90c"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/29
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132144 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:29 ;
+    xl:from s2c_AP:x0 ;
+    xl:to dts2600:resource17555 ;
+    ] .
+
+dts2600:resource17555 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Total/NA"""@en ;
+    .
+
+dts2600:link132145 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:29 ;
+    xl:from s2c_AP:x60 ;
+    xl:to dts2600:resource17556 ;
+    ] .
+
+dts2600:resource17556 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Simplifications based on article 90c"""@en ;
+    .
+
+dts2600:link132146 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:29 ;
+    xl:from s2c_AP:x61 ;
+    xl:to dts2600:resource17557 ;
+    ] .
+
+dts2600:resource17557 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Simplifications based on article 90b"""@en ;
+    .
+
+dts2600:link132147 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:29 ;
+    xl:from s2c_AP:x71 ;
+    xl:to dts2600:resource17558 ;
+    ] .
+
+dts2600:resource17558 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Simplifications based on article 90b windstorm"""@en ;
+    .
+
+dts2600:link132148 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:29 ;
+    xl:from s2c_AP:x72 ;
+    xl:to dts2600:resource17559 ;
+    ] .
+
+dts2600:resource17559 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Simplifications based on article 90b earthquake"""@en ;
+    .
+
+dts2600:link132149 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:29 ;
+    xl:from s2c_AP:x73 ;
+    xl:to dts2600:resource17560 ;
+    ] .
+
+dts2600:resource17560 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Simplifications based on article 90b flood"""@en ;
+    .
+
+dts2600:link132150 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:29 ;
+    xl:from s2c_AP:x74 ;
+    xl:to dts2600:resource17561 ;
+    ] .
+
+dts2600:resource17561 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Simplifications based on article 90b hail"""@en ;
+    .
+
+dts2600:link132151 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:29 ;
+    xl:from s2c_AP:x75 ;
+    xl:to dts2600:resource17562 ;
+    ] .
+
+dts2600:resource17562 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Simplifications based on article 90b subsidence"""@en ;
+    .
+
+dts2600:link132152 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:29 ;
+    xl:from s2c_AP:x76 ;
+    xl:to dts2600:resource17563 ;
+    ] .
+
+dts2600:resource17563 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """Simplifications based on simplified SCR calculation for debt portfolio"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/30
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132153 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:30 ;
+    xl:from s2c_AP:x34 ;
+    xl:to dts2600:resource17564 ;
+    ] .
+
+dts2600:resource17564 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - Simplifications not used"""@en ;
+    .
+
+dts2600:link132154 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:30 ;
+    xl:from s2c_AP:x57 ;
+    xl:to dts2600:resource17565 ;
+    ] .
+
+dts2600:resource17565 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Simplifications for Article 105a"""@en ;
+    .
+
+dts2600:link132155 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:30 ;
+    xl:from s2c_AP:x64 ;
+    xl:to dts2600:resource17566 ;
+    ] .
+
+dts2600:resource17566 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Simplification for Article 104"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/31
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132156 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:31 ;
+    xl:from s2c_AP:x34 ;
+    xl:to dts2600:resource17567 ;
+    ] .
+
+dts2600:resource17567 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - Simplifications not used"""@en ;
+    .
+
+dts2600:link132157 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:31 ;
+    xl:from s2c_AP:x65 ;
+    xl:to dts2600:resource17568 ;
+    ] .
+
+dts2600:resource17568 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """3 - Simplification pooling arrangements, article 109"""@en ;
+    .
+
+dts2600:link132158 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:31 ;
+    xl:from s2c_AP:x66 ;
+    xl:to dts2600:resource17569 ;
+    ] .
+
+dts2600:resource17569 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """4 - Simplification grouping single name exposures, article 110"""@en ;
+    .
+
+dts2600:link132159 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:31 ;
+    xl:from s2c_AP:x67 ;
+    xl:to dts2600:resource17570 ;
+    ] .
+
+dts2600:resource17570 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """5 - Simplification of the LGD for reinsurance arrangements, article 112a"""@en ;
+    .
+
+dts2600:link132160 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:31 ;
+    xl:from s2c_AP:x68 ;
+    xl:to dts2600:resource17571 ;
+    ] .
+
+dts2600:resource17571 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """6 - Simplification for type 1 exposures, article 112b"""@en ;
+    .
+
+dts2600:link132161 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:31 ;
+    xl:from s2c_AP:x69 ;
+    xl:to dts2600:resource17572 ;
+    ] .
+
+dts2600:resource17572 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """7 - Simplification for the risk-mitigating effect of reinsurance arrangements, article 111"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/32
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132162 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:32 ;
+    xl:from s2c_AP:x34 ;
+    xl:to dts2600:resource17573 ;
+    ] .
+
+dts2600:resource17573 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - Simplifications not used"""@en ;
+    .
+
+dts2600:link132163 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:32 ;
+    xl:from s2c_AP:x62 ;
+    xl:to dts2600:resource17574 ;
+    ] .
+
+dts2600:resource17574 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Simplification for the Article 95"""@en ;
+    .
+
+dts2600:link132164 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:32 ;
+    xl:from s2c_AP:x63 ;
+    xl:to dts2600:resource17575 ;
+    ] .
+
+dts2600:resource17575 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Simplification for the Article 95a"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/33
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132165 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:33 ;
+    xl:from s2c_AP:x34 ;
+    xl:to dts2600:resource17576 ;
+    ] .
+
+dts2600:resource17576 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - Simplifications not used"""@en ;
+    .
+
+dts2600:link132166 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:33 ;
+    xl:from s2c_AP:x70 ;
+    xl:to dts2600:resource17577 ;
+    ] .
+
+dts2600:resource17577 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Simplification for the Article 102a"""@en ;
+    .
+
+dts2600:link132167 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:33 ;
+    xl:from s2c_AP:x78 ;
+    xl:to dts2600:resource17578 ;
+    ] .
+
+dts2600:resource17578 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Simplification for the Article 102"""@en ;
+    .
+
+# XLINKS
+# localname: labelLink
+# role: http://eiopa.europa.eu/xbrl/s2c/role/dict/dom/AP/34
+# base: http://eiopa.europa.eu/eu/xbrl/s2c/dict/dom/ap/hier-lab-mem-en.xml
+
+dts2600:link132168 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:34 ;
+    xl:from s2c_AP:x34 ;
+    xl:to dts2600:resource17579 ;
+    ] .
+
+dts2600:resource17579 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """9 - Simplifications not used"""@en ;
+    .
+
+dts2600:link132169 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:34 ;
+    xl:from s2c_AP:x71 ;
+    xl:to dts2600:resource17580 ;
+    ] .
+
+dts2600:resource17580 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """1 - Simplification article 90b windstorm"""@en ;
+    .
+
+dts2600:link132170 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:34 ;
+    xl:from s2c_AP:x72 ;
+    xl:to dts2600:resource17581 ;
+    ] .
+
+dts2600:resource17581 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """2 - Simplification article 90b earthquake"""@en ;
+    .
+
+dts2600:link132171 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:34 ;
+    xl:from s2c_AP:x73 ;
+    xl:to dts2600:resource17582 ;
+    ] .
+
+dts2600:resource17582 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """3 - Simplification article 90b flood"""@en ;
+    .
+
+dts2600:link132172 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:34 ;
+    xl:from s2c_AP:x74 ;
+    xl:to dts2600:resource17583 ;
+    ] .
+
+dts2600:resource17583 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """4 - Simplification article 90b hail"""@en ;
+    .
+
+dts2600:link132173 arcrole3:concept-label [
+    xl:type xl:link ;
+    xl:role role49:34 ;
+    xl:from s2c_AP:x75 ;
+    xl:to dts2600:resource17584 ;
+    ] .
+
+dts2600:resource17584 
+    xl:type link:label ;
+    xlink:role role2:label ;
+    rdf:lang """en"""^^rdf:XMLLiteral ;
+    rdf:value """5 - Simplification article 90b subsidence"""@en ;
+    .
+
