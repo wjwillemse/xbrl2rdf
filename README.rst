@@ -5,9 +5,6 @@ xbrl2rdf
 .. image:: https://img.shields.io/pypi/v/xbrl2rdf.svg
         :target: https://pypi.python.org/pypi/xbrl2rdf
 
-.. image:: https://img.shields.io/travis/wjwillemse/xbrl2rdf.svg
-        :target: https://travis-ci.com/wjwillemse/xbrl2rdf
-
 .. image:: https://readthedocs.org/projects/xbrl2rdf/badge/?version=latest
         :target: https://xbrl2rdf.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
