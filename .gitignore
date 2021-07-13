@@ -107,6 +107,7 @@ ENV/
 
 data/rdf
 data/instances
+data/taxonomies/taxonomyPackages.json
 
 tests/actual/data
 tests/actual/taxonomies
