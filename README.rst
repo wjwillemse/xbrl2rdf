@@ -2,7 +2,6 @@
 xbrl2rdf
 ========
 
-
 .. image:: https://img.shields.io/pypi/v/xbrl2rdf.svg
         :target: https://pypi.python.org/pypi/xbrl2rdf
 
@@ -12,6 +11,10 @@ xbrl2rdf
 .. image:: https://readthedocs.org/projects/xbrl2rdf/badge/?version=latest
         :target: https://xbrl2rdf.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+        :target: https://github.com/psf/black
+        :alt: Code style: black
 
 > #### DISCLAIMER - BETA PHASE
 > This XBRL to RDF parser is currently in a beta phase.
@@ -67,6 +70,11 @@ the file EIOPA_SolvencyII_XBRL_Taxonomy_2.4.0_with_external_hotfix.zip and put t
 Download from the same location the file EIOPA_SolvencyII_XBRL_Instance_documents_2.4.0.zip. Extract from this EIOPA_SolvencyII_XBRL_Instance_documents_2.4.0/random/qrs_240_instance.xbrl (or another instance file) and put the file in data/instances.
 
 Then run the command above to parse this file.
+
+Acknowledgments
+===============
+
+This code is based on Dave Raggett's work on the translation of XBRL into RDF (https://sourceforge.net/projects/xbrlimport/).
 
 Contributing
 ============
