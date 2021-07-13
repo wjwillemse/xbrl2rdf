@@ -107,7 +107,6 @@ ENV/
 
 data/rdf
 data/instances
-data/taxonomies
 
 tests/actual/data
 tests/actual/taxonomies
