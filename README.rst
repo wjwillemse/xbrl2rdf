@@ -41,13 +41,13 @@ To install the package from Github
 The idea of this package
 ========================
 
-This project started with two observations:
+This package started with two observations:
 
-* the meta data contained in XBRL taxonomies are very useful but poorly used outside IT departments and XBRL specialists;
+* the meta data contained in XBRL taxonomies are very useful but not often used outside IT departments and XBRL specialists;
 
 * the data in XBRL reports is not very well suited for combining with other data sources and with text data.
 
- The idea was to transform the XBRL format to a semantic data format / knowledge graph based on RDF/OWL. The XBRL format already uses XML and URIs, so parsing XBRL to RDF should at least be feasible. The RDF representation makes it easier to combine internal and external data, data from other taxonomies and allows semantic reasoning.
+The idea of this package was to transform the XBRL format to a semantic data format / knowledge graph based on RDF/OWL. The XBRL format already uses XML and URIs, so parsing XBRL to RDF is relatively straightforward (especially if compared to parsing XBRL to a relational database). The RDF representation makes it easier to combine XBRL data with internal and external data, and data from other taxonomies. Furthermore it allows semantic reasoning.
 
 Features
 ========
@@ -91,7 +91,6 @@ Meta data from an XBRL taxonomy looks like this::
             xl:to s2md_met:mi1808 ;    
             ]
 
-
         _:link107873 arcrole1:concept-label [
             xl:type xl:link ;
             xl:role s2c_LB:5 ;
@@ -101,7 +100,7 @@ Meta data from an XBRL taxonomy looks like this::
             rdf:value """Annuities stemming from non-life insurance contracts"""@en ;
             ].
 
-With XBRL in RDF format you can then query the data, for example query for the labels of grouptables of the qrs entrypoint (quarterly reports from solo undertakings)::
+With XBRL in RDF format you can then query the data, for example for the labels of group tables of the qrs entrypoint (quarterly reports from solo undertakings of Solvency 2)::
 
         SELECT ?grouptable ?label
         WHERE {
@@ -114,20 +113,20 @@ With XBRL in RDF format you can then query the data, for example query for the l
 
 This query gives the following output::
 
-        tgS.06.03.01: Collective investment undertakings - look-through approach
-        tgS.12.01.02: Life and Health SLT Technical Provisions
-        tgS.08.02.01: Derivatives Transactions
-        tgS.01.02.01: Basic Information - General
-        tgS.17.01.02: Non-Life Technical Provisions
-        tgS.28.02.01: Minimum Capital Requirement - Both life and non-life insurance activity
-        tgS.06.02.01: List of assets
-        tgT.99.01.01: Technical table
         tgS.01.01.02: Appendix I: Quantitative reporting templates
-        tgS.28.01.01: Minimum Capital Requirement - Only life or only non-life insurance or reinsurance activity
-        tgS.08.01.01: Open derivatives
-        tgS.23.01.01: Own funds
-        tgS.05.01.02: Premiums, claims and expenses by line of business
+        tgS.01.02.01: Basic Information - General
         tgS.02.01.02: Balance sheet
+        tgS.05.01.02: Premiums, claims and expenses by line of business
+        tgS.06.02.01: List of assets
+        tgS.06.03.01: Collective investment undertakings - look-through approach
+        tgS.08.01.01: Open derivatives
+        tgS.08.02.01: Derivatives Transactions
+        tgS.12.01.02: Life and Health SLT Technical Provisions
+        tgS.17.01.02: Non-Life Technical Provisions
+        tgS.23.01.01: Own funds
+        tgS.28.01.01: Minimum Capital Requirement - Only life or only non-life insurance or reinsurance activity
+        tgS.28.02.01: Minimum Capital Requirement - Both life and non-life insurance activity
+        tgT.99.01.01: Technical table
 
 How to run
 ==========
