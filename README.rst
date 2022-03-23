@@ -49,7 +49,7 @@ This package started with two observations:
 
 The idea of this package was to transform the XBRL format to a semantic data format / knowledge graph based on RDF/OWL. The XBRL format already uses XML and URIs, so parsing XBRL to RDF is relatively straightforward (especially if compared to parsing XBRL to a relational database). The RDF representation makes it easier to combine XBRL data with internal and external data, and data from other taxonomies. Furthermore it allows semantic reasoning.
 
-See also: `Short overview <https://github.com/wjwillemse/XBRL2RDF/docs/XBRL to RDF.pdf>`_
+See also: `Short overview <https://github.com/wjwillemse/xbrl2rdf/blob/main/docs/XBRL%20to%20RDF.pdf>`_
 
 Features
 ========
