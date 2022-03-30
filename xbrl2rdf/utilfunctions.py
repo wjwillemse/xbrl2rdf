@@ -76,7 +76,10 @@ def processAttribute(
                 attr_value = (
                     expandRelativePath(attr_value, base)
                     .replace("s.", "S.")
-                    .replace("eu/eu/", "eu/")
+                    # .replace("f_", "F_")
+                    # .replace("eu/fr/", "")
+                    # .replace("nl/fr/", "")
+                    # .replace("eu/eu/", "eu/")
                 )
             name = attr_value.split("/")[-1]
             base = "/".join(attr_value.split("/")[0:-1])
@@ -167,7 +170,7 @@ def loadXML(handler, uri, ns, params):
             fp = xbrl_zipfile.fs.open(filePath, "r")
             content = fp.read()
         except:
-            logging.info('Could not read "+uri+" from zip-file.\n')
+            logging.info('Could not read '+uri+' from zip-file.\n')
             params["errorCount"] += 1
             return -1
     else:  # treat as local file

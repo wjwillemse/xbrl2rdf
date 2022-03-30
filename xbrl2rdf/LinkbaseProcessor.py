@@ -656,11 +656,14 @@ def getTurtleName(
         res, namespace, name = findId(href, base, params)
         if res != 0:
             # check if href path is in namespaces, presumable a bug in the eiopa taxonomy
+            # this should also be changed in utilfunctions.py
             corrected_path = (
                 "/".join(href.split("/")[0:-1])
                 .replace("s.", "S.")
-                .replace("eu/eu/", "eu/")
-                .replace("nl/fr/", "")
+                # .replace("f_", "F_")
+                # .replace("eu/fr/", "")
+                # .replace("nl/fr/", "")
+                # .replace("eu/eu/", "eu/")
             )
             if corrected_path in params["namespaces"].keys():
                 namespace = corrected_path
@@ -673,8 +676,10 @@ def getTurtleName(
         namespace = (
             "/".join(base.split("/")[0:-1])
             .replace("s.", "S.")
-            .replace("eu/eu/", "eu/")
-            .replace("nl/fr/", "")
+            # .replace("f_", "F_")
+            # .replace("eu/fr/", "")
+            # .replace("nl/fr/", "")
+            # .replace("eu/eu/", "eu/")
         )
         name = loc.get(XLINK_LABEL, None)
 
